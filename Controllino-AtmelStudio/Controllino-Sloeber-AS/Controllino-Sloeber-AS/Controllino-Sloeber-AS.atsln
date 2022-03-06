@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Atmel Studio Solution File, Format Version 11.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{606CD3BC-00DD-421A-8EC3-D232DBEB2464}") = "Controllino-Sloeber-AS", "Controllino-Sloeber-AS\Controllino-Sloeber-AS.objproj", "{95E308BB-1C75-42E8-BFB2-65AF28346215}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95E308BB-1C75-42E8-BFB2-65AF28346215}.Debug|AVR.ActiveCfg = Debug|AVR
+		{95E308BB-1C75-42E8-BFB2-65AF28346215}.Debug|AVR.Build.0 = Debug|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

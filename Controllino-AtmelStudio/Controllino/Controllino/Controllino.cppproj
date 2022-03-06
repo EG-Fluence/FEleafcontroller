@@ -1,0 +1,927 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.CPP</ToolchainName>
+    <ProjectGuid>dce6c7e3-ee26-4d79-826b-08594b9ad897</ProjectGuid>
+    <avrdevice>ATmega2560</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>Controllino</AssemblyName>
+    <Name>Controllino</Name>
+    <RootNamespace>Controllino</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <BootSegment>2</BootSegment>
+    <ResetRule>0</ResetRule>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <EraseKey />
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.40.0" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <avrtool>com.atmel.avrdbg.tool.atmelice</avrtool>
+    <avrtoolserialnumber>J42700050365</avrtoolserialnumber>
+    <avrdeviceexpectedsignature>0x1E9801</avrdeviceexpectedsignature>
+    <com_atmel_avrdbg_tool_atmelice>
+      <ToolOptions>
+        <InterfaceProperties>
+          <JtagDbgClock>200000</JtagDbgClock>
+        </InterfaceProperties>
+        <InterfaceName>JTAG</InterfaceName>
+      </ToolOptions>
+      <ToolType>com.atmel.avrdbg.tool.atmelice</ToolType>
+      <ToolNumber>J42700050365</ToolNumber>
+      <ToolName>Atmel-ICE</ToolName>
+    </com_atmel_avrdbg_tool_atmelice>
+    <avrtoolinterface>JTAG</avrtoolinterface>
+    <avrtoolinterfaceclock>200000</avrtoolinterfaceclock>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+        <avrgcc.common.Device>-mmcu=atmega2560 -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.2.209\gcc\dev\atmega2560"</avrgcc.common.Device>
+        <avrgcc.common.optimization.RelaxBranches>True</avrgcc.common.optimization.RelaxBranches>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>NDEBUG</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.209\include</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcccpp.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>NDEBUG</Value>
+          </ListValues>
+        </avrgcccpp.compiler.symbols.DefSymbols>
+        <avrgcccpp.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.209\include</Value>
+          </ListValues>
+        </avrgcccpp.compiler.directories.IncludePaths>
+        <avrgcccpp.compiler.optimization.level>Optimize for size (-Os)</avrgcccpp.compiler.optimization.level>
+        <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+        <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+        <avrgcccpp.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcccpp.linker.libraries.Libraries>
+        <avrgcccpp.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.209\include</Value>
+          </ListValues>
+        </avrgcccpp.assembler.general.IncludePaths>
+      </AvrGccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGccCpp>
+        <avrgcc.common.Device>-mmcu=atmega2560 -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.2.209\gcc\dev\atmega2560"</avrgcc.common.Device>
+        <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+        <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+        <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+        <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+        <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+        <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcc.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+            <Value>F_CPU=16000000L</Value>
+            <Value>ARDUINO=10812</Value>
+            <Value>ARDUINO_AVR_MEGA2560</Value>
+            <Value>ARDUINO_ARCH_AVR</Value>
+          </ListValues>
+        </avrgcc.compiler.symbols.DefSymbols>
+        <avrgcc.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.209\include</Value>
+            <Value>../Arduino/AVR-1.8.4</Value>
+            <Value>../Arduino/AVR-1.8.4/core</Value>
+            <Value>../Arduino/AVR-1.8.4/variant</Value>
+            <Value>../Arduino/CONTROLLINO_Library</Value>
+            <Value>../Arduino/AVR-1.8.4/DallasTemperature</Value>
+            <Value>../Arduino/AVR-1.8.4/EEPROM</Value>
+            <Value>../Arduino/AVR-1.8.4/Ethernet</Value>
+            <Value>../Arduino/AVR-1.8.4/OneWire</Value>
+            <Value>../Arduino/AVR-1.8.4/SPI</Value>
+            <Value>../Arduino/SimpleUtility</Value>
+            <Value>../Arduino/SimpleWebServer</Value>
+            <Value>../Arduino/ArduinoModbus_Controllino</Value>
+            <Value>../Arduino/ArduinoModbus_Controllino/libmodbus</Value>
+            <Value>../Arduino/ArduinoRS485_Controllino</Value>
+            <Value>../Arduino/ArduinoJson-5.x</Value>
+            <Value>../Arduino/NTPclient</Value>
+          </ListValues>
+        </avrgcc.compiler.directories.IncludePaths>
+        <avrgcc.compiler.optimization.level>Optimize debugging experience (-Og)</avrgcc.compiler.optimization.level>
+        <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+        <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+        <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+        <avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultCharTypeUnsigned>
+        <avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcccpp.compiler.general.ChangeDefaultBitFieldUnsigned>
+        <avrgcccpp.compiler.symbols.DefSymbols>
+          <ListValues>
+            <Value>DEBUG</Value>
+            <Value>F_CPU=16000000L</Value>
+            <Value>ARDUINO=10812</Value>
+            <Value>ARDUINO_AVR_MEGA2560</Value>
+            <Value>ARDUINO_ARCH_AVR</Value>
+          </ListValues>
+        </avrgcccpp.compiler.symbols.DefSymbols>
+        <avrgcccpp.compiler.directories.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.209\include</Value>
+            <Value>../Arduino/AVR-1.8.4</Value>
+            <Value>../Arduino/AVR-1.8.4/core</Value>
+            <Value>../Arduino/AVR-1.8.4/variant</Value>
+            <Value>../Arduino/CONTROLLINO_Library</Value>
+            <Value>../Arduino/AVR-1.8.4/DallasTemperature</Value>
+            <Value>../Arduino/AVR-1.8.4/EEPROM</Value>
+            <Value>../Arduino/AVR-1.8.4/Ethernet</Value>
+            <Value>../Arduino/AVR-1.8.4/OneWire</Value>
+            <Value>../Arduino/AVR-1.8.4/SPI</Value>
+            <Value>../Arduino/SimpleUtility</Value>
+            <Value>../Arduino/SimpleWebServer</Value>
+            <Value>../Arduino/ArduinoModbus_Controllino</Value>
+            <Value>../Arduino/ArduinoModbus_Controllino/libmodbus</Value>
+            <Value>../Arduino/ArduinoRS485_Controllino</Value>
+            <Value>../Arduino/ArduinoJson-5.x</Value>
+            <Value>../Arduino/NTPclient</Value>
+          </ListValues>
+        </avrgcccpp.compiler.directories.IncludePaths>
+        <avrgcccpp.compiler.optimization.level>Optimize debugging experience (-Og)</avrgcccpp.compiler.optimization.level>
+        <avrgcccpp.compiler.optimization.PackStructureMembers>True</avrgcccpp.compiler.optimization.PackStructureMembers>
+        <avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcccpp.compiler.optimization.AllocateBytesNeededForEnum>
+        <avrgcccpp.compiler.optimization.DebugLevel>Default (-g2)</avrgcccpp.compiler.optimization.DebugLevel>
+        <avrgcccpp.compiler.warnings.AllWarnings>True</avrgcccpp.compiler.warnings.AllWarnings>
+        <avrgcccpp.compiler.miscellaneous.OtherFlags>-std=gnu++11</avrgcccpp.compiler.miscellaneous.OtherFlags>
+        <avrgcccpp.linker.libraries.Libraries>
+          <ListValues>
+            <Value>libm</Value>
+          </ListValues>
+        </avrgcccpp.linker.libraries.Libraries>
+        <avrgcccpp.assembler.general.IncludePaths>
+          <ListValues>
+            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.2.209\include</Value>
+          </ListValues>
+        </avrgcccpp.assembler.general.IncludePaths>
+        <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
+      </AvrGccCpp>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\compatibility.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Configuration.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Data\Encoding.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Data\JsonBufferAllocated.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Data\JsonFloat.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Data\JsonInteger.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Data\JsonVariantAs.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Data\JsonVariantContent.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Data\JsonVariantDefault.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Data\JsonVariantType.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Data\List.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Data\ListConstIterator.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Data\ListIterator.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Data\ListNode.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Data\NonCopyable.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Data\ReferenceType.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Data\ValueSaver.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Deserialization\Comments.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Deserialization\JsonParser.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Deserialization\JsonParserImpl.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Deserialization\StringWriter.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\DynamicJsonBuffer.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\JsonArray.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\JsonArrayImpl.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\JsonArraySubscript.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\JsonBuffer.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\JsonBufferBase.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\JsonBufferImpl.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\JsonObject.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\JsonObjectImpl.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\JsonObjectSubscript.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\JsonPair.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\JsonVariant.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\JsonVariantBase.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\JsonVariantCasts.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\JsonVariantComparisons.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\JsonVariantImpl.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\JsonVariantOr.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\JsonVariantSubscripts.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Polyfills\alias_cast.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Polyfills\attributes.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Polyfills\ctype.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Polyfills\isFloat.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Polyfills\isInteger.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Polyfills\math.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Polyfills\parseFloat.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Polyfills\parseInteger.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\RawJson.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Serialization\DummyPrint.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Serialization\DynamicStringBuilder.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Serialization\FloatParts.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Serialization\IndentedPrint.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Serialization\JsonPrintable.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Serialization\JsonSerializer.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Serialization\JsonSerializerImpl.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Serialization\JsonWriter.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Serialization\Prettyfier.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Serialization\StaticStringBuilder.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\Serialization\StreamPrintAdapter.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\StaticJsonBuffer.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\StringTraits\ArduinoStream.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\StringTraits\CharPointer.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\StringTraits\FlashString.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\StringTraits\StdStream.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\StringTraits\StdString.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\StringTraits\StringTraits.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\TypeTraits\EnableIf.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\TypeTraits\FloatTraits.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\TypeTraits\IsArray.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\TypeTraits\IsBaseOf.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\TypeTraits\IsChar.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\TypeTraits\IsConst.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\TypeTraits\IsFloatingPoint.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\TypeTraits\IsIntegral.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\TypeTraits\IsSame.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\TypeTraits\IsSignedIntegral.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\TypeTraits\IsUnsignedIntegral.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\TypeTraits\IsVariant.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\TypeTraits\RemoveConst.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\TypeTraits\RemoveReference.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoJson-5.x\ArduinoJson\version.hpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoModbus_Controllino\ArduinoModbus.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoModbus_Controllino\libmodbus\modbus-data.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoModbus_Controllino\libmodbus\modbus-private.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoModbus_Controllino\libmodbus\modbus-rtu-private.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoModbus_Controllino\libmodbus\modbus-rtu.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoModbus_Controllino\libmodbus\modbus-rtu.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoModbus_Controllino\libmodbus\modbus-tcp-private.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoModbus_Controllino\libmodbus\modbus-tcp.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoModbus_Controllino\libmodbus\modbus-tcp.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoModbus_Controllino\libmodbus\modbus-version.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoModbus_Controllino\libmodbus\modbus.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoModbus_Controllino\libmodbus\modbus.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoModbus_Controllino\ModbusClient.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoModbus_Controllino\ModbusClient.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoModbus_Controllino\ModbusRTUClient.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoModbus_Controllino\ModbusRTUClient.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoModbus_Controllino\ModbusRTUServer.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoModbus_Controllino\ModbusRTUServer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoModbus_Controllino\ModbusServer.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoModbus_Controllino\ModbusServer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoModbus_Controllino\ModbusTCPClient.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoModbus_Controllino\ModbusTCPClient.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoModbus_Controllino\ModbusTCPServer.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoModbus_Controllino\ModbusTCPServer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoRS485_Controllino\ArduinoRS485.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoRS485_Controllino\RS485.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\ArduinoRS485_Controllino\RS485.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\abi.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\Arduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\binary.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\CDC.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\Client.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\HardwareSerial.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\HardwareSerial.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\HardwareSerial0.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\HardwareSerial1.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\HardwareSerial2.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\HardwareSerial3.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\HardwareSerial_private.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\hooks.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\IPAddress.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\IPAddress.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\main.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\new.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\new.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\PluggableUSB.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\PluggableUSB.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\Print.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\Print.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\Printable.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\Server.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\Stream.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\Stream.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\Tone.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\Udp.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\USBAPI.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\USBCore.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\USBCore.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\USBDesc.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\WCharacter.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\WInterrupts.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\wiring.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\wiring_analog.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\wiring_digital.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\wiring_private.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\wiring_pulse.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\wiring_shift.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\WMath.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\WString.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\core\WString.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\DallasTemperature\DallasTemperature.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\DallasTemperature\DallasTemperature.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\EEPROM\EEPROM.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\Ethernet\Dhcp.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\Ethernet\Dhcp.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\Ethernet\Dns.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\Ethernet\Dns.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\Ethernet\Ethernet.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\Ethernet\Ethernet.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\Ethernet\EthernetClient.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\Ethernet\EthernetClient.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\Ethernet\EthernetServer.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\Ethernet\EthernetServer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\Ethernet\EthernetUdp.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\Ethernet\EthernetUdp.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\Ethernet\socket.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\Ethernet\utility\w5100.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\Ethernet\utility\w5100.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\OneWire\OneWire.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\OneWire\OneWire.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\OneWire\util\OneWire_direct_gpio.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\OneWire\util\OneWire_direct_regtype.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\SPI\SPI.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\SPI\SPI.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\AVR-1.8.4\variant\pins_arduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\CONTROLLINO_Library\Controllino.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\CONTROLLINO_Library\Controllino.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\NTPclient\NTPClient.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\NTPclient\NTPClient.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\SimpleUtility\SimpleBuffer.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\SimpleUtility\SimpleBuffer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\SimpleUtility\SimpleDebug.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\SimpleUtility\SimpleHttp.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\SimpleUtility\SimpleHttp.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\SimpleUtility\SimplePrint.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\SimpleUtility\SimpleTimer.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\SimpleUtility\SimpleTimer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\SimpleUtility\SimpleUtils.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\SimpleUtility\SimpleUtils.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\SimpleWebServer\SimpleTask.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\SimpleWebServer\SimpleTask.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\SimpleWebServer\SimpleWebServer.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Arduino\SimpleWebServer\SimpleWebServer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCConfiguration.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCConfiguration.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCEthernet.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCEthernet.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCInputOutput.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCInputOutput.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCModbusRTUClient.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCModbusRTUClient.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCModbusRTUServer.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCModbusRTUServer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCModbusTCPServer.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCModbusTCPServer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCSerial.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCSerial.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCSoftReset.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCWebServer.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCWebServer.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCWebServer_DigitalInput.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCWebServer_DigitalOutput.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCWebServer_ModbusRTU.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCWebServer_Relay.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LeafController.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LeafController_defines.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LeafController_main.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="ModbusRtu.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="ModbusTCPServerRTUClient.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="ModbusTCPServerRTUClient.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="NTPClientEx.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="NTPClientEx.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Arduino\AVR-1.8.4\core\new">
+      <SubType>compile</SubType>
+    </None>
+    <None Include="spec.d">
+      <SubType>compile</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Arduino" />
+    <Folder Include="Arduino\ArduinoJson-5.x\ArduinoJson" />
+    <Folder Include="Arduino\ArduinoJson-5.x\ArduinoJson\Data" />
+    <Folder Include="Arduino\ArduinoJson-5.x\ArduinoJson\Deserialization" />
+    <Folder Include="Arduino\ArduinoJson-5.x\ArduinoJson\TypeTraits" />
+    <Folder Include="Arduino\ArduinoJson-5.x\ArduinoJson\StringTraits" />
+    <Folder Include="Arduino\ArduinoJson-5.x\ArduinoJson\Serialization" />
+    <Folder Include="Arduino\ArduinoJson-5.x\ArduinoJson\Polyfills" />
+    <Folder Include="Arduino\ArduinoModbus_Controllino\libmodbus" />
+    <Folder Include="Arduino\AVR-1.8.4\DallasTemperature" />
+    <Folder Include="Arduino\AVR-1.8.4\EEPROM" />
+    <Folder Include="Arduino\AVR-1.8.4\Ethernet" />
+    <Folder Include="Arduino\AVR-1.8.4\core" />
+    <Folder Include="Arduino\AVR-1.8.4\Ethernet\utility" />
+    <Folder Include="Arduino\AVR-1.8.4\OneWire\util" />
+    <Folder Include="Arduino\AVR-1.8.4\variant" />
+    <Folder Include="Arduino\AVR-1.8.4\OneWire" />
+    <Folder Include="Arduino\AVR-1.8.4\SPI" />
+    <Folder Include="Arduino\CONTROLLINO_Library" />
+    <Folder Include="Arduino\AVR-1.8.4" />
+    <Folder Include="Arduino\ArduinoModbus_Controllino" />
+    <Folder Include="Arduino\ArduinoRS485_Controllino" />
+    <Folder Include="Arduino\ArduinoJson-5.x" />
+    <Folder Include="Arduino\SimpleUtility" />
+    <Folder Include="Arduino\SimpleWebServer" />
+    <Folder Include="Arduino\NTPclient" />
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>

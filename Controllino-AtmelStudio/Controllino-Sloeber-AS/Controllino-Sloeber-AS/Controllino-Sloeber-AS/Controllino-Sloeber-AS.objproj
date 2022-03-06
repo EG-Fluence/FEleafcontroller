@@ -1,0 +1,921 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Object</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ProjectGuid>95e308bb-1c75-42e8-bfb2-65af28346215</ProjectGuid>
+    <avrdeviceseries>none</avrdeviceseries>
+    <avrdevice>ATmega2560</avrdevice>
+    <avrtool>com.atmel.avrdbg.tool.atmelice</avrtool>
+    <OutputFileName>LeafController</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\Release</OutputDirectory>
+    <ObjectProjectType>True</ObjectProjectType>
+    <MD5HashValue>004A84FEDCF968817DAA5BFA66A2084C</MD5HashValue>
+    <RootFolderCreationPattern>OptimizedRoot</RootFolderCreationPattern>
+    <IsObjLinkFile>True</IsObjLinkFile>
+    <UseGdb>false</UseGdb>
+    <UseGdbCustomPath>false</UseGdbCustomPath>
+    <GdbCustomPath>
+    </GdbCustomPath>
+    <AsfFrameworkConfig>
+      <framework-data xmlns="">
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.40.0" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <BootSegment>2</BootSegment>
+    <ResetRule>0</ResetRule>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <EraseKey />
+    <avrtoolserialnumber>J42700050365</avrtoolserialnumber>
+    <avrdeviceexpectedsignature>0x1E9801</avrdeviceexpectedsignature>
+    <com_atmel_avrdbg_tool_atmelice>
+      <ToolOptions>
+        <InterfaceProperties>
+          <JtagDbgClock>200000</JtagDbgClock>
+        </InterfaceProperties>
+        <InterfaceName>JTAG</InterfaceName>
+      </ToolOptions>
+      <ToolType>com.atmel.avrdbg.tool.atmelice</ToolType>
+      <ToolNumber>J42700050365</ToolNumber>
+      <ToolName>Atmel-ICE</ToolName>
+    </com_atmel_avrdbg_tool_atmelice>
+    <avrtoolinterface>JTAG</avrtoolinterface>
+    <avrtoolinterfaceclock>200000</avrtoolinterfaceclock>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+  </PropertyGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\Vs\FakeObjProjects.targets" />
+  <ItemGroup>
+    <Compile Include="C:\home\jenkins-mingw32\workspace\avr-gcc-staging\label\Ubuntu14.04x64-mingw32\gcc\libgcc\config\avr\lib1funcs.S">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\home\jenkins-mingw32\workspace\avr-gcc-staging\label\Ubuntu14.04x64-mingw32\gcc\libgcc\config\avr\lib1funcs.S</FilePathFromObjectFile>
+      <AliasFilePath>C:\home\jenkins-mingw32\workspace\avr-gcc-staging\label\Ubuntu14.04x64-mingw32\gcc\libgcc\config\avr\lib1funcs.S</AliasFilePath>
+      <Link>lib1funcs.S</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\main\libraries\ArduinoUniqueID\src\ArduinoUniqueID.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\libraries\ArduinoUniqueID\src\ArduinoUniqueID.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\libraries\ArduinoUniqueID\src\ArduinoUniqueID.cpp</AliasFilePath>
+      <Link>main\libraries\ArduinoUniqueID\src\ArduinoUniqueID.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\main\libraries\ArduinoUniqueID\src\ArduinoUniqueID.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\libraries\ArduinoUniqueID\src\ArduinoUniqueID.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\libraries\ArduinoUniqueID\src\ArduinoUniqueID.h</AliasFilePath>
+      <Link>main\libraries\ArduinoUniqueID\src\ArduinoUniqueID.h</Link>
+    </Compile>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\JsonBufferAllocated.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\JsonBufferAllocated.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\JsonBufferAllocated.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\Data\JsonBufferAllocated.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\JsonFloat.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\JsonFloat.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\JsonFloat.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\Data\JsonFloat.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\JsonInteger.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\JsonInteger.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\JsonInteger.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\Data\JsonInteger.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\JsonVariantContent.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\JsonVariantContent.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\JsonVariantContent.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\Data\JsonVariantContent.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\JsonVariantType.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\JsonVariantType.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\JsonVariantType.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\Data\JsonVariantType.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\List.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\List.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\List.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\Data\List.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\ListConstIterator.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\ListConstIterator.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\ListConstIterator.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\Data\ListConstIterator.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\ListIterator.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\ListIterator.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\ListIterator.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\Data\ListIterator.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\ListNode.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\ListNode.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\ListNode.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\Data\ListNode.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\NonCopyable.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\NonCopyable.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\NonCopyable.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\Data\NonCopyable.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\ValueSaver.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\ValueSaver.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\ValueSaver.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\Data\ValueSaver.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\encoding.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\encoding.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Data\encoding.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\Data\encoding.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\JsonArray.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\JsonArray.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\JsonArray.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\JsonArray.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\JsonArrayImpl.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\JsonArrayImpl.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\JsonArrayImpl.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\JsonArrayImpl.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\JsonBufferImpl.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\JsonBufferImpl.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\JsonBufferImpl.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\JsonBufferImpl.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\JsonObject.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\JsonObject.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\JsonObject.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\JsonObject.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\JsonObjectSubscript.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\JsonObjectSubscript.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\JsonObjectSubscript.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\JsonObjectSubscript.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\JsonPair.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\JsonPair.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\JsonPair.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\JsonPair.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\JsonVariant.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\JsonVariant.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\JsonVariant.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\JsonVariant.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\JsonVariantImpl.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\JsonVariantImpl.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\JsonVariantImpl.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\JsonVariantImpl.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization\JsonPrintable.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization\JsonPrintable.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization\JsonPrintable.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization\JsonPrintable.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization\JsonSerializer.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization\JsonSerializer.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization\JsonSerializer.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization\JsonSerializer.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization\JsonSerializerImpl.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization\JsonSerializerImpl.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization\JsonSerializerImpl.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization\JsonSerializerImpl.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization\JsonWriter.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization\JsonWriter.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization\JsonWriter.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization\JsonWriter.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization\StaticStringBuilder.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization\StaticStringBuilder.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization\StaticStringBuilder.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization\StaticStringBuilder.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization\floatparts.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization\floatparts.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization\floatparts.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization\floatparts.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\StaticJsonBuffer.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\StaticJsonBuffer.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\StaticJsonBuffer.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\StaticJsonBuffer.hpp</Link>
+    </None>
+    <None Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\jsonbuffer.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\jsonbuffer.hpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoJson-5.x\src\ArduinoJson\jsonbuffer.hpp</AliasFilePath>
+      <Link>libraries\ArduinoJson-5.x\src\ArduinoJson\jsonbuffer.hpp</Link>
+    </None>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusClient.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusClient.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusClient.cpp</AliasFilePath>
+      <Link>libraries\ArduinoModbus_Controllino\src\ModbusClient.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusClient.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusClient.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusClient.h</AliasFilePath>
+      <Link>libraries\ArduinoModbus_Controllino\src\ModbusClient.h</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusRTUClient.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusRTUClient.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusRTUClient.cpp</AliasFilePath>
+      <Link>libraries\ArduinoModbus_Controllino\src\ModbusRTUClient.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusRTUClient.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusRTUClient.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusRTUClient.h</AliasFilePath>
+      <Link>libraries\ArduinoModbus_Controllino\src\ModbusRTUClient.h</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusRTUServer.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusRTUServer.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusRTUServer.cpp</AliasFilePath>
+      <Link>libraries\ArduinoModbus_Controllino\src\ModbusRTUServer.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusRTUServer.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusRTUServer.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusRTUServer.h</AliasFilePath>
+      <Link>libraries\ArduinoModbus_Controllino\src\ModbusRTUServer.h</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusServer.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusServer.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusServer.cpp</AliasFilePath>
+      <Link>libraries\ArduinoModbus_Controllino\src\ModbusServer.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusServer.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusServer.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusServer.h</AliasFilePath>
+      <Link>libraries\ArduinoModbus_Controllino\src\ModbusServer.h</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusTCPClient.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusTCPClient.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusTCPClient.cpp</AliasFilePath>
+      <Link>libraries\ArduinoModbus_Controllino\src\ModbusTCPClient.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusTCPServer.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusTCPServer.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusTCPServer.cpp</AliasFilePath>
+      <Link>libraries\ArduinoModbus_Controllino\src\ModbusTCPServer.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusTCPServer.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusTCPServer.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\ModbusTCPServer.h</AliasFilePath>
+      <Link>libraries\ArduinoModbus_Controllino\src\ModbusTCPServer.h</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\libmodbus\modbus-data.c">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\libmodbus\modbus-data.c</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\libmodbus\modbus-data.c</AliasFilePath>
+      <Link>libraries\ArduinoModbus_Controllino\src\libmodbus\modbus-data.c</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\libmodbus\modbus-private.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\libmodbus\modbus-private.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\libmodbus\modbus-private.h</AliasFilePath>
+      <Link>libraries\ArduinoModbus_Controllino\src\libmodbus\modbus-private.h</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\libmodbus\modbus-rtu-private.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\libmodbus\modbus-rtu-private.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\libmodbus\modbus-rtu-private.h</AliasFilePath>
+      <Link>libraries\ArduinoModbus_Controllino\src\libmodbus\modbus-rtu-private.h</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\libmodbus\modbus-rtu.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\libmodbus\modbus-rtu.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\libmodbus\modbus-rtu.cpp</AliasFilePath>
+      <Link>libraries\ArduinoModbus_Controllino\src\libmodbus\modbus-rtu.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\libmodbus\modbus-tcp-private.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\libmodbus\modbus-tcp-private.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\libmodbus\modbus-tcp-private.h</AliasFilePath>
+      <Link>libraries\ArduinoModbus_Controllino\src\libmodbus\modbus-tcp-private.h</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\libmodbus\modbus-tcp.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\libmodbus\modbus-tcp.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\libmodbus\modbus-tcp.cpp</AliasFilePath>
+      <Link>libraries\ArduinoModbus_Controllino\src\libmodbus\modbus-tcp.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\libmodbus\modbus.c">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\libmodbus\modbus.c</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\libmodbus\modbus.c</AliasFilePath>
+      <Link>libraries\ArduinoModbus_Controllino\src\libmodbus\modbus.c</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\libmodbus\modbus.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\libmodbus\modbus.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoModbus_Controllino\src\libmodbus\modbus.h</AliasFilePath>
+      <Link>libraries\ArduinoModbus_Controllino\src\libmodbus\modbus.h</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoRS485_Controllino\src\RS485.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoRS485_Controllino\src\RS485.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoRS485_Controllino\src\RS485.cpp</AliasFilePath>
+      <Link>libraries\ArduinoRS485_Controllino\src\RS485.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoRS485_Controllino\src\RS485.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoRS485_Controllino\src\RS485.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\ArduinoRS485_Controllino\src\RS485.h</AliasFilePath>
+      <Link>libraries\ArduinoRS485_Controllino\src\RS485.h</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\NTPClient\NTPClient.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\NTPClient\NTPClient.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\NTPClient\NTPClient.cpp</AliasFilePath>
+      <Link>libraries\NTPClient\NTPClient.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\Simple-Utility-Library\src\SimpleHttp.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\Simple-Utility-Library\src\SimpleHttp.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\Simple-Utility-Library\src\SimpleHttp.cpp</AliasFilePath>
+      <Link>libraries\Simple-Utility-Library\src\SimpleHttp.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\Simple-Utility-Library\src\SimpleHttp.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\Simple-Utility-Library\src\SimpleHttp.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\Simple-Utility-Library\src\SimpleHttp.h</AliasFilePath>
+      <Link>libraries\Simple-Utility-Library\src\SimpleHttp.h</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\Simple-Utility-Library\src\SimpleUtils.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\Simple-Utility-Library\src\SimpleUtils.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\Simple-Utility-Library\src\SimpleUtils.cpp</AliasFilePath>
+      <Link>libraries\Simple-Utility-Library\src\SimpleUtils.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\Simple-WebServer-Library\src\SimpleTask.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\Simple-WebServer-Library\src\SimpleTask.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\Simple-WebServer-Library\src\SimpleTask.cpp</AliasFilePath>
+      <Link>libraries\Simple-WebServer-Library\src\SimpleTask.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\Simple-WebServer-Library\src\SimpleTask.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\Simple-WebServer-Library\src\SimpleTask.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\Simple-WebServer-Library\src\SimpleTask.h</AliasFilePath>
+      <Link>libraries\Simple-WebServer-Library\src\SimpleTask.h</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\Simple-WebServer-Library\src\SimpleWebServer.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\Simple-WebServer-Library\src\SimpleWebServer.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\Simple-WebServer-Library\src\SimpleWebServer.cpp</AliasFilePath>
+      <Link>libraries\Simple-WebServer-Library\src\SimpleWebServer.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\Simple-WebServer-Library\src\SimpleWebServer.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\Simple-WebServer-Library\src\SimpleWebServer.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\libraries\Simple-WebServer-Library\src\SimpleWebServer.h</AliasFilePath>
+      <Link>libraries\Simple-WebServer-Library\src\SimpleWebServer.h</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCEthernet.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCEthernet.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCEthernet.cpp</AliasFilePath>
+      <Link>main\LCEthernet.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCInputOutput.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCInputOutput.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCInputOutput.cpp</AliasFilePath>
+      <Link>main\LCInputOutput.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCInputOutput.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCInputOutput.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCInputOutput.h</AliasFilePath>
+      <Link>main\LCInputOutput.h</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCModbusTCPServer.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCModbusTCPServer.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCModbusTCPServer.cpp</AliasFilePath>
+      <Link>main\LCModbusTCPServer.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCSerial.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCSerial.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCSerial.cpp</AliasFilePath>
+      <Link>main\LCSerial.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCSoftReset.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCSoftReset.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCSoftReset.cpp</AliasFilePath>
+      <Link>main\LCSoftReset.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCWebServer.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCWebServer.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCWebServer.cpp</AliasFilePath>
+      <Link>main\LCWebServer.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCWebServer.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCWebServer.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCWebServer.h</AliasFilePath>
+      <Link>main\LCWebServer.h</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCWebServer_DigitalInput.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCWebServer_DigitalInput.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCWebServer_DigitalInput.cpp</AliasFilePath>
+      <Link>main\LCWebServer_DigitalInput.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCWebServer_DigitalOutput.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCWebServer_DigitalOutput.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCWebServer_DigitalOutput.cpp</AliasFilePath>
+      <Link>main\LCWebServer_DigitalOutput.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCWebServer_Relay.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCWebServer_Relay.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LCWebServer_Relay.cpp</AliasFilePath>
+      <Link>main\LCWebServer_Relay.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LeafController_main.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LeafController_main.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\LeafController_main.cpp</AliasFilePath>
+      <Link>main\LeafController_main.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\main\ModbusTCPServerRTUClient.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\ModbusTCPServerRTUClient.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\ModbusTCPServerRTUClient.cpp</AliasFilePath>
+      <Link>main\ModbusTCPServerRTUClient.cpp</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\main\ModbusTCPServerRTUClient.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\ModbusTCPServerRTUClient.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\ModbusTCPServerRTUClient.h</AliasFilePath>
+      <Link>main\ModbusTCPServerRTUClient.h</Link>
+    </Compile>
+    <Compile Include="C:\FluenceEnergy\controller_software\LeafController\Controllino\main\NTPClientEx.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\NTPClientEx.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\FluenceEnergy\controller_software\LeafController\Controllino\main\NTPClientEx.cpp</AliasFilePath>
+      <Link>main\NTPClientEx.cpp</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\libraries\DallasTemperature\3.9.0\DallasTemperature.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\libraries\DallasTemperature\3.9.0\DallasTemperature.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\libraries\DallasTemperature\3.9.0\DallasTemperature.cpp</AliasFilePath>
+      <Link>libraries\DallasTemperature\3.9.0\DallasTemperature.cpp</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\libraries\DallasTemperature\3.9.0\DallasTemperature.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\libraries\DallasTemperature\3.9.0\DallasTemperature.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\libraries\DallasTemperature\3.9.0\DallasTemperature.h</AliasFilePath>
+      <Link>libraries\DallasTemperature\3.9.0\DallasTemperature.h</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\Dhcp.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\Dhcp.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\Dhcp.cpp</AliasFilePath>
+      <Link>libraries\Ethernet\2.0.0\src\Dhcp.cpp</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\Dns.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\Dns.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\Dns.cpp</AliasFilePath>
+      <Link>libraries\Ethernet\2.0.0\src\Dns.cpp</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\Dns.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\Dns.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\Dns.h</AliasFilePath>
+      <Link>libraries\Ethernet\2.0.0\src\Dns.h</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\Ethernet.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\Ethernet.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\Ethernet.cpp</AliasFilePath>
+      <Link>libraries\Ethernet\2.0.0\src\Ethernet.cpp</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\Ethernet.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\Ethernet.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\Ethernet.h</AliasFilePath>
+      <Link>libraries\Ethernet\2.0.0\src\Ethernet.h</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\EthernetClient.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\EthernetClient.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\EthernetClient.cpp</AliasFilePath>
+      <Link>libraries\Ethernet\2.0.0\src\EthernetClient.cpp</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\EthernetServer.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\EthernetServer.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\EthernetServer.cpp</AliasFilePath>
+      <Link>libraries\Ethernet\2.0.0\src\EthernetServer.cpp</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\EthernetUdp.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\EthernetUdp.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\EthernetUdp.cpp</AliasFilePath>
+      <Link>libraries\Ethernet\2.0.0\src\EthernetUdp.cpp</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\socket.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\socket.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\socket.cpp</AliasFilePath>
+      <Link>libraries\Ethernet\2.0.0\src\socket.cpp</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\utility\w5100.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\utility\w5100.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\utility\w5100.cpp</AliasFilePath>
+      <Link>libraries\Ethernet\2.0.0\src\utility\w5100.cpp</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\utility\w5100.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\utility\w5100.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\libraries\Ethernet\2.0.0\src\utility\w5100.h</AliasFilePath>
+      <Link>libraries\Ethernet\2.0.0\src\utility\w5100.h</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\libraries\OneWire\2.3.6\OneWire.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\libraries\OneWire\2.3.6\OneWire.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\libraries\OneWire\2.3.6\OneWire.cpp</AliasFilePath>
+      <Link>libraries\OneWire\2.3.6\OneWire.cpp</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\libraries\OneWire\2.3.6\OneWire.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\libraries\OneWire\2.3.6\OneWire.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\libraries\OneWire\2.3.6\OneWire.h</AliasFilePath>
+      <Link>libraries\OneWire\2.3.6\OneWire.h</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Arduino.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Arduino.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Arduino.h</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\Arduino.h</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Client.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Client.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Client.h</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\Client.h</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\HardwareSerial.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\HardwareSerial.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\HardwareSerial.cpp</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\HardwareSerial.cpp</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\HardwareSerial.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\HardwareSerial.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\HardwareSerial.h</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\HardwareSerial.h</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\HardwareSerial0.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\HardwareSerial0.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\HardwareSerial0.cpp</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\HardwareSerial0.cpp</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\HardwareSerial3.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\HardwareSerial3.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\HardwareSerial3.cpp</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\HardwareSerial3.cpp</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\HardwareSerial_private.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\HardwareSerial_private.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\HardwareSerial_private.h</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\HardwareSerial_private.h</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\IPAddress.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\IPAddress.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\IPAddress.cpp</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\IPAddress.cpp</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\IPAddress.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\IPAddress.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\IPAddress.h</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\IPAddress.h</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Print.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Print.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Print.cpp</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\Print.cpp</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Print.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Print.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Print.h</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\Print.h</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Printable.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Printable.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Printable.h</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\Printable.h</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Server.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Server.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Server.h</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\Server.h</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Stream.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Stream.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Stream.cpp</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\Stream.cpp</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Stream.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Stream.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Stream.h</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\Stream.h</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Udp.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Udp.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\Udp.h</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\Udp.h</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\WMath.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\WMath.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\WMath.cpp</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\WMath.cpp</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\abi.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\abi.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\abi.cpp</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\abi.cpp</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\hooks.c">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\hooks.c</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\hooks.c</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\hooks.c</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\main.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\main.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\main.cpp</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\main.cpp</Link>
+    </Compile>
+    <None Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\new">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\new</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\new</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\new</Link>
+    </None>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\new.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\new.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\new.cpp</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\new.cpp</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\wiring.c">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\wiring.c</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\wiring.c</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\wiring.c</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\wiring_analog.c">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\wiring_analog.c</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\wiring_analog.c</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\wiring_analog.c</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\wiring_digital.c">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\wiring_digital.c</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\cores\arduino\wiring_digital.c</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\cores\arduino\wiring_digital.c</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\libraries\SPI\src\SPI.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\libraries\SPI\src\SPI.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\libraries\SPI\src\SPI.cpp</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\libraries\SPI\src\SPI.cpp</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\libraries\SPI\src\SPI.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\libraries\SPI\src\SPI.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\libraries\SPI\src\SPI.h</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\libraries\SPI\src\SPI.h</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\libraries\SoftwareSerial\src\SoftwareSerial.cpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\libraries\SoftwareSerial\src\SoftwareSerial.cpp</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\libraries\SoftwareSerial\src\SoftwareSerial.cpp</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\libraries\SoftwareSerial\src\SoftwareSerial.cpp</Link>
+    </Compile>
+    <Compile Include="C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\libraries\SoftwareSerial\src\SoftwareSerial.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\libraries\SoftwareSerial\src\SoftwareSerial.h</FilePathFromObjectFile>
+      <AliasFilePath>C:\Sloeber\arduinoPlugin\packages\arduino\hardware\avr\1.8.4\libraries\SoftwareSerial\src\SoftwareSerial.h</AliasFilePath>
+      <Link>packages\arduino\hardware\avr\1.8.4\libraries\SoftwareSerial\src\SoftwareSerial.h</Link>
+    </Compile>
+    <None Include="c:\fluenceenergy\controller_software\leafcontroller\controllino\libraries\arduinojson-5.x\src\arduinojson\StringTraits\CharPointer.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>c:\fluenceenergy\controller_software\leafcontroller\controllino\libraries\arduinojson-5.x\src\arduinojson\StringTraits\CharPointer.hpp</FilePathFromObjectFile>
+      <AliasFilePath>c:\fluenceenergy\controller_software\leafcontroller\controllino\libraries\arduinojson-5.x\src\arduinojson\StringTraits\CharPointer.hpp</AliasFilePath>
+      <Link>StringTraits\CharPointer.hpp</Link>
+    </None>
+    <None Include="c:\fluenceenergy\controller_software\leafcontroller\controllino\libraries\arduinojson-5.x\src\arduinojson\polyfills\math.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>c:\fluenceenergy\controller_software\leafcontroller\controllino\libraries\arduinojson-5.x\src\arduinojson\polyfills\math.hpp</FilePathFromObjectFile>
+      <AliasFilePath>c:\fluenceenergy\controller_software\leafcontroller\controllino\libraries\arduinojson-5.x\src\arduinojson\polyfills\math.hpp</AliasFilePath>
+      <Link>polyfills\math.hpp</Link>
+    </None>
+    <None Include="c:\fluenceenergy\controller_software\leafcontroller\controllino\libraries\arduinojson-5.x\src\arduinojson\typetraits\enableif.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>c:\fluenceenergy\controller_software\leafcontroller\controllino\libraries\arduinojson-5.x\src\arduinojson\typetraits\enableif.hpp</FilePathFromObjectFile>
+      <AliasFilePath>c:\fluenceenergy\controller_software\leafcontroller\controllino\libraries\arduinojson-5.x\src\arduinojson\typetraits\enableif.hpp</AliasFilePath>
+      <Link>typetraits\enableif.hpp</Link>
+    </None>
+    <None Include="c:\fluenceenergy\controller_software\leafcontroller\controllino\libraries\arduinojson-5.x\src\arduinojson\typetraits\floattraits.hpp">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>c:\fluenceenergy\controller_software\leafcontroller\controllino\libraries\arduinojson-5.x\src\arduinojson\typetraits\floattraits.hpp</FilePathFromObjectFile>
+      <AliasFilePath>c:\fluenceenergy\controller_software\leafcontroller\controllino\libraries\arduinojson-5.x\src\arduinojson\typetraits\floattraits.hpp</AliasFilePath>
+      <Link>typetraits\floattraits.hpp</Link>
+    </None>
+    <Compile Include="c:\sloeber\arduinoplugin\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\avr\wdt.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>c:\sloeber\arduinoplugin\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\avr\wdt.h</FilePathFromObjectFile>
+      <AliasFilePath>c:\sloeber\arduinoplugin\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\avr\wdt.h</AliasFilePath>
+      <Link>arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\avr\wdt.h</Link>
+    </Compile>
+    <Compile Include="c:\sloeber\arduinoplugin\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\signal.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>c:\sloeber\arduinoplugin\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\signal.h</FilePathFromObjectFile>
+      <AliasFilePath>c:\sloeber\arduinoplugin\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\signal.h</AliasFilePath>
+      <Link>arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\signal.h</Link>
+    </Compile>
+    <Compile Include="c:\sloeber\arduinoplugin\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\stdint.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>c:\sloeber\arduinoplugin\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\stdint.h</FilePathFromObjectFile>
+      <AliasFilePath>c:\sloeber\arduinoplugin\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\stdint.h</AliasFilePath>
+      <Link>arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\stdint.h</Link>
+    </Compile>
+    <Compile Include="c:\sloeber\arduinoplugin\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\stdio.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>c:\sloeber\arduinoplugin\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\stdio.h</FilePathFromObjectFile>
+      <AliasFilePath>c:\sloeber\arduinoplugin\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\stdio.h</AliasFilePath>
+      <Link>arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\stdio.h</Link>
+    </Compile>
+    <Compile Include="c:\sloeber\arduinoplugin\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\string.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>c:\sloeber\arduinoplugin\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\string.h</FilePathFromObjectFile>
+      <AliasFilePath>c:\sloeber\arduinoplugin\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\string.h</AliasFilePath>
+      <Link>arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\string.h</Link>
+    </Compile>
+    <Compile Include="c:\sloeber\arduinoplugin\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util\atomic.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>c:\sloeber\arduinoplugin\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util\atomic.h</FilePathFromObjectFile>
+      <AliasFilePath>c:\sloeber\arduinoplugin\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util\atomic.h</AliasFilePath>
+      <Link>arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util\atomic.h</Link>
+    </Compile>
+    <Compile Include="c:\sloeber\arduinoplugin\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\lib\gcc\avr\7.3.0\include\stdarg.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>c:\sloeber\arduinoplugin\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\lib\gcc\avr\7.3.0\include\stdarg.h</FilePathFromObjectFile>
+      <AliasFilePath>c:\sloeber\arduinoplugin\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\lib\gcc\avr\7.3.0\include\stdarg.h</AliasFilePath>
+      <Link>arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\lib\gcc\avr\7.3.0\include\stdarg.h</Link>
+    </Compile>
+    <Compile Include="c:\sloeber\arduinoplugin\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\lib\gcc\avr\7.3.0\include\stddef.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>c:\sloeber\arduinoplugin\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\lib\gcc\avr\7.3.0\include\stddef.h</FilePathFromObjectFile>
+      <AliasFilePath>c:\sloeber\arduinoplugin\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\lib\gcc\avr\7.3.0\include\stddef.h</AliasFilePath>
+      <Link>arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\lib\gcc\avr\7.3.0\include\stddef.h</Link>
+    </Compile>
+    <Compile Include="c:\sloeber\arduinoplugin\packages\controllino_boards\hardware\avr\3.1.0\variants\mega\pins_arduino.h">
+      <SubType>compile</SubType>
+      <FilePathFromObjectFile>c:\sloeber\arduinoplugin\packages\controllino_boards\hardware\avr\3.1.0\variants\mega\pins_arduino.h</FilePathFromObjectFile>
+      <AliasFilePath>c:\sloeber\arduinoplugin\packages\controllino_boards\hardware\avr\3.1.0\variants\mega\pins_arduino.h</AliasFilePath>
+      <Link>controllino_boards\hardware\avr\3.1.0\variants\mega\pins_arduino.h</Link>
+    </Compile>
+    <Folder Include="arduino\" />
+    <Folder Include="arduino\tools\" />
+    <Folder Include="arduino\tools\avr-gcc\" />
+    <Folder Include="arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\" />
+    <Folder Include="arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\" />
+    <Folder Include="arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\lib\" />
+    <Folder Include="arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\lib\gcc\" />
+    <Folder Include="arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\lib\gcc\avr\" />
+    <Folder Include="arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\lib\gcc\avr\7.3.0\" />
+    <Folder Include="controllino_boards\" />
+    <Folder Include="controllino_boards\hardware\" />
+    <Folder Include="controllino_boards\hardware\avr\" />
+    <Folder Include="controllino_boards\hardware\avr\3.1.0\" />
+    <Folder Include="controllino_boards\hardware\avr\3.1.0\variants\" />
+    <Folder Include="libraries\" />
+    <Folder Include="libraries\ArduinoJson-5.x\" />
+    <Folder Include="libraries\ArduinoJson-5.x\src\" />
+    <Folder Include="libraries\ArduinoModbus_Controllino\" />
+    <Folder Include="libraries\ArduinoRS485_Controllino\" />
+    <Folder Include="libraries\DallasTemperature\" />
+    <Folder Include="libraries\Ethernet\" />
+    <Folder Include="libraries\Ethernet\2.0.0\" />
+    <Folder Include="libraries\OneWire\" />
+    <Folder Include="libraries\Simple-Utility-Library\" />
+    <Folder Include="libraries\Simple-WebServer-Library\" />
+    <Folder Include="main\libraries\" />
+    <Folder Include="main\libraries\ArduinoUniqueID\" />
+    <Folder Include="main\libraries\ArduinoUniqueID\src" />
+    <Folder Include="libraries\ArduinoJson-5.x\src\ArduinoJson\Data" />
+    <Folder Include="libraries\ArduinoJson-5.x\src\ArduinoJson" />
+    <Folder Include="libraries\ArduinoJson-5.x\src\ArduinoJson\Serialization" />
+    <Folder Include="libraries\ArduinoModbus_Controllino\src" />
+    <Folder Include="libraries\ArduinoModbus_Controllino\src\libmodbus" />
+    <Folder Include="libraries\ArduinoRS485_Controllino\src" />
+    <Folder Include="libraries\NTPClient" />
+    <Folder Include="libraries\Simple-Utility-Library\src" />
+    <Folder Include="libraries\Simple-WebServer-Library\src" />
+    <Folder Include="main" />
+    <Folder Include="libraries\DallasTemperature\3.9.0" />
+    <Folder Include="libraries\Ethernet\2.0.0\src" />
+    <Folder Include="libraries\Ethernet\2.0.0\src\utility" />
+    <Folder Include="libraries\OneWire\2.3.6" />
+    <Folder Include="packages\" />
+    <Folder Include="packages\arduino\" />
+    <Folder Include="packages\arduino\hardware\" />
+    <Folder Include="packages\arduino\hardware\avr\" />
+    <Folder Include="packages\arduino\hardware\avr\1.8.4\" />
+    <Folder Include="packages\arduino\hardware\avr\1.8.4\cores\" />
+    <Folder Include="packages\arduino\hardware\avr\1.8.4\cores\arduino" />
+    <Folder Include="packages\arduino\hardware\avr\1.8.4\libraries\" />
+    <Folder Include="packages\arduino\hardware\avr\1.8.4\libraries\SoftwareSerial\" />
+    <Folder Include="packages\arduino\hardware\avr\1.8.4\libraries\SPI\" />
+    <Folder Include="packages\arduino\hardware\avr\1.8.4\libraries\SPI\src" />
+    <Folder Include="packages\arduino\hardware\avr\1.8.4\libraries\SoftwareSerial\src" />
+    <Folder Include="StringTraits" />
+    <Folder Include="polyfills" />
+    <Folder Include="typetraits" />
+    <Folder Include="arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\avr" />
+    <Folder Include="arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include" />
+    <Folder Include="arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util" />
+    <Folder Include="arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\lib\gcc\avr\7.3.0\include" />
+    <Folder Include="controllino_boards\hardware\avr\3.1.0\variants\mega" />
+  </ItemGroup>
+</Project>
