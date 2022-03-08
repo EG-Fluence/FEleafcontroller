@@ -72,6 +72,8 @@ def readFullRegister(client, regType, unitId, dataFrame):
                     dataFrame.loc[startIndex:lastIndex, 'value'] = result.registers[0:numberOfRegs]
                 if regType == 'ir':
                     dataFrame.loc[startIndex:lastIndex, 'value'] = result.registers[0:numberOfRegs]
+                    if (result.unit_id == 42) or (result.unit_id == 5):
+                        print("    UnitID:" + str(result.unit_id) + "  " + str(result.registers))
             else:
                 print('\n # Check Device with unit ID: ' + str(unitId) + ' error code: ' + str(result.function_code))
                 print('\n regType: ' + regType + ' startAddress: ' + str(startAddress) + ' numberOfRegs: ' + str(numberOfRegs))

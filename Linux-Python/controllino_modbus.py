@@ -1092,11 +1092,11 @@ def writeToClients():
             print('Found in Queue')
             
         except Empty:
-            print('Queue empty')
+            print('writeToClients() Queue empty')
             break # while True:
         
-        #if(sleepvalue != None):
-        time.sleep(sleepvalue) # must be set, 0 is allowed
+        # if sleepvalue != None:
+        time.sleep(sleepvalue)  # must be set, 0 is allowed
             
         # write coils or registers depending on the function code(singular coil/register is also possible with the same function).
         if fx == 5 or fx == 15:
@@ -1112,10 +1112,17 @@ def writeToClients():
                     value = values[0]
                     ret = client.write_coil(address, value, unit = unitId)
                 else:
-                    ret = client.write_coils(address, values, unit = unitId)
-                    
+                    # ret = client.write_coils(address, values, unit = unitId)   # This causes a crash, replaced by several client.write_coil() requests.
+                    i = 0
+                    while i < values.size:
+                        ret = client.write_coil(address, values[i], unit=unitId)
+                        if not (ret.function_code < 0x80):
+                            break
+                        address += 1
+                        i += 1
+
                 # Check the function code to detect errors.
-                if (ret.function_code < 0x80):
+                if ret.function_code < 0x80:
                     print('Write was successful')
                 else:
                     print('\n # Write was unsuccessful, check Client with unit ID: ' + str(unitId) + ' #')
@@ -2025,6 +2032,5 @@ Main
 '''
 if __name__ == "__main__":
     main()
-
 
 os._exit(1)

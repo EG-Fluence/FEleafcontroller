@@ -89,7 +89,6 @@ hvacHrRegisterList = [
     ['highTempPoint',               0x0706, 0xFF, 'rw', 'r'],      # Ratio x1, 25 - 50 degC
     ['lowTempPoint',                0x0707, 0xFF, 'rw', 'r'],      # Ratio x1, -20 - 50 degC
     ['highHumPoint',                0x0708, 0xFF, 'rw', 'r'],      # Ratio x1, 0 - 100 percent
-#    ['internalFanStopPoint',        0x0709, 0xFF, 'rw', 'r'],      #
     ['internFanStopPoint',          0x070A, 0xFF, 'rw', 'r'],      # Ratio x1, -20 - 50 degC
 
     ['remoteControl',               0x0801, 0xFF, 'rw', 'r'],      # 1：Open, 0: Close

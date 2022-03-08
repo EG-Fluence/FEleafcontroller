@@ -55,8 +55,10 @@ controllinoIrRegisterList = [
 
 
     # Aggregation variables implemented as virtual
-    ['aggTripAlarmCore', 0x182A, 0xAB, 'ro', 'v'],  # 6186, Aggregation of CoreIMD, fStopButton, bmsFstopButton, preFirePanelSignalPoint, mainFstop
-    ['aggTripAlarmCube', 0x182B, 0xBA, 'ro', 'v']   # 6187, Aggregation of fstopK1Relay, fstopPushButton
+    ['aggTripAlarmCore', 0x182A, 0xFF, 'ro', 'v'],  # 6186, Aggregation of CoreIMD, fStopButton, bmsFstopButton, preFirePanelSignalPoint, mainFstop
+#    ['aggTripAlarmCore', 0xdddd, 0xFF, 'ro', 'v']   # 6130, Aggregation of fstopK1Relay, fstopPushButton
+
+    ['aggTripAlarmCube', 0, 0xFF, 'ro', 'v']   # 6100, Aggregation of fstopK1Relay, fstopPushButton
 
 ]
 
