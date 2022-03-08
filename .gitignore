@@ -12,8 +12,8 @@
 *.pch
 *.src
 
-Controllino-AtmelStudio/Controllino/Controllino/Debug/*
-Linux-Python/.idea/*
-Linux-Python/venv/*
-Linux-Python/controllino_modbus_utils/__pycache__/*
+Leaf-Controllino/Controllino/Controllino/Debug/*
+Leaf-Linux/.idea/*
+Leaf-Linux/venv/*
+Leaf-Linux/controllino_modbus_utils/__pycache__/*
 Info/Equipment Manuals/DL-10/DCON_Utility_Pro_PC/*
