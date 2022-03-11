@@ -117,29 +117,29 @@ class ChillerDevice(ModbusDevice):
             assignVirtualRegisters = self.assignVirtualRegisters)
 
     def assignVirtualRegisters(self, coRegisterList, diRegisterList, hrRegisterList, irRegisterList):
-        if ((irRegisterList.loc['outletLowWaterTemp', 'value'] == 0) and
-                (irRegisterList.loc['pumpFail', 'value'] == 0) and
-                (irRegisterList.loc['inverterComFail', 'value'] == 0) and
-                (irRegisterList.loc['highSystemPressAlarm', 'value'] == 0) and
-                (irRegisterList.loc['sysHighVoltageLock', 'value'] == 0) and
-                (irRegisterList.loc['sysLowVoltageLock', 'value'] == 0) and
-                (irRegisterList.loc['exhaustGasHighTempLock', 'value'] == 0) and
-                (irRegisterList.loc['inverterOverCurrentLock', 'value'] == 0) and
-                (irRegisterList.loc['inverterOverTempLock', 'value'] == 0) and
-                (irRegisterList.loc['inverterOverVoltLock', 'value'] == 0) and
-                (irRegisterList.loc['inverterUnderVoltLock', 'value'] == 0) and
-                (irRegisterList.loc['inverterPhaseLossLock', 'value'] == 0) and
-                (irRegisterList.loc['inverterOtherFaultLock', 'value'] == 0)):
-            irRegisterList.loc['vdAnyChillerAlarm', 'value'] = 0
+        if ((hrRegisterList.loc['outletLowWaterTemp', 'value'] == 0) and
+                (hrRegisterList.loc['pumpFail', 'value'] == 0) and
+                (hrRegisterList.loc['inverterComFail', 'value'] == 0) and
+                (hrRegisterList.loc['highSystemPressAlarm', 'value'] == 0) and
+                (hrRegisterList.loc['sysHighVoltageLock', 'value'] == 0) and
+                (hrRegisterList.loc['sysLowVoltageLock', 'value'] == 0) and
+                (hrRegisterList.loc['exhaustGasHighTempLock', 'value'] == 0) and
+                (hrRegisterList.loc['inverterOverCurrentLock', 'value'] == 0) and
+                (hrRegisterList.loc['inverterOverTempLock', 'value'] == 0) and
+                (hrRegisterList.loc['inverterOverVoltLock', 'value'] == 0) and
+                (hrRegisterList.loc['inverterUnderVoltLock', 'value'] == 0) and
+                (hrRegisterList.loc['inverterPhaseLossLock', 'value'] == 0) and
+                (hrRegisterList.loc['inverterOtherFaultLock', 'value'] == 0)):
+            hrRegisterList.loc['vdAnyChillerAlarm', 'value'] = 0
         else:
-            irRegisterList.loc['vdAnyChillerAlarm', 'value'] = 1
+            hrRegisterList.loc['vdAnyChillerAlarm', 'value'] = 1
 
-        if ((irRegisterList.loc['outletHighWaterTemp', 'value'] == 0) and
-                (irRegisterList.loc['outletWaterTempSensFail', 'value'] == 0) and
-                (irRegisterList.loc['returnWaterTempSensFail', 'value'] == 0) and
-                (irRegisterList.loc['heatingFail', 'value'] == 0) and
-                (irRegisterList.loc['highOutletPressAlarm', 'value'] == 0) and
-                (irRegisterList.loc['heatingFaultLock', 'value'] == 0)):
-            irRegisterList.loc['vdAnyChillerWarning', 'value'] = 0
+        if ((hrRegisterList.loc['outletHighWaterTemp', 'value'] == 0) and
+                (hrRegisterList.loc['outletWaterTempSensFail', 'value'] == 0) and
+                (hrRegisterList.loc['returnWaterTempSensFail', 'value'] == 0) and
+                (hrRegisterList.loc['heatingFail', 'value'] == 0) and
+                (hrRegisterList.loc['highOutletPressAlarm', 'value'] == 0) and
+                (hrRegisterList.loc['heatingFaultLock', 'value'] == 0)):
+            hrRegisterList.loc['vdAnyChillerWarning', 'value'] = 0
         else:
-            irRegisterList.loc['vdAnyChillerWarning', 'value'] = 1
+            hrRegisterList.loc['vdAnyChillerWarning', 'value'] = 1

@@ -1,0 +1,9 @@
+# Read the Fuses
+avrdude -patmega2560 -cwiring -P/dev/cu.usbmodem323101 -b115200 -D
+
+# Program the Fuses
+avrdude -patmega2560 -cwiring -P/dev/cu.usbmodem323101 -b115200 -U lfuse:w:0xFF:m -U hfuse:w:0x98:m -U efuse:w:0xFD:m
+
+#Read the lock byte
+avrdude -patmega2560 -cwiring -P/dev/cu.usbmodem323101 -b115200 -U lock:r:m
+
