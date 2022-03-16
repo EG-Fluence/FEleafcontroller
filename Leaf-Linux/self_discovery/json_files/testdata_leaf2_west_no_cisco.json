@@ -1,0 +1,105 @@
+{
+  "lldp": {
+    "interface": [
+      {
+        "wan": {
+          "via": "CDPv2",
+          "rid": "12",
+          "age": "5 days, 22:56:04",
+          "chassis": {
+            "leaf1": {
+              "id": {
+                "type": "local",
+                "value": "leaf1"
+              },
+              "descr": "Linux running on\nUbuntu 18.04.3 LTS Linux 4.14.141-bpi-r2-main #6 SMP Wed Sep 18 09:10:39 PDT 2019 armv7l",
+              "mgmt-ip": "192.168.2.40",
+              "capability": [
+                {
+                  "type": "Bridge",
+                  "enabled": true
+                },
+                {
+                  "type": "Router",
+                  "enabled": true
+                }
+              ]
+            }
+          },
+          "port": {
+            "id": {
+              "type": "ifname",
+              "value": "lan3"
+            },
+            "descr": "lan3",
+            "ttl": "120"
+          }
+        }
+      },
+      {
+        "lan3": {
+          "via": "CDPv2",
+          "rid": "14",
+          "age": "5 days, 22:53:59",
+          "chassis": {
+            "leaf3": {
+              "id": {
+                "type": "local",
+                "value": "leaf3"
+              },
+              "descr": "Linux running on\nUbuntu 18.04.3 LTS Linux 4.14.141-bpi-r2-main #6 SMP Wed Sep 18 09:10:39 PDT 2019 armv7l",
+              "mgmt-ip": "192.168.2.44",
+              "capability": {
+                "type": "Bridge",
+                "enabled": true
+              }
+            }
+          },
+          "port": {
+            "id": {
+              "type": "ifname",
+              "value": "wan"
+            },
+            "descr": "wan",
+            "ttl": "120"
+          }
+        }
+      },
+      {
+        "lan3": {
+          "via": "CDPv2",
+          "rid": "13",
+          "age": "5 days, 22:51:03",
+          "chassis": {
+            "7018a7ba5f38": {
+              "id": {
+                "type": "local",
+                "value": "7018a7ba5f38"
+              },
+              "descr": "Cisco SG350-10 (PID:SG350-10-K9)-VSD running on\n2.5.0.83",
+              "mgmt-ip": "192.168.2.230",
+              "capability": [
+                {
+                  "type": "Bridge",
+                  "enabled": true
+                },
+                {
+                  "type": "Router",
+                  "enabled": true
+                }
+              ]
+            }
+          },
+          "port": {
+            "id": {
+              "type": "ifname",
+              "value": "gi7"
+            },
+            "descr": "gi7",
+            "ttl": "180"
+          }
+        }
+      }
+    ]
+  }
+}
