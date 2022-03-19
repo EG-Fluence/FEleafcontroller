@@ -13,7 +13,10 @@
 *.src
 
 Leaf-Controllino/Controllino/Controllino/Debug/*
-Leaf-Linux/.idea/*
-Leaf-Linux/venv/*
-Leaf-Linux/controllino_modbus_utils/__pycache__/*
+Leaf-Linux/controllino_modbus/.idea/*
+Leaf-Linux/controllino_modbus/venv/*
+Leaf-Linux/controllino_modbus/__pycache__/*
+Leaf-Linux/controllino_modbus/controllino_modbus_utils/__pycache__/*
+Leaf-Linux-testing/controllino_testing/.idea/*
+Leaf-Linux-testing/controllino_testing/venv/*
 Info/Equipment Manuals/DL-10/DCON_Utility_Pro_PC/*

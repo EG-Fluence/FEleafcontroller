@@ -7,6 +7,8 @@ Created on Thu Aug 27 09:20:02 2020
 """
 #import ipaddress
 
+import variables
+
 from controllino_modbus_utils import controllino_modbus_utils as cmu_utils
 
 from pymodbus.client.sync import ModbusTcpClient
@@ -768,7 +770,7 @@ Only the clients that are supposed to be read as decided by user input will be r
 '''
 def readClients(settings):
     global virtualSlaveDF
-    print('Starting Client')
+#    print('Starting Client')
     
     checkReactorRunning(settings)
     
@@ -1092,7 +1094,7 @@ def writeToClients():
             print('Found in Queue')
             
         except Empty:
-            print('writeToClients() Queue empty')
+#            print('writeToClients() Queue empty')
             break # while True:
         
         # if sleepvalue != None:
@@ -1110,11 +1112,12 @@ def writeToClients():
                   
                 if fx == 5:
                     value = values[0]
-                    ret = client.write_coil(address, value, unit = unitId)
+                    ret = client.write_coil(address, value, unit=unitId)
                 else:
                     # ret = client.write_coils(address, values, unit = unitId)   # This causes a crash, replaced by several client.write_coil() requests.
                     i = 0
                     while i < values.size:
+                        variables.WriteMessages_counter += 1
                         ret = client.write_coil(address, values[i], unit=unitId)
                         if not (ret.function_code < 0x80):
                             break
@@ -1123,20 +1126,20 @@ def writeToClients():
 
                 # Check the function code to detect errors.
                 if ret.function_code < 0x80:
-                    print('Write was successful')
+                    # print('Write was successful')
+                    pass
                 else:
-                    print('\n # Write was unsuccessful, check Client with unit ID: ' + str(unitId) + ' #')
-                    print(ret)
+                    variables.WriteMessages_error_counter += 1
+                    print('     Write was unsuccessful, check Client with unit ID: ' + str(unitId) + '  ' + str(ret))
 
             except pme.ConnectionException as e:
-                print(e)
-                print()
                 print('#===========!!!IMPORTANT!!!===========#')
+                print(e)
                 print('Connection to Client with unit ID: ' + str(unitId) + ' impossible')
             except AttributeError as e:
+                print('#===========!!!IMPORTANT!!!===========#')
                 print(e)
                 if'ModbusIOException' in str(e):
-                    print('#===========!!!IMPORTANT!!!===========#')
                     print('ModbusIOexption for Client with unit ID: ' + str(unitId) + ' ')
                     print('This can happen when trying to connect to a device ID that does not exist.')
                 else:
@@ -1149,30 +1152,38 @@ def writeToClients():
                 if not client.is_socket_open():
                     client.connect()
                     
-                print(unitId, fx, address, values, sleepvalue)    
+                # print(unitId, fx, address, values, sleepvalue)
                 
                 if fx == 6:
                     value = values[0]
-                    ret = client.write_register(address, value, unit = unitId)
+                    ret = client.write_register(address, value, unit=unitId)
                 else:
-                    ret = client.write_registers(address, values, unit = unitId)
+                    #ret = client.write_registers(address, values, unit = unitId)
+                    i = 0
+                    while i < len(values):
+                        variables.WriteMessages_counter += 1
+                        ret = client.write_register(address, values[i], unit=unitId)
+                        if not (ret.function_code < 0x80):
+                            break
+                        address += 1
+                        i += 1
 
                 # Check the function code to detect errors.
                 if (ret.function_code < 0x80):
-                    print('Write was successful')
+                    # print('Write was successful')
+                    pass
                 else:
-                    print('\n # Write was unsuccessful, check Client with unit ID: ' + str(unitId) + ' #')
-                    print(ret)
+                    variables.WriteMessages_error_counter += 1
+                    print('     Write was unsuccessful, check Client with unit ID: ' + str(unitId) + '   ' + str(ret))
 
             except pme.ConnectionException as e:
-                print(e)
-                print()
                 print('#===========!!!IMPORTANT!!!===========#')
+                print(e)
                 print('Connection to Client with unit ID: ' + str(unitId) + ' impossible')
             except AttributeError as e:
+                print('#===========!!!IMPORTANT!!!===========#')
                 print(e)
                 if'ModbusIOException' in str(e):
-                    print('#===========!!!IMPORTANT!!!===========#')
                     print('ModbusIOexption for Client with unit ID: ' + str(unitId) + ' ')
                     print('This can happen when trying to connect to a device ID that does not exist.')
                 else:
@@ -1203,7 +1214,13 @@ def loopTransferDataClientToServer(log, settings, context):
             time.sleep(1)
             os._exit(1)
 
-        time.sleep(settings.sleepTime)
+        # time.sleep(settings.sleepTime)  # TODO  doesn't seem to make much effect...
+
+        print("ReadMessages_counter = " + str(variables.ReadMessages_counter) + "    " +
+              "ReadMessages_error_counter = " + str(variables.ReadMessages_error_counter)
+              + "   |   "
+              "WriteMessages_counter = " + str(variables.WriteMessages_counter) + "    " +
+              "WriteMessages_error_counter = " + str(variables.WriteMessages_error_counter))
 
 
 '''
@@ -1211,8 +1228,8 @@ Function is called upon shutting down the Main Thread.
 '''
 def shutdownProcess(settings):
     closeAllClients(settings)
-    print('Shutdown of Main Thread')
-    print('\n\n\n\n\n!!IMPORTANT!!\nThe client readout Thread can take up to 10 seconds to shutdown\n\n\n\n\n')
+    print('\n\nShutdown of Main Thread')
+    print('!!IMPORTANT!!\nThe client readout Thread can take up to 10 seconds to shutdown\n\n')
 
 
 '''

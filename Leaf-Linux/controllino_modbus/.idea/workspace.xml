@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79c41cea-3701-4816-8a48-8f44ab70e900" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Development/~$af Controller.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Development/~WRL0005.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Leaf-Controllino/Controllino/.vs/Controllino/v14/.atsuo" beforeDir="false" afterPath="$PROJECT_DIR$/../../Leaf-Controllino/Controllino/.vs/Controllino/v14/.atsuo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../controllino_modbus - original.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../controllino_modbus.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../controllino_modbus.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../controllino_modbus_utils/controllino_chiller.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../controllino_modbus_utils/controllino_controllino.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../controllino_modbus_utils/controllino_dl10.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../controllino_modbus_utils/controllino_flowmeter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../controllino_modbus_utils/controllino_generic_modbus_device.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../controllino_modbus_utils/controllino_hvac.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../controllino_modbus_utils/controllino_hvacTelco.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../controllino_modbus_utils/controllino_modbus_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../controllino_modbus_utils/controllino_osensa.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../controllino_modbus_utils/controllino_ups.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../controllino_modbus_utils/controllino_upsTelco.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../controllino_modbus_utils/controllino_virtual_device.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllino_modbus.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllino_modbus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllino_modbus_utils/controllino_generic_modbus_device.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllino_modbus_utils/controllino_generic_modbus_device.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

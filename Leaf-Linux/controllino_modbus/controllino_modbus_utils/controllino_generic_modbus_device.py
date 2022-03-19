@@ -11,6 +11,7 @@ import controllino_modbus_utils.controllino_modbus_utils as cmu_utils
 import builtins
 import time
 
+import variables
 
 maxNumberOfProcessableRegisters = 30
 
@@ -23,7 +24,7 @@ def singleRead(client, regType, unitId, startAddress, numberOfRegs, dataFrame):
         result = client.read_holding_registers(startAddress, numberOfRegs, unit = unitId)
     if regType == 'ir':
         result = client.read_input_registers(startAddress, numberOfRegs, unit = unitId)
-    
+
     return result
 
 
@@ -60,8 +61,9 @@ def readFullRegister(client, regType, unitId, dataFrame):
         
         startAddress = dataFrame.loc[startIndex, 'address']
         lastIndex = dataFrame.index.values[i + numberOfRegs - 1]
-        
+
         try:
+            variables.ReadMessages_counter += 1
             result = singleRead(client, regType, unitId, startAddress, numberOfRegs, dataFrame)
             if (result.function_code < 0x80):
                 if regType == 'co':
@@ -72,15 +74,16 @@ def readFullRegister(client, regType, unitId, dataFrame):
                     dataFrame.loc[startIndex:lastIndex, 'value'] = result.registers[0:numberOfRegs]
                 if regType == 'ir':
                     dataFrame.loc[startIndex:lastIndex, 'value'] = result.registers[0:numberOfRegs]
-                    if (result.unit_id == 42) or (result.unit_id == 5):
-                        print("    UnitID:" + str(result.unit_id) + "  " + str(result.registers))
+                    # if (result.unit_id == 42) or (result.unit_id == 5):
+                    #     print("    UnitID:" + str(result.unit_id) + "  " + str(result.registers))
             else:
+                variables.ReadMessages_error_counter += 1
                 print('\n # Check Device with unit ID: ' + str(unitId) + ' error code: ' + str(result.function_code))
                 print('\n regType: ' + regType + ' startAddress: ' + str(startAddress) + ' numberOfRegs: ' + str(numberOfRegs))
-
                 dataFrame.loc['readAlarm', 'value'] = 1
                 return dataFrame
         except pme.ConnectionException as e:
+            variables.ReadMessages_error_counter += 1
             print(e)
             print()
             print('#===========!!!IMPORTANT!!!===========#')
@@ -88,6 +91,7 @@ def readFullRegister(client, regType, unitId, dataFrame):
             dataFrame.loc['readAlarm', 'value'] = 1
             return dataFrame
         except AttributeError as e:
+            variables.ReadMessages_error_counter += 1
             print(e)
             if'ModbusIOException' in str(e):
                 print('#===========!!!IMPORTANT!!!===========#')
