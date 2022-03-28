@@ -2,7 +2,7 @@
 # directory that contains the controllino_modbus /usr/local/share/fluence/
 
 # RAP: 10.194.159.3
-# /home/bkajganic.admin/bpi-r2/controller_software/LeafController/B
+# /home/bkajganic.admin/bpi-r2/controller_software/LeafController/B...
 
 # Installing from the ArrayController to the BananaPi-R2 at 10.11.8.3
 

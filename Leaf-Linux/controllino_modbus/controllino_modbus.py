@@ -1112,6 +1112,7 @@ def writeToClients():
                   
                 if fx == 5:
                     value = values[0]
+                    variables.WriteMessages_counter += 1
                     ret = client.write_coil(address, value, unit=unitId)
                 else:
                     # ret = client.write_coils(address, values, unit = unitId)   # This causes a crash, replaced by several client.write_coil() requests.
@@ -1156,6 +1157,7 @@ def writeToClients():
                 
                 if fx == 6:
                     value = values[0]
+                    variables.WriteMessages_counter += 1
                     ret = client.write_register(address, value, unit=unitId)
                 else:
                     #ret = client.write_registers(address, values, unit = unitId)
