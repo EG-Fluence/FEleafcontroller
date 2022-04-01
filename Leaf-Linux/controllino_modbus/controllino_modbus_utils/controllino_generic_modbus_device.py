@@ -68,14 +68,16 @@ def readFullRegister(client, regType, unitId, dataFrame):
             if (result.function_code < 0x80):
                 if regType == 'co':
                     dataFrame.loc[startIndex:lastIndex, 'value'] = result.bits[0:numberOfRegs]
+                    print("    UnitID'co':" + str(result.unit_id) + "  " + str(result.bits))
                 if regType == 'di':
                     dataFrame.loc[startIndex:lastIndex, 'value'] = result.bits[0:numberOfRegs]
+                    print("    UnitID'di':" + str(result.unit_id) + "  " + str(result.bits))
                 if regType == 'hr':
                     dataFrame.loc[startIndex:lastIndex, 'value'] = result.registers[0:numberOfRegs]
+                    print("    UnitID'hr':" + str(result.unit_id) + "  " + str(result.registers))
                 if regType == 'ir':
                     dataFrame.loc[startIndex:lastIndex, 'value'] = result.registers[0:numberOfRegs]
-                    # if (result.unit_id == 42) or (result.unit_id == 5):
-                    #     print("    UnitID:" + str(result.unit_id) + "  " + str(result.registers))
+                    print("    UnitID'ir':" + str(result.unit_id) + "  " + str(result.registers))
             else:
                 variables.ReadMessages_error_counter += 1
                 print('\n # Check Device with unit ID: ' + str(unitId) + ' error code: ' + str(result.function_code))
