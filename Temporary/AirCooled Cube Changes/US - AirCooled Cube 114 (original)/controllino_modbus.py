@@ -246,26 +246,30 @@ def serverInit(settings):
                                     ]
 
         list.extend(entriesCont)
-
-        entriesChiller1 = [
-            ['vdCh1PressLow',                chillerDev1.hrDataFrame.loc['WaterReplenishmentAlarm', 'address'],    settings.chiller1,    0xFF, 'ro'], # '''26'''
-            ['vdCh1OutletWaterTempSensFail', chillerDev1.hrDataFrame.loc['outletWaterTempSensFail', 'address'],    settings.chiller1,    0xFF, 'ro'], # '''27'''
-            ['vdCh1waterTempSet',            chillerDev1.hrDataFrame.loc['waterTempSet',            'address'],    settings.chiller1,    0xFF, 'rw'], # '''28'''
-            ['vdCh1hysteresisSet',           chillerDev1.hrDataFrame.loc['hysteresisSet',           'address'],    settings.chiller1,    0xFF, 'rw'], # '''29'''
-            ['vdCh1pumpCommandSpeed',        chillerDev1.hrDataFrame.loc['pumpCommandSpeed',        'address'],    settings.chiller1,    0xFF, 'ro'], # '''30'''
-            ['vdCh1heartbeat',               chillerDev1.hrDataFrame.loc['heartbeat',               'address'],    settings.chiller1,    0xFF, 'ro'], # '''31'''
-            ['vdCh1systemOnOff',             chillerDev1.hrDataFrame.loc['systemOnOff',             'address'],    settings.chiller1,    0xFF, 'rw'], # '''32'''
-                                                ]
-
-        entriesChiller2 = [
-            ['vdCh2PressLow',                chillerDev2.hrDataFrame.loc['WaterReplenishmentAlarm', 'address'],    settings.chiller2,    0xFF, 'ro'], # '''33'''
-            ['vdCh2OutletWaterTempSensFail', chillerDev2.hrDataFrame.loc['outletWaterTempSensFail', 'address'],    settings.chiller2,    0xFF, 'ro'], # '''34'''
-            ['vdCh2waterTempSet',            chillerDev2.hrDataFrame.loc['waterTempSet',            'address'],    settings.chiller2,    0xFF, 'rw'], # '''35'''
-            ['vdCh2hysteresisSet',           chillerDev2.hrDataFrame.loc['hysteresisSet',           'address'],    settings.chiller2,    0xFF, 'rw'], # '''36'''
-            ['vdCh2pumpCommandSpeed',        chillerDev2.hrDataFrame.loc['pumpCommandSpeed',        'address'],    settings.chiller2,    0xFF, 'ro'], # '''37'''
-            ['vdCh2heartbeat',               chillerDev2.hrDataFrame.loc['heartbeat',               'address'],    settings.chiller2,    0xFF, 'ro'], # '''38'''
-            ['vdCh2systemOnOff',             chillerDev2.hrDataFrame.loc['systemOnOff',             'address'],    settings.chiller2,    0xFF, 'rw'], # '''39'''
-                                                ]
+        if settings.chiller1.type == 'Airsys':
+            entriesChiller1 = []
+        else:
+            entriesChiller1 = [
+                ['vdCh1PressLow',                chillerDev1.hrDataFrame.loc['WaterReplenishmentAlarm', 'address'],    settings.chiller1,    0xFF, 'ro'], # '''26'''
+                ['vdCh1OutletWaterTempSensFail', chillerDev1.hrDataFrame.loc['outletWaterTempSensFail', 'address'],    settings.chiller1,    0xFF, 'ro'], # '''27'''
+                ['vdCh1waterTempSet',            chillerDev1.hrDataFrame.loc['waterTempSet',            'address'],    settings.chiller1,    0xFF, 'rw'], # '''28'''
+                ['vdCh1hysteresisSet',           chillerDev1.hrDataFrame.loc['hysteresisSet',           'address'],    settings.chiller1,    0xFF, 'rw'], # '''29'''
+                ['vdCh1pumpCommandSpeed',        chillerDev1.hrDataFrame.loc['pumpCommandSpeed',        'address'],    settings.chiller1,    0xFF, 'ro'], # '''30'''
+                ['vdCh1heartbeat',               chillerDev1.hrDataFrame.loc['heartbeat',               'address'],    settings.chiller1,    0xFF, 'ro'], # '''31'''
+                ['vdCh1systemOnOff',             chillerDev1.hrDataFrame.loc['systemOnOff',             'address'],    settings.chiller1,    0xFF, 'rw'], # '''32'''
+                                                    ]
+        if settings.chiller2.type == 'Airsys':
+            entriesChiller2 = []
+        else:
+            entriesChiller2 = [
+                ['vdCh2PressLow',                chillerDev2.hrDataFrame.loc['WaterReplenishmentAlarm', 'address'],    settings.chiller2,    0xFF, 'ro'], # '''33'''
+                ['vdCh2OutletWaterTempSensFail', chillerDev2.hrDataFrame.loc['outletWaterTempSensFail', 'address'],    settings.chiller2,    0xFF, 'ro'], # '''34'''
+                ['vdCh2waterTempSet',            chillerDev2.hrDataFrame.loc['waterTempSet',            'address'],    settings.chiller2,    0xFF, 'rw'], # '''35'''
+                ['vdCh2hysteresisSet',           chillerDev2.hrDataFrame.loc['hysteresisSet',           'address'],    settings.chiller2,    0xFF, 'rw'], # '''36'''
+                ['vdCh2pumpCommandSpeed',        chillerDev2.hrDataFrame.loc['pumpCommandSpeed',        'address'],    settings.chiller2,    0xFF, 'ro'], # '''37'''
+                ['vdCh2heartbeat',               chillerDev2.hrDataFrame.loc['heartbeat',               'address'],    settings.chiller2,    0xFF, 'ro'], # '''38'''
+                ['vdCh2systemOnOff',             chillerDev2.hrDataFrame.loc['systemOnOff',             'address'],    settings.chiller2,    0xFF, 'rw'], # '''39'''
+                                                    ]
 
         list.extend(entriesChiller1)
         list.extend(entriesChiller2)
@@ -450,21 +454,27 @@ def getVirtualSlaveValues(settings, localDf):
         localDf.loc['vdContReserved13', 'value']      = controllinoDev.irDataFrame.loc['reserved13', 'value']
         localDf.loc['vdContHeartbeat', 'value']       = controllinoDev.irDataFrame.loc['heartbeat', 'value']
 
-    localDf.loc['vdCh1PressLow', 'value']                 = chillerDev1.hrDataFrame.loc['WaterReplenishmentAlarm', 'value']
-    localDf.loc['vdCh1OutletWaterTempSensFail', 'value']  = 1 if chillerDev1.hrDataFrame.loc['outletWaterTempSensFail':'heatingFaultLock', 'value'].sum() > 1 else 0
-    localDf.loc['vdCh1waterTempSet', 'value']             = chillerDev1.hrDataFrame.loc['waterTempSet', 'value']
-    localDf.loc['vdCh1hysteresisSet', 'value']            = chillerDev1.hrDataFrame.loc['hysteresisSet', 'value']
-    localDf.loc['vdCh1pumpCommandSpeed', 'value']         = chillerDev1.hrDataFrame.loc['pumpCommandSpeed', 'value']
-    localDf.loc['vdCh1heartbeat', 'value']                = chillerDev1.hrDataFrame.loc['heartbeat', 'value']
-    localDf.loc['vdCh1systemOnOff', 'value']              = chillerDev1.hrDataFrame.loc['systemOnOff', 'value']
-    
-    localDf.loc['vdCh2PressLow', 'value']                 = chillerDev2.hrDataFrame.loc['WaterReplenishmentAlarm', 'value']
-    localDf.loc['vdCh2OutletWaterTempSensFail', 'value']  = 1 if chillerDev2.hrDataFrame.loc['outletWaterTempSensFail':'heatingFaultLock', 'value'].sum() > 1 else 0
-    localDf.loc['vdCh2waterTempSet', 'value']             = chillerDev2.hrDataFrame.loc['waterTempSet', 'value']
-    localDf.loc['vdCh2hysteresisSet', 'value']            = chillerDev2.hrDataFrame.loc['hysteresisSet', 'value']
-    localDf.loc['vdCh2pumpCommandSpeed', 'value']         = chillerDev2.hrDataFrame.loc['pumpCommandSpeed', 'value']
-    localDf.loc['vdCh2heartbeat', 'value']                = chillerDev2.hrDataFrame.loc['heartbeat', 'value']
-    localDf.loc['vdCh2systemOnOff', 'value']              = chillerDev2.hrDataFrame.loc['systemOnOff', 'value']
+    if settings.chiller1.type == 'Airsys':
+        pass
+    else:
+        localDf.loc['vdCh1PressLow', 'value']                 = chillerDev1.hrDataFrame.loc['WaterReplenishmentAlarm', 'value']
+        localDf.loc['vdCh1OutletWaterTempSensFail', 'value']  = 1 if chillerDev1.hrDataFrame.loc['outletWaterTempSensFail':'heatingFaultLock', 'value'].sum() > 1 else 0
+        localDf.loc['vdCh1waterTempSet', 'value']             = chillerDev1.hrDataFrame.loc['waterTempSet', 'value']
+        localDf.loc['vdCh1hysteresisSet', 'value']            = chillerDev1.hrDataFrame.loc['hysteresisSet', 'value']
+        localDf.loc['vdCh1pumpCommandSpeed', 'value']         = chillerDev1.hrDataFrame.loc['pumpCommandSpeed', 'value']
+        localDf.loc['vdCh1heartbeat', 'value']                = chillerDev1.hrDataFrame.loc['heartbeat', 'value']
+        localDf.loc['vdCh1systemOnOff', 'value']              = chillerDev1.hrDataFrame.loc['systemOnOff', 'value']
+
+    if settings.chiller2.type == 'Airsys':
+        pass
+    else:
+        localDf.loc['vdCh2PressLow', 'value']                 = chillerDev2.hrDataFrame.loc['WaterReplenishmentAlarm', 'value']
+        localDf.loc['vdCh2OutletWaterTempSensFail', 'value']  = 1 if chillerDev2.hrDataFrame.loc['outletWaterTempSensFail':'heatingFaultLock', 'value'].sum() > 1 else 0
+        localDf.loc['vdCh2waterTempSet', 'value']             = chillerDev2.hrDataFrame.loc['waterTempSet', 'value']
+        localDf.loc['vdCh2hysteresisSet', 'value']            = chillerDev2.hrDataFrame.loc['hysteresisSet', 'value']
+        localDf.loc['vdCh2pumpCommandSpeed', 'value']         = chillerDev2.hrDataFrame.loc['pumpCommandSpeed', 'value']
+        localDf.loc['vdCh2heartbeat', 'value']                = chillerDev2.hrDataFrame.loc['heartbeat', 'value']
+        localDf.loc['vdCh2systemOnOff', 'value']              = chillerDev2.hrDataFrame.loc['systemOnOff', 'value']
 
     if settings.hvac1.type == 'BlackShields':
         localDf.loc['vd' + str(settings.hvac1.name) + 'AnyAlarm',           'value']    = 1 if hvacDev1.coDataFrame.loc['highAndLowPressureAlarm':'highAndLowTempAlarm', 'value'].sum() > 1 else 0
@@ -1237,7 +1247,7 @@ def writeToClients():
 #            print('writeToClients() Queue empty')
             break # while True:
         
-        # if sleepvalue != None:
+        #if sleepvalue != None:
         time.sleep(sleepvalue) # must be set, 0 is allowed
             
         # write coils or registers depending on the function code(singular coil/register is also possible with the same function).
@@ -1695,12 +1705,9 @@ def main():
 
     # ============================== Definition of default values. Important when no config file or command line is used. ============================== #
     # Set default values. Those are used if no arguments or inputs are given.
-
-    if variables.WINDOWS:
-        defaultConfigFilePath = "controllino_modbus.conf"
-    else:
-        defaultConfigFilePath = "/usr/local/share/fluence/controllino_modbus.conf"
-
+    
+    defaultConfigFilePath = "/usr/local/share/fluence/controllino_modbus.conf"
+    
     # Client is the modbus device, that the script "talks to". It could be the controllino, an hvac etc.
     settingsDefault.clientIpAddress = '192.168.2.3'
     settingsDefault.clientPort = 502
@@ -1806,7 +1813,7 @@ def main():
     # Even if the Config File is used, use user arguments or input values to overwrite options.
     # First, set Ip addresses and ports from input or arguments.
     if(len(sys.argv) > 2):
-        # check if Ip Address has correct Format
+        # check if Ip Adress has correct Format
         if len(str(sys.argv[1]).split('.')) == 4:
             settings.clients.ipAddress = str(sys.argv[1])
             if (settingsDefault.clientIpAddress == settings.clients.ipAddress):
@@ -2186,8 +2193,8 @@ def main():
             os._exit(0)
         else:
             os._exit(1)
-
  #   init()
+ #    print('hello')
     runUpdatingServerAndClients(log, settings)
     
     
@@ -2196,5 +2203,6 @@ Main
 '''
 if __name__ == "__main__":
     main()
+
 
 os._exit(1)

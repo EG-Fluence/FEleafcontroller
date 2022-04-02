@@ -67,7 +67,7 @@ chillerHrRegisterList = [
     ['inverterOverCurrentLock',     0xB13A, 0xFF, 'ro', 'r'],      # 0 normal, 1 locked
     ['inverterOverTempLock',        0xB13B, 0xFF, 'ro', 'r'],      # 0 normal, 1 locked
     ['inverterOverVoltLock',        0xB13C, 0xFF, 'ro', 'r'],      # 0 normal, 1 locked
-    ['inverterUnderVoltLock',       0xB13D, 0xFF, 'ro', 'r'],      # 0 normal, 1 locked
+    ['inverterUnterVoltLock',       0xB13D, 0xFF, 'ro', 'r'],      # 0 normal, 1 locked
     ['inverterPhaseLossLock',       0xB13E, 0xFF, 'ro', 'r'],      # 0 normal, 1 locked
     ['inverterOtherFaultLock',      0xB13F, 0xFF, 'ro', 'r'],      # 0 normal, 1 locked
 

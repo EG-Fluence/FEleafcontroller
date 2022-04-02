@@ -64,31 +64,26 @@ def readFullRegister(client, regType, unitId, dataFrame):
         lastIndex = dataFrame.index.values[i + numberOfRegs - 1]
 
 
+        
         try:
             variables.ReadMessages_counter += 1
             result = singleRead(client, regType, unitId, startAddress, numberOfRegs, dataFrame)
-
             if (result.function_code < 0x80):
+
                 if regType == 'co':
                     dataFrame.loc[startIndex:lastIndex, 'value'] = result.bits[0:numberOfRegs]
-                    if variables.DEBUG:
-                        print("    UnitID'co':" + str(result.unit_id) + "  " + str(result.bits))
                 if regType == 'di':
                     dataFrame.loc[startIndex:lastIndex, 'value'] = result.bits[0:numberOfRegs]
-                    if variables.DEBUG:
-                        print("    UnitID'di':" + str(result.unit_id) + "  " + str(result.bits))
                 if regType == 'hr':
                     dataFrame.loc[startIndex:lastIndex, 'value'] = result.registers[0:numberOfRegs]
-                    if variables.DEBUG:
-                        print("    UnitID'hr':" + str(result.unit_id) + "  " + str(result.registers))
                 if regType == 'ir':
                     dataFrame.loc[startIndex:lastIndex, 'value'] = result.registers[0:numberOfRegs]
-                    if variables.DEBUG:
-                        print("    UnitID'ir':" + str(result.unit_id) + "  " + str(result.registers))
+                    # if (result.unit_id == 42) or (result.unit_id == 5):
+                    #     print("    UnitID:" + str(result.unit_id) + "  " + str(result.registers))
             else:
                 variables.ReadMessages_error_counter += 1
-                # print('\n # Check Device with unit ID: ' + str(unitId) + ' error code: ' + str(result.function_code))
-                # print('\n regType: ' + regType + ' startAddress: ' + str(startAddress) + ' numberOfRegs: ' + str(numberOfRegs))
+                print('\n # Check Device with unit ID: ' + str(unitId) + ' error code: ' + str(result.function_code))
+                print('\n regType: ' + regType + ' startAddress: ' + str(startAddress) + ' numberOfRegs: ' + str(numberOfRegs))
                 dataFrame.loc['readAlarm', 'value'] = 1
                 return dataFrame
         except pme.ConnectionException as e:
@@ -165,12 +160,16 @@ class ModbusDevice():
             self.deviceSettings.client.connect()
         
         if self.coDataFrame is not None:
+            # read_message, read_error = readFullRegister(self.deviceSettings.client, 'co', self.deviceSettings.unitId, self.coDataFrame)
             readFullRegister(self.deviceSettings.client, 'co', self.deviceSettings.unitId, self.coDataFrame)
         if self.diDataFrame is not None:
+            # read_message, read_error = readFullRegister(self.deviceSettings.client, 'di', self.deviceSettings.unitId, self.diDataFrame)
             readFullRegister(self.deviceSettings.client, 'di', self.deviceSettings.unitId, self.diDataFrame)
         if self.hrDataFrame is not None:
+            # read_message, read_error = readFullRegister(self.deviceSettings.client, 'hr', self.deviceSettings.unitId, self.hrDataFrame)
             readFullRegister(self.deviceSettings.client, 'hr', self.deviceSettings.unitId, self.hrDataFrame)
         if self.irDataFrame is not None:
+            # read_message, read_error = readFullRegister(self.deviceSettings.client, 'ir', self.deviceSettings.unitId, self.irDataFrame)
             readFullRegister(self.deviceSettings.client, 'ir', self.deviceSettings.unitId, self.irDataFrame)
         
         #TODO: Why is this as return arguments?

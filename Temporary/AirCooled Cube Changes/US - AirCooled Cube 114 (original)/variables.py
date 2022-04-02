@@ -1,7 +1,4 @@
 
-WINDOWS = True
-DEBUG = True
-
 ReadMessages_counter = 0
 ReadMessages_error_counter = 0
 
