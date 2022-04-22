@@ -199,12 +199,11 @@ def showHelptext(MODE):
     print('Example: python controllino_modbus readmultiple 42 ir 3 5')
     print()
     
-    
     print()
     print('\n\n\n!!!=========!!!IMPORTANT!!!=========!!!')
     print('When using the script for the first time, please read through the helptext above and disable it afterwards.\n\n')
     if not MODE == 'Production':
-        input('Press Enter to continue.')
+       input('Press Enter to continue.')
 
 
 
@@ -520,14 +519,9 @@ class ModbusScriptSettings:
         print('hvacTelcoPort: '   + str(self.hvacTelco.port))
         print('upsTelcoPort: '    + str(self.upsTelco.port))
 
-        
-        
         if not self.MODE == 'Production':
-            input('Press Enter to continue.')
+           input('Press Enter to continue.')
         
-
-
-
 
 
 '''

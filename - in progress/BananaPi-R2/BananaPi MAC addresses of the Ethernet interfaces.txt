@@ -1,0 +1,85 @@
+br0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 10.11.9.101  netmask 255.255.248.0  broadcast 10.11.15.255
+        ether 66:6f:de:de:e2:42  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+br1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.2.1  netmask 255.255.255.0  broadcast 192.168.2.255
+        inet6 fe80::20b2:39ff:fe91:a54c  prefixlen 64  scopeid 0x20<link>
+        ether 22:b2:39:91:a5:4c  txqueuelen 1000  (Ethernet)
+
+
+=====================================
+
+br0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 10.11.9.101  netmask 255.255.248.0  broadcast 10.11.15.255
+        ether 66:6f:de:de:e2:42  txqueuelen 1000  (Ethernet)
+
+br1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.2.1  netmask 255.255.255.0  broadcast 192.168.2.255
+        inet6 fe80::20b2:39ff:fe91:a54c  prefixlen 64  scopeid 0x20<link>
+        ether 22:b2:39:91:a5:4c  txqueuelen 1000  (Ethernet)
+
+
+===========================================================================
+
+
+After reboot
+============
+
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet6 fe80::2:2ff:fe02:202  prefixlen 64  scopeid 0x20<link>
+        ether 02:02:02:02:02:02  txqueuelen 1000  (Ethernet)
+
+eth1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet6 fe80::3:3ff:fe03:303  prefixlen 64  scopeid 0x20<link>
+        ether 02:03:03:03:03:03  txqueuelen 1000  (Ethernet)
+
+lan0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 02:02:02:02:02:02  txqueuelen 1000  (Ethernet)
+
+lan1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 02:02:02:02:02:02  txqueuelen 1000  (Ethernet)
+
+lan2: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        ether 02:02:02:02:02:02  txqueuelen 1000  (Ethernet)
+
+lan3: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 02:02:02:02:02:02  txqueuelen 1000  (Ethernet)
+
+wan: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 02:03:03:03:03:03  txqueuelen 1000  (Ethernet)
+
+
+--------------------------------------
+
+Some minutes later
+==================
+
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet6 fe80::202:2ff:feed:4acb  prefixlen 64  scopeid 0x20<link>
+        ether 00:02:02:ed:4a:cb  txqueuelen 1000  (Ethernet)
+
+eth1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet6 fe80::203:3ff:fe79:6a02  prefixlen 64  scopeid 0x20<link>
+        ether 00:03:03:79:6a:02  txqueuelen 1000  (Ethernet)
+
+lan0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 00:02:02:25:57:80  txqueuelen 1000  (Ethernet)
+
+lan1: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 00:02:02:7e:5d:33  txqueuelen 1000  (Ethernet)
+
+lan2: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        ether 00:02:02:70:9f:04  txqueuelen 1000  (Ethernet)
+
+lan3: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 00:02:02:ed:a6:61  txqueuelen 1000  (Ethernet)
+
+wan: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether 00:03:03:b8:41:2a  txqueuelen 1000  (Ethernet)
+
+

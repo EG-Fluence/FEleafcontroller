@@ -1,0 +1,10 @@
+Deployment centre California
+
+2 Air-cooled HVAC Blakcshields
+   172.16.1.113  UL
+   172.16.1.114  IEC
+
+
+2 Liquid-cooled HVAC Envicool
+   172.16.1.111  LD UL
+   172.16.1.112  SD IEC

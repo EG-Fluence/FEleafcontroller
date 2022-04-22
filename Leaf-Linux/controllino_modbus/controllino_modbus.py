@@ -1696,7 +1696,7 @@ def main():
     # ============================== Definition of default values. Important when no config file or command line is used. ============================== #
     # Set default values. Those are used if no arguments or inputs are given.
 
-    if variables.WINDOWS:
+    if variables.CFG_LOCAL:
         defaultConfigFilePath = "controllino_modbus.conf"
     else:
         defaultConfigFilePath = "/usr/local/share/fluence/controllino_modbus.conf"

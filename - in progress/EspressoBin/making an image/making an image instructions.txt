@@ -1,0 +1,65 @@
+For ‘dd’ method:
+
+ 
+
+You can use our usb recovery disk image and boot system from the usb recovery disk via u-boot.
+
+https://drive.google.com/file/d/19BzMYhE-8moTYtEPP7Inf6USo_ln5FcA/view?usp=sharing
+
+ 
+
+Below is the backup and install step:
+
+ 
+
+1.  Prepare a usbdisk and copy  all files under the recovery folder (recovery_5.16.12) to usbdisk
+2.  Power on the espressobin ultra and press any key to enter u-boot console
+3.  Insert usbdisk and run “usb reset; fatload usb 0 $loadaddr recovery.bin; source $loadaddr” to load ramdisk and boot
+4.  After boot completed, mount usbdisk to /media
+		# mount /dev/sda1 /media
+5.  Use dd command to backup the emmc disk, it will take logn time to backup the emmc disk and your usbdisk free space need to larger than 8GB.
+		# dd if=/dev/mmcblk0 of=/media/ebinx-fluence-emmc.img; sync
+		# umount /media
+6.  Prepare another ESPRESSObin Ultra device and insert the recovery usbdisk
+7.  Power on the device and go to the u-boot console
+8.  run “usb reset; fatload usb 0 $loadaddr recovery.bin; source $loadaddr” to load ramdisk and boot
+9.  After boot completed, mount usbdisk to /media
+10. Run dd command to restore to eMMC disk.
+		# mount /dev/sda1 /media
+		# dd if=/media/ebinx-fluence-emmc.img of=/dev/mmcblk0; sync
+11. After restore completed, umount the usbdisk “umount /media”
+
+
+========================================================================================
+
+
+If you use dd command it will take more time to write image to emmc disk,
+we suggest you can zip all files on emmc disk and decompress the zip file to another device, it more quickly than using dd command.
+
+You can use our usb recovery disk image and boot system from the usb recovery disk via u-boot.
+https://drive.google.com/file/d/19BzMYhE-8moTYtEPP7Inf6USo_ln5FcA/view?usp=sharing
+Below is the backup and install step:
+
+1.  Prepare a usbdisk and copy  all files under the recovery folder (recovery_5.16.12) to usbdisk
+2.  Power on the espressobin ultra and press any key to enter u-boot console
+3.  Insert usbdisk and run “usb reset; fatload usb 0 $loadaddr recovery.bin; source $loadaddr” to load ramdisk and boot
+4.  After boot completed, mount usbdisk to /media
+		# mount /dev/sda1 /media
+5.  Mount emmc to /mnt
+		# mount /dev/mmcblk0p1 /mnt
+6.  Backup the emmc content
+		# cd /mnt
+		# tar -zcvf /media/ebinx-fluence-rootfs.tgz *
+		# sync
+		# cd
+		# umount /media /mnt
+7.      Prepare another ESPRESSObin Ultra device and insert the recovery usbdisk
+8.      Power on the device and go to the u-boot console
+9.  run “usb reset; fatload usb 0 $loadaddr recovery.bin; source $loadaddr” to load ramdisk and boot
+10. After boot completed, mount usbdisk to /media
+
+11. Run “/root/mkemmc.sh /media/ebinx-fluence-rootfs.tgz”
+	this mkemmc.sh will partition and format the emmc and then install ebinx-fluence-rootfs.tgz to emmc disk
+12. After install completed, umount the usbdisk “umount /media”
+
+ 

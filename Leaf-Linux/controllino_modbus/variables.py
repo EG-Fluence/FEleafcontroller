@@ -1,5 +1,5 @@
 
-WINDOWS = True
+CFG_LOCAL = True
 DEBUG = True
 
 ReadMessages_counter = 0
