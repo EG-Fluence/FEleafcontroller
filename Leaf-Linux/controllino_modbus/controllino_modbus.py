@@ -1218,7 +1218,72 @@ def readClientsWriteToServer(log, settings, context):
         address += 1
 
     #print(virtualSlaveDF)
-     
+
+
+'''
+Implements write coil retries in case of rs485 errors
+'''
+def writeCoilRetry (client, address, value, unitId):
+
+    variables.WriteMessages_counter += 1
+    WriteAttempts = 0
+    while True:
+        try:
+            ret = client.write_coil(address, value, unit=unitId)
+            WriteAttempts += 1
+            if ret.function_code < 0x80:
+                return
+            variables.WriteMessages_error_counter += 1
+            if WriteAttempts == variables.MaximumWriteAttempts:
+                print("Giving up from trying to send a Write message to unitId: " + str(unitId))
+                return
+
+        except pme.ConnectionException as e:
+            print('#===========!!!IMPORTANT!!!===========#')
+            print(e)
+            print('Connection to Client with unit ID: ' + str(unitId) + ' impossible')
+        except AttributeError as e:
+            print('#===========!!!IMPORTANT!!!===========#')
+            print(e)
+            if 'ModbusIOException' in str(e):
+                print('ModbusIOException for Client with unit ID: ' + str(unitId) + ' ')
+                print('This can happen when trying to connect to a device ID that does not exist.')
+
+        print("Retrying Write message to unitId: " + str(unitId))
+
+
+'''
+Implements write register retries in case of rs485 errors
+'''
+def writeRegisterRetry (client, address, value, unitId):
+
+    variables.WriteMessages_counter += 1
+    WriteAttempts = 0
+    while True:
+        try:
+            ret = client.write_register(address, value, unit=unitId)
+            WriteAttempts += 1
+            if ret.function_code < 0x80:
+                return
+            variables.WriteMessages_error_counter += 1
+            if WriteAttempts == variables.MaximumWriteAttempts:
+                print("Giving up from trying to send a Write message to unitId: " + str(unitId))
+                return
+
+        except pme.ConnectionException as e:
+            print('#===========!!!IMPORTANT!!!===========#')
+            print(e)
+            print('Connection to Client with unit ID: ' + str(unitId) + ' impossible')
+        except AttributeError as e:
+            print('#===========!!!IMPORTANT!!!===========#')
+            print(e)
+            if 'ModbusIOException' in str(e):
+                print('ModbusIOException for Client with unit ID: ' + str(unitId) + ' ')
+                print('This can happen when trying to connect to a device ID that does not exist.')
+
+        print("Retrying Write message to unitId: " + str(unitId))
+
+
 '''
 Function will check the Queue for write-requests. If there are any, it will write coils or
 registers of the respective client.
@@ -1227,113 +1292,60 @@ def writeToClients():
     while True:
         # check the queue for write requests
         try:
-            deviceName, fx, address, values, sleepvalue = queue.get(timeout = 1)
+            deviceName, fx, address, values, sleepvalue = queue.get(timeout=1)
             deviceSetting, df, fc = devDict[deviceName]
             client = deviceSetting.client
             unitId = deviceSetting.unitId            
-            print('Found in Queue')
+            print('Modbus Write request found in Queue')
             
         except Empty:
-#            print('writeToClients() Queue empty')
-            break # while True:
+            # print('writeToClients() Queue empty')
+            break
         
         # if sleepvalue != None:
-        time.sleep(sleepvalue) # must be set, 0 is allowed
+        time.sleep(sleepvalue)  # must be set, 0 is allowed
             
         # write coils or registers depending on the function code(singular coil/register is also possible with the same function).
         if fx == 5 or fx == 15:
             # print('Writing Coil of Client with UnitID: ' + str(unitId))
-            try:
-                if not client.is_socket_open():
-                    client.connect()
-                    
-                values = np.multiply(values, 1) # Convert True/False to 1/0
-                # usually not commented out:
-                # print(unitId, fx, address, values, sleepvalue)
-                  
-                if fx == 5:
-                    value = values[0]
-                    variables.WriteMessages_counter += 1
-                    ret = client.write_coil(address, value, unit=unitId)
-                else:
-                    # ret = client.write_coils(address, values, unit = unitId)   # This causes a crash, replaced by several client.write_coil() requests.
-                    i = 0
-                    while i < values.size:
-                        variables.WriteMessages_counter += 1
-                        ret = client.write_coil(address, values[i], unit=unitId)
-                        if not (ret.function_code < 0x80):
-                            break
-                        address += 1
-                        i += 1
-                    
-                # Check the function code to detect errors.
-                if ret.function_code < 0x80:
-                    ## usualy not commented out
-                    # print('Write was successful')
-                    pass
-                else:
-                    variables.WriteMessages_error_counter += 1
-                    print('     Write was unsuccessful, check Client with unit ID: ' + str(unitId) + '  ' + str(ret))
 
-            except pme.ConnectionException as e:
-                print('#===========!!!IMPORTANT!!!===========#')
-                print(e)
-                print('Connection to Client with unit ID: ' + str(unitId) + ' impossible')
-            except AttributeError as e:
-                print('#===========!!!IMPORTANT!!!===========#')
-                print(e)
-                if'ModbusIOException' in str(e):
-                    print('ModbusIOexption for Client with unit ID: ' + str(unitId) + ' ')
-                    print('This can happen when trying to connect to a device ID that does not exist.')
-                else:
-                    raise AttributeError(e)
+            if not client.is_socket_open():
+                client.connect()
+
+            values = np.multiply(values, 1)  # Convert True/False to 1/0
+            # usually not commented out:
+            # print(unitId, fx, address, values, sleepvalue)
+
+            if fx == 5:
+                writeCoilRetry(client, address, values[0], unitId)
+            else:
+                # ret = client.write_coils(address, values, unit = unitId)   # This causes a crash, replaced by several client.write_coil() requests.
+                i = 0
+                while i < values.size:
+                    writeCoilRetry(client, address, values[i], unitId)
+                    address += 1
+                    i += 1
 
         elif fx == 6 or fx == 16:
             # print('Trying to write Registers of Client with UnitID: ' + str(unitId))
 
-            try:
                 if not client.is_socket_open():
                     client.connect()
-                # usualy not commented out
+
+                # usually not commented out
                 # print(unitId, fx, address, values, sleepvalue)
                 
                 if fx == 6:
-                    value = values[0]
-                    variables.WriteMessages_counter += 1
-                    ret = client.write_register(address, value, unit=unitId)
+                    client.write_register(address, values[0], unit=unitId)
+                    writeRegisterRetry(client, address, values[0], unitId)
                 else:
-                    # ret = client.write_registers(address, values, unit = unitId)
+                    # ret = client.write_registers(address, values, unit = unitId)   # This causes a crash, replaced by several client.write_registers() requests.
                     i = 0
                     while i < len(values):
-                        variables.WriteMessages_counter += 1
-                        ret = client.write_register(address, values[i], unit=unitId)
-                        if not (ret.function_code < 0x80):
-                            break
+                        writeRegisterRetry(client, address, values[i], unitId)
                         address += 1
                         i += 1
 
-                # Check the function code to detect errors.
-                if (ret.function_code < 0x80):
-                    # usualy not commented out
-                    # print('Write was successful')
-                    pass
-                else:
-                    variables.WriteMessages_error_counter += 1
-                    print('     Write was unsuccessful, check Client with unit ID: ' + str(unitId) + '   ' + str(ret))
-
-            except pme.ConnectionException as e:
-                print('#===========!!!IMPORTANT!!!===========#')
-                print(e)
-                print('Connection to Client with unit ID: ' + str(unitId) + ' impossible')
-            except AttributeError as e:
-                print('#===========!!!IMPORTANT!!!===========#')
-                print(e)
-                if'ModbusIOException' in str(e):
-                    print('ModbusIOexption for Client with unit ID: ' + str(unitId) + ' ')
-                    print('This can happen when trying to connect to a device ID that does not exist.')
-                else:
-                    raise AttributeError(e)
-        
         else:
             print('Function Code not Found: ' + str(fx))
 
@@ -1348,7 +1360,9 @@ It will loop until it realizes the main thread is not running anymore.
 '''
 def loopTransferDataClientToServer(log, settings, context):
     while True:
+
         if settings.clients.use:
+
             readClientsWriteToServer(log, settings, context)
     
             writeToClients()

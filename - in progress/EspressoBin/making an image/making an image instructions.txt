@@ -1,6 +1,190 @@
+
+EXPERIMENTAR!!!!
+# dd if=/dev/urandom | pv | dd of=/dev/sda1
+4,14MB 0:00:05 [ 98kB/s] [      <=>                  ]
+
+
+
+
+1. Identifying the USB disk:
+		By lsblk 
+				root@ebinx1ac843:~# lsblk
+				NAME         MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+				sda            8:0    1 29.8G  0 disk
+				|-sda1         8:1    1  256M  0 part
+				`-sda2         8:2    1    7G  0 part
+				mtdblock0     31:0    0  3.9M  0 disk
+				mtdblock1     31:1    0   64K  1 disk
+				mtdblock2     31:2    0   64K  0 disk
+				mmcblk0      179:0    0  7.3G  0 disk
+				`-mmcblk0p1  179:1    0  7.3G  0 part /
+				mmcblk0boot0 179:32   0    4M  1 disk
+				mmcblk0boot1 179:64   0    4M  1 disk
+
+		If there is a sda1 and sda2 these need to be unmounted
+				sudo umount -fl /dev/sda1
+				sudo umount -fl /dev/sda2
+
+
+2. If there is no sda1 and sda2:
+
+	root@ebinx1ac843:~# lsblk
+	NAME         MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+	sda            8:0    1 29.8G  0 disk
+	mtdblock0     31:0    0  3.9M  0 disk
+	mtdblock1     31:1    0   64K  1 disk
+	mtdblock2     31:2    0   64K  0 disk
+	mmcblk0      179:0    0  7.3G  0 disk
+	`-mmcblk0p1  179:1    0  7.3G  0 part /
+	mmcblk0boot0 179:32   0    4M  1 disk
+	mmcblk0boot1 179:64   0    4M  1 disk
+
+
+3. Formating the USB disk:
+		root@ebinx1ac843:~# mkfs -V /dev/sda
+		mkfs from util-linux 2.31.1
+		mkfs.ext2 /dev/sda
+		mke2fs 1.44.1 (24-Mar-2018)
+		Found a dos partition table in /dev/sda
+		Proceed anyway? (y,N) y
+		Creating filesystem with 7815168 4k blocks and 1954064 inodes
+		Filesystem UUID: b659914e-9145-44b9-969b-a4f55853834d
+		Superblock backups stored on blocks:
+		        32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208,
+		        4096000
+
+		Allocating group tables: done
+		Writing inode tables: done
+		Writing superblocks and filesystem accounting information: done
+
+
+4. Confirm that the format has been done:
+		root@ebinx1ac843:~# lsblk
+		NAME         MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+		sda            8:0    1 29.8G  0 disk
+		mtdblock0     31:0    0  3.9M  0 disk
+		mtdblock1     31:1    0   64K  1 disk
+		mtdblock2     31:2    0   64K  0 disk
+		mmcblk0      179:0    0  7.3G  0 disk
+		`-mmcblk0p1  179:1    0  7.3G  0 part /
+		mmcblk0boot0 179:32   0    4M  1 disk
+		mmcblk0boot1 179:64   0    4M  1 disk
+
+
+5. Copy recovery_5.16.12 files (not the directory) to the USB disk
+
+		mkdir /mnt/usbdisk
+		umount /mnt/usbdisk
+		cp * /mnt/usbdisk 
+
+6. Confirm that the files were copied into the USB disk by excuting "ls -al /mnt/usbdisk/"
+
+		drwxr-xr-x 2 root root     4096 Apr 24 17:34 .
+		drwxr-xr-x 3 root root     4096 Apr 24 13:00 ..
+		-rwxr-xr-x 1 root root 19964416 Apr 24 17:34 Image
+		-rwxr-xr-x 1 root root    12884 Apr 24 17:34 armada-3720-ccpe.dtb
+		-rwxr-xr-x 1 root root    12884 Apr 24 17:34 armada-3720-espressobin-ultra.dtb
+		-rwxr-xr-x 1 root root  3997696 Apr 24 17:34 espressobin_ultra-bootloader-cpu-1000-ddr4-1cs-1g-atf-eff6ede8-uboot-g926d08c7ce-utils-52d9aef-20220411-rel.bin
+		-rwxr-xr-x 1 root root  3997696 Apr 24 17:34 espressobin_ultra-bootloader-cpu-1000-ddr4-2cs-2g-atf-eff6ede8-uboot-g926d08c7ce-utils-52d9aef-20220411-rel.bin
+		-rwxr-xr-x 1 root root  3997696 Apr 24 17:34 espressobin_ultra-bootloader-cpu-1200-ddr4-1cs-1g-atf-eff6ede8-uboot-g926d08c7ce-utils-52d9aef-20220411-rel.bin
+		-rwxr-xr-x 1 root root  3997696 Apr 24 17:34 espressobin_ultra-bootloader-cpu-1200-ddr4-2cs-2g-atf-eff6ede8-uboot-g926d08c7ce-utils-52d9aef-20220411-rel.bin
+		-rwxr-xr-x 1 root root      713 Apr 24 17:34 md5sum.txt
+		-rwxr-xr-x 1 root root  8897801 Apr 24 17:34 ramdisk
+		-rwxr-xr-x 1 root root      589 Apr 24 17:34 recovery.bin
+
+The USB disk is now prepared.
+
+
+
+=====================================================
+
+
+5. Reboot the system by executing "reboot"
+
+
+6. As the systems boots press any key to enter the U-boot console:
+
+		....
+		Hit any key to stop autoboot:  0
+		Marvell>>
+
+
+7. 
+
+
+================ SERIAL MODEM 
+
+
+transfering files through the serial port
+
+Set the baurate:   stty -F /dev/ttyMV0 ispeed 19200
+
+
+On Linux execute  rz
+
+On Windows use TeraTerm | Send File | ZMODEM
+
+
+==========================
+
+
+
+Changing IP address of br0 (LAN0) to 192.168.2.101 edit file /etc/network/interfaces
+
+
+# interfaces(5) file used by ifup(8) and ifdown(8)
+# Include files from /etc/network/interfaces.d:
+
+source /etc/network/interfaces.d/*
+
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet manual
+    up /sbin/ifconfig $IFACE 0.0.0.0 promisc up
+    down /sbin/ifconfig $IFACE down
+
+auto wan
+iface wan inet dhcp
+    pre-up /sbin/ifconfig eth0 0.0.0.0 promisc up
+
+auto lan0
+iface lan0 inet manual
+
+auto lan1
+iface lan1 inet manual
+
+auto lan2
+iface lan2 inet manual
+
+auto lan3
+iface lan3 inet manual
+
+auto br0
+iface br0 inet static
+    address 192.168.2.101
+    netmask 255.255.255.0
+    bridge_stp off
+    bridge_fd 0
+    bridge_ports lan0 lan1 lan2 lan3
+    post-up dnsmasq --interface=br0 --except-interface=lo --bind-interfaces --dhcp-range=192.168.2.200,192.168.2.250,12h
+    post-up echo 1 > /proc/sys/net/ipv4/ip_forward
+    post-up iptables -t nat -A POSTROUTING -s '192.168.2.101/24' -o wan -j MASQUERADE
+    post-down iptables -t nat -D POSTROUTING -s '192.168.2.101/24' -o wan -j MASQUERADE
+    post-down echo 0 > /proc/sys/net/ipv4/ip_forward
+    post-down pkill dnsmasq
+
+
+==========================================================
+
+
+
+
+
+
 For ‘dd’ method:
 
- 
 
 You can use our usb recovery disk image and boot system from the usb recovery disk via u-boot.
 

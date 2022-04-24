@@ -39,7 +39,7 @@ def readFullRegister(client, regType, unitId, dataFrame):
     size = len(dataFrame.index)
     i = 0
 
-    while (i < size):
+    while i < size:
         startIndex = dataFrame.index.values[i]
         if(dataFrame.loc[startIndex, 'regtype'] == 'v'):
             i += 1
@@ -48,7 +48,7 @@ def readFullRegister(client, regType, unitId, dataFrame):
         numberOfRegs = 1        
 
         j = i + 1
-        while (j < size):
+        while j < size:
             currentIndex = dataFrame.index.values[j]
             # not virtual register
             if((dataFrame.loc[currentIndex, 'regtype'] != 'v') and
@@ -57,60 +57,80 @@ def readFullRegister(client, regType, unitId, dataFrame):
                 (numberOfRegs < maxNumberOfProcessableRegisters)):
                     numberOfRegs += 1  
             else:
-                break # while (j < size):
+                break  # while (j < size):
             j += 1;        
         
         startAddress = dataFrame.loc[startIndex, 'address']
         lastIndex = dataFrame.index.values[i + numberOfRegs - 1]
 
+        ReadAttempts = 0
+        while True:
 
-        try:
-            variables.ReadMessages_counter += 1
-            result = singleRead(client, regType, unitId, startAddress, numberOfRegs, dataFrame)
+            try:
+                variables.ReadMessages_counter += 1
+                result = singleRead(client, regType, unitId, startAddress, numberOfRegs, dataFrame)
+                ReadAttempts += 1
 
-            if (result.function_code < 0x80):
-                if regType == 'co':
-                    dataFrame.loc[startIndex:lastIndex, 'value'] = result.bits[0:numberOfRegs]
-                    if variables.DEBUG:
-                        print("    UnitID'co':" + str(result.unit_id) + "  " + str(result.bits))
-                if regType == 'di':
-                    dataFrame.loc[startIndex:lastIndex, 'value'] = result.bits[0:numberOfRegs]
-                    if variables.DEBUG:
-                        print("    UnitID'di':" + str(result.unit_id) + "  " + str(result.bits))
-                if regType == 'hr':
-                    dataFrame.loc[startIndex:lastIndex, 'value'] = result.registers[0:numberOfRegs]
-                    if variables.DEBUG:
-                        print("    UnitID'hr':" + str(result.unit_id) + "  " + str(result.registers))
-                if regType == 'ir':
-                    dataFrame.loc[startIndex:lastIndex, 'value'] = result.registers[0:numberOfRegs]
-                    if variables.DEBUG:
-                        print("    UnitID'ir':" + str(result.unit_id) + "  " + str(result.registers))
-            else:
+                if result.function_code < 0x80:
+                    if regType == 'co':
+                        dataFrame.loc[startIndex:lastIndex, 'value'] = result.bits[0:numberOfRegs]
+                        if variables.DEBUG:
+                            print("    UnitID'co':" + str(result.unit_id) + "  " + str(result.bits))
+                    if regType == 'di':
+                        dataFrame.loc[startIndex:lastIndex, 'value'] = result.bits[0:numberOfRegs]
+                        if variables.DEBUG:
+                            print("    UnitID'di':" + str(result.unit_id) + "  " + str(result.bits))
+                    if regType == 'hr':
+                        dataFrame.loc[startIndex:lastIndex, 'value'] = result.registers[0:numberOfRegs]
+                        if variables.DEBUG:
+                            print("    UnitID'hr':" + str(result.unit_id) + "  " + str(result.registers))
+                    if regType == 'ir':
+                        dataFrame.loc[startIndex:lastIndex, 'value'] = result.registers[0:numberOfRegs]
+                        if variables.DEBUG:
+                            print("    UnitID'ir':" + str(result.unit_id) + "  " + str(result.registers))
+
+                    break  # success, so no more retries
+
+                else:
+                    variables.ReadMessages_error_counter += 1
+                    # print('\n # Check Device with unit ID: ' + str(unitId) + ' error code: ' + str(result.function_code))
+                    # print('\n regType: ' + regType + ' startAddress: ' + str(startAddress) + ' numberOfRegs: ' + str(numberOfRegs))
+                    dataFrame.loc['readAlarm', 'value'] = 1
+                    if ReadAttempts == variables.MaximumReadAttempts:
+                        print("Giving up from trying to send a Read message to unitID: " + str(unitId))
+                        return dataFrame
+
+            except pme.ConnectionException as e:
                 variables.ReadMessages_error_counter += 1
-                # print('\n # Check Device with unit ID: ' + str(unitId) + ' error code: ' + str(result.function_code))
-                # print('\n regType: ' + regType + ' startAddress: ' + str(startAddress) + ' numberOfRegs: ' + str(numberOfRegs))
-                dataFrame.loc['readAlarm', 'value'] = 1
-                return dataFrame
-        except pme.ConnectionException as e:
-            variables.ReadMessages_error_counter += 1
-            print(e)
-            print()
-            print('#===========!!!IMPORTANT!!!===========#')
-            print('Connection impossible to Client with unit ID: ' + str(unitId) + ', StartAddress: ' + str(startAddress) + ', Number of Registers: ' + str(numberOfRegs))
-            dataFrame.loc['readAlarm', 'value'] = 1
-            return dataFrame
-        except AttributeError as e:
-            variables.ReadMessages_error_counter += 1
-            print(e)
-            if'ModbusIOException' in str(e):
+                print(e)
+                print()
                 print('#===========!!!IMPORTANT!!!===========#')
-                print('ModbusIOexption for Client with unit ID: ' + str(unitId) + ', StartAddress: ' + str(startAddress) + ', Number of Registers: ' + str(numberOfRegs))
-                print('This can happen when trying to connect to a device ID that does not exist.')
+                print('Connection impossible to Client with unit ID: ' + str(unitId) + ', StartAddress: ' + str(startAddress) + ', Number of Registers: ' + str(numberOfRegs))
                 dataFrame.loc['readAlarm', 'value'] = 1
-                return dataFrame
-            else:
-                raise AttributeError(e)
-        
+                if ReadAttempts == variables.MaximumReadAttempts:
+                    return dataFrame
+
+            except AttributeError as e:
+                variables.ReadMessages_error_counter += 1
+                print(e)
+                if'ModbusIOException' in str(e):
+                    print('#===========!!!IMPORTANT!!!===========#')
+                    print('ModbusIOException for Client with unit ID: ' + str(unitId) + ', StartAddress: ' + str(startAddress) + ', Number of Registers: ' + str(numberOfRegs))
+                    print('This can happen when trying to connect to a device ID that does not exist.')
+                    dataFrame.loc['readAlarm', 'value'] = 1
+                    if ReadAttempts == variables.MaximumReadAttempts:
+                        return dataFrame
+                else:
+                    if ReadAttempts == variables.MaximumReadAttempts:
+                        raise AttributeError(e)
+
+            if variables.DEBUG:
+                print("Retrying Read message to unitId: " + str(unitId))
+
+            # the message got an error, so let's try again...
+
+        # if we come out of the loop by retrying, then maybe we will do better next time...
+
         i += numberOfRegs
     
     try:
