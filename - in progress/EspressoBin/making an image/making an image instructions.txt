@@ -1,9 +1,6 @@
 
-EXPERIMENTAR!!!!
-# dd if=/dev/urandom | pv | dd of=/dev/sda1
-4,14MB 0:00:05 [ 98kB/s] [      <=>                  ]
-
-
+EspressoBin
+===============
 
 
 1. Identifying the USB disk:
@@ -28,16 +25,20 @@ EXPERIMENTAR!!!!
 
 2. If there is no sda1 and sda2:
 
-	root@ebinx1ac843:~# lsblk
-	NAME         MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
-	sda            8:0    1 29.8G  0 disk
-	mtdblock0     31:0    0  3.9M  0 disk
-	mtdblock1     31:1    0   64K  1 disk
-	mtdblock2     31:2    0   64K  0 disk
-	mmcblk0      179:0    0  7.3G  0 disk
-	`-mmcblk0p1  179:1    0  7.3G  0 part /
-	mmcblk0boot0 179:32   0    4M  1 disk
-	mmcblk0boot1 179:64   0    4M  1 disk
+				root@ebinx1ac843:~# lsblk
+				NAME         MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+				sda            8:0    1 29.8G  0 disk
+				mtdblock0     31:0    0  3.9M  0 disk
+				mtdblock1     31:1    0   64K  1 disk
+				mtdblock2     31:2    0   64K  0 disk
+				mmcblk0      179:0    0  7.3G  0 disk
+				`-mmcblk0p1  179:1    0  7.3G  0 part /
+				mmcblk0boot0 179:32   0    4M  1 disk
+				mmcblk0boot1 179:64   0    4M  1 disk
+
+	If there is a sda this needs to be unmounted
+
+				sudo umount -fl /dev/sda
 
 
 3. Formating the USB disk:

@@ -1,0 +1,45 @@
+1) Random MAC addresses
+2) Random hostname
+3) Br0 disabled/unconfigured
+4) Discovery process (lldp cdp)
+	if cdp on W -> get SW port for device type -> get pool address -> I am leaf #1
+        if cdp on l3 -> get SW port for device type -> get pool address -> I am leaf #n (n from server config file)
+        If lldp neighbors -> get pool address -> I am L+1 or R-1
+
+5) enable/configure br0
+6) set static ip address
+7) set hostname
+
+
+Config file on server
+
+Site name
+Number of cores 2
+Number of nodes per core
+C1 N1
+C2 N2
+Numbers of leaves per node
+N1 L8
+N2 L7
+Ports to device map
+1 CS
+2 CS
+3 NC
+4 NC
+11 C1L1
+12 C1L8
+21 C2L1
+22 C2L7
+
+
+
+discovered devices registry
+
+CS1
+C1 N1 L1
+C2 N1 L3
+etc
+
+
+
+

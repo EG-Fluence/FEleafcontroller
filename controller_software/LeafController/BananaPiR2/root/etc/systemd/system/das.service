@@ -1,0 +1,38 @@
+[Unit]
+Description=Infinite Automation Mango DAS
+After=network.target
+After=network-online.target
+
+[Service]
+User=das
+Group=das
+Type=forking
+WorkingDirectory=/srv/das
+ExecStart=/srv/das/bin/ma.sh start
+ExecStop=/srv/das/bin/ma.sh stop
+ExecReload=/srv/das/bin/ma.sh restart
+Environment="JAVA_HOME=/usr/lib/jvm/java-11-openjdk-armhf"
+Environment="JAVA_OPTS=-Djava.awt.headless=true"
+Environment="HOME=/srv/das"
+UMask=007
+LimitNOFILE=500000
+Restart=on-failure
+
+# Security
+NoNewPrivileges=yes
+PrivateTmp=yes
+PrivateDevices=yes
+DevicePolicy=closed
+ProtectSystem=full
+ReadWritePaths=/srv/das /home/das /etc/das /var/log/das
+ProtectControlGroups=yes
+ProtectKernelModules=yes
+ProtectKernelTunables=yes
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6 AF_NETLINK
+RestrictRealtime=yes
+RestrictNamespaces=yes
+#MemoryDenyWriteExecute=yes
+
+[Install]
+WantedBy=multi-user.target
+

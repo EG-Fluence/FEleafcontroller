@@ -1,0 +1,15 @@
+[Unit]
+Description=Fluence Modbus Server service
+After=network.target network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=5
+ExecStart=/usr/local/bin/fluence_controller.sh
+RemainAfterExit=true
+StandardOutput=journal
+
+[Install]
+WantedBy=multi-user.target

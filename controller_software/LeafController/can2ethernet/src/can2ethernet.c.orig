@@ -1,0 +1,119 @@
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <time.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+#include "multicast.h"
+#include "run_loop.h"
+#include "multicast.h"
+#include "Log.hxx"
+#include "can.h"
+#include <string>
+#include <signal.h>
+
+static const int MCAST_PORT = 6000;
+static const char* MCAST_GROUP = "239.0.0.1";
+
+using namespace logging;
+using namespace std;
+using namespace runloop;
+
+static int running = 1;
+
+void callback_sigint(int signal) {
+    minfo ("SIGINT Callback. Terminating program.");
+    running = 0;
+}
+
+void callback_error (void* err_data) {
+    merr ("Error Callback\n");
+}
+
+void callback_timeout (void* to_data) {
+    minfo ("Timeout Callback\n");
+}
+
+void cb_mcast_receive (int listenDescriptor, void* data) {
+    minfo ("Incoming multicast message\n");
+    int fd_can_snd = *((int*)data);
+
+    bzero((char *)&receiverAddr, sizeof(receiverAddr));
+    receiverAddr.sin_family = AF_INET;
+    receiverAddr.sin_addr.s_addr = htonl(INADDR_ANY);
+    receiverAddr.sin_port = htons(MCAST_PORT);
+
+    string recvMessage;
+    mcast_receive(listenDescriptor, receiverAddr, recvMessage);
+}
+
+void cb_can_receive (int listenDescriptor, void* data) {
+    minfo ("Incoming CAN message\n");
+    int fd_mcast_snd = *((int*)data);
+    
+            char ctrlmsg[CMSG_SPACE(sizeof(struct timeval) + 3*sizeof(struct timespec) + sizeof(__u32))];
+        struct canfd_frame frame;
+        struct iovec iov;
+        struct msghdr msg;
+        iov.iov_base = &frame;
+        msg.msg_name = &addr;
+        msg.msg_iov = &iov;
+        msg.msg_iovlen = 1;
+        msg.msg_control = &ctrlmsg;
+
+        iov.iov_len = sizeof(frame);
+        msg.msg_namelen = sizeof(addr);
+        msg.msg_controllen = sizeof(ctrlmsg);
+        msg.msg_flags = 0;
+
+        int cnt = can_receive(can_receiver_sock,msg);
+}
+
+int main() {
+
+    signal(SIGINT, callback_sigint);
+
+    run_loop_init(&callback_timeout, &callback_error, 1, 0);
+
+    // --- initialize multicast receiver and sender
+    struct sockaddr_in senderAddr, receiverAddr;
+
+    bzero((char *)&senderAddr, sizeof(senderAddr));
+    senderAddr.sin_family = AF_INET;
+    senderAddr.sin_addr.s_addr = inet_addr(MCAST_GROUP);
+    senderAddr.sin_port = htons(MCAST_PORT);
+
+    bzero((char *)&receiverAddr, sizeof(receiverAddr));
+    receiverAddr.sin_family = AF_INET;
+    receiverAddr.sin_addr.s_addr = htonl(INADDR_ANY);
+    receiverAddr.sin_port = htons(MCAST_PORT);
+
+    struct ip_mreq mreq;
+    mreq.imr_multiaddr.s_addr = inet_addr(MCAST_GROUP);
+    mreq.imr_interface.s_addr = htonl(INADDR_ANY);
+
+    int fd_mcast_recv = initialize_mcast_receiver(receiverAddr,mreq);
+    int fd_mcast_snd = initialize_mcast_sender();
+
+    // --- initialize can receiver and sender
+    struct sockaddr_can addr;
+    addr.can_family = AF_CAN;
+    addr.can_ifindex = 0;
+
+    int fd_can_recv = initialize_can_receiver(addr);
+    int fd_can_snd = initialize_can_sender();
+
+    // --- add the receiver sockets to the run loop
+    run_loop_add_fd(fd_mcast_recv, cb_mcast_receive, &fd_can_snd);
+    run_loop_add_fd(fd_can_recv, cb_can_receive, &fd_mcast_snd);
+
+    while (running) {
+        run_loop_run();
+    }
+
+    return 0;
+}

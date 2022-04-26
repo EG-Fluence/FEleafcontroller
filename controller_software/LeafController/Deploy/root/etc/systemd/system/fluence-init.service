@@ -1,0 +1,15 @@
+[Unit]
+Description=Initialize Machine to Fluence Specification
+After=network.target network-online.target
+#After=sshd.service
+
+[Service]
+#ExecStartPre=/bin/sleep 30
+Type=oneshot
+ExecStart=/usr/local/bin/fluence_system-init.sh
+RemainAfterExit=true
+StandardOutput=journal
+
+[Install]
+WantedBy=multi-user.target
+

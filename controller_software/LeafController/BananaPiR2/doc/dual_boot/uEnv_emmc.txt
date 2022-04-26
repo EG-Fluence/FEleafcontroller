@@ -1,0 +1,66 @@
+#
+## uEnv.txt
+#
+bpi=bananapi
+board=bpi-r2
+chip=mt7623n
+service=linux
+#
+##
+#
+kernel=uImage
+kernel=uImage_4.14.48-main
+
+kernel44=uImage_4.4.129
+kernel49=uImage_4.9.96
+kernel414=uImage_4.14.48-main
+kernel416=uImage_4.16.14-main
+kernel417=uImage_4.17.1-main
+#
+
+#newloadenv=mmc init; run loadbootenv; env import -t ${scriptaddr} ${filesize}
+##
+#
+kaddr=0x84000000
+rdaddr=0x86000000
+#
+##
+#
+root=/dev/mmcblk1p2 rootfstype=ext4 rootwait
+partition=0:1
+
+console=earlyprintk console=tty1 fbcon=map:0 console=ttyS0,115200
+
+#bootopts=vmalloc=496M debug=7 initcall_debug=0 video=1280x720-32 drm.debug=0x7
+#bootopts=vmalloc=496M debug=7 initcall_debug=0 video=720x480@60 drm.debug=0x7
+#bootopts=vmalloc=496M debug=7 initcall_debug=0 video=1024x768@60 drm.debug=0x7
+bootopts=vmalloc=496M debug=7 initcall_debug=0 video=1920x1080 drm.debug=0x7 netcfg/do_not_use_netplan=true
+#
+##
+#
+abootargs=setenv bootargs board=${board} console=${console} root=${root} service=${service} ${bootopts}
+#
+##
+#
+ahello=echo Banana Pi ${board} chip: $chip Service: $service
+#
+##
+#
+aboot=if fatload $device $partition $rdaddr ${bpi}/berryboot.img; then bootm $kaddr $rdaddr ; else bootm $kaddr; fi
+#
+##
+#
+aload_kernel=fatload $device $partition $kaddr ${bpi}/${board}/${service}/${kernel}
+#
+##
+#
+uenvcmd=run ahello abootargs aload_kernel aboot
+
+#new bootmenuentries (start at bootmenu_7) require reload bootmenu because uenv.txt is not loaded before display menu
+boot417=run newloadenv; setenv kernel ${kernel417}; printenv; run newboot
+bootmenu_7=8. Boot kernel 4.17.=run boot417
+
+#
+## END
+#
+

@@ -1,0 +1,13 @@
+[Unit]
+Description=BPi eMMC automatic installation service
+After=systemd-user-sessions.service plymouth-quit-wait.service
+After=rc-local.service
+Before=getty.target
+
+[Service]
+StandardOutput=journal+console
+Type=idle
+ExecStart=/bin/sh /root/bpi-r2/auto_install.sh
+
+[Install]
+WantedBy=multi-user.target

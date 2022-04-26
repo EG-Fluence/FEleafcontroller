@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="io.sloeber.core.toolChain.release.507561055">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="io.sloeber.core.toolChain.release.507561055" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildProperties="" description="" id="io.sloeber.core.toolChain.release.507561055" name="Release" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="io.sloeber.core.toolChain.release.507561055.1737773206" name="/" resourcePath="">
+						<toolChain id="io.sloeber.core.toolChain.release.653328418" name="Arduino Toolchain (Sloeber edition)" superClass="io.sloeber.core.toolChain.release">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="io.sloeber.targetplatform.974573699" name="Arduino Target" osList="all" superClass="io.sloeber.targetplatform"/>
+							<builder autoBuildTarget="all" buildPath="${workspace_loc:/LeafController}/Release" cleanBuildTarget="clean" enableAutoBuild="false" enableCleanBuild="true" enabledIncrementalBuild="true" id="io.sloeber.sketch.builder.1222276244" incrementalBuildTarget="all" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Arduino sketch builder" parallelBuildOn="false" superClass="io.sloeber.sketch.builder"/>
+							<tool commandLinePattern="${recipe.cpp.o.pattern.1} ${FLAGS} -D__IN_ECLIPSE__=1 -x c++ ${INPUTS} ${recipe.cpp.o.pattern.2} -o ${OUTPUT} ${recipe.cpp.o.pattern.3} ${sloeber.extra.compile} ${sloeber.extra.cpp.compile} ${sloeber.extra.all}" id="io.sloeber.tool.sketch.compiler.cpp.1495577138" name="Arduino C++ Compiler" superClass="io.sloeber.tool.sketch.compiler.cpp">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="io.sloeber.compiler.cpp.sketch.option.incpath.359710635" name="Include Paths (-I)" superClass="io.sloeber.compiler.cpp.sketch.option.incpath" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/core/core}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/core/variant}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/DallasTemperature}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/ArduinoJson-5.x/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/ArduinoModbus_Controllino/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/ArduinoRS485_Controllino/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/CONTROLLINO_Library}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/Ethernet/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/NTPClient}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/OneWire}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/Simple-Utility-Library/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/Simple-WebServer-Library/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/SoftwareSerial/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/SPI/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/EEPROM/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/TrueRandom}&quot;"/>
+								</option>
+								<inputType id="io.sloeber.compiler.cpp.sketch.input.1466349140" name="CPP source files" superClass="io.sloeber.compiler.cpp.sketch.input"/>
+							</tool>
+							<tool commandLinePattern="${recipe.c.o.pattern.1} ${FLAGS} -D__IN_ECLIPSE__=1 ${INPUTS} ${recipe.c.o.pattern.2} -o ${OUTPUT} ${recipe.c.o.pattern.3} ${sloeber.extra.compile} ${sloeber.extra.c.compile} ${sloeber.extra.all}" id="io.sloeber.tool.compiler.c.1234399327" name="Arduino C Compiler" superClass="io.sloeber.tool.compiler.c">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="io.sloeber.compiler.c.sketch.option.incpath.1240780182" name="Include Paths (-I)" superClass="io.sloeber.compiler.c.sketch.option.incpath" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/core/core}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/core/variant}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/DallasTemperature}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/ArduinoJson-5.x/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/ArduinoModbus_Controllino/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/ArduinoRS485_Controllino/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/CONTROLLINO_Library}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/Ethernet/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/NTPClient}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/OneWire}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/Simple-Utility-Library/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/Simple-WebServer-Library/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/SoftwareSerial/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/SPI/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/EEPROM/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/TrueRandom}&quot;"/>
+								</option>
+								<inputType id="io.sloeber.compiler.c.sketch.input.117820869" name="C Source Files" superClass="io.sloeber.compiler.c.sketch.input"/>
+							</tool>
+							<tool id="io.sloeber.tool.sketch.compiler.s.236157576" name="Arduino Assembler" superClass="io.sloeber.tool.sketch.compiler.s">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="io.sloeber.compiler.asm.sketch.option.incpath.1211726278" name="Include Paths (-I)" superClass="io.sloeber.compiler.asm.sketch.option.incpath" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/core/core}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/core/variant}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/DallasTemperature}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/ArduinoJson-5.x/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/ArduinoModbus_Controllino/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/ArduinoRS485_Controllino/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/CONTROLLINO_Library}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/Ethernet/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/NTPClient}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/OneWire}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/Simple-Utility-Library/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/Simple-WebServer-Library/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/SoftwareSerial/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/SPI/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/EEPROM/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/LeafController/libraries/TrueRandom}&quot;"/>
+								</option>
+								<inputType id="io.sloeber.compiler.S.sketch.input.2041364643" name="Assembly source files" superClass="io.sloeber.compiler.S.sketch.input"/>
+							</tool>
+							<tool id="io.sloeber.tool.ar.639817479" name="Arduino archiver" superClass="io.sloeber.tool.ar"/>
+							<tool id="io.sloeber.tool.combine.1611404754" name="Arduino combiner" superClass="io.sloeber.tool.combine"/>
+							<tool id="io.sloeber.tool.objcopy.eep.71297618" name="Arduino tool objcopy command" superClass="io.sloeber.tool.objcopy.eep"/>
+							<tool id="io.sloeber.tool.size.1192850759" name="Arduino tool Print Size" superClass="io.sloeber.tool.size"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="libraries/CONTROLLINO/MAXI|libraries/CONTROLLINO/MAXI Automation|libraries/CONTROLLINO/Bootloaders|libraries/CONTROLLINO/Boards|libraries/CONTROLLINO/MEGA|libraries/CONTROLLINO/Common|libraries/CONTROLLINO/MINI|libraries/OneWire/docs|libraries/Simple-WebServer-Library/lib|libraries/Simple-Utility-Library/lib|libraries/CONTROLLINO_Library/Common|libraries/CONTROLLINO_Library/MAXI|libraries/CONTROLLINO_Library/MEGA|libraries/CONTROLLINO_Library/Bootloaders|libraries/CONTROLLINO_Library/MAXI Automation|libraries/CONTROLLINO_Library/MINI|libraries/CONTROLLINO_Library/Boards|libraries/Simple-Utility-Library-for-Arduino/lib|libraries/ArduinoJson-5.x/scripts|libraries/ArduinoJson-5.x/fuzzing|libraries/ArduinoJson-5.x/.github|Simple_HTTP_Relay_JSON.cpp|libraries/ArduinoJson/scripts|libraries/ArduinoJson/fuzzing|libraries/Simple-WebServer-Library-for-Arduino/lib|libraries/Simple-Utility-Library-for-Arduino-master/lib|libraries/CONTROLLINO_Library-master/MINI|libraries/CONTROLLINO_Library-master/MEGA|libraries/CONTROLLINO_Library-master/MAXI Automation|libraries/CONTROLLINO_Library-master/MAXI|libraries/CONTROLLINO_Library-master/Common|libraries/CONTROLLINO_Library-master/Bootloaders|libraries/CONTROLLINO_Library-master/Boards|libraries/OneWire/util|libraries/?*/**/?xamples/**|libraries/?*/**/?xtras/**|libraries/?*/**/test*/**|libraries/?*/**/third-party/**|libraries/**/._*|libraries/?*/utility/*/*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="LeafController.null.738161101" name="LeafController"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/LeafController"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+</cproject>

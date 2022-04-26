@@ -1,4 +1,4 @@
-1) 	edit file /etc/netplan.yaml and in br0 disable DHCP and enable a static IP address
+1) 	edit file /etc/netplan/network.yaml and in br0 disable DHCP and enable a static IP address
 
 		network:
 		  bridges:
@@ -35,14 +35,14 @@
 
 
 
-=====================================  /etc/netplan.yaml
+=====================================  /etc/netplan/network.yaml
 
 
 
 network:
   bridges:
     br0:
-      addresses: [$0/21]
+      addresses: [STATIC_IP_ADDRESS/21]
       gateway4: 10.11.8.1
       dhcp4: false
       interfaces:
@@ -87,3 +87,18 @@ network:
 
 
 
+============================================
+
+STATIC_IP_ADDRESS = $1
+
+cp network.yaml.template network.yaml.($STATIC_IP_ADDRESS)
+
+sed -i 's/STATIC_IP_ADDRESS/$STATIC_IP_ADDRESS/' network.yaml.($STATIC_IP_ADDRESS)
+
+rm network.yaml
+
+cp network.yaml.($STATIC_IP_ADDRESS) network.yaml
+
+
+
+reboot

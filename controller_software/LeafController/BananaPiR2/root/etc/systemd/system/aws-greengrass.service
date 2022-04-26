@@ -1,0 +1,14 @@
+[Unit]
+Description=AWS Greengrass Daemon
+
+[Service]
+Type=forking
+PIDFile=/var/run/greengrassd.pid
+Restart=on-failure
+ExecStart=/srv/greengrass/ggc/core/greengrassd start
+ExecReload=/srv/greengrass/ggc/core/greengrassd restart
+ExecStop=/srv/greengrass/ggc/core/greengrassd stop
+
+[Install]
+WantedBy=multi-user.target
+

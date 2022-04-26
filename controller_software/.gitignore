@@ -1,0 +1,15 @@
+.settings
+core
+libraries
+Debug
+Release
+obj
+cscope.out
+Makefile
+spec.d
+/.project
+transfer
+*_transfer
+*.tgz
+__pycache__
+

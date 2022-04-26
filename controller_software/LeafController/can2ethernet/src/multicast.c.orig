@@ -1,0 +1,124 @@
+/*
+
+multicast.c
+
+The following program sends or receives multicast packets. If invoked
+with one argument, it sends a packet containing the current time to an
+arbitrarily chosen multicast group and UDP port. If invoked with no
+arguments, it receives and prints these packets. Start it as a sender on
+just one host and as a receiver on all the other hosts
+
+*/
+
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <time.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+#include "Log.hxx"
+
+using namespace logging;
+
+static const int MCAST_PORT = 6000;
+static const char* MCAST_GROUP = "239.0.0.1";
+
+
+int initialize_mcast_sender() {
+
+    int sock = socket(AF_INET, SOCK_DGRAM, 0);
+    if (sock < 0) {
+        merr("sender socket failure");
+    }
+    return sock;
+}
+
+int mcast_send(int sock, string& message) {
+    struct sockaddr_in addr;
+    bzero((char *)&addr, sizeof(addr));
+    addr.sin_family = AF_INET;
+    addr.sin_addr.s_addr = htonl(INADDR_ANY);
+    addr.sin_port = htons(MCAST_PORT);
+    int addrlen = sizeof(addr);
+    addr.sin_addr.s_addr = inet_addr(MCAST_GROUP);
+
+    int cnt = sendto(sock, message.c_str(), message.length(), 0,
+                 (struct sockaddr *) &addr, addrlen);
+    if (cnt < 0) {
+        merr("send to multicast failed");
+    }
+    return cnt;
+}
+
+int mcast_receive(int sock, string& strMessage) {
+	char message[50];
+	struct sockaddr_in addr;
+	int addrlen;
+	
+	bzero((char *)&addr, sizeof(addr));
+    addr.sin_family = AF_INET;
+    addr.sin_addr.s_addr = htonl(INADDR_ANY);
+    addr.sin_port = htons(EXAMPLE_PORT);
+    addrlen = sizeof(addr);
+   
+      if (bind(sock, (struct sockaddr *) &addr, sizeof(addr)) < 0) {        
+         perror("bind");
+	 exit(1);
+      }    
+      mreq.imr_multiaddr.s_addr = inet_addr(EXAMPLE_GROUP);         
+      mreq.imr_interface.s_addr = htonl(INADDR_ANY);         
+      if (setsockopt(sock, IPPROTO_IP, IP_ADD_MEMBERSHIP,
+		     &mreq, sizeof(mreq)) < 0) {
+	 perror("setsockopt mreq");
+	 exit(1);
+      } 
+    int cnt = recvfrom(sock, message, sizeof(message), 0,
+                   (struct sockaddr *) &addr, (socklen_t*)&addrlen);
+    if (cnt < 0) {
+        perror("recvfrom");
+        exit(1);
+    } else if (cnt == 0) {
+        break;
+    }
+    string tmp(message);
+    strMessage.swap(tmp); tmp.clear();
+    
+    mdebug(string(inet_ntoa(addr.sin_addr)) + ":" + strMessage);
+}
+
+void initialize_mcast_receiver() {
+    struct sockaddr_in addr;
+    int addrlen, sock, cnt;
+    struct ip_mreq mreq;
+    
+
+    /* set up socket */
+    sock = socket(AF_INET, SOCK_DGRAM, 0);
+    if (sock < 0) {
+        perror("socket");
+        exit(1);
+    }
+    bzero((char *)&addr, sizeof(addr));
+    addr.sin_family = AF_INET;
+    addr.sin_addr.s_addr = htonl(INADDR_ANY);
+    addr.sin_port = htons(MCAST_PORT);
+    addrlen = sizeof(addr);
+
+
+    /* receive */
+    if (bind(sock, (struct sockaddr *) &addr, sizeof(addr)) < 0) {
+        perror("bind");
+        exit(1);
+    }
+    mreq.imr_multiaddr.s_addr = inet_addr(MCAST_GROUP);
+    mreq.imr_interface.s_addr = htonl(INADDR_ANY);
+    if (setsockopt(sock, IPPROTO_IP, IP_ADD_MEMBERSHIP,
+                   &mreq, sizeof(mreq)) < 0) {
+        perror("setsockopt mreq");
+        exit(1);
+    }
+}

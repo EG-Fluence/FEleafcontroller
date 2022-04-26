@@ -1,0 +1,33 @@
+network:
+  bridges:
+    br0:
+      dhcp4: yes
+      addresses: [ ]
+      interfaces:
+      - wan
+      - lan3
+    br1:
+      dhcp4: yes
+      addresses: [ ]
+      interfaces:
+      - lan0
+      - lan1
+      - lan2
+  ethernets:
+    eth0:
+      dhcp4: false
+    eth1:
+      dhcp4: false
+    lan0:
+      dhcp4: false
+    lan1:
+      dhcp4: false
+    lan2:
+      dhcp4: false
+    lan3:
+      dhcp4: false
+    wan:
+      dhcp4: false
+  renderer: networkd
+  version: 2
+

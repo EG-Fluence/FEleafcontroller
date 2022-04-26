@@ -1,0 +1,9 @@
+#!/bin/sh
+
+CURRENT_DIR=${1:-$(pwd)}
+CALLED_DIR=`dirname -- $0`
+BASE_DIR=${CURRENT_DIR}
+
+cat ${BASE_DIR}/testdata_leaf2_west_no_cisco.json
+#cat testdata_leaf2.json
+ 

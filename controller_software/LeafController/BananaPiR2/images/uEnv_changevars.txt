@@ -1,0 +1,3 @@
+loadcustomenv=env default -a;setenv boot_normal 'if run loadbootenv; then echo Loaded environment from ${bootenv}; env import -t ${scriptaddr} ${filesize}; fi; run uenvcmd; fatload mmc 0:1 ${loadaddr} ${bpi}/${board}/${service}/${kernel}; bootm';saveenv;setenv boot10 'mmc init 0; run boot_normal; bootm;';saveenv;setenv loadbootenv 'fatload ${device} 0:1 ${scriptaddr} ${bpi}/${board}/${service}/${bootenv} || fatload ${device} $0:1 ${scriptaddr} ${bootenv}';saveenv;reset
+
+uenvcmd=run loadcustomenv

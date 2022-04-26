@@ -1,0 +1,16 @@
+[Unit]
+Description=LeafController / SelfConfiguration
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=3
+WorkingDirectory=/usr/local/bin/fluence_selfconfiguration-server
+ExecStart=/bin/bash /usr/local/bin/fluence_selfconfiguration-server.sh
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
