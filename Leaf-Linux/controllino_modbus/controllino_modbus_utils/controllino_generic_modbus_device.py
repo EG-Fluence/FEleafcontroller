@@ -29,6 +29,9 @@ def singleRead(client, regType, unitId, startAddress, numberOfRegs, dataFrame):
 
 
 def readFullRegister(client, regType, unitId, dataFrame):
+
+    print("===================================== readFullRegister BEGIN")
+
     # for every read-try implement heartbeat
     try:
         dataFrame.loc['heartbeat', 'value'] = (dataFrame.loc['heartbeat', 'value'] + 1)%65536
@@ -140,6 +143,7 @@ def readFullRegister(client, regType, unitId, dataFrame):
     except builtins.KeyError:
         pass
 
+    print("===================================== readFullRegister END\r\n\r")
 
 
 

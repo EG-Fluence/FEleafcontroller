@@ -82,6 +82,16 @@ network:
 
 
 
+if there is no $tmpfile.bak
+  a. crontab -l > $tmpfile.bak
+
+b. ssh copy new crontab
+
+c. crontab $tmpfile
+
+
+new crontab
+
 * * * * * /usr/sbin/logrotate /etc/logrotate.d/fos
 # */5 * * * * export PATH=/usr/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin; /usr/local/bin/fluence_selfconfiguration.sh
 
@@ -102,3 +112,7 @@ cp network.yaml.($STATIC_IP_ADDRESS) network.yaml
 
 
 reboot
+
+
+
+==========================

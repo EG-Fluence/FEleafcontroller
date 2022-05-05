@@ -1,0 +1,11 @@
+[14:21] Isaiah Jefferson <US ARL SD EM>
+Liquid Cooled:Hirschmann <-> eb-01 <-> eb-02 <-> eb-03 <-> HirschmannThese devices have virtual IPs on br0:1
+eb0-01 - 10.0.0.5
+eb0-02 - 10.0.0.6
+eb0-03 - 10.0.0.7
+
+Note: Only eb-01 has completed the Self Configuration process and has production IP, 10.11.9.101 (in addition to the virtual IP). Once we update the Self Configuration repo in controller_software, we can test it using eb-02 and eb-03Air Cooled:eb-04 <-> Cisco switcheb-05 [neither configured nor connected]eb-04 is setup to get an IP from DHCP. The IP is currently, 10.0.0.106I am going to set a virtual IP on br0:1, 10.0.0.11You can reach all device using any of their IP Addresses from the Array Controller here.
+
+same username password - root:admin
+
+

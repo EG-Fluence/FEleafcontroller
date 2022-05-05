@@ -42,7 +42,7 @@ https://fluenceenergy.sharepoint.com/sites/ArchitectureandSoftwareEngineering/Sh
 =====================================================================
 
 
-If FLUENCE_INITIALIZED is present it needs to be removed
+If FLUENCE_INITIALIZED is present it needs to be removed (see below)
 
 
 Connect to ESPRESSObin-Ultra with a console cable (usb micro to usb a)
@@ -70,10 +70,10 @@ mount mount /dev/mmcblk0p1 /mnt
 Remove FLUENCE_INITIALIZED
 rm /mnt/etc/FLUENCE_INITIALIZED
 
-umount eMMC
+Unmount eMMC
 umount /mnt
 
-umount usb
+Unmount usb
 umount /media
 
 Reboot
@@ -84,4 +84,23 @@ reboot
 =====================================================================
 
 
+Connect to ESPRESSObin-Ultra with a console cable (usb micro to usb a)
+
+Install USB into ESPRESSObin-Ultra
+
+Boot ESPRESSObin-Ultra
+
+Hit any key to stop autoboot (you have a few seconds)
+usb reset; fatload usb 0 $loadaddr recovery.bin; source $loadaddr
+
+After boot completed - press enter - to see command prompt
+
+Mount usb
+mount /dev/sda1 /media
+
+Run dd command to copy the eMMC disk to the USB disk. Note: This will take a long time
 dd if=/dev/mmcblk0 | gzip > /media/ebinx-fluence-emmc.img.gz ; sync
+
+Unmount usb
+umount /media
+
