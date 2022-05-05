@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-if [ $# -eq 0 ]; then
+if [ $# -ne 1 ]; then
     echo "Usage:"
     echo "changeConfig-remote.sh <IP address>"
     exit 1
@@ -10,7 +10,6 @@ fi
 STATIC_IP_ADDRESS=$1
 
 echo
-echo "---------------------------------------------"
 echo "Changing the Configuration of $STATIC_IP_ADDRESS"
 echo
 
@@ -72,8 +71,6 @@ crontab $crontab_file_name
 
 echo
 echo "Configuration of $1 changed."
-echo "---------------------------------------------"
-echo
 
 
 exit 0
