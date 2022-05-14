@@ -2,7 +2,12 @@
 
 if [ $# -ne 1 ]; then
     echo "Usage:"
-    echo "update-remote.sh <Cube Type>"
+    echo "update-remote.sh <Cube type>"
+    echo "  <Cube type>"
+    echo "    AC    = Air    Cooled"
+    echo "    LC-LD = Liquid Cooled - Long  Duration"
+    echo "    LC-SD = Liquid Cooled - Short Duration"
+    echo
     exit 1
 fi
 

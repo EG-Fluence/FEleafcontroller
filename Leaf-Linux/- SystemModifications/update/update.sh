@@ -2,7 +2,12 @@
 
 if [ $# -ne 3 ]; then
     echo "Usage:"
-    echo "update.sh <IP address> <root password> <cube type>"
+    echo "update.sh <IP address> <root password> <Cube type>"
+    echo "  <Cube type>"
+    echo "    AC    = Air    Cooled"
+    echo "    LC-LD = Liquid Cooled - Long  Duration"
+    echo "    LC-SD = Liquid Cooled - Short Duration"
+    echo
     exit 1
 fi
 
