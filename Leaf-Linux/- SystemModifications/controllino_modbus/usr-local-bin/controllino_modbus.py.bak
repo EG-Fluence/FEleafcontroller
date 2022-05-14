@@ -1374,7 +1374,6 @@ def loopTransferDataClientToServer(log, settings, context):
             os._exit(1)
 
         # time.sleep(settings.sleepTime)  # TODO  doesn't seem to make much effect...
-        time.sleep(1)    # sleep for 1 second otherwise errors are returned from singleRead...
 
         print("ReadMessages_counter = " + str(variables.ReadMessages_counter) + "    " +
               "ReadMessages_error_counter = " + str(variables.ReadMessages_error_counter)

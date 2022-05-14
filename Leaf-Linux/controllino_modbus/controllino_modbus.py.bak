@@ -1692,7 +1692,7 @@ def main():
     settings.MAX_SOFTWARE_VERSION_CHILLER = 4245
     settings.MAX_SOFTWARE_VERSION_HVAC = 100
     settings.OSENSA_ALARM_RESET_TEMP = 90
-    settings.MODBUS_TIMEOUT = 1
+    settings.MODBUS_TIMEOUT = 0.1
 
     print('Starting Script')
 
