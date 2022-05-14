@@ -1,0 +1,12 @@
+2:34:14 PM-> objList count = 0  LoadIO tDA1P1R1
+2:34:23 PM-> shutdown objList count = 1  RemovePlugIn tDA1P1R1
+2:34:23 PM-> shutdown objList count = 0
+2:35:09 PM-> objList count = 0  LoadIO tDA1P1R1
+2:38:25 PM-> shutdown objList count = 1  RemovePlugIn tDA1P1R1
+2:38:25 PM-> shutdown objList count = 0
+2:46:44 PM-> objList count = 0  LoadIO tDA1P1R1
+2:48:05 PM-> shutdown objList count = 1  RemovePlugIn tDA1P1R1
+2:48:05 PM-> shutdown objList count = 0
+2:48:14 PM-> objList count = 0  LoadIO tDA1P1R1
+2:58:27 PM-> shutdown objList count = 1  RemovePlugIn tDA1P1R1
+2:58:27 PM-> shutdown objList count = 0

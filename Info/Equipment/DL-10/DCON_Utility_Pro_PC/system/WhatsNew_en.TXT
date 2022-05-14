@@ -1,0 +1,54 @@
+Search function:
+	Default: from start address to end address
+	Search RU-87PN Addr. Mode: (start address +128) --> start address --> (start address +128 + 1) --> start address + 1 etc.
+	
+Configure I/O module:
+	1. It can configure multiple modules on search list. 
+	   For example,it can configure and test the analog data for I-7024 UI and I-7017 UI at the same time.
+	   For Version less than V3, it can only configure one module at a time.
+	   
+	2. Commands log and export commands table	
+	   This function is especially useful for Modules with modbus protocol,it will save command tabel at DCON_Utility_Pro\modbus\
+	   the talbe format as below.
+	  		
+		********************************[DO_Registers]********************************
+		00266 = GET_TEMPERATURE_DISPLAY_FORMAT
+		00268 = GET_MODBUS_DATAFORMAT		
+		
+		********************************[AI_Registers]********************************
+		30000 = READ_CH0_AI
+		30001 = READ_CH1_AI
+		30002 = READ_CH2_AI
+		30003 = READ_CH3_AI
+		30004 = READ_CH4_AI
+		30005 = READ_CH5_AI
+		30006 = READ_CH6_AI
+		30007 = READ_CH7_AI
+		
+	3. Remote I/O quick configuration : (includes I-7K/M-7K/I-87K/tM series)
+	   This function can show and save the configutaions for above modules in offline mode. 
+	   If there are large amount of the same modules with the same configurations (Communication parameters are editable)
+	   It can configure the above modules in INIT* to GND state quickly, and can save much time.
+	
+	4. Terminal Command line can find the command list with to look up the user manual
+	   If want to test the I/O modules with DCON or Modbus commands,it should find the user manual to find the commands.
+	   Terminal Command line can find the command list according to module ID and protocol, 
+	   if assign correct address,it will show correct command in command line.
+	   
+	5. RU-87PN offline configuration :
+	   This function can show the configutaions for I-87K modules in offline mode, that is we can show the configration without real module.
+	   This also can generate the configration file for RU-87PN/USB-87PN/ET-87PN offline.
+	   
+	6. Save and Restall the backplane I-87K modules on PAC system. (WP-8000, XP-8000 series)
+	   For most of I-87K modules on PAC system, they need to configure the modules previous.
+	   We can use this fuction to save the configurations for I-87K module on PAC to file.
+	   If one of the I-87K modules is damaged, and needs to replace a new one, use this function to restall the configrations from previous file.
+	   
+	7. Language:
+	   Support multi-language, default English, Tranditional Chinese, German, and will increase more languages in future.
+	   
+	8. FAQ list
+	   We will collect most freqently ask qustions in Specific Topics, it will be helpful in trouble shooting.   
+	
+	
+

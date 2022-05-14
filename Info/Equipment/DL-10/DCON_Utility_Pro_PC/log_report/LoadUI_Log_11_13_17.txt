@@ -1,0 +1,848 @@
+5:13:59 PM-> 01H
+5:13:59 PM-> 7
+5:13:59 PM-> RF Channel
+5:13:59 PM-> RF Pan ID
+5:13:59 PM-> Reverse DO State
+5:13:59 PM-> ms
+5:13:59 PM-> Min. Half Pulse Width
+5:13:59 PM-> RF Power
+5:13:59 PM-> Enable ZT Software Configuration
+5:13:59 PM-> 0
+5:13:59 PM-> [00H]
+5:13:59 PM-> Response Delay
+5:13:59 PM-> Parity (INIT*)
+5:13:59 PM-> Checksum (INIT*)
+5:13:59 PM-> Baud Rate (INIT*)
+5:13:59 PM-> Protocol (INIT*)
+5:13:59 PM-> Address
+5:13:59 PM-> 01H
+5:13:59 PM-> 7
+5:13:59 PM-> RF Channel
+5:13:59 PM-> RF Pan ID
+5:13:59 PM-> Reverse DO State
+5:13:59 PM-> ms
+5:13:59 PM-> Min. Half Pulse Width
+5:13:59 PM-> RF Power
+5:13:59 PM-> Enable ZT Software Configuration
+5:13:59 PM-> 0
+5:13:59 PM-> [00H]
+5:13:59 PM-> Response Delay
+5:13:59 PM-> Parity (INIT*)
+5:13:59 PM-> Checksum (INIT*)
+5:13:59 PM-> Baud Rate (INIT*)
+5:13:59 PM-> Protocol (INIT*)
+5:13:59 PM-> Address
+5:13:59 PM-> Type Code
+5:13:59 PM-> AI Value
+5:13:59 PM-> Set all channels as CH0
+5:13:59 PM-> Sample Rate
+5:13:59 PM-> CH:00
+5:13:59 PM-> CH:0
+5:13:59 PM-> CH:01
+5:13:59 PM-> CH:1
+5:13:59 PM-> CH:02
+5:13:59 PM-> CH:2
+5:13:59 PM-> CH:03
+5:13:59 PM-> CH:3
+5:13:59 PM-> 01H
+5:13:59 PM-> 7
+5:13:59 PM-> RF Channel
+5:13:59 PM-> RF Pan ID
+5:13:59 PM-> Reverse DO State
+5:13:59 PM-> ms
+5:13:59 PM-> Min. Half Pulse Width
+5:13:59 PM-> RF Power
+5:13:59 PM-> Enable ZT Software Configuration
+5:13:59 PM-> 0
+5:13:59 PM-> [00H]
+5:13:59 PM-> Response Delay
+5:13:59 PM-> Parity (INIT*)
+5:13:59 PM-> Checksum (INIT*)
+5:13:59 PM-> Baud Rate (INIT*)
+5:13:59 PM-> Protocol (INIT*)
+5:13:59 PM-> Address
+5:13:59 PM-> Type Code
+5:13:59 PM-> AI Value
+5:13:59 PM-> Set all channels as CH0
+5:13:59 PM-> Sample Rate
+5:13:59 PM-> CH:00
+5:13:59 PM-> CH:0
+5:13:59 PM-> CH:01
+5:13:59 PM-> CH:1
+5:13:59 PM-> CH:02
+5:13:59 PM-> CH:2
+5:13:59 PM-> CH:03
+5:13:59 PM-> CH:3
+5:13:59 PM-> WDT Timeout Count
+5:13:59 PM-> Enable Output When WDT Timeout
+5:13:59 PM-> Set Timer
+5:13:59 PM-> (0.1 ~ 25.5 sec)
+5:13:59 PM-> Reset Watchdog Status
+5:13:59 PM-> Auto Send Host OK
+5:13:59 PM-> Enable WDT
+5:13:59 PM-> WDT Timeout
+5:13:59 PM-> 01H
+5:13:59 PM-> 7
+5:13:59 PM-> RF Channel
+5:13:59 PM-> RF Pan ID
+5:13:59 PM-> Reverse DO State
+5:13:59 PM-> ms
+5:13:59 PM-> Min. Half Pulse Width
+5:13:59 PM-> RF Power
+5:13:59 PM-> Enable ZT Software Configuration
+5:13:59 PM-> 0
+5:13:59 PM-> [00H]
+5:13:59 PM-> Response Delay
+5:13:59 PM-> Parity (INIT*)
+5:13:59 PM-> Checksum (INIT*)
+5:13:59 PM-> Baud Rate (INIT*)
+5:13:59 PM-> Protocol (INIT*)
+5:13:59 PM-> Address
+5:13:59 PM-> Type Code
+5:13:59 PM-> AI Value
+5:13:59 PM-> Set all channels as CH0
+5:13:59 PM-> Sample Rate
+5:13:59 PM-> CH:00
+5:13:59 PM-> CH:0
+5:13:59 PM-> CH:01
+5:13:59 PM-> CH:1
+5:13:59 PM-> CH:02
+5:13:59 PM-> CH:2
+5:13:59 PM-> CH:03
+5:13:59 PM-> CH:3
+5:13:59 PM-> WDT Timeout Count
+5:13:59 PM-> Enable Output When WDT Timeout
+5:13:59 PM-> Set Timer
+5:13:59 PM-> (0.1 ~ 25.5 sec)
+5:13:59 PM-> Reset Watchdog Status
+5:13:59 PM-> Auto Send Host OK
+5:13:59 PM-> Enable WDT
+5:13:59 PM-> WDT Timeout
+5:13:59 PM-> Reverse DI State  (INIT*)
+5:13:59 PM-> DI Bit Status
+5:13:59 PM-> DI Value
+5:13:59 PM-> 01H
+5:13:59 PM-> 7
+5:13:59 PM-> RF Channel
+5:13:59 PM-> RF Pan ID
+5:13:59 PM-> Reverse DO State
+5:13:59 PM-> ms
+5:13:59 PM-> Min. Half Pulse Width
+5:13:59 PM-> RF Power
+5:13:59 PM-> Enable ZT Software Configuration
+5:13:59 PM-> 0
+5:13:59 PM-> [00H]
+5:13:59 PM-> Response Delay
+5:13:59 PM-> Parity (INIT*)
+5:13:59 PM-> Checksum (INIT*)
+5:13:59 PM-> Baud Rate (INIT*)
+5:13:59 PM-> Protocol (INIT*)
+5:13:59 PM-> Address
+5:13:59 PM-> Type Code
+5:13:59 PM-> AI Value
+5:13:59 PM-> Set all channels as CH0
+5:13:59 PM-> Sample Rate
+5:13:59 PM-> CH:00
+5:13:59 PM-> CH:0
+5:13:59 PM-> CH:01
+5:13:59 PM-> CH:1
+5:13:59 PM-> CH:02
+5:13:59 PM-> CH:2
+5:13:59 PM-> CH:03
+5:13:59 PM-> CH:3
+5:13:59 PM-> WDT Timeout Count
+5:13:59 PM-> Enable Output When WDT Timeout
+5:13:59 PM-> Set Timer
+5:13:59 PM-> (0.1 ~ 25.5 sec)
+5:13:59 PM-> Reset Watchdog Status
+5:13:59 PM-> Auto Send Host OK
+5:13:59 PM-> Enable WDT
+5:13:59 PM-> WDT Timeout
+5:13:59 PM-> Reverse DI State  (INIT*)
+5:13:59 PM-> DI Bit Status
+5:13:59 PM-> DI Value
+5:13:59 PM-> Low Latch
+5:13:59 PM-> High Latch
+5:13:59 PM-> Clear DI Latch
+5:13:59 PM-> 01H
+5:13:59 PM-> 7
+5:13:59 PM-> RF Channel
+5:13:59 PM-> RF Pan ID
+5:13:59 PM-> Reverse DO State
+5:13:59 PM-> ms
+5:13:59 PM-> Min. Half Pulse Width
+5:13:59 PM-> RF Power
+5:13:59 PM-> Enable ZT Software Configuration
+5:13:59 PM-> 0
+5:13:59 PM-> [00H]
+5:13:59 PM-> Response Delay
+5:13:59 PM-> Parity (INIT*)
+5:13:59 PM-> Checksum (INIT*)
+5:13:59 PM-> Baud Rate (INIT*)
+5:13:59 PM-> Protocol (INIT*)
+5:13:59 PM-> Address
+5:13:59 PM-> Type Code
+5:13:59 PM-> AI Value
+5:13:59 PM-> Set all channels as CH0
+5:13:59 PM-> Sample Rate
+5:13:59 PM-> CH:00
+5:13:59 PM-> CH:0
+5:13:59 PM-> CH:01
+5:13:59 PM-> CH:1
+5:13:59 PM-> CH:02
+5:13:59 PM-> CH:2
+5:13:59 PM-> CH:03
+5:13:59 PM-> CH:3
+5:13:59 PM-> WDT Timeout Count
+5:13:59 PM-> Enable Output When WDT Timeout
+5:13:59 PM-> Set Timer
+5:13:59 PM-> (0.1 ~ 25.5 sec)
+5:13:59 PM-> Reset Watchdog Status
+5:13:59 PM-> Auto Send Host OK
+5:13:59 PM-> Enable WDT
+5:13:59 PM-> WDT Timeout
+5:13:59 PM-> Reverse DI State  (INIT*)
+5:13:59 PM-> DI Bit Status
+5:13:59 PM-> DI Value
+5:13:59 PM-> Low Latch
+5:13:59 PM-> High Latch
+5:13:59 PM-> Clear DI Latch
+5:13:59 PM-> DI Counter
+5:13:59 PM-> CH: 00
+5:13:59 PM-> Clear
+5:13:59 PM-> CH: 01
+5:13:59 PM-> 01H
+5:13:59 PM-> 7
+5:13:59 PM-> RF Channel
+5:13:59 PM-> RF Pan ID
+5:13:59 PM-> Reverse DO State
+5:13:59 PM-> ms
+5:13:59 PM-> Min. Half Pulse Width
+5:13:59 PM-> RF Power
+5:13:59 PM-> Enable ZT Software Configuration
+5:13:59 PM-> 0
+5:13:59 PM-> [00H]
+5:13:59 PM-> Response Delay
+5:13:59 PM-> Parity (INIT*)
+5:13:59 PM-> Checksum (INIT*)
+5:13:59 PM-> Baud Rate (INIT*)
+5:13:59 PM-> Protocol (INIT*)
+5:13:59 PM-> Address
+5:13:59 PM-> Type Code
+5:13:59 PM-> AI Value
+5:13:59 PM-> Set all channels as CH0
+5:13:59 PM-> Sample Rate
+5:13:59 PM-> CH:00
+5:13:59 PM-> CH:0
+5:13:59 PM-> CH:01
+5:13:59 PM-> CH:1
+5:13:59 PM-> CH:02
+5:13:59 PM-> CH:2
+5:13:59 PM-> CH:03
+5:13:59 PM-> CH:3
+5:13:59 PM-> WDT Timeout Count
+5:13:59 PM-> Enable Output When WDT Timeout
+5:13:59 PM-> Set Timer
+5:13:59 PM-> (0.1 ~ 25.5 sec)
+5:13:59 PM-> Reset Watchdog Status
+5:13:59 PM-> Auto Send Host OK
+5:13:59 PM-> Enable WDT
+5:13:59 PM-> WDT Timeout
+5:13:59 PM-> Reverse DI State  (INIT*)
+5:13:59 PM-> DI Bit Status
+5:13:59 PM-> DI Value
+5:13:59 PM-> Low Latch
+5:13:59 PM-> High Latch
+5:13:59 PM-> Clear DI Latch
+5:13:59 PM-> DI Counter
+5:13:59 PM-> CH: 00
+5:13:59 PM-> Clear
+5:13:59 PM-> CH: 01
+5:13:59 PM-> Alarm Mode
+5:13:59 PM-> Low Alarm Limit
+5:13:59 PM-> High Alarm Limit
+5:13:59 PM-> Set Alarm
+5:13:59 PM-> 01H
+5:13:59 PM-> 7
+5:13:59 PM-> RF Channel
+5:13:59 PM-> RF Pan ID
+5:13:59 PM-> Reverse DO State
+5:13:59 PM-> ms
+5:13:59 PM-> Min. Half Pulse Width
+5:13:59 PM-> RF Power
+5:13:59 PM-> Enable ZT Software Configuration
+5:13:59 PM-> 0
+5:13:59 PM-> [00H]
+5:13:59 PM-> Response Delay
+5:13:59 PM-> Parity (INIT*)
+5:13:59 PM-> Checksum (INIT*)
+5:13:59 PM-> Baud Rate (INIT*)
+5:13:59 PM-> Protocol (INIT*)
+5:13:59 PM-> Address
+5:13:59 PM-> Type Code
+5:13:59 PM-> AI Value
+5:13:59 PM-> Set all channels as CH0
+5:13:59 PM-> Sample Rate
+5:13:59 PM-> CH:00
+5:13:59 PM-> CH:0
+5:13:59 PM-> CH:01
+5:13:59 PM-> CH:1
+5:13:59 PM-> CH:02
+5:13:59 PM-> CH:2
+5:13:59 PM-> CH:03
+5:13:59 PM-> CH:3
+5:13:59 PM-> WDT Timeout Count
+5:13:59 PM-> Enable Output When WDT Timeout
+5:13:59 PM-> Set Timer
+5:13:59 PM-> (0.1 ~ 25.5 sec)
+5:13:59 PM-> Reset Watchdog Status
+5:13:59 PM-> Auto Send Host OK
+5:13:59 PM-> Enable WDT
+5:13:59 PM-> WDT Timeout
+5:13:59 PM-> Reverse DI State  (INIT*)
+5:13:59 PM-> DI Bit Status
+5:13:59 PM-> DI Value
+5:13:59 PM-> Low Latch
+5:13:59 PM-> High Latch
+5:13:59 PM-> Clear DI Latch
+5:13:59 PM-> DI Counter
+5:13:59 PM-> CH: 00
+5:13:59 PM-> Clear
+5:13:59 PM-> CH: 01
+5:13:59 PM-> Alarm Mode
+5:13:59 PM-> Low Alarm Limit
+5:13:59 PM-> High Alarm Limit
+5:13:59 PM-> Set Alarm
+5:13:59 PM-> Low Alarm Status
+5:13:59 PM-> High Alarm Status
+5:13:59 PM-> DO Bit Status
+5:13:59 PM-> Read Safe Value
+5:13:59 PM-> Read Power On Value
+5:13:59 PM-> Read DO
+5:13:59 PM-> Set to [Safe Value]
+5:13:59 PM-> Set to [Power On Value]
+5:13:59 PM-> DO0
+5:13:59 PM-> DO1
+5:14:00 PM-> 01H
+5:14:00 PM-> 7
+5:14:00 PM-> RF Channel
+5:14:00 PM-> RF Pan ID
+5:14:00 PM-> Reverse DO State
+5:14:00 PM-> ms
+5:14:00 PM-> Min. Half Pulse Width
+5:14:00 PM-> RF Power
+5:14:00 PM-> Enable ZT Software Configuration
+5:14:00 PM-> 0
+5:14:00 PM-> [00H]
+5:14:00 PM-> Response Delay
+5:14:00 PM-> Parity (INIT*)
+5:14:00 PM-> Checksum (INIT*)
+5:14:00 PM-> Baud Rate (INIT*)
+5:14:00 PM-> Protocol (INIT*)
+5:14:00 PM-> Address
+5:14:00 PM-> Type Code
+5:14:00 PM-> AI Value
+5:14:00 PM-> Set all channels as CH0
+5:14:00 PM-> Sample Rate
+5:14:00 PM-> CH:00
+5:14:00 PM-> CH:0
+5:14:00 PM-> CH:01
+5:14:00 PM-> CH:1
+5:14:00 PM-> CH:02
+5:14:00 PM-> CH:2
+5:14:00 PM-> CH:03
+5:14:00 PM-> CH:3
+5:14:00 PM-> WDT Timeout Count
+5:14:00 PM-> Enable Output When WDT Timeout
+5:14:00 PM-> Set Timer
+5:14:00 PM-> (0.1 ~ 25.5 sec)
+5:14:00 PM-> Reset Watchdog Status
+5:14:00 PM-> Auto Send Host OK
+5:14:00 PM-> Enable WDT
+5:14:00 PM-> WDT Timeout
+5:14:00 PM-> Reverse DI State  (INIT*)
+5:14:00 PM-> DI Bit Status
+5:14:00 PM-> DI Value
+5:14:00 PM-> Low Latch
+5:14:00 PM-> High Latch
+5:14:00 PM-> Clear DI Latch
+5:14:00 PM-> DI Counter
+5:14:00 PM-> CH: 00
+5:14:00 PM-> Clear
+5:14:00 PM-> CH: 01
+5:14:00 PM-> Alarm Mode
+5:14:00 PM-> Low Alarm Limit
+5:14:00 PM-> High Alarm Limit
+5:14:00 PM-> Set Alarm
+5:14:00 PM-> Low Alarm Status
+5:14:00 PM-> High Alarm Status
+5:14:00 PM-> DO Bit Status
+5:14:00 PM-> Read Safe Value
+5:14:00 PM-> Read Power On Value
+5:14:00 PM-> Read DO
+5:14:00 PM-> Set to [Safe Value]
+5:14:00 PM-> Set to [Power On Value]
+5:14:00 PM-> DO0
+5:14:00 PM-> DO1
+5:14:00 PM-> Configuration
+5:14:00 PM-> DSub Connector
+5:14:00 PM-> Set Module Configurations
+5:14:00 PM-> Enable Check Command Received Timeout
+5:14:00 PM-> Analog Format
+5:14:00 PM-> Sample Mode
+5:14:00 PM-> 60/50 Hz
+5:14:00 PM-> AI/DO Alarm
+5:14:00 PM-> SingleEnd
+5:14:00 PM-> Enable SingleEnded
+5:14:00 PM-> DI
+5:14:00 PM-> Host WDT
+5:14:00 PM-> Commands Log
+5:14:00 PM-> Export Commands
+5:14:00 PM-> Log All Commands
+5:14:00 PM-> Save to path\log_report\
+5:14:00 PM-> About
+5:14:00 PM-> Exit
+5:14:57 PM-> Select ID
+5:14:57 PM-> COM Port
+5:14:57 PM-> ms
+5:14:57 PM-> Response
+5:14:57 PM-> Command
+5:14:57 PM-> Address
+5:14:57 PM-> Send
+5:14:57 PM-> Timeout
+5:14:57 PM-> Format
+5:14:57 PM-> Checksum
+5:14:57 PM-> Baud Rate
+5:14:57 PM-> Protocol
+5:14:57 PM-> Save to path\log_report\
+5:14:57 PM-> Clear
+5:15:57 PM-> 01H
+5:15:57 PM-> 7
+5:15:57 PM-> RF Channel
+5:15:57 PM-> RF Pan ID
+5:15:57 PM-> Reverse DO State
+5:15:57 PM-> ms
+5:15:57 PM-> Min. Half Pulse Width
+5:15:57 PM-> RF Power
+5:15:57 PM-> Enable ZT Software Configuration
+5:15:57 PM-> 0
+5:15:57 PM-> [00H]
+5:15:57 PM-> Response Delay
+5:15:57 PM-> Parity (INIT*)
+5:15:57 PM-> Checksum (INIT*)
+5:15:57 PM-> Baud Rate (INIT*)
+5:15:57 PM-> Protocol (INIT*)
+5:15:57 PM-> Address
+5:15:57 PM-> 01H
+5:15:57 PM-> 7
+5:15:57 PM-> RF Channel
+5:15:57 PM-> RF Pan ID
+5:15:57 PM-> Reverse DO State
+5:15:57 PM-> ms
+5:15:57 PM-> Min. Half Pulse Width
+5:15:57 PM-> RF Power
+5:15:57 PM-> Enable ZT Software Configuration
+5:15:57 PM-> 0
+5:15:57 PM-> [00H]
+5:15:57 PM-> Response Delay
+5:15:57 PM-> Parity (INIT*)
+5:15:57 PM-> Checksum (INIT*)
+5:15:57 PM-> Baud Rate (INIT*)
+5:15:57 PM-> Protocol (INIT*)
+5:15:57 PM-> Address
+5:15:57 PM-> Type Code
+5:15:57 PM-> AI Value
+5:15:57 PM-> Set all channels as CH0
+5:15:57 PM-> Sample Rate
+5:15:57 PM-> CH:00
+5:15:57 PM-> CH:0
+5:15:57 PM-> CH:01
+5:15:57 PM-> CH:1
+5:15:57 PM-> CH:02
+5:15:57 PM-> CH:2
+5:15:57 PM-> CH:03
+5:15:57 PM-> CH:3
+5:15:57 PM-> 01H
+5:15:57 PM-> 7
+5:15:57 PM-> RF Channel
+5:15:57 PM-> RF Pan ID
+5:15:57 PM-> Reverse DO State
+5:15:57 PM-> ms
+5:15:57 PM-> Min. Half Pulse Width
+5:15:57 PM-> RF Power
+5:15:57 PM-> Enable ZT Software Configuration
+5:15:57 PM-> 0
+5:15:57 PM-> [00H]
+5:15:57 PM-> Response Delay
+5:15:57 PM-> Parity (INIT*)
+5:15:57 PM-> Checksum (INIT*)
+5:15:57 PM-> Baud Rate (INIT*)
+5:15:57 PM-> Protocol (INIT*)
+5:15:57 PM-> Address
+5:15:57 PM-> Type Code
+5:15:57 PM-> AI Value
+5:15:57 PM-> Set all channels as CH0
+5:15:57 PM-> Sample Rate
+5:15:57 PM-> CH:00
+5:15:57 PM-> CH:0
+5:15:57 PM-> CH:01
+5:15:57 PM-> CH:1
+5:15:57 PM-> CH:02
+5:15:57 PM-> CH:2
+5:15:57 PM-> CH:03
+5:15:57 PM-> CH:3
+5:15:57 PM-> WDT Timeout Count
+5:15:57 PM-> Enable Output When WDT Timeout
+5:15:57 PM-> Set Timer
+5:15:57 PM-> (0.1 ~ 25.5 sec)
+5:15:57 PM-> Reset Watchdog Status
+5:15:57 PM-> Auto Send Host OK
+5:15:57 PM-> Enable WDT
+5:15:57 PM-> WDT Timeout
+5:15:58 PM-> 01H
+5:15:58 PM-> 7
+5:15:58 PM-> RF Channel
+5:15:58 PM-> RF Pan ID
+5:15:58 PM-> Reverse DO State
+5:15:58 PM-> ms
+5:15:58 PM-> Min. Half Pulse Width
+5:15:58 PM-> RF Power
+5:15:58 PM-> Enable ZT Software Configuration
+5:15:58 PM-> 0
+5:15:58 PM-> [00H]
+5:15:58 PM-> Response Delay
+5:15:58 PM-> Parity (INIT*)
+5:15:58 PM-> Checksum (INIT*)
+5:15:58 PM-> Baud Rate (INIT*)
+5:15:58 PM-> Protocol (INIT*)
+5:15:58 PM-> Address
+5:15:58 PM-> Type Code
+5:15:58 PM-> AI Value
+5:15:58 PM-> Set all channels as CH0
+5:15:58 PM-> Sample Rate
+5:15:58 PM-> CH:00
+5:15:58 PM-> CH:0
+5:15:58 PM-> CH:01
+5:15:58 PM-> CH:1
+5:15:58 PM-> CH:02
+5:15:58 PM-> CH:2
+5:15:58 PM-> CH:03
+5:15:58 PM-> CH:3
+5:15:58 PM-> WDT Timeout Count
+5:15:58 PM-> Enable Output When WDT Timeout
+5:15:58 PM-> Set Timer
+5:15:58 PM-> (0.1 ~ 25.5 sec)
+5:15:58 PM-> Reset Watchdog Status
+5:15:58 PM-> Auto Send Host OK
+5:15:58 PM-> Enable WDT
+5:15:58 PM-> WDT Timeout
+5:15:58 PM-> Reverse DI State  (INIT*)
+5:15:58 PM-> DI Bit Status
+5:15:58 PM-> DI Value
+5:15:58 PM-> 01H
+5:15:58 PM-> 7
+5:15:58 PM-> RF Channel
+5:15:58 PM-> RF Pan ID
+5:15:58 PM-> Reverse DO State
+5:15:58 PM-> ms
+5:15:58 PM-> Min. Half Pulse Width
+5:15:58 PM-> RF Power
+5:15:58 PM-> Enable ZT Software Configuration
+5:15:58 PM-> 0
+5:15:58 PM-> [00H]
+5:15:58 PM-> Response Delay
+5:15:58 PM-> Parity (INIT*)
+5:15:58 PM-> Checksum (INIT*)
+5:15:58 PM-> Baud Rate (INIT*)
+5:15:58 PM-> Protocol (INIT*)
+5:15:58 PM-> Address
+5:15:58 PM-> Type Code
+5:15:58 PM-> AI Value
+5:15:58 PM-> Set all channels as CH0
+5:15:58 PM-> Sample Rate
+5:15:58 PM-> CH:00
+5:15:58 PM-> CH:0
+5:15:58 PM-> CH:01
+5:15:58 PM-> CH:1
+5:15:58 PM-> CH:02
+5:15:58 PM-> CH:2
+5:15:58 PM-> CH:03
+5:15:58 PM-> CH:3
+5:15:58 PM-> WDT Timeout Count
+5:15:58 PM-> Enable Output When WDT Timeout
+5:15:58 PM-> Set Timer
+5:15:58 PM-> (0.1 ~ 25.5 sec)
+5:15:58 PM-> Reset Watchdog Status
+5:15:58 PM-> Auto Send Host OK
+5:15:58 PM-> Enable WDT
+5:15:58 PM-> WDT Timeout
+5:15:58 PM-> Reverse DI State  (INIT*)
+5:15:58 PM-> DI Bit Status
+5:15:58 PM-> DI Value
+5:15:58 PM-> Low Latch
+5:15:58 PM-> High Latch
+5:15:58 PM-> Clear DI Latch
+5:15:58 PM-> 01H
+5:15:58 PM-> 7
+5:15:58 PM-> RF Channel
+5:15:58 PM-> RF Pan ID
+5:15:58 PM-> Reverse DO State
+5:15:58 PM-> ms
+5:15:58 PM-> Min. Half Pulse Width
+5:15:58 PM-> RF Power
+5:15:58 PM-> Enable ZT Software Configuration
+5:15:58 PM-> 0
+5:15:58 PM-> [00H]
+5:15:58 PM-> Response Delay
+5:15:58 PM-> Parity (INIT*)
+5:15:58 PM-> Checksum (INIT*)
+5:15:58 PM-> Baud Rate (INIT*)
+5:15:58 PM-> Protocol (INIT*)
+5:15:58 PM-> Address
+5:15:58 PM-> Type Code
+5:15:58 PM-> AI Value
+5:15:58 PM-> Set all channels as CH0
+5:15:58 PM-> Sample Rate
+5:15:58 PM-> CH:00
+5:15:58 PM-> CH:0
+5:15:58 PM-> CH:01
+5:15:58 PM-> CH:1
+5:15:58 PM-> CH:02
+5:15:58 PM-> CH:2
+5:15:58 PM-> CH:03
+5:15:58 PM-> CH:3
+5:15:58 PM-> WDT Timeout Count
+5:15:58 PM-> Enable Output When WDT Timeout
+5:15:58 PM-> Set Timer
+5:15:58 PM-> (0.1 ~ 25.5 sec)
+5:15:58 PM-> Reset Watchdog Status
+5:15:58 PM-> Auto Send Host OK
+5:15:58 PM-> Enable WDT
+5:15:58 PM-> WDT Timeout
+5:15:58 PM-> Reverse DI State  (INIT*)
+5:15:58 PM-> DI Bit Status
+5:15:58 PM-> DI Value
+5:15:58 PM-> Low Latch
+5:15:58 PM-> High Latch
+5:15:58 PM-> Clear DI Latch
+5:15:58 PM-> DI Counter
+5:15:58 PM-> CH: 00
+5:15:58 PM-> Clear
+5:15:58 PM-> CH: 01
+5:15:58 PM-> 01H
+5:15:58 PM-> 7
+5:15:58 PM-> RF Channel
+5:15:58 PM-> RF Pan ID
+5:15:58 PM-> Reverse DO State
+5:15:58 PM-> ms
+5:15:58 PM-> Min. Half Pulse Width
+5:15:58 PM-> RF Power
+5:15:58 PM-> Enable ZT Software Configuration
+5:15:58 PM-> 0
+5:15:58 PM-> [00H]
+5:15:58 PM-> Response Delay
+5:15:58 PM-> Parity (INIT*)
+5:15:58 PM-> Checksum (INIT*)
+5:15:58 PM-> Baud Rate (INIT*)
+5:15:58 PM-> Protocol (INIT*)
+5:15:58 PM-> Address
+5:15:58 PM-> Type Code
+5:15:58 PM-> AI Value
+5:15:58 PM-> Set all channels as CH0
+5:15:58 PM-> Sample Rate
+5:15:58 PM-> CH:00
+5:15:58 PM-> CH:0
+5:15:58 PM-> CH:01
+5:15:58 PM-> CH:1
+5:15:58 PM-> CH:02
+5:15:58 PM-> CH:2
+5:15:58 PM-> CH:03
+5:15:58 PM-> CH:3
+5:15:58 PM-> WDT Timeout Count
+5:15:58 PM-> Enable Output When WDT Timeout
+5:15:58 PM-> Set Timer
+5:15:58 PM-> (0.1 ~ 25.5 sec)
+5:15:58 PM-> Reset Watchdog Status
+5:15:58 PM-> Auto Send Host OK
+5:15:58 PM-> Enable WDT
+5:15:58 PM-> WDT Timeout
+5:15:58 PM-> Reverse DI State  (INIT*)
+5:15:58 PM-> DI Bit Status
+5:15:58 PM-> DI Value
+5:15:58 PM-> Low Latch
+5:15:58 PM-> High Latch
+5:15:58 PM-> Clear DI Latch
+5:15:58 PM-> DI Counter
+5:15:58 PM-> CH: 00
+5:15:58 PM-> Clear
+5:15:58 PM-> CH: 01
+5:15:58 PM-> Alarm Mode
+5:15:58 PM-> Low Alarm Limit
+5:15:58 PM-> High Alarm Limit
+5:15:58 PM-> Set Alarm
+5:15:58 PM-> 01H
+5:15:58 PM-> 7
+5:15:58 PM-> RF Channel
+5:15:58 PM-> RF Pan ID
+5:15:58 PM-> Reverse DO State
+5:15:58 PM-> ms
+5:15:58 PM-> Min. Half Pulse Width
+5:15:58 PM-> RF Power
+5:15:58 PM-> Enable ZT Software Configuration
+5:15:58 PM-> 0
+5:15:58 PM-> [00H]
+5:15:58 PM-> Response Delay
+5:15:58 PM-> Parity (INIT*)
+5:15:58 PM-> Checksum (INIT*)
+5:15:58 PM-> Baud Rate (INIT*)
+5:15:58 PM-> Protocol (INIT*)
+5:15:58 PM-> Address
+5:15:58 PM-> Type Code
+5:15:58 PM-> AI Value
+5:15:58 PM-> Set all channels as CH0
+5:15:58 PM-> Sample Rate
+5:15:58 PM-> CH:00
+5:15:58 PM-> CH:0
+5:15:58 PM-> CH:01
+5:15:58 PM-> CH:1
+5:15:58 PM-> CH:02
+5:15:58 PM-> CH:2
+5:15:58 PM-> CH:03
+5:15:58 PM-> CH:3
+5:15:58 PM-> WDT Timeout Count
+5:15:58 PM-> Enable Output When WDT Timeout
+5:15:58 PM-> Set Timer
+5:15:58 PM-> (0.1 ~ 25.5 sec)
+5:15:58 PM-> Reset Watchdog Status
+5:15:58 PM-> Auto Send Host OK
+5:15:58 PM-> Enable WDT
+5:15:58 PM-> WDT Timeout
+5:15:58 PM-> Reverse DI State  (INIT*)
+5:15:58 PM-> DI Bit Status
+5:15:58 PM-> DI Value
+5:15:58 PM-> Low Latch
+5:15:58 PM-> High Latch
+5:15:58 PM-> Clear DI Latch
+5:15:58 PM-> DI Counter
+5:15:58 PM-> CH: 00
+5:15:58 PM-> Clear
+5:15:58 PM-> CH: 01
+5:15:58 PM-> Alarm Mode
+5:15:58 PM-> Low Alarm Limit
+5:15:58 PM-> High Alarm Limit
+5:15:58 PM-> Set Alarm
+5:15:58 PM-> Low Alarm Status
+5:15:58 PM-> High Alarm Status
+5:15:58 PM-> DO Bit Status
+5:15:58 PM-> Read Safe Value
+5:15:58 PM-> Read Power On Value
+5:15:58 PM-> Read DO
+5:15:58 PM-> Set to [Safe Value]
+5:15:58 PM-> Set to [Power On Value]
+5:15:58 PM-> DO0
+5:15:58 PM-> DO1
+5:15:58 PM-> 01H
+5:15:58 PM-> 7
+5:15:58 PM-> RF Channel
+5:15:58 PM-> RF Pan ID
+5:15:58 PM-> Reverse DO State
+5:15:58 PM-> ms
+5:15:58 PM-> Min. Half Pulse Width
+5:15:58 PM-> RF Power
+5:15:58 PM-> Enable ZT Software Configuration
+5:15:58 PM-> 0
+5:15:58 PM-> [00H]
+5:15:58 PM-> Response Delay
+5:15:58 PM-> Parity (INIT*)
+5:15:58 PM-> Checksum (INIT*)
+5:15:58 PM-> Baud Rate (INIT*)
+5:15:58 PM-> Protocol (INIT*)
+5:15:58 PM-> Address
+5:15:58 PM-> Type Code
+5:15:58 PM-> AI Value
+5:15:58 PM-> Set all channels as CH0
+5:15:58 PM-> Sample Rate
+5:15:58 PM-> CH:00
+5:15:58 PM-> CH:0
+5:15:58 PM-> CH:01
+5:15:58 PM-> CH:1
+5:15:58 PM-> CH:02
+5:15:58 PM-> CH:2
+5:15:58 PM-> CH:03
+5:15:58 PM-> CH:3
+5:15:58 PM-> WDT Timeout Count
+5:15:58 PM-> Enable Output When WDT Timeout
+5:15:58 PM-> Set Timer
+5:15:58 PM-> (0.1 ~ 25.5 sec)
+5:15:58 PM-> Reset Watchdog Status
+5:15:58 PM-> Auto Send Host OK
+5:15:58 PM-> Enable WDT
+5:15:58 PM-> WDT Timeout
+5:15:58 PM-> Reverse DI State  (INIT*)
+5:15:58 PM-> DI Bit Status
+5:15:58 PM-> DI Value
+5:15:58 PM-> Low Latch
+5:15:58 PM-> High Latch
+5:15:58 PM-> Clear DI Latch
+5:15:58 PM-> DI Counter
+5:15:58 PM-> CH: 00
+5:15:58 PM-> Clear
+5:15:58 PM-> CH: 01
+5:15:58 PM-> Alarm Mode
+5:15:58 PM-> Low Alarm Limit
+5:15:58 PM-> High Alarm Limit
+5:15:58 PM-> Set Alarm
+5:15:58 PM-> Low Alarm Status
+5:15:58 PM-> High Alarm Status
+5:15:58 PM-> DO Bit Status
+5:15:58 PM-> Read Safe Value
+5:15:58 PM-> Read Power On Value
+5:15:58 PM-> Read DO
+5:15:58 PM-> Set to [Safe Value]
+5:15:58 PM-> Set to [Power On Value]
+5:15:58 PM-> DO0
+5:15:58 PM-> DO1
+5:15:58 PM-> Configuration
+5:15:58 PM-> DSub Connector
+5:15:58 PM-> Set Module Configurations
+5:15:58 PM-> Enable Check Command Received Timeout
+5:15:58 PM-> Analog Format
+5:15:58 PM-> Sample Mode
+5:15:58 PM-> 60/50 Hz
+5:15:58 PM-> AI/DO Alarm
+5:15:58 PM-> SingleEnd
+5:15:58 PM-> Enable SingleEnded
+5:15:58 PM-> DI
+5:15:58 PM-> Host WDT
+5:15:58 PM-> Commands Log
+5:15:58 PM-> Export Commands
+5:15:58 PM-> Log All Commands
+5:15:58 PM-> Save to path\log_report\
+5:15:58 PM-> About
+5:15:58 PM-> Exit
+5:16:41 PM-> Baud Rate
+5:16:41 PM-> 1200
+5:16:41 PM-> 2400
+5:16:41 PM-> 4800
+5:16:41 PM-> 9600
+5:16:41 PM-> 19200
+5:16:41 PM-> 38400
+5:16:41 PM-> 57600
+5:16:41 PM-> 115200
+5:16:41 PM-> Protocol
+5:16:41 PM-> Modbus ASCII
+5:16:41 PM-> Modbus RTU
+5:16:41 PM-> DCON
+5:16:41 PM-> Checksum
+5:16:41 PM-> Checksum Enabled
+5:16:41 PM-> Checksum Disabled
+5:16:41 PM-> Format
+5:16:41 PM-> O,8,1
+5:16:41 PM-> E,8,1
+5:16:41 PM-> N,8,2
+5:16:41 PM-> N,8,1
+5:16:41 PM-> Timeout
+5:16:41 PM-> COM Port
+5:16:41 PM-> Cancel
+5:16:41 PM-> OK
+5:16:41 PM-> ms

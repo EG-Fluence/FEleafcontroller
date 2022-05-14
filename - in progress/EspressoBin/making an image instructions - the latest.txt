@@ -1,42 +1,53 @@
-
-
 ========================================================================================
 
 
 1. 	Format a FAT32 USB disk and copy the files in the link below to the USB disk
 https://fluenceenergy.sharepoint.com/sites/ArchitectureandSoftwareEngineering/Shared%20Documents/Forms/AllItems.aspx?ct=1651165308920&or=Teams%2DHL&ga=1&id=%2Fsites%2FArchitectureandSoftwareEngineering%2FShared%20Documents%2FControllers%2FESPRESSObin%2DUltra%2FReplicate%20an%20ESPRESSObin%20Ultra%20Installation%2FEBRECOVER%20Files&viewid=436b9f21%2D5445%2D449e%2D9633%2D895f6e79c116
 
+            10,827 armada-3720-axc300-v3.dtb
+            10,559 armada-3720-ccpe.dtb
+     1,193,202,389 ebinx-fluence-rootfs.tgz
+         4,066,304 espressobin_ultra-bootloader-cpu-1000-ddr4-1cs-1g-atf-eff6ede8-uboot-g926d08c7ce-utils-52d9aef-20220307-rel.bin
+        13,310,464 Image
+               533 md5sum.txt
+         8,897,801 ramdisk
+               576 recovery.bin
+               762 u-boot-env.txt
+
 
 2. 	Connect to ESPRESSObin-Ultra with a console cable (usb micro to usb a)
 
 
-3. 	Plug the USB disk into ESPRESSObin-Ultra
+3. 	Plug the USB disk into any of USB ports in the ESPRESSObin-Ultra
 
 
-4. 	Boot ESPRESSObin-Ultra
+4. 	Boot ESPRESSObin-Ultra and hit any key to stop autoboot (you have a few seconds)
 
 
-5. 	Hit any key to stop autoboot (you have a few seconds)
-	Os the U-Boot Marvell execute:
+5.	On the U-Boot Marvell execute:
+	bubt espressobin_ultra-bootloader-cpu-1000-ddr4-1cs-1g-atf-eff6ede8-uboot-g926d08c7ce-utils-52d9aef-20220307-rel.bin spi usb
+
+
+6. 	On the U-Boot Marvell execute:
 	usb reset; fatload usb 0 $loadaddr recovery.bin; source $loadaddr
 
 
-6.	After boot completed - press enter - to see command prompt
+7.	After boot completed - press enter - to see command prompt
 
 
-7.	Mount usb
-	mount /dev/sda1 /media
+8. 	fsck.ext4 -y /dev/mmcblk0p1 ; mount /dev/sda1 /media ; mount /dev/mmcblk0p1 /mnt
 
 
-8.	Run dd command to restore to eMMC disk. Note: This will take a long time
-	gzip -dc /media/ebinx-fluence-emmc.img.gz  |  dd of=/dev/mmcblk0; sync
+9.  tar -zxvf /media/ebinx-fluence-rootfs.tgz -C /mnt
 
 
-9.	After restore completed, umount the usbdisk
-	umount /media
+10. sync
 
 
-10.	Execute: reboot
+11. umount /mnt ; cd ; umount /media
+
+
+12.	reboot
 
 
 =====================================================================
@@ -65,7 +76,7 @@ gzip -dc /media/ebinx-fluence-emmc.img.gz | dd of=/dev/mmcblk0; sync
 After restore completed [updated]
 
 mount eMMC
-mount mount /dev/mmcblk0p1 /mnt
+mount /dev/mmcblk0p1 /mnt
 
 Remove FLUENCE_INITIALIZED
 rm /mnt/etc/FLUENCE_INITIALIZED

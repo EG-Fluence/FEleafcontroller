@@ -1,0 +1,21 @@
+9:36:14 AM-> [16911]DCON GET_MODULE_NAME,B[9600],F[N,8,1], C[Disable], Cmd [$00M], Rec [!01tP8]Raw [21 30 31 74 50 38 ]
+9:36:14 AM-> [93]DCON GET_MODULE_FIRMWARE,B[9600],F[N,8,1], C[Disable], Cmd [$00F], Rec [!01A1.6]Raw [21 30 31 41 31 2E 36 ]
+9:36:14 AM-> [16]DCON GET_MODULE_PROTOCOL,B[9600],F[N,8,1], C[Disable], Cmd [$00P], Rec [!0131]Raw [21 30 31 33 31 ]
+9:36:14 AM-> [31]DCON GetModuleConfig,B[9600],F[N,8,1], C[Disable], Cmd [$002], Rec [!01400680]Raw [21 30 31 34 30 30 36 38 30 ]
+9:36:14 AM-> [16]DCON SetModuleConfig,B[9600],F[N,8,1], C[Disable], Cmd [%0001400580], Rec [!01]Raw [21 30 31 ]
+9:36:14 AM-> [31]DCON SetModuleConfig,B[9600],F[N,8,1], C[Disable], Cmd [%0001400680], Rec [!01]Raw [21 30 31 ]
+9:36:14 AM-> Close COM 1
+9:37:21 AM-> [67455]DCON GET_MODULE_NAME,B[9600],F[N,8,1], C[Disable], Cmd [$00M], Rec [!01tP8]Raw [21 30 31 74 50 38 ]
+9:37:21 AM-> [15]DCON GET_MODULE_FIRMWARE,B[9600],F[N,8,1], C[Disable], Cmd [$00F], Rec [!01A1.6]Raw [21 30 31 41 31 2E 36 ]
+9:37:21 AM-> [32]DCON GET_MODULE_PROTOCOL,B[9600],F[N,8,1], C[Disable], Cmd [$00P], Rec [!0131]Raw [21 30 31 33 31 ]
+9:37:21 AM-> [15]DCON GetModuleConfig,B[9600],F[N,8,1], C[Disable], Cmd [$002], Rec [!01400680]Raw [21 30 31 34 30 30 36 38 30 ]
+9:37:22 AM-> [31]DCON SetModuleConfig,B[9600],F[N,8,1], C[Disable], Cmd [%0001400580], Rec [!01]Raw [21 30 31 ]
+9:37:22 AM-> [32]DCON SetModuleConfig,B[9600],F[N,8,1], C[Disable], Cmd [%0001400680], Rec [!01]Raw [21 30 31 ]
+9:37:22 AM-> Close COM 1
+9:37:52 AM-> [30591]DCON GET_MODULE_NAME,B[9600],F[N,8,1], C[Disable], Cmd [$00M], Rec [!01tP8]Raw [21 30 31 74 50 38 ]
+9:37:52 AM-> [16]DCON GET_MODULE_FIRMWARE,B[9600],F[N,8,1], C[Disable], Cmd [$00F], Rec [!01A1.6]Raw [21 30 31 41 31 2E 36 ]
+9:37:52 AM-> [31]DCON GET_MODULE_PROTOCOL,B[9600],F[N,8,1], C[Disable], Cmd [$00P], Rec [!0131]Raw [21 30 31 33 31 ]
+9:37:52 AM-> [16]DCON GetModuleConfig,B[9600],F[N,8,1], C[Disable], Cmd [$002], Rec [!01400680]Raw [21 30 31 34 30 30 36 38 30 ]
+9:37:52 AM-> [31]DCON SetModuleConfig,B[9600],F[N,8,1], C[Disable], Cmd [%0001400580], Rec [!01]Raw [21 30 31 ]
+9:37:52 AM-> [31]DCON SetModuleConfig,B[9600],F[N,8,1], C[Disable], Cmd [%0001400680], Rec [!01]Raw [21 30 31 ]
+9:37:52 AM-> Close COM 1

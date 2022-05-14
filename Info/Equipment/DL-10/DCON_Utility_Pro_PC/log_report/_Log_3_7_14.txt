@@ -1,0 +1,42 @@
+14:47:31-> DCON Error_GET_MODULE_NAME,B[115200],F[N,8,1], C[Disable], Cmd [$00M], Rec []Raw []
+14:47:32-> DCON Error_GET_MODULE_NAME,B[115200],F[E,8,1], C[Disable], Cmd [$00M], Rec []Raw []
+14:47:33-> Modbus RTU Timeout  GET_MODULE_NAME,B[115200],F[N,8,1], , CmdType [100], Cmd [00 46 00 43 A0], wT = 600
+14:47:33-> Modbus RTU Timeout  GET_MODULE_NAME,B[115200],F[E,8,1], , CmdType [100], Cmd [00 46 00 43 A0], wT = 600
+14:47:34-> Modbus ASCII Timeout  GET_MODULE_NAME,B[115200],F[N,8,1], , CmdType [100], Cmd [:004600BA], wT = 600
+14:47:35-> Modbus ASCII Timeout  GET_MODULE_NAME,B[115200],F[E,8,1], , CmdType [100], Cmd [:004600BA], wT = 600
+14:47:35-> DCON Error_GET_MODULE_NAME,B[19200],F[N,8,1], C[Disable], Cmd [$00M], Rec []Raw []
+14:47:36-> DCON Error_GET_MODULE_NAME,B[19200],F[E,8,1], C[Disable], Cmd [$00M], Rec []Raw []
+14:47:36-> Modbus RTU Timeout  GET_MODULE_NAME,B[19200],F[N,8,1], , CmdType [100], Cmd [00 46 00 43 A0], wT = 600
+14:47:37-> Modbus RTU Timeout  GET_MODULE_NAME,B[19200],F[E,8,1], , CmdType [100], Cmd [00 46 00 43 A0], wT = 600
+14:47:38-> Modbus ASCII Timeout  GET_MODULE_NAME,B[19200],F[N,8,1], , CmdType [100], Cmd [:004600BA], wT = 600
+14:47:38-> Modbus ASCII Timeout  GET_MODULE_NAME,B[19200],F[E,8,1], , CmdType [100], Cmd [:004600BA], wT = 600
+14:47:39-> DCON Error_GET_MODULE_NAME,B[9600],F[N,8,1], C[Disable], Cmd [$00M], Rec []Raw []
+14:47:40-> DCON Error_GET_MODULE_NAME,B[9600],F[E,8,1], C[Disable], Cmd [$00M], Rec []Raw []
+14:47:40-> Modbus RTU Timeout  GET_MODULE_NAME,B[9600],F[N,8,1], , CmdType [100], Cmd [00 46 00 43 A0], wT = 600
+14:47:41-> Modbus RTU Timeout  GET_MODULE_NAME,B[9600],F[E,8,1], , CmdType [100], Cmd [00 46 00 43 A0], wT = 600
+14:47:41-> Modbus ASCII Timeout  GET_MODULE_NAME,B[9600],F[N,8,1], , CmdType [100], Cmd [:004600BA], wT = 600
+14:47:42-> Modbus ASCII Timeout  GET_MODULE_NAME,B[9600],F[E,8,1], , CmdType [100], Cmd [:004600BA], wT = 600
+14:47:43-> DCON Error_GET_MODULE_NAME,B[115200],F[N,8,1], C[Disable], Cmd [$01M], Rec []Raw []
+14:47:43-> DCON Error_GET_MODULE_NAME,B[115200],F[E,8,1], C[Disable], Cmd [$01M], Rec []Raw []
+14:47:43-> Modbus RTU OK  GET_MODULE_NAME,B[115200],F[N,8,1], , CmdType [100], Cmd [01 46 00 12 60], Rec [01 46 00 44 4C 00 10 D1 8D ]wT = 8
+14:47:44-> Modbus RTU OK  GET_MODULE_NAME,B[115200],F[E,8,1], , CmdType [100], Cmd [01 46 00 12 60], Rec [01 46 00 44 4C 00 10 D1 8D ]wT = 8
+14:47:44-> Modbus ASCII Timeout  GET_MODULE_NAME,B[115200],F[N,8,1], , CmdType [100], Cmd [:014600B9], wT = 600
+14:47:45-> Modbus ASCII Timeout  GET_MODULE_NAME,B[115200],F[E,8,1], , CmdType [100], Cmd [:014600B9], wT = 600
+14:47:46-> DCON Error_GET_MODULE_NAME,B[19200],F[N,8,1], C[Disable], Cmd [$01M], Rec []Raw []
+14:47:46-> DCON Error_GET_MODULE_NAME,B[19200],F[E,8,1], C[Disable], Cmd [$01M], Rec []Raw []
+14:47:47-> Modbus RTU Timeout  GET_MODULE_NAME,B[19200],F[N,8,1], , CmdType [100], Cmd [01 46 00 12 60], wT = 600
+14:47:48-> Modbus RTU Timeout  GET_MODULE_NAME,B[19200],F[E,8,1], , CmdType [100], Cmd [01 46 00 12 60], wT = 600
+14:47:48-> Modbus ASCII Timeout  GET_MODULE_NAME,B[19200],F[N,8,1], , CmdType [100], Cmd [:014600B9], wT = 600
+14:47:49-> Modbus ASCII Timeout  GET_MODULE_NAME,B[19200],F[E,8,1], , CmdType [100], Cmd [:014600B9], wT = 600
+14:47:49-> DCON Error_GET_MODULE_NAME,B[9600],F[N,8,1], C[Disable], Cmd [$01M], Rec []Raw []
+14:47:50-> DCON Error_GET_MODULE_NAME,B[9600],F[E,8,1], C[Disable], Cmd [$01M], Rec []Raw []
+14:47:51-> Modbus RTU Timeout  GET_MODULE_NAME,B[9600],F[N,8,1], , CmdType [100], Cmd [01 46 00 12 60], wT = 600
+14:47:51-> Modbus RTU Timeout  GET_MODULE_NAME,B[9600],F[E,8,1], , CmdType [100], Cmd [01 46 00 12 60], wT = 600
+14:47:52-> Modbus ASCII Timeout  GET_MODULE_NAME,B[9600],F[N,8,1], , CmdType [100], Cmd [:014600B9], wT = 600
+14:47:53-> Modbus ASCII Timeout  GET_MODULE_NAME,B[9600],F[E,8,1], , CmdType [100], Cmd [:014600B9], wT = 600
+14:47:53-> DCON Error_GET_MODULE_NAME,B[115200],F[N,8,1], C[Disable], Cmd [$02M], Rec []Raw []
+14:47:54-> DCON Error_GET_MODULE_NAME,B[115200],F[E,8,1], C[Disable], Cmd [$02M], Rec []Raw []
+14:47:54-> Modbus RTU Timeout  GET_MODULE_NAME,B[115200],F[N,8,1], , CmdType [100], Cmd [02 46 00 E2 60], wT = 600
+14:47:55-> Modbus RTU Timeout  GET_MODULE_NAME,B[115200],F[E,8,1], , CmdType [100], Cmd [02 46 00 E2 60], wT = 600
+14:47:56-> Modbus ASCII Timeout  GET_MODULE_NAME,B[115200],F[N,8,1], , CmdType [100], Cmd [:024600B8], wT = 600
+14:47:56-> Modbus ASCII Timeout  GET_MODULE_NAME,B[115200],F[E,8,1], , CmdType [100], Cmd [:024600B8], wT = 600

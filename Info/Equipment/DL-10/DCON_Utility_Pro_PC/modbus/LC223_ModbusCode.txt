@@ -1,0 +1,140 @@
+#region LC223
+case "LC223":
+hasCmd = false;
+switch (cmdTitle)
+{
+case "GET_MODULE_NAME":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODULE_FIRMWARE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "READ_MF_DO_SAFE_VALUE":
+functionCode = 0x1;
+refAddr = 128;
+break;
+case "READ_MF_DO_POWER_ON":
+functionCode = 0x1;
+refAddr = 160;
+break;
+case "GET_DI_REVERSE":
+functionCode = 0x1;
+refAddr = 264;
+break;
+case "GET_WDT_TIMER":
+functionCode = 0x3;
+refAddr = 488;
+break;
+case "GET_WDT_ENABLE":
+functionCode = 0x1;
+refAddr = 260;
+break;
+case "GET_WDT_OVERWRITE":
+functionCode = 0x1;
+refAddr = 259;
+break;
+case "GET_MODULE_ADDRESS":
+functionCode = 0x3;
+refAddr = 484;
+break;
+case "GET_MODBUS_DATAFORMAT":
+functionCode = 0x1;
+refAddr = 268;
+break;
+case "GET_RESPONSE_DELAY_TIME":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_CH0_AO_TYPE_CODE":
+functionCode = 0x3;
+refAddr = 416;
+break;
+case "GET_CH0_AO_SLEW_RATE":
+functionCode = 0x3;
+refAddr = 288;
+break;
+case "READ_CH0_LAST_AO":
+functionCode = 0x3;
+refAddr = 0;
+break;
+case "GET_DI_DIMMING":
+functionCode = 0x1;
+refAddr = 270;
+break;
+case "GET_DI_DIMMING_TYPE":
+functionCode = 0x1;
+refAddr = 267;
+break;
+case "GET_DI1_FALLING_DIMMING_RANGE":
+functionCode = 0x3;
+refAddr = 160;
+break;
+case "GET_DI1_RISING_DIMMING_RANGE":
+functionCode = 0x3;
+refAddr = 161;
+break;
+case "GET_DI2_FALLING_DIMMING_RANGE":
+functionCode = 0x3;
+refAddr = 162;
+break;
+case "GET_DI2_RISING_DIMMING_RANGE":
+functionCode = 0x3;
+refAddr = 163;
+break;
+case "READ_WDT_STATUS":
+functionCode = 0x1;
+refAddr = 269;
+break;
+case "READ_DI":
+functionCode = 0x1;
+refAddr = 32;
+break;
+case "READ_DI_HIGH_LATCH":
+functionCode = 0x1;
+refAddr = 64;
+break;
+case "READ_DI_LOW_LATCH":
+functionCode = 0x1;
+refAddr = 96;
+break;
+case "READ_CH0_DI_COUNTER":
+functionCode = 0x4;
+refAddr = 128;
+break;
+case "READ_CH1_DI_COUNTER":
+functionCode = 0x4;
+refAddr = 129;
+break;
+case "READ_CH2_DI_COUNTER":
+functionCode = 0x4;
+refAddr = 130;
+break;
+case "READ_DO":
+functionCode = 0x1;
+refAddr = 0;
+break;
+case "READ_CH0_AO":
+functionCode = 0x3;
+refAddr = 64;
+break;
+case "SET_DI_REVERSE":
+functionCode = 0x5;
+refAddr = 264;
+break;
+case "CLEAR_CH0_DI_COUNTER":
+functionCode = 0x5;
+refAddr = 512;
+break;
+case "CLEAR_CH1_DI_COUNTER":
+functionCode = 0x5;
+refAddr = 513;
+break;
+case "CLEAR_CH2_DI_COUNTER":
+functionCode = 0x5;
+refAddr = 514;
+break;
+}
+break;
+#endregion LC223

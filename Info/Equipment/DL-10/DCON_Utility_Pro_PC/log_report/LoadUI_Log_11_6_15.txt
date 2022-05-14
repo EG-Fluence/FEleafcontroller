@@ -1,0 +1,206 @@
+3:30:43 PM-> English
+3:30:43 PM-> Chinese
+3:30:43 PM-> Don't show this next time
+3:30:43 PM-> Search RU-87PN Addr. Mode
+3:30:43 PM-> Modbus Editor
+3:30:43 PM-> COM Port
+3:30:43 PM-> Start Search
+3:30:43 PM-> Stop Search
+3:30:43 PM-> Command Line
+3:30:43 PM-> Remote I/O quick configuration
+3:30:43 PM-> CE/WES Backup/Restore backplane I-87K I/O configurations
+3:30:43 PM-> Offline Configuration for 87PN
+3:30:43 PM-> Data Logger
+3:30:43 PM-> Language
+3:30:43 PM-> FAQ
+3:30:43 PM-> End Address
+3:30:43 PM-> Start Address
+3:30:43 PM-> ID
+3:30:43 PM-> Address
+3:30:43 PM-> Baud Rate
+3:30:43 PM-> Checksum
+3:30:43 PM-> Format
+3:30:43 PM-> Status
+3:30:43 PM-> Description
+3:30:43 PM-> COM:1
+3:30:50 PM-> 01H
+3:30:50 PM-> 7
+3:30:50 PM-> RF Channel
+3:30:50 PM-> RF Pan ID
+3:30:50 PM-> Reverse DO State
+3:30:50 PM-> ms
+3:30:50 PM-> Min. Half Pulse Width
+3:30:50 PM-> RF Power
+3:30:50 PM-> Enable ZT Software Configuration
+3:30:50 PM-> 1
+3:30:50 PM-> Response Delay
+3:30:50 PM-> Parity
+3:30:50 PM-> Checksum
+3:30:50 PM-> Baud Rate
+3:30:50 PM-> Protocol
+3:30:50 PM-> Address
+3:30:50 PM-> 01H
+3:30:50 PM-> 7
+3:30:50 PM-> RF Channel
+3:30:50 PM-> RF Pan ID
+3:30:50 PM-> Reverse DO State
+3:30:50 PM-> ms
+3:30:50 PM-> Min. Half Pulse Width
+3:30:50 PM-> RF Power
+3:30:50 PM-> Enable ZT Software Configuration
+3:30:50 PM-> 1
+3:30:50 PM-> Response Delay
+3:30:50 PM-> Parity
+3:30:50 PM-> Checksum
+3:30:50 PM-> Baud Rate
+3:30:50 PM-> Protocol
+3:30:50 PM-> Address
+3:30:50 PM-> WDT Timeout Count
+3:30:50 PM-> Enable Output When WDT Timeout
+3:30:50 PM-> Set Timer
+3:30:50 PM-> (0.1 ~ 25.5 sec)
+3:30:50 PM-> Reset Watchdog Status
+3:30:50 PM-> Auto Send Host OK
+3:30:50 PM-> Enable WDT
+3:30:50 PM-> WDT Timeout
+3:31:15 PM-> English
+3:31:15 PM-> Chinese
+3:31:15 PM-> Don't show this next time
+3:31:15 PM-> Search RU-87PN Addr. Mode
+3:31:15 PM-> Modbus Editor
+3:31:15 PM-> COM Port
+3:31:15 PM-> Start Search
+3:31:15 PM-> Stop Search
+3:31:15 PM-> Command Line
+3:31:15 PM-> Remote I/O quick configuration
+3:31:15 PM-> CE/WES Backup/Restore backplane I-87K I/O configurations
+3:31:15 PM-> Offline Configuration for 87PN
+3:31:15 PM-> Data Logger
+3:31:15 PM-> Language
+3:31:15 PM-> FAQ
+3:31:15 PM-> End Address
+3:31:15 PM-> Start Address
+3:31:15 PM-> ID
+3:31:15 PM-> Address
+3:31:15 PM-> Baud Rate
+3:31:15 PM-> Checksum
+3:31:15 PM-> Format
+3:31:15 PM-> Status
+3:31:15 PM-> Description
+3:31:15 PM-> COM:1
+3:31:23 PM-> 01H
+3:31:23 PM-> 7
+3:31:23 PM-> RF Channel
+3:31:23 PM-> RF Pan ID
+3:31:23 PM-> Reverse DO State
+3:31:23 PM-> ms
+3:31:23 PM-> Min. Half Pulse Width
+3:31:23 PM-> RF Power
+3:31:23 PM-> Enable ZT Software Configuration
+3:31:23 PM-> 1
+3:31:23 PM-> Response Delay
+3:31:23 PM-> Parity
+3:31:23 PM-> Checksum
+3:31:23 PM-> Baud Rate
+3:31:23 PM-> Protocol
+3:31:23 PM-> Address
+3:31:23 PM-> 01H
+3:31:23 PM-> 7
+3:31:23 PM-> RF Channel
+3:31:23 PM-> RF Pan ID
+3:31:23 PM-> Reverse DO State
+3:31:23 PM-> ms
+3:31:23 PM-> Min. Half Pulse Width
+3:31:23 PM-> RF Power
+3:31:23 PM-> Enable ZT Software Configuration
+3:31:23 PM-> 1
+3:31:23 PM-> Response Delay
+3:31:23 PM-> Parity
+3:31:23 PM-> Checksum
+3:31:23 PM-> Baud Rate
+3:31:23 PM-> Protocol
+3:31:23 PM-> Address
+3:31:23 PM-> WDT Timeout Count
+3:31:23 PM-> Enable Output When WDT Timeout
+3:31:23 PM-> Set Timer
+3:31:23 PM-> (0.1 ~ 25.5 sec)
+3:31:23 PM-> Reset Watchdog Status
+3:31:23 PM-> Auto Send Host OK
+3:31:23 PM-> Enable WDT
+3:31:23 PM-> WDT Timeout
+3:31:24 PM-> 01H
+3:31:24 PM-> 7
+3:31:24 PM-> RF Channel
+3:31:24 PM-> RF Pan ID
+3:31:24 PM-> Reverse DO State
+3:31:24 PM-> ms
+3:31:24 PM-> Min. Half Pulse Width
+3:31:24 PM-> RF Power
+3:31:24 PM-> Enable ZT Software Configuration
+3:31:24 PM-> 1
+3:31:24 PM-> Response Delay
+3:31:24 PM-> Parity
+3:31:24 PM-> Checksum
+3:31:24 PM-> Baud Rate
+3:31:24 PM-> Protocol
+3:31:24 PM-> Address
+3:31:24 PM-> WDT Timeout Count
+3:31:24 PM-> Enable Output When WDT Timeout
+3:31:24 PM-> Set Timer
+3:31:24 PM-> (0.1 ~ 25.5 sec)
+3:31:24 PM-> Reset Watchdog Status
+3:31:24 PM-> Auto Send Host OK
+3:31:24 PM-> Enable WDT
+3:31:24 PM-> WDT Timeout
+3:31:24 PM-> Exit
+3:31:24 PM-> Configuration
+3:31:24 PM-> Analog Format
+3:31:24 PM-> Set Module Configurations
+3:31:24 PM-> AI
+3:31:24 PM-> Set Type Code As CH:0
+3:31:24 PM-> 0
+3:31:24 PM-> -
+3:31:24 PM-> +
+3:31:24 PM-> CH:15
+3:31:24 PM-> CH:14
+3:31:24 PM-> CH:13
+3:31:24 PM-> CH:12
+3:31:24 PM-> CH:11
+3:31:24 PM-> CH:10
+3:31:24 PM-> CH:9
+3:31:24 PM-> CH:8
+3:31:24 PM-> CH:7
+3:31:24 PM-> CH:6
+3:31:24 PM-> CH:5
+3:31:24 PM-> CH:4
+3:31:24 PM-> CH:3
+3:31:24 PM-> CH:2
+3:31:24 PM-> CH:1
+3:31:24 PM-> CH:0
+3:31:24 PM-> AO/DI
+3:31:24 PM-> Set Configuration As CH:0
+3:31:24 PM-> Real AO
+3:31:24 PM-> Last AO
+3:31:24 PM-> 12000
+3:31:24 PM-> 9999
+3:31:24 PM-> Reset DI Latch
+3:31:24 PM-> Operate AO Data as engineering format
+3:31:24 PM-> Read Safe Value
+3:31:24 PM-> Read Power ON Value
+3:31:24 PM-> Read AO
+3:31:24 PM-> Set Safe Value
+3:31:24 PM-> Set Power On
+3:31:24 PM-> Clear Counter
+3:31:24 PM-> Output
+3:31:24 PM-> Counter
+3:31:24 PM-> Low Latch
+3:31:24 PM-> High Latch
+3:31:24 PM-> DI Status
+3:31:24 PM-> Output Value
+3:31:24 PM-> Host WDT
+3:31:24 PM-> Commands Log
+3:31:24 PM-> Export Commands
+3:31:24 PM-> Log All Commands
+3:31:24 PM-> Save to path\log_report\
+3:31:24 PM-> Clear
+3:31:24 PM-> About

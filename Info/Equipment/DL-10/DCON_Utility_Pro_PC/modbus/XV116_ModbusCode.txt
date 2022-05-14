@@ -1,0 +1,140 @@
+#region XV116
+case "XV116":
+hasCmd = false;
+switch (cmdTitle)
+{
+case "GET_MODULE_NAME":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODULE_FIRMWARE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_COMMUNICATE_PARAMETER":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODULE_ADDRESS":
+functionCode = 0x3;
+refAddr = 484;
+break;
+case "GET_DO_REVERSE":
+functionCode = 0x1;
+refAddr = 265;
+break;
+case "READ_DO_POWER_ON":
+functionCode = 0x1;
+refAddr = 160;
+break;
+case "GET_DI_REVERSE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_CNT_EDGE":
+functionCode = 0x1;
+refAddr = 192;
+break;
+case "READ_DI":
+functionCode = 0x1;
+refAddr = 32;
+break;
+case "READ_DI_HIGH_LATCH":
+functionCode = 0x1;
+refAddr = 64;
+break;
+case "READ_DI_LOW_LATCH":
+functionCode = 0x1;
+refAddr = 96;
+break;
+case "READ_CH0_DI_COUNTER":
+functionCode = 0x4;
+refAddr = 0;
+break;
+case "READ_CH1_DI_COUNTER":
+functionCode = 0x4;
+refAddr = 2;
+break;
+case "READ_CH2_DI_COUNTER":
+functionCode = 0x4;
+refAddr = 4;
+break;
+case "READ_CH3_DI_COUNTER":
+functionCode = 0x4;
+refAddr = 6;
+break;
+case "READ_CH4_DI_COUNTER":
+functionCode = 0x4;
+refAddr = 8;
+break;
+case "READ_DO":
+functionCode = 0x1;
+refAddr = 0;
+break;
+case "SET_DO_REVERSE":
+functionCode = 0x5;
+refAddr = 265;
+break;
+case "OUTPUT_CH0_DO_BIT":
+functionCode = 0x5;
+refAddr = 0;
+break;
+case "OUTPUT_CH1_DO_BIT":
+functionCode = 0x5;
+refAddr = 1;
+break;
+case "OUTPUT_CH2_DO_BIT":
+functionCode = 0x5;
+refAddr = 2;
+break;
+case "OUTPUT_CH3_DO_BIT":
+functionCode = 0x5;
+refAddr = 3;
+break;
+case "OUTPUT_CH4_DO_BIT":
+functionCode = 0x5;
+refAddr = 4;
+break;
+case "OUTPUT_CH5_DO_BIT":
+functionCode = 0x5;
+refAddr = 5;
+break;
+case "CLEAR_CH0_DI_COUNTER":
+functionCode = 0x5;
+refAddr = 512;
+break;
+case "CLEAR_CH1_DI_COUNTER":
+functionCode = 0x5;
+refAddr = 513;
+break;
+case "CLEAR_CH2_DI_COUNTER":
+functionCode = 0x5;
+refAddr = 514;
+break;
+case "SET_DO_POWER_ON":
+functionCode = 0xF;
+refAddr = 160;
+break;
+case "SET_CNT_EDGE":
+functionCode = 0xF;
+refAddr = 192;
+break;
+case "SET_DI_REVERSE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "CLEAR_CH3_DI_COUNTER":
+functionCode = 0x5;
+refAddr = 515;
+break;
+case "CLEAR_CH4_DI_COUNTER":
+functionCode = 0x5;
+refAddr = 516;
+break;
+case "CLEAR_DI_LATCH":
+functionCode = 0x5;
+refAddr = 263;
+break;
+}
+break;
+#endregion XV116

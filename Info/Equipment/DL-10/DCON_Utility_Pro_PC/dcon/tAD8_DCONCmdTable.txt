@@ -1,0 +1,5 @@
+$00M            => GET_MODULE_NAME
+$00F            => GET_MODULE_FIRMWARE
+$002            => GET_MODULE_CONFIG
+$00P            => GET_MODULE_PROTOCOL
+$00P1           => SET_MODULE_PROTOCOL

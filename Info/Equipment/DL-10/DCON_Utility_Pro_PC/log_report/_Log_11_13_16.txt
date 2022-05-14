@@ -1,0 +1,14 @@
+4:01:03 PM-> DCON Error_GET_MODULE_NAME,B[115200],F[N,8,1], C[Disable], Cmd [$00M], Rec []Raw []
+4:01:04 PM-> Modbus RTU Timeout  GET_MODULE_NAME,B[115200],F[N,8,1], , CmdType [100], Cmd [00 46 00 43 A0], wT = 600
+4:01:04 PM-> [4210342]DCON GET_MODULE_NAME,B[9600],F[N,8,1], C[Disable], Cmd [$00M], Rec [!01tAD4P2C2]Raw [21 30 31 74 41 44 34 50 32 43 32 ]
+4:01:05 PM-> Modbus RTU Timeout  GET_MODULE_NAME,B[9600],F[N,8,1], , CmdType [100], Cmd [00 46 00 43 A0], wT = 600
+4:01:05 PM-> DCON Error_GET_MODULE_NAME,B[115200],F[N,8,1], C[Disable], Cmd [$01M], Rec []Raw []
+4:01:05 PM-> Close COM 1
+4:01:20 PM-> [15460]DCON ,B[9600],F[N,8,1], C[Disable], Cmd [$00P], Rec [!0130]Raw [21 30 31 33 30 ]
+4:01:20 PM-> Close COM 1
+4:01:20 PM-> [31]DCON ,B[9600],F[N,8,1], C[Disable], Cmd [$00P], Rec [!0130]Raw [21 30 31 33 30 ]
+4:01:20 PM-> Close COM 1
+4:01:42 PM-> [22574]DCON ,B[9600],F[N,8,1], C[Disable], Cmd [$00P], Rec [!0130]Raw [21 30 31 33 30 ]
+4:01:42 PM-> Close COM 1
+4:01:45 PM-> [2995]DCON ,B[9600],F[N,8,1], C[Disable], Cmd [$00P], Rec [!0130]Raw [21 30 31 33 30 ]
+4:01:45 PM-> Close COM 1

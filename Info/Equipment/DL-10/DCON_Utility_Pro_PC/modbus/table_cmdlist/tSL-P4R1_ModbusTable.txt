@@ -1,0 +1,34 @@
+
+
+********************************[0x46_Registers]********************************
+XXXXX = GET_MODULE_NAME
+XXXXX = GET_MODULE_FIRMWARE
+XXXXX = SET_COMMUNICATE_PARAMETER
+XXXXX = GET_COMMUNICATE_PARAMETER
+XXXXX = SET_RESPONSE_DELAY_TIME
+XXXXX = GET_RESPONSE_DELAY_TIME
+
+
+********************************[DO_Registers]********************************
+00000 = OUTPUT_CH0_DO_BIT
+00000 = READ_DO
+
+
+********************************[AO_Registers]********************************
+40201 = SET_DI_FILTER
+40288 = SET_CHANGE_INTERVAL
+40288 = SET_CHANGE_COUNT
+40484 = SET_MODULE_ADDRESS
+40484 = GET_MODULE_ADDRESS
+
+
+********************************[AI_Registers]********************************
+30000 = READ_CH0_AI
+30001 = READ_CH1_AI
+30002 = READ_CH2_AI
+30003 = READ_CH3_AI
+30004 = READ_CH4_AI
+30005 = READ_CH5_AI
+30201 = GET_DI_FILTER
+30288 = GET_CHANGE_COUNT
+30288 = GET_CHANGE_INTERVAL

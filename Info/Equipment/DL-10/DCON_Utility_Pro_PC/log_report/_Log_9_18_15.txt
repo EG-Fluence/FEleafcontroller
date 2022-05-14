@@ -1,0 +1,2 @@
+3:39:31 PM-> Close COM 1
+3:39:40 PM-> Close COM 1

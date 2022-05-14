@@ -1,0 +1,148 @@
+#region M2004
+case "M2004":
+hasCmd = false;
+switch (cmdTitle)
+{
+case "GET_MODULE_NAME":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODULE_FIRMWARE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_COMMUNICATE_PARAMETER":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODULE_ADDRESS":
+functionCode = 0x3;
+refAddr = 484;
+break;
+case "GET_MODBUS_MISC":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "SET_RE_SCAN_SENSOR":
+functionCode = 0x5;
+refAddr = 0;
+break;
+case "GET_PORT0SENSOR_COUNT":
+functionCode = 0x4;
+refAddr = 80;
+break;
+case "GET_PORT1SENSOR_COUNT":
+functionCode = 0x4;
+refAddr = 81;
+break;
+case "GET_PORT2SENSOR_COUNT":
+functionCode = 0x4;
+refAddr = 82;
+break;
+case "GET_PORT3SENSOR_COUNT":
+functionCode = 0x4;
+refAddr = 83;
+break;
+case "READ_CH0_SENSOR_AI":
+functionCode = 0x4;
+refAddr = 0;
+break;
+case "READ_CH1_SENSOR_AI":
+functionCode = 0x4;
+refAddr = 1;
+break;
+case "READ_CH2_SENSOR_AI":
+functionCode = 0x4;
+refAddr = 2;
+break;
+case "READ_CH3_SENSOR_AI":
+functionCode = 0x4;
+refAddr = 3;
+break;
+case "READ_CH4_SENSOR_AI":
+functionCode = 0x4;
+refAddr = 4;
+break;
+case "READ_CH5_SENSOR_AI":
+functionCode = 0x4;
+refAddr = 5;
+break;
+case "READ_CH6_SENSOR_AI":
+functionCode = 0x4;
+refAddr = 6;
+break;
+case "READ_CH7_SENSOR_AI":
+functionCode = 0x4;
+refAddr = 7;
+break;
+case "READ_CH8_SENSOR_AI":
+functionCode = 0x4;
+refAddr = 8;
+break;
+case "READ_CH9_SENSOR_AI":
+functionCode = 0x4;
+refAddr = 9;
+break;
+case "READ_CH10_SENSOR_AI":
+functionCode = 0x4;
+refAddr = 10;
+break;
+case "READ_CH11_SENSOR_AI":
+functionCode = 0x4;
+refAddr = 11;
+break;
+case "READ_CH12_SENSOR_AI":
+functionCode = 0x4;
+refAddr = 12;
+break;
+case "READ_CH13_SENSOR_AI":
+functionCode = 0x4;
+refAddr = 13;
+break;
+case "READ_CH14_SENSOR_AI":
+functionCode = 0x4;
+refAddr = 14;
+break;
+case "READ_CH15_SENSOR_AI":
+functionCode = 0x4;
+refAddr = 15;
+break;
+case "READ_CH16_SENSOR_AI":
+functionCode = 0x4;
+refAddr = 16;
+break;
+case "READ_CH17_SENSOR_AI":
+functionCode = 0x4;
+refAddr = 17;
+break;
+case "READ_CH18_SENSOR_AI":
+functionCode = 0x4;
+refAddr = 18;
+break;
+case "READ_CH19_SENSOR_AI":
+functionCode = 0x4;
+refAddr = 19;
+break;
+case "SET_MODBUS_MISC":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_PORT_0_NEWSENSOR_COUNT":
+functionCode = 0x4;
+refAddr = 96;
+break;
+case "GET_PORT_1_NEWSENSOR_COUNT":
+functionCode = 0x4;
+refAddr = 97;
+break;
+case "GET_PORT_2_NEWSENSOR_COUNT":
+functionCode = 0x4;
+refAddr = 98;
+break;
+case "GET_PORT_3_NEWSENSOR_COUNT":
+functionCode = 0x4;
+refAddr = 99;
+break;
+}
+break;
+#endregion M2004

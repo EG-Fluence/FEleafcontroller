@@ -1,0 +1,9 @@
+11:23:15 AM-> objList count = 0  LoadIO tAD4P2C2
+11:24:53 AM-> shutdown objList count = 1  RemovePlugIn tAD4P2C2
+11:24:53 AM-> shutdown objList count = 0
+11:25:01 AM-> objList count = 0  LoadIO tAD4P2C2
+11:26:05 AM-> shutdown objList count = 1  RemovePlugIn tAD4P2C2
+11:26:05 AM-> shutdown objList count = 0
+11:26:19 AM-> objList count = 0  LoadIO tAD4P2C2
+11:38:00 AM-> shutdown objList count = 1  RemovePlugIn tAD4P2C2
+11:38:00 AM-> shutdown objList count = 0

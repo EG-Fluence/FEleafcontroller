@@ -1,0 +1,68 @@
+#region LC103
+case "LC103":
+hasCmd = false;
+switch (cmdTitle)
+{
+case "GET_MODULE_NAME":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODULE_FIRMWARE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "READ_DO_POWER_ON":
+functionCode = 0x1;
+refAddr = 160;
+break;
+case "READ_DO_SAFE_VALUE":
+functionCode = 0x1;
+refAddr = 128;
+break;
+case "GET_MODULE_ADDRESS":
+functionCode = 0x3;
+refAddr = 484;
+break;
+case "GET_RESPONSE_DELAY_TIME":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_DI_CONNECTION":
+functionCode = 0x1;
+refAddr = 273;
+break;
+case "GET_ON_DELAY_TIME":
+functionCode = 0x3;
+refAddr = 497;
+break;
+case "READ_DI":
+functionCode = 0x1;
+refAddr = 32;
+break;
+case "READ_DO":
+functionCode = 0x1;
+refAddr = 0;
+break;
+case "SET_DI_CONNECTION":
+functionCode = 0x5;
+refAddr = 273;
+break;
+case "SET_ON_DELAY_TIME":
+functionCode = 0x6;
+refAddr = 497;
+break;
+case "SET_RESPONSE_DELAY_TIME":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "SET_COMMUNICATE_PARAMETER":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "SET_MODULE_ADDRESS":
+functionCode = 0x6;
+refAddr = 484;
+break;
+}
+break;
+#endregion LC103

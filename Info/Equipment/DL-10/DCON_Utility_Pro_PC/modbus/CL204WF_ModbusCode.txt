@@ -1,0 +1,336 @@
+#region CL204WF
+case "CL204WF":
+hasCmd = false;
+switch (cmdTitle)
+{
+case "GET_MODULE_NAME":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODULE_FIRMWARE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_COMMUNICATE_PARAMETER":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODULE_ADDRESS":
+functionCode = 0x3;
+refAddr = 484;
+break;
+case "GET_MODBUS_MISC":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_RESPONSE_DELAY_TIME":
+functionCode = 0x3;
+refAddr = 487;
+break;
+case "GET_WDT_TIMER":
+functionCode = 0x3;
+refAddr = 488;
+break;
+case "GET_WDT_ENABLE":
+functionCode = 0x1;
+refAddr = 260;
+break;
+case "GET_WDT_OVERWRITE":
+functionCode = 0x1;
+refAddr = 259;
+break;
+case "READ_LOG_RTC":
+functionCode = 0x3;
+refAddr = 864;
+break;
+case "GET_LOG_SAMPLE_MODE":
+functionCode = 0x3;
+refAddr = 875;
+break;
+case "GET_LOG_OVERWRITE":
+functionCode = 0x3;
+refAddr = 876;
+break;
+case "GET_LOG_SAMPLE_PERIOD":
+functionCode = 0x3;
+refAddr = 877;
+break;
+case "GET_LOG_START_TIME":
+functionCode = 0x3;
+refAddr = 880;
+break;
+case "READ_LOG_END_TIME":
+functionCode = 0x3;
+refAddr = 886;
+break;
+case "GET_CH0_SIMPLE_AI_HIGH_ALARM_LIMIT":
+functionCode = 0x3;
+refAddr = 224;
+break;
+case "GET_CH0_AI_ALARM_ENABLE_STATUS":
+functionCode = 0x1;
+refAddr = 320;
+break;
+case "GET_CH1_SIMPLE_AI_HIGH_ALARM_LIMIT":
+functionCode = 0x3;
+refAddr = 225;
+break;
+case "GET_CH1_AI_ALARM_ENABLE_STATUS":
+functionCode = 0x1;
+refAddr = 321;
+break;
+case "GET_CH2_SIMPLE_AI_HIGH_ALARM_LIMIT":
+functionCode = 0x3;
+refAddr = 226;
+break;
+case "GET_CH2_SIMPLE_AI_LOW_ALARM_LIMIT":
+functionCode = 0x3;
+refAddr = 234;
+break;
+case "GET_CH2_AI_ALARM_ENABLE_STATUS":
+functionCode = 0x1;
+refAddr = 322;
+break;
+case "GET_CH3_SIMPLE_AI_HIGH_ALARM_LIMIT":
+functionCode = 0x3;
+refAddr = 227;
+break;
+case "GET_CH3_SIMPLE_AI_LOW_ALARM_LIMIT":
+functionCode = 0x3;
+refAddr = 235;
+break;
+case "GET_CH3_AI_ALARM_ENABLE_STATUS":
+functionCode = 0x1;
+refAddr = 323;
+break;
+case "GET_CH4_SIMPLE_AI_HIGH_ALARM_LIMIT":
+functionCode = 0x3;
+refAddr = 228;
+break;
+case "GET_CH4_SIMPLE_AI_LOW_ALARM_LIMIT":
+functionCode = 0x3;
+refAddr = 236;
+break;
+case "GET_CH4_AI_ALARM_ENABLE_STATUS":
+functionCode = 0x1;
+refAddr = 324;
+break;
+case "GET_CH5_SIMPLE_AI_HIGH_ALARM_LIMIT":
+functionCode = 0x3;
+refAddr = 229;
+break;
+case "GET_CH5_SIMPLE_AI_LOW_ALARM_LIMIT":
+functionCode = 0x3;
+refAddr = 237;
+break;
+case "GET_CH5_AI_ALARM_ENABLE_STATUS":
+functionCode = 0x1;
+refAddr = 325;
+break;
+case "GET_CH6_SIMPLE_AI_HIGH_ALARM_LIMIT":
+functionCode = 0x3;
+refAddr = 230;
+break;
+case "GET_CH6_SIMPLE_AI_LOW_ALARM_LIMIT":
+functionCode = 0x3;
+refAddr = 238;
+break;
+case "GET_CH6_AI_ALARM_ENABLE_STATUS":
+functionCode = 0x1;
+refAddr = 326;
+break;
+case "GET_DL_BUZZER_ENSTATUS":
+functionCode = 0x1;
+refAddr = 448;
+break;
+case "GET_DL30X_BUZZER":
+functionCode = 0x3;
+refAddr = 496;
+break;
+case "GET_DL30X_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 450;
+break;
+case "GET_DL30X_HUMIDITY_OFFSET":
+functionCode = 0x3;
+refAddr = 449;
+break;
+case "GET_HCHO_OFFSET":
+functionCode = 0x3;
+refAddr = 448;
+break;
+case "GET_TVOC_OFFSET":
+functionCode = 0x3;
+refAddr = 449;
+break;
+case "READ_CH0_AI":
+functionCode = 0x4;
+refAddr = 0;
+break;
+case "READ_CH1_AI":
+functionCode = 0x4;
+refAddr = 1;
+break;
+case "READ_CH2_AI":
+functionCode = 0x4;
+refAddr = 2;
+break;
+case "READ_CH3_AI":
+functionCode = 0x4;
+refAddr = 3;
+break;
+case "READ_CH5_AI":
+functionCode = 0x4;
+refAddr = 5;
+break;
+case "READ_CH4_AI":
+functionCode = 0x4;
+refAddr = 4;
+break;
+case "READ_CH6_AI":
+functionCode = 0x4;
+refAddr = 6;
+break;
+case "READ_SIMPLE_AI_DO_STATUS":
+functionCode = 0x1;
+refAddr = 0;
+break;
+case "READ_LOW_ALARM_DO_ON":
+functionCode = 0x1;
+refAddr = 288;
+break;
+case "READ_HIGH_ALARM_DO_ON":
+functionCode = 0x1;
+refAddr = 304;
+break;
+case "READ_LOG_STATUS":
+functionCode = 0x4;
+refAddr = 874;
+break;
+case "READ_WDT_STATUS":
+functionCode = 0x1;
+refAddr = 269;
+break;
+case "SET_HCHO_OFFSET":
+functionCode = 0x6;
+refAddr = 448;
+break;
+case "SET_TVOC_OFFSET":
+functionCode = 0x6;
+refAddr = 449;
+break;
+case "SET_DL30X_HUMIDITY_OFFSET":
+functionCode = 0x6;
+refAddr = 449;
+break;
+case "SET_DL30X_TEMPERATURE_OFFSET":
+functionCode = 0x6;
+refAddr = 450;
+break;
+case "SET_CH0_DISABLE_AI_ALARM":
+functionCode = 0x5;
+refAddr = 320;
+break;
+case "SET_DL30X_AI_HIGH_ALARM_LIMIT":
+functionCode = 0x6;
+refAddr = 230;
+break;
+case "SET_CH1_DISABLE_AI_ALARM":
+functionCode = 0x5;
+refAddr = 321;
+break;
+case "SET_CH2_DISABLE_AI_ALARM":
+functionCode = 0x5;
+refAddr = 322;
+break;
+case "SET_DL30X_AI_LOW_ALARM_LIMIT":
+functionCode = 0x6;
+refAddr = 238;
+break;
+case "SET_CH3_DISABLE_AI_ALARM":
+functionCode = 0x5;
+refAddr = 323;
+break;
+case "SET_CH4_DISABLE_AI_ALARM":
+functionCode = 0x5;
+refAddr = 324;
+break;
+case "SET_CH5_DISABLE_AI_ALARM":
+functionCode = 0x5;
+refAddr = 325;
+break;
+case "SET_CH6_DISABLE_AI_ALARM":
+functionCode = 0x5;
+refAddr = 326;
+break;
+case "SET_DL_BUZZER_STATUS":
+functionCode = 0xF;
+refAddr = 448;
+break;
+case "SET_DL30X_BUZZER":
+functionCode = 0x6;
+refAddr = 496;
+break;
+case "OUTPUT_CH0_MFDO":
+functionCode = 0x5;
+refAddr = 0;
+break;
+case "SET_MF_DO_SAFE_VALUE":
+functionCode = 0xF;
+refAddr = 128;
+break;
+case "SET_MF_DO_POWER_ON":
+functionCode = 0xF;
+refAddr = 160;
+break;
+case "READ_MF_DO_SAFE_VALUE":
+functionCode = 0x1;
+refAddr = 128;
+break;
+case "READ_MF_DO_POWER_ON":
+functionCode = 0x1;
+refAddr = 160;
+break;
+case "SET_WDT_OVERWRITE":
+functionCode = 0xF;
+refAddr = 259;
+break;
+case "CLEAR_WDT_ALARM":
+functionCode = 0x5;
+refAddr = 269;
+break;
+case "SET_WDT_TIMER":
+functionCode = 0x6;
+refAddr = 488;
+break;
+case "SET_WDT_ENABLE":
+functionCode = 0xF;
+refAddr = 260;
+break;
+case "SET_LOG_SAMPLE_MODE":
+functionCode = 0x10;
+refAddr = 875;
+break;
+case "SET_LOG_OVERWRITE":
+functionCode = 0x10;
+refAddr = 876;
+break;
+case "SET_LOG_SAMPLE_PERIOD":
+functionCode = 0x10;
+refAddr = 877;
+break;
+case "SET_LOG_START_TIME":
+functionCode = 0x10;
+refAddr = 880;
+break;
+case "SET_LOG_END_TIME":
+functionCode = 0x10;
+refAddr = 886;
+break;
+case "SET_LOG_RTC":
+functionCode = 0x10;
+refAddr = 864;
+break;
+}
+break;
+#endregion CL204WF

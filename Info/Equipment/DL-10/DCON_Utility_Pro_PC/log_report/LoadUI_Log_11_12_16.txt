@@ -1,0 +1,26 @@
+4:57:40 PM-> Language Name
+4:57:40 PM-> OK
+4:57:40 PM-> Refresh_Sorting_Language
+4:57:40 PM-> Select Language
+4:57:43 PM-> Search RU-87PN Addr. Mode
+4:57:43 PM-> Modbus Editor
+4:57:43 PM-> COM Port
+4:57:43 PM-> Start Search
+4:57:43 PM-> Stop Search
+4:57:43 PM-> Command Line
+4:57:43 PM-> Remote I/O quick configuration
+4:57:43 PM-> CE/WES Backup/Restore backplane I-87K I/O configurations
+4:57:43 PM-> Offline Configuration for 87PN
+4:57:43 PM-> Data Logger
+4:57:43 PM-> Language
+4:57:43 PM-> FAQ
+4:57:43 PM-> End Address
+4:57:43 PM-> Start Address
+4:57:43 PM-> ID
+4:57:43 PM-> Address
+4:57:43 PM-> Baud Rate
+4:57:43 PM-> Checksum
+4:57:43 PM-> Format
+4:57:43 PM-> Status
+4:57:43 PM-> Description
+4:57:43 PM-> COM:1

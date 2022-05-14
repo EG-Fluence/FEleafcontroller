@@ -1,0 +1,17 @@
+
+
+********************************[0x46_Registers]********************************
+XXXXX = GET_MODULE_NAME
+XXXXX = GET_MODULE_FIRMWARE
+XXXXX = GET_COMMUNICATE_PARAMETER
+XXXXX = GET_MODBUS_MISC
+XXXXX = SET_COMMUNICATE_PARAMETER
+
+
+********************************[AO_Registers]********************************
+00864 = SET_LOG_RTC
+00875 = SET_LOG_SAMPLE_MODE
+00876 = SET_LOG_OVERWRITE
+00877 = SET_LOG_SAMPLE_PERIOD
+00880 = SET_LOG_START_TIME
+00886 = SET_LOG_END_TIME

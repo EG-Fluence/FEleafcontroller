@@ -1,0 +1,426 @@
+2:16:57 PM-> English
+2:16:57 PM-> Chinese
+2:16:57 PM-> Don't show this next time
+2:16:57 PM-> Search RU-87PN Addr. Mode
+2:16:57 PM-> Modbus Editor
+2:16:57 PM-> COM Port
+2:16:57 PM-> Start Search
+2:16:57 PM-> Stop Search
+2:16:57 PM-> Command Line
+2:16:57 PM-> Remote I/O quick configuration
+2:16:57 PM-> CE/WES Backup/Restore backplane I-87K I/O configurations
+2:16:57 PM-> Offline Configuration for 87PN
+2:16:57 PM-> Data Logger
+2:16:57 PM-> Language
+2:16:57 PM-> FAQ
+2:16:57 PM-> End Address
+2:16:57 PM-> Start Address
+2:16:57 PM-> ID
+2:16:57 PM-> Address
+2:16:57 PM-> Baud Rate
+2:16:57 PM-> Checksum
+2:16:57 PM-> Format
+2:16:57 PM-> Status
+2:16:57 PM-> Description
+2:16:57 PM-> COM:1
+2:17:22 PM-> 01H
+2:17:22 PM-> 7
+2:17:22 PM-> RF Channel
+2:17:22 PM-> RF Pan ID
+2:17:22 PM-> Reverse DO State
+2:17:22 PM-> ms
+2:17:22 PM-> Min. Half Pulse Width
+2:17:22 PM-> RF Power
+2:17:22 PM-> Enable ZT Software Configuration
+2:17:22 PM-> 1
+2:17:22 PM-> Response Delay
+2:17:22 PM-> Parity
+2:17:22 PM-> Checksum
+2:17:22 PM-> Baud Rate
+2:17:22 PM-> Protocol
+2:17:22 PM-> Address
+2:17:22 PM-> 01H
+2:17:22 PM-> 7
+2:17:22 PM-> RF Channel
+2:17:22 PM-> RF Pan ID
+2:17:22 PM-> Reverse DO State
+2:17:22 PM-> ms
+2:17:22 PM-> Min. Half Pulse Width
+2:17:22 PM-> RF Power
+2:17:22 PM-> Enable ZT Software Configuration
+2:17:22 PM-> 1
+2:17:22 PM-> Response Delay
+2:17:22 PM-> Parity
+2:17:22 PM-> Checksum
+2:17:22 PM-> Baud Rate
+2:17:22 PM-> Protocol
+2:17:22 PM-> Address
+2:17:22 PM-> Type Code
+2:17:22 PM-> AI Value
+2:17:22 PM-> Set all channels as CH0
+2:17:22 PM-> Sample Rate
+2:17:22 PM-> CH:00
+2:17:22 PM-> CH:0
+2:17:22 PM-> CH:01
+2:17:22 PM-> CH:1
+2:17:22 PM-> CH:02
+2:17:22 PM-> CH:2
+2:17:22 PM-> CH:03
+2:17:22 PM-> CH:3
+2:17:22 PM-> 01H
+2:17:22 PM-> 7
+2:17:22 PM-> RF Channel
+2:17:22 PM-> RF Pan ID
+2:17:22 PM-> Reverse DO State
+2:17:22 PM-> ms
+2:17:22 PM-> Min. Half Pulse Width
+2:17:22 PM-> RF Power
+2:17:22 PM-> Enable ZT Software Configuration
+2:17:22 PM-> 1
+2:17:22 PM-> Response Delay
+2:17:22 PM-> Parity
+2:17:22 PM-> Checksum
+2:17:22 PM-> Baud Rate
+2:17:22 PM-> Protocol
+2:17:22 PM-> Address
+2:17:22 PM-> Type Code
+2:17:22 PM-> AI Value
+2:17:22 PM-> Set all channels as CH0
+2:17:22 PM-> Sample Rate
+2:17:22 PM-> CH:00
+2:17:22 PM-> CH:0
+2:17:22 PM-> CH:01
+2:17:22 PM-> CH:1
+2:17:22 PM-> CH:02
+2:17:22 PM-> CH:2
+2:17:22 PM-> CH:03
+2:17:22 PM-> CH:3
+2:17:22 PM-> WDT Timeout Count
+2:17:22 PM-> Enable Output When WDT Timeout
+2:17:22 PM-> Set Timer
+2:17:22 PM-> (0.1 ~ 25.5 sec)
+2:17:22 PM-> Reset Watchdog Status
+2:17:22 PM-> Auto Send Host OK
+2:17:22 PM-> Enable WDT
+2:17:22 PM-> WDT Timeout
+2:17:22 PM-> 01H
+2:17:22 PM-> 7
+2:17:22 PM-> RF Channel
+2:17:22 PM-> RF Pan ID
+2:17:22 PM-> Reverse DO State
+2:17:22 PM-> ms
+2:17:22 PM-> Min. Half Pulse Width
+2:17:22 PM-> RF Power
+2:17:22 PM-> Enable ZT Software Configuration
+2:17:22 PM-> 1
+2:17:22 PM-> Response Delay
+2:17:22 PM-> Parity
+2:17:22 PM-> Checksum
+2:17:22 PM-> Baud Rate
+2:17:22 PM-> Protocol
+2:17:22 PM-> Address
+2:17:22 PM-> Type Code
+2:17:22 PM-> AI Value
+2:17:22 PM-> Set all channels as CH0
+2:17:22 PM-> Sample Rate
+2:17:22 PM-> CH:00
+2:17:22 PM-> CH:0
+2:17:22 PM-> CH:01
+2:17:22 PM-> CH:1
+2:17:22 PM-> CH:02
+2:17:22 PM-> CH:2
+2:17:22 PM-> CH:03
+2:17:22 PM-> CH:3
+2:17:22 PM-> WDT Timeout Count
+2:17:22 PM-> Enable Output When WDT Timeout
+2:17:22 PM-> Set Timer
+2:17:22 PM-> (0.1 ~ 25.5 sec)
+2:17:22 PM-> Reset Watchdog Status
+2:17:22 PM-> Auto Send Host OK
+2:17:22 PM-> Enable WDT
+2:17:22 PM-> WDT Timeout
+2:17:22 PM-> Reverse DI State  (INIT*)
+2:17:22 PM-> DI Bit Status
+2:17:22 PM-> 0
+2:17:22 PM-> DI Value
+2:17:22 PM-> 01H
+2:17:22 PM-> 7
+2:17:22 PM-> RF Channel
+2:17:22 PM-> RF Pan ID
+2:17:22 PM-> Reverse DO State
+2:17:22 PM-> ms
+2:17:22 PM-> Min. Half Pulse Width
+2:17:22 PM-> RF Power
+2:17:22 PM-> Enable ZT Software Configuration
+2:17:22 PM-> 1
+2:17:22 PM-> Response Delay
+2:17:22 PM-> Parity
+2:17:22 PM-> Checksum
+2:17:22 PM-> Baud Rate
+2:17:22 PM-> Protocol
+2:17:22 PM-> Address
+2:17:22 PM-> Type Code
+2:17:22 PM-> AI Value
+2:17:22 PM-> Set all channels as CH0
+2:17:22 PM-> Sample Rate
+2:17:22 PM-> CH:00
+2:17:22 PM-> CH:0
+2:17:22 PM-> CH:01
+2:17:22 PM-> CH:1
+2:17:22 PM-> CH:02
+2:17:22 PM-> CH:2
+2:17:22 PM-> CH:03
+2:17:22 PM-> CH:3
+2:17:22 PM-> WDT Timeout Count
+2:17:22 PM-> Enable Output When WDT Timeout
+2:17:22 PM-> Set Timer
+2:17:22 PM-> (0.1 ~ 25.5 sec)
+2:17:22 PM-> Reset Watchdog Status
+2:17:22 PM-> Auto Send Host OK
+2:17:22 PM-> Enable WDT
+2:17:22 PM-> WDT Timeout
+2:17:22 PM-> Reverse DI State  (INIT*)
+2:17:22 PM-> DI Bit Status
+2:17:22 PM-> 0
+2:17:22 PM-> DI Value
+2:17:22 PM-> Low Latch
+2:17:22 PM-> High Latch
+2:17:22 PM-> Clear DI Latch
+2:17:22 PM-> 01H
+2:17:22 PM-> 7
+2:17:22 PM-> RF Channel
+2:17:22 PM-> RF Pan ID
+2:17:22 PM-> Reverse DO State
+2:17:22 PM-> ms
+2:17:22 PM-> Min. Half Pulse Width
+2:17:22 PM-> RF Power
+2:17:22 PM-> Enable ZT Software Configuration
+2:17:22 PM-> 1
+2:17:22 PM-> Response Delay
+2:17:22 PM-> Parity
+2:17:22 PM-> Checksum
+2:17:22 PM-> Baud Rate
+2:17:22 PM-> Protocol
+2:17:22 PM-> Address
+2:17:22 PM-> Type Code
+2:17:22 PM-> AI Value
+2:17:22 PM-> Set all channels as CH0
+2:17:22 PM-> Sample Rate
+2:17:22 PM-> CH:00
+2:17:22 PM-> CH:0
+2:17:22 PM-> CH:01
+2:17:22 PM-> CH:1
+2:17:22 PM-> CH:02
+2:17:22 PM-> CH:2
+2:17:22 PM-> CH:03
+2:17:22 PM-> CH:3
+2:17:22 PM-> WDT Timeout Count
+2:17:22 PM-> Enable Output When WDT Timeout
+2:17:22 PM-> Set Timer
+2:17:22 PM-> (0.1 ~ 25.5 sec)
+2:17:22 PM-> Reset Watchdog Status
+2:17:22 PM-> Auto Send Host OK
+2:17:22 PM-> Enable WDT
+2:17:22 PM-> WDT Timeout
+2:17:22 PM-> Reverse DI State  (INIT*)
+2:17:22 PM-> DI Bit Status
+2:17:22 PM-> 0
+2:17:22 PM-> DI Value
+2:17:22 PM-> Low Latch
+2:17:22 PM-> High Latch
+2:17:22 PM-> Clear DI Latch
+2:17:22 PM-> DI Counter
+2:17:22 PM-> CH: 00
+2:17:22 PM-> Clear
+2:17:22 PM-> CH: 01
+2:17:23 PM-> 01H
+2:17:23 PM-> 7
+2:17:23 PM-> RF Channel
+2:17:23 PM-> RF Pan ID
+2:17:23 PM-> Reverse DO State
+2:17:23 PM-> ms
+2:17:23 PM-> Min. Half Pulse Width
+2:17:23 PM-> RF Power
+2:17:23 PM-> Enable ZT Software Configuration
+2:17:23 PM-> 1
+2:17:23 PM-> Response Delay
+2:17:23 PM-> Parity
+2:17:23 PM-> Checksum
+2:17:23 PM-> Baud Rate
+2:17:23 PM-> Protocol
+2:17:23 PM-> Address
+2:17:23 PM-> Type Code
+2:17:23 PM-> AI Value
+2:17:23 PM-> Set all channels as CH0
+2:17:23 PM-> Sample Rate
+2:17:23 PM-> CH:00
+2:17:23 PM-> CH:0
+2:17:23 PM-> CH:01
+2:17:23 PM-> CH:1
+2:17:23 PM-> CH:02
+2:17:23 PM-> CH:2
+2:17:23 PM-> CH:03
+2:17:23 PM-> CH:3
+2:17:23 PM-> WDT Timeout Count
+2:17:23 PM-> Enable Output When WDT Timeout
+2:17:23 PM-> Set Timer
+2:17:23 PM-> (0.1 ~ 25.5 sec)
+2:17:23 PM-> Reset Watchdog Status
+2:17:23 PM-> Auto Send Host OK
+2:17:23 PM-> Enable WDT
+2:17:23 PM-> WDT Timeout
+2:17:23 PM-> Reverse DI State  (INIT*)
+2:17:23 PM-> DI Bit Status
+2:17:23 PM-> 0
+2:17:23 PM-> DI Value
+2:17:23 PM-> Low Latch
+2:17:23 PM-> High Latch
+2:17:23 PM-> Clear DI Latch
+2:17:23 PM-> DI Counter
+2:17:23 PM-> CH: 00
+2:17:23 PM-> Clear
+2:17:23 PM-> CH: 01
+2:17:23 PM-> Alarm Mode
+2:17:23 PM-> Low Alarm Limit
+2:17:23 PM-> High Alarm Limit
+2:17:23 PM-> Set Alarm
+2:17:23 PM-> 01H
+2:17:23 PM-> 7
+2:17:23 PM-> RF Channel
+2:17:23 PM-> RF Pan ID
+2:17:23 PM-> Reverse DO State
+2:17:23 PM-> ms
+2:17:23 PM-> Min. Half Pulse Width
+2:17:23 PM-> RF Power
+2:17:23 PM-> Enable ZT Software Configuration
+2:17:23 PM-> 1
+2:17:23 PM-> Response Delay
+2:17:23 PM-> Parity
+2:17:23 PM-> Checksum
+2:17:23 PM-> Baud Rate
+2:17:23 PM-> Protocol
+2:17:23 PM-> Address
+2:17:23 PM-> Type Code
+2:17:23 PM-> AI Value
+2:17:23 PM-> Set all channels as CH0
+2:17:23 PM-> Sample Rate
+2:17:23 PM-> CH:00
+2:17:23 PM-> CH:0
+2:17:23 PM-> CH:01
+2:17:23 PM-> CH:1
+2:17:23 PM-> CH:02
+2:17:23 PM-> CH:2
+2:17:23 PM-> CH:03
+2:17:23 PM-> CH:3
+2:17:23 PM-> WDT Timeout Count
+2:17:23 PM-> Enable Output When WDT Timeout
+2:17:23 PM-> Set Timer
+2:17:23 PM-> (0.1 ~ 25.5 sec)
+2:17:23 PM-> Reset Watchdog Status
+2:17:23 PM-> Auto Send Host OK
+2:17:23 PM-> Enable WDT
+2:17:23 PM-> WDT Timeout
+2:17:23 PM-> Reverse DI State  (INIT*)
+2:17:23 PM-> DI Bit Status
+2:17:23 PM-> 0
+2:17:23 PM-> DI Value
+2:17:23 PM-> Low Latch
+2:17:23 PM-> High Latch
+2:17:23 PM-> Clear DI Latch
+2:17:23 PM-> DI Counter
+2:17:23 PM-> CH: 00
+2:17:23 PM-> Clear
+2:17:23 PM-> CH: 01
+2:17:23 PM-> Alarm Mode
+2:17:23 PM-> Low Alarm Limit
+2:17:23 PM-> High Alarm Limit
+2:17:23 PM-> Set Alarm
+2:17:23 PM-> Low Alarm Status
+2:17:23 PM-> High Alarm Status
+2:17:23 PM-> DO Bit Status
+2:17:23 PM-> Read Safe Value
+2:17:23 PM-> Read Power On Value
+2:17:23 PM-> Read DO
+2:17:23 PM-> Set to [Safe Value]
+2:17:23 PM-> Set to [Power On Value]
+2:17:23 PM-> DO0
+2:17:23 PM-> DO1
+2:17:23 PM-> 01H
+2:17:23 PM-> 7
+2:17:23 PM-> RF Channel
+2:17:23 PM-> RF Pan ID
+2:17:23 PM-> Reverse DO State
+2:17:23 PM-> ms
+2:17:23 PM-> Min. Half Pulse Width
+2:17:23 PM-> RF Power
+2:17:23 PM-> Enable ZT Software Configuration
+2:17:23 PM-> 1
+2:17:23 PM-> Response Delay
+2:17:23 PM-> Parity
+2:17:23 PM-> Checksum
+2:17:23 PM-> Baud Rate
+2:17:23 PM-> Protocol
+2:17:23 PM-> Address
+2:17:23 PM-> Type Code
+2:17:23 PM-> AI Value
+2:17:23 PM-> Set all channels as CH0
+2:17:23 PM-> Sample Rate
+2:17:23 PM-> CH:00
+2:17:23 PM-> CH:0
+2:17:23 PM-> CH:01
+2:17:23 PM-> CH:1
+2:17:23 PM-> CH:02
+2:17:23 PM-> CH:2
+2:17:23 PM-> CH:03
+2:17:23 PM-> CH:3
+2:17:23 PM-> WDT Timeout Count
+2:17:23 PM-> Enable Output When WDT Timeout
+2:17:23 PM-> Set Timer
+2:17:23 PM-> (0.1 ~ 25.5 sec)
+2:17:23 PM-> Reset Watchdog Status
+2:17:23 PM-> Auto Send Host OK
+2:17:23 PM-> Enable WDT
+2:17:23 PM-> WDT Timeout
+2:17:23 PM-> Reverse DI State  (INIT*)
+2:17:23 PM-> DI Bit Status
+2:17:23 PM-> 0
+2:17:23 PM-> DI Value
+2:17:23 PM-> Low Latch
+2:17:23 PM-> High Latch
+2:17:23 PM-> Clear DI Latch
+2:17:23 PM-> DI Counter
+2:17:23 PM-> CH: 00
+2:17:23 PM-> Clear
+2:17:23 PM-> CH: 01
+2:17:23 PM-> Alarm Mode
+2:17:23 PM-> Low Alarm Limit
+2:17:23 PM-> High Alarm Limit
+2:17:23 PM-> Set Alarm
+2:17:23 PM-> Low Alarm Status
+2:17:23 PM-> High Alarm Status
+2:17:23 PM-> DO Bit Status
+2:17:23 PM-> Read Safe Value
+2:17:23 PM-> Read Power On Value
+2:17:23 PM-> Read DO
+2:17:23 PM-> Set to [Safe Value]
+2:17:23 PM-> Set to [Power On Value]
+2:17:23 PM-> DO0
+2:17:23 PM-> DO1
+2:17:23 PM-> Configuration
+2:17:23 PM-> DSub Connector
+2:17:23 PM-> Set Module Configurations
+2:17:23 PM-> Enable Check Command Received Timeout
+2:17:23 PM-> Analog Format
+2:17:23 PM-> Sample Mode
+2:17:23 PM-> 60/50 Hz
+2:17:23 PM-> AI/DO Alarm
+2:17:23 PM-> SingleEnd
+2:17:23 PM-> Enable SingleEnded
+2:17:23 PM-> DI
+2:17:23 PM-> Host WDT
+2:17:23 PM-> Commands Log
+2:17:23 PM-> Export Commands
+2:17:23 PM-> Log All Commands
+2:17:23 PM-> Save to path\log_report\
+2:17:23 PM-> About
+2:17:23 PM-> Exit

@@ -1,0 +1,50 @@
+5:30:39 PM-> aaa SearchRun =False
+5:30:39 PM-> bbb SearchRun =False
+5:30:39 PM-> SearchRun True, aa 128, cc0
+5:30:40 PM-> SearchRun True, aa 128, cc1
+5:30:42 PM-> SearchRun True, aa 0, cc0
+5:30:43 PM-> SearchRun True, aa 0, cc1
+5:30:44 PM-> SearchRun True, aa 129, cc0
+5:30:45 PM-> SearchRun True, aa 129, cc1
+5:30:47 PM-> SearchRun True, aa 1, cc0
+5:30:47 PM-> SearchRun True, aa 1, cc1
+5:30:49 PM-> SearchRun True, aa 130, cc0
+5:30:49 PM-> aaa SearchRun =False
+5:30:49 PM-> bbb SearchRun =False
+5:30:49 PM-> aaa SearchRun =False
+5:30:49 PM-> bbb SearchRun =False
+5:30:49 PM-> 00028
+5:30:51 PM-> aaa SearchRun =False
+5:30:51 PM-> bbb SearchRun =False
+5:30:54 PM-> aaa SearchRun =False
+5:30:54 PM-> bbb SearchRun =False
+5:30:55 PM-> aaa SearchRun =False
+5:30:55 PM-> bbb SearchRun =False
+5:30:55 PM-> aaa SearchRun =False
+5:30:55 PM-> bbb SearchRun =False
+5:30:56 PM-> aaa SearchRun =False
+5:30:56 PM-> bbb SearchRun =False
+5:30:56 PM-> aaa SearchRun =False
+5:30:56 PM-> bbb SearchRun =False
+5:31:15 PM-> aaa SearchRun =False
+5:31:15 PM-> bbb SearchRun =False
+5:31:18 PM-> aaa SearchRun =False
+5:31:18 PM-> bbb SearchRun =False
+5:31:19 PM-> aaa SearchRun =False
+5:31:19 PM-> bbb SearchRun =False
+5:31:19 PM-> aaa SearchRun =False
+5:31:19 PM-> bbb SearchRun =False
+5:31:20 PM-> aaa SearchRun =False
+5:31:20 PM-> bbb SearchRun =False
+5:31:23 PM-> aaa SearchRun =False
+5:31:23 PM-> bbb SearchRun =False
+5:31:23 PM-> aaa SearchRun =False
+5:31:23 PM-> bbb SearchRun =False
+5:31:24 PM-> aaa SearchRun =False
+5:31:24 PM-> bbb SearchRun =False
+5:31:25 PM-> aaa SearchRun =False
+5:31:25 PM-> bbb SearchRun =False
+5:31:25 PM-> aaa SearchRun =False
+5:31:25 PM-> bbb SearchRun =False
+5:31:35 PM-> aaa SearchRun =False
+5:31:35 PM-> bbb SearchRun =False

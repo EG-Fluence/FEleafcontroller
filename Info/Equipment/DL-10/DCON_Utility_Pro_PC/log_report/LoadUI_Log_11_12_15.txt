@@ -1,0 +1,549 @@
+3:04:16 PM-> English
+3:04:16 PM-> Chinese
+3:04:16 PM-> Don't show this next time
+3:04:16 PM-> Search RU-87PN Addr. Mode
+3:04:16 PM-> Modbus Editor
+3:04:16 PM-> COM Port
+3:04:16 PM-> Start Search
+3:04:16 PM-> Stop Search
+3:04:16 PM-> Command Line
+3:04:16 PM-> Remote I/O quick configuration
+3:04:16 PM-> CE/WES Backup/Restore backplane I-87K I/O configurations
+3:04:16 PM-> Offline Configuration for 87PN
+3:04:16 PM-> Data Logger
+3:04:16 PM-> Language
+3:04:16 PM-> FAQ
+3:04:16 PM-> End Address
+3:04:16 PM-> Start Address
+3:04:16 PM-> ID
+3:04:16 PM-> Address
+3:04:16 PM-> Baud Rate
+3:04:16 PM-> Checksum
+3:04:16 PM-> Format
+3:04:16 PM-> Status
+3:04:16 PM-> Description
+3:04:16 PM-> COM:1
+3:04:18 PM-> Edit Command
+3:04:18 PM-> Command Reference
+3:04:18 PM-> Start Search
+3:04:18 PM-> Modify
+3:04:18 PM-> Slot Index
+3:04:18 PM-> Compare Mode
+3:04:18 PM-> Compared Response
+3:04:18 PM-> Send Command
+3:04:18 PM-> Timeout (ms)
+3:04:18 PM-> Delay for Next (ms)
+3:04:18 PM-> Data Format
+3:04:18 PM-> Checksum
+3:04:18 PM-> Baud Rate
+3:04:18 PM-> Protocol
+3:04:18 PM-> COM Port
+3:04:18 PM-> Save
+3:04:18 PM-> Load
+3:04:18 PM-> Remove
+3:04:18 PM-> Add >>
+3:04:18 PM-> Data Logger
+3:04:18 PM-> View
+3:04:18 PM-> Interval to Change File Name
+3:04:18 PM-> Use Default Name
+3:04:18 PM-> Saved File Mode
+3:04:18 PM-> Pause
+3:04:18 PM-> Log To File
+3:04:18 PM-> Log Error Only
+3:04:18 PM-> Stop
+3:04:18 PM-> Start
+3:04:18 PM-> COM
+3:04:18 PM-> Command
+3:04:18 PM-> Response Data
+3:04:18 PM-> Compared Data
+3:04:18 PM-> Response(ms)
+3:04:18 PM-> Result
+3:04:18 PM-> Sent
+3:04:18 PM-> Error
+3:04:18 PM-> Timeout
+3:04:18 PM-> About
+3:04:21 PM-> Language Name
+3:04:21 PM-> OK
+3:04:21 PM-> Refresh_Sorting_Language
+3:04:21 PM-> Select Language
+3:04:28 PM-> Search RU-87PN Addr. Mode
+3:04:28 PM-> Modbus Editor
+3:04:28 PM-> COM Port
+3:04:28 PM-> Start Search
+3:04:28 PM-> Stop Search
+3:04:28 PM-> Command Line
+3:04:28 PM-> Remote I/O quick configuration
+3:04:28 PM-> CE/WES Backup/Restore backplane I-87K I/O configurations
+3:04:28 PM-> Offline Configuration for 87PN
+3:04:28 PM-> Data Logger
+3:04:28 PM-> Language
+3:04:28 PM-> FAQ
+3:04:28 PM-> End Address
+3:04:28 PM-> Start Address
+3:04:28 PM-> ID
+3:04:28 PM-> Address
+3:04:28 PM-> Baud Rate
+3:04:28 PM-> Checksum
+3:04:28 PM-> Format
+3:04:28 PM-> Status
+3:04:28 PM-> Description
+3:04:28 PM-> COM:1
+3:06:36 PM-> English
+3:06:36 PM-> Chinese
+3:06:36 PM-> Don't show this next time
+3:06:37 PM-> Search RU-87PN Addr. Mode
+3:06:37 PM-> Modbus Editor
+3:06:37 PM-> COM Port
+3:06:37 PM-> Start Search
+3:06:37 PM-> Stop Search
+3:06:37 PM-> Command Line
+3:06:37 PM-> Remote I/O quick configuration
+3:06:37 PM-> CE/WES Backup/Restore backplane I-87K I/O configurations
+3:06:37 PM-> Offline Configuration for 87PN
+3:06:37 PM-> Data Logger
+3:06:37 PM-> Language
+3:06:37 PM-> FAQ
+3:06:37 PM-> End Address
+3:06:37 PM-> Start Address
+3:06:37 PM-> ID
+3:06:37 PM-> Address
+3:06:37 PM-> Baud Rate
+3:06:37 PM-> Checksum
+3:06:37 PM-> Format
+3:06:37 PM-> Status
+3:06:37 PM-> Description
+3:06:37 PM-> COM:1
+3:06:38 PM-> Language Name
+3:06:38 PM-> OK
+3:06:38 PM-> Refresh_Sorting_Language
+3:06:38 PM-> Select Language
+3:06:43 PM-> Language Name
+3:06:43 PM-> OK
+3:06:43 PM-> Refresh_Sorting_Language
+3:06:43 PM-> Select Language
+3:06:48 PM-> Search RU-87PN Addr. Mode
+3:06:48 PM-> Modbus Editor
+3:06:48 PM-> COM Port
+3:06:48 PM-> Start Search
+3:06:48 PM-> Stop Search
+3:06:48 PM-> Command Line
+3:06:48 PM-> Remote I/O quick configuration
+3:06:48 PM-> CE/WES Backup/Restore backplane I-87K I/O configurations
+3:06:48 PM-> Offline Configuration for 87PN
+3:06:48 PM-> Data Logger
+3:06:48 PM-> Language
+3:06:48 PM-> FAQ
+3:06:48 PM-> End Address
+3:06:48 PM-> Start Address
+3:06:48 PM-> ID
+3:06:48 PM-> Address
+3:06:48 PM-> Baud Rate
+3:06:48 PM-> Checksum
+3:06:48 PM-> Format
+3:06:48 PM-> Status
+3:06:48 PM-> Description
+3:06:48 PM-> COM:1
+3:06:57 PM-> Language Name
+3:06:57 PM-> OK
+3:06:57 PM-> Refresh_Sorting_Language
+3:06:57 PM-> Select Language
+3:07:04 PM-> Language Name
+3:07:04 PM-> OK
+3:07:04 PM-> Refresh_Sorting_Language
+3:07:04 PM-> Select Language
+3:07:05 PM-> Search RU-87PN Addr. Mode
+3:07:05 PM-> Modbus Editor
+3:07:05 PM-> COM Port
+3:07:05 PM-> Start Search
+3:07:05 PM-> Stop Search
+3:07:05 PM-> Command Line
+3:07:05 PM-> Remote I/O quick configuration
+3:07:05 PM-> CE/WES Backup/Restore backplane I-87K I/O configurations
+3:07:05 PM-> Offline Configuration for 87PN
+3:07:05 PM-> Data Logger
+3:07:05 PM-> Language
+3:07:05 PM-> FAQ
+3:07:05 PM-> End Address
+3:07:05 PM-> Start Address
+3:07:05 PM-> ID
+3:07:05 PM-> Address
+3:07:05 PM-> Baud Rate
+3:07:05 PM-> Checksum
+3:07:05 PM-> Format
+3:07:05 PM-> Status
+3:07:05 PM-> Description
+3:07:05 PM-> COM:1
+3:07:12 PM-> Language Name
+3:07:12 PM-> OK
+3:07:12 PM-> Refresh_Sorting_Language
+3:07:12 PM-> Select Language
+3:07:20 PM-> Language Name
+3:07:20 PM-> OK
+3:07:20 PM-> Refresh_Sorting_Language
+3:07:20 PM-> Select Language
+3:07:22 PM-> Search RU-87PN Addr. Mode
+3:07:22 PM-> Modbus Editor
+3:07:22 PM-> COM Port
+3:07:22 PM-> Start Search
+3:07:22 PM-> Stop Search
+3:07:22 PM-> Command Line
+3:07:22 PM-> Remote I/O quick configuration
+3:07:22 PM-> CE/WES Backup/Restore backplane I-87K I/O configurations
+3:07:22 PM-> Offline Configuration for 87PN
+3:07:22 PM-> Data Logger
+3:07:22 PM-> Language
+3:07:22 PM-> FAQ
+3:07:22 PM-> End Address
+3:07:22 PM-> Start Address
+3:07:22 PM-> ID
+3:07:22 PM-> Address
+3:07:22 PM-> Baud Rate
+3:07:22 PM-> Checksum
+3:07:22 PM-> Format
+3:07:22 PM-> Status
+3:07:22 PM-> Description
+3:07:22 PM-> COM:1
+3:07:28 PM-> English
+3:07:28 PM-> Chinese
+3:07:28 PM-> Don't show this next time
+3:07:28 PM-> Search RU-87PN Addr. Mode
+3:07:28 PM-> Modbus Editor
+3:07:28 PM-> COM Port
+3:07:28 PM-> Start Search
+3:07:28 PM-> Stop Search
+3:07:28 PM-> Command Line
+3:07:28 PM-> Remote I/O quick configuration
+3:07:28 PM-> CE/WES Backup/Restore backplane I-87K I/O configurations
+3:07:28 PM-> Offline Configuration for 87PN
+3:07:28 PM-> Data Logger
+3:07:28 PM-> Language
+3:07:28 PM-> FAQ
+3:07:28 PM-> End Address
+3:07:28 PM-> Start Address
+3:07:28 PM-> ID
+3:07:28 PM-> Address
+3:07:28 PM-> Baud Rate
+3:07:28 PM-> Checksum
+3:07:28 PM-> Format
+3:07:28 PM-> Status
+3:07:28 PM-> Description
+3:07:28 PM-> COM:1
+3:07:29 PM-> Language Name
+3:07:29 PM-> OK
+3:07:29 PM-> Refresh_Sorting_Language
+3:07:29 PM-> Select Language
+3:07:32 PM-> Language Name
+3:07:32 PM-> OK
+3:07:32 PM-> Refresh_Sorting_Language
+3:07:32 PM-> Select Language
+3:07:34 PM-> Language Name
+3:07:34 PM-> OK
+3:07:34 PM-> Refresh_Sorting_Language
+3:07:34 PM-> Select Language
+3:07:35 PM-> Search RU-87PN Addr. Mode
+3:07:35 PM-> Modbus Editor
+3:07:35 PM-> COM Port
+3:07:35 PM-> Start Search
+3:07:35 PM-> Stop Search
+3:07:35 PM-> Command Line
+3:07:35 PM-> Remote I/O quick configuration
+3:07:35 PM-> CE/WES Backup/Restore backplane I-87K I/O configurations
+3:07:35 PM-> Offline Configuration for 87PN
+3:07:35 PM-> Data Logger
+3:07:35 PM-> Language
+3:07:35 PM-> FAQ
+3:07:35 PM-> End Address
+3:07:35 PM-> Start Address
+3:07:35 PM-> ID
+3:07:35 PM-> Address
+3:07:35 PM-> Baud Rate
+3:07:35 PM-> Checksum
+3:07:35 PM-> Format
+3:07:35 PM-> Status
+3:07:35 PM-> Description
+3:07:35 PM-> COM:1
+3:16:32 PM-> English
+3:16:32 PM-> Chinese
+3:16:32 PM-> Don't show this next time
+3:16:32 PM-> Search RU-87PN Addr. Mode
+3:16:32 PM-> Modbus Editor
+3:16:32 PM-> COM Port
+3:16:32 PM-> Start Search
+3:16:32 PM-> Stop Search
+3:16:32 PM-> Command Line
+3:16:32 PM-> Remote I/O quick configuration
+3:16:32 PM-> CE/WES Backup/Restore backplane I-87K I/O configurations
+3:16:32 PM-> Offline Configuration for 87PN
+3:16:32 PM-> Data Logger
+3:16:32 PM-> Language
+3:16:32 PM-> FAQ
+3:16:32 PM-> End Address
+3:16:32 PM-> Start Address
+3:16:32 PM-> ID
+3:16:32 PM-> Address
+3:16:32 PM-> Baud Rate
+3:16:32 PM-> Checksum
+3:16:32 PM-> Format
+3:16:32 PM-> Status
+3:16:32 PM-> Description
+3:16:32 PM-> COM:1
+3:16:43 PM-> 01H
+3:16:43 PM-> 7
+3:16:43 PM-> RF Channel
+3:16:43 PM-> RF Pan ID
+3:16:43 PM-> Reverse DO State
+3:16:43 PM-> ms
+3:16:43 PM-> Min. Half Pulse Width
+3:16:43 PM-> RF Power
+3:16:43 PM-> Enable ZT Software Configuration
+3:16:43 PM-> 1
+3:16:43 PM-> Response Delay
+3:16:43 PM-> Parity
+3:16:43 PM-> Checksum
+3:16:43 PM-> Baud Rate
+3:16:43 PM-> Protocol
+3:16:43 PM-> Address
+3:16:44 PM-> 01H
+3:16:44 PM-> 7
+3:16:44 PM-> RF Channel
+3:16:44 PM-> RF Pan ID
+3:16:44 PM-> Reverse DO State
+3:16:44 PM-> ms
+3:16:44 PM-> Min. Half Pulse Width
+3:16:44 PM-> RF Power
+3:16:44 PM-> Enable ZT Software Configuration
+3:16:44 PM-> 1
+3:16:44 PM-> Response Delay
+3:16:44 PM-> Parity
+3:16:44 PM-> Checksum
+3:16:44 PM-> Baud Rate
+3:16:44 PM-> Protocol
+3:16:44 PM-> Address
+3:16:44 PM-> WDT Timeout Count
+3:16:44 PM-> Enable Output When WDT Timeout
+3:16:44 PM-> Set Timer
+3:16:44 PM-> (0.1 ~ 25.5 sec)
+3:16:44 PM-> Reset Watchdog Status
+3:16:44 PM-> Auto Send Host OK
+3:16:44 PM-> Enable WDT
+3:16:44 PM-> WDT Timeout
+3:16:45 PM-> 01H
+3:16:45 PM-> 7
+3:16:45 PM-> RF Channel
+3:16:45 PM-> RF Pan ID
+3:16:45 PM-> Reverse DO State
+3:16:45 PM-> ms
+3:16:45 PM-> Min. Half Pulse Width
+3:16:45 PM-> RF Power
+3:16:45 PM-> Enable ZT Software Configuration
+3:16:45 PM-> 1
+3:16:45 PM-> Response Delay
+3:16:45 PM-> Parity
+3:16:45 PM-> Checksum
+3:16:45 PM-> Baud Rate
+3:16:45 PM-> Protocol
+3:16:45 PM-> Address
+3:16:45 PM-> WDT Timeout Count
+3:16:45 PM-> Enable Output When WDT Timeout
+3:16:45 PM-> Set Timer
+3:16:45 PM-> (0.1 ~ 25.5 sec)
+3:16:45 PM-> Reset Watchdog Status
+3:16:45 PM-> Auto Send Host OK
+3:16:45 PM-> Enable WDT
+3:16:45 PM-> WDT Timeout
+3:16:45 PM-> Exit
+3:16:45 PM-> Configuration
+3:16:45 PM-> Analog Format
+3:16:45 PM-> Set Module Configurations
+3:16:45 PM-> AI
+3:16:45 PM-> Set Type Code As CH:0
+3:16:45 PM-> 0
+3:16:45 PM-> -
+3:16:45 PM-> +
+3:16:45 PM-> CH:15
+3:16:45 PM-> CH:14
+3:16:45 PM-> CH:13
+3:16:45 PM-> CH:12
+3:16:45 PM-> CH:11
+3:16:45 PM-> CH:10
+3:16:45 PM-> CH:9
+3:16:45 PM-> CH:8
+3:16:45 PM-> CH:7
+3:16:45 PM-> CH:6
+3:16:45 PM-> CH:5
+3:16:45 PM-> CH:4
+3:16:45 PM-> CH:3
+3:16:45 PM-> CH:2
+3:16:45 PM-> CH:1
+3:16:45 PM-> CH:0
+3:16:45 PM-> AO/DI
+3:16:45 PM-> Set Configuration As CH:0
+3:16:45 PM-> Real AO
+3:16:45 PM-> Last AO
+3:16:45 PM-> 4000
+3:16:45 PM-> Reset DI Latch
+3:16:45 PM-> Operate AO Data as engineering format
+3:16:45 PM-> Read Safe Value
+3:16:45 PM-> Read Power ON Value
+3:16:45 PM-> Read AO
+3:16:45 PM-> Set Safe Value
+3:16:45 PM-> Set Power On
+3:16:45 PM-> Clear Counter
+3:16:45 PM-> Output
+3:16:45 PM-> Counter
+3:16:45 PM-> Low Latch
+3:16:45 PM-> High Latch
+3:16:45 PM-> DI Status
+3:16:45 PM-> Output Value
+3:16:45 PM-> Host WDT
+3:16:45 PM-> Commands Log
+3:16:45 PM-> Export Commands
+3:16:45 PM-> Log All Commands
+3:16:45 PM-> Save to path\log_report\
+3:16:45 PM-> Clear
+3:16:45 PM-> About
+3:16:51 PM-> Language Name
+3:16:51 PM-> OK
+3:16:51 PM-> Refresh_Sorting_Language
+3:16:51 PM-> Select Language
+3:16:54 PM-> Language Name
+3:16:54 PM-> OK
+3:16:54 PM-> Refresh_Sorting_Language
+3:16:54 PM-> Select Language
+3:16:56 PM-> Search RU-87PN Addr. Mode
+3:16:56 PM-> Modbus Editor
+3:16:56 PM-> COM Port
+3:16:56 PM-> Start Search
+3:16:56 PM-> Stop Search
+3:16:56 PM-> Command Line
+3:16:56 PM-> Remote I/O quick configuration
+3:16:56 PM-> CE/WES Backup/Restore backplane I-87K I/O configurations
+3:16:56 PM-> Offline Configuration for 87PN
+3:16:56 PM-> Data Logger
+3:16:56 PM-> Language
+3:16:56 PM-> FAQ
+3:16:56 PM-> End Address
+3:16:56 PM-> Start Address
+3:16:56 PM-> ID
+3:16:56 PM-> Address
+3:16:56 PM-> Baud Rate
+3:16:56 PM-> Checksum
+3:16:56 PM-> Format
+3:16:56 PM-> Status
+3:16:56 PM-> Description
+3:16:56 PM-> COM:1
+3:16:59 PM-> 01H
+3:16:59 PM-> 7
+3:16:59 PM-> RF Channel
+3:16:59 PM-> RF Pan ID
+3:16:59 PM-> Reverse DO State
+3:16:59 PM-> ms
+3:16:59 PM-> Min. Half Pulse Width
+3:16:59 PM-> RF Power
+3:16:59 PM-> Enable ZT Software Configuration
+3:16:59 PM-> 1
+3:16:59 PM-> Response Delay
+3:16:59 PM-> Parity
+3:16:59 PM-> Checksum
+3:16:59 PM-> Baud Rate
+3:16:59 PM-> Protocol
+3:16:59 PM-> Address
+3:17:00 PM-> 01H
+3:17:00 PM-> 7
+3:17:00 PM-> RF Channel
+3:17:00 PM-> RF Pan ID
+3:17:00 PM-> Reverse DO State
+3:17:00 PM-> ms
+3:17:00 PM-> Min. Half Pulse Width
+3:17:00 PM-> RF Power
+3:17:00 PM-> Enable ZT Software Configuration
+3:17:00 PM-> 1
+3:17:00 PM-> Response Delay
+3:17:00 PM-> Parity
+3:17:00 PM-> Checksum
+3:17:00 PM-> Baud Rate
+3:17:00 PM-> Protocol
+3:17:00 PM-> Address
+3:17:00 PM-> WDT Timeout Count
+3:17:00 PM-> Enable Output When WDT Timeout
+3:17:00 PM-> Set Timer
+3:17:00 PM-> (0.1 ~ 25.5 sec)
+3:17:00 PM-> Reset Watchdog Status
+3:17:00 PM-> Auto Send Host OK
+3:17:00 PM-> Enable WDT
+3:17:00 PM-> WDT Timeout
+3:17:01 PM-> 01H
+3:17:01 PM-> 7
+3:17:01 PM-> RF Channel
+3:17:01 PM-> RF Pan ID
+3:17:01 PM-> Reverse DO State
+3:17:01 PM-> ms
+3:17:01 PM-> Min. Half Pulse Width
+3:17:01 PM-> RF Power
+3:17:01 PM-> Enable ZT Software Configuration
+3:17:01 PM-> 1
+3:17:01 PM-> Response Delay
+3:17:01 PM-> Parity
+3:17:01 PM-> Checksum
+3:17:01 PM-> Baud Rate
+3:17:01 PM-> Protocol
+3:17:01 PM-> Address
+3:17:01 PM-> WDT Timeout Count
+3:17:01 PM-> Enable Output When WDT Timeout
+3:17:01 PM-> Set Timer
+3:17:01 PM-> (0.1 ~ 25.5 sec)
+3:17:01 PM-> Reset Watchdog Status
+3:17:01 PM-> Auto Send Host OK
+3:17:01 PM-> Enable WDT
+3:17:01 PM-> WDT Timeout
+3:17:01 PM-> Exit
+3:17:01 PM-> Configuration
+3:17:01 PM-> Analog Format
+3:17:01 PM-> Set Module Configurations
+3:17:01 PM-> AI
+3:17:01 PM-> Set Type Code As CH:0
+3:17:01 PM-> 0
+3:17:01 PM-> -
+3:17:01 PM-> +
+3:17:01 PM-> CH:15
+3:17:01 PM-> CH:14
+3:17:01 PM-> CH:13
+3:17:01 PM-> CH:12
+3:17:01 PM-> CH:11
+3:17:01 PM-> CH:10
+3:17:01 PM-> CH:9
+3:17:01 PM-> CH:8
+3:17:01 PM-> CH:7
+3:17:01 PM-> CH:6
+3:17:01 PM-> CH:5
+3:17:01 PM-> CH:4
+3:17:01 PM-> CH:3
+3:17:01 PM-> CH:2
+3:17:01 PM-> CH:1
+3:17:01 PM-> CH:0
+3:17:01 PM-> AO/DI
+3:17:01 PM-> Set Configuration As CH:0
+3:17:01 PM-> Real AO
+3:17:01 PM-> Last AO
+3:17:01 PM-> 4000
+3:17:01 PM-> Reset DI Latch
+3:17:01 PM-> Operate AO Data as engineering format
+3:17:01 PM-> Read Safe Value
+3:17:01 PM-> Read Power ON Value
+3:17:01 PM-> Read AO
+3:17:01 PM-> Set Safe Value
+3:17:01 PM-> Set Power On
+3:17:01 PM-> Clear Counter
+3:17:01 PM-> Output
+3:17:01 PM-> Counter
+3:17:01 PM-> Low Latch
+3:17:01 PM-> High Latch
+3:17:01 PM-> DI Status
+3:17:01 PM-> Output Value
+3:17:01 PM-> Host WDT
+3:17:01 PM-> Commands Log
+3:17:01 PM-> Export Commands
+3:17:01 PM-> Log All Commands
+3:17:01 PM-> Save to path\log_report\
+3:17:01 PM-> Clear
+3:17:01 PM-> About

@@ -1,0 +1,152 @@
+#region LC291
+case "LC291":
+hasCmd = false;
+switch (cmdTitle)
+{
+case "GET_MODULE_NAME":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODULE_FIRMWARE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODULE_ADDRESS":
+functionCode = 0x3;
+refAddr = 484;
+break;
+case "GET_MODBUS_DATAFORMAT":
+functionCode = 0x1;
+refAddr = 268;
+break;
+case "GET_RESPONSE_DELAY_TIME":
+functionCode = 0x3;
+refAddr = 487;
+break;
+case "GET_WDT_TIMER":
+functionCode = 0x3;
+refAddr = 488;
+break;
+case "GET_WDT_ENABLE":
+functionCode = 0x1;
+refAddr = 260;
+break;
+case "GET_WDT_OVERWRITE":
+functionCode = 0x1;
+refAddr = 259;
+break;
+case "GET_BEEP_CONFIG":
+functionCode = 0x3;
+refAddr = 496;
+break;
+case "READ_ROTARY_SWITCH":
+functionCode = 0x2;
+refAddr = 832;
+break;
+case "READ_MF_DO_SAFE_VALUE":
+functionCode = 0x1;
+refAddr = 128;
+break;
+case "READ_MF_DO_POWER_ON":
+functionCode = 0x1;
+refAddr = 160;
+break;
+case "GET_CH0_AI_ALARM_ENABLE_STATUS":
+functionCode = 0x1;
+refAddr = 320;
+break;
+case "READ_CH0_AI_ALARM_MODE":
+functionCode = 0x1;
+refAddr = 336;
+break;
+case "GET_LEAKAGE_INDEX":
+functionCode = 0x3;
+refAddr = 495;
+break;
+case "READ_CH0_AI":
+functionCode = 0x4;
+refAddr = 0;
+break;
+case "READ_CH1_AI":
+functionCode = 0x4;
+refAddr = 1;
+break;
+case "READ_SIMPLE_AI_DI_STATUS":
+functionCode = 0x2;
+refAddr = 32;
+break;
+case "READ_SIMPLE_AI_DO_STATUS":
+functionCode = 0x1;
+refAddr = 0;
+break;
+case "READ_SIMPLE_AI_ALARM_STATUS":
+functionCode = 0x1;
+refAddr = 288;
+break;
+case "READ_WDT_STATUS":
+functionCode = 0x1;
+refAddr = 269;
+break;
+case "SET_CH0_DISABLE_AI_ALARM":
+functionCode = 0x5;
+refAddr = 320;
+break;
+case "SET_CH0_ENABLE_AI_ALARM":
+functionCode = 0x5;
+refAddr = 320;
+break;
+case "SET_CH0_AI_ALARM_MODE":
+functionCode = 0x5;
+refAddr = 336;
+break;
+case "OUTPUT_CH0_MFDO":
+functionCode = 0x5;
+refAddr = 0;
+break;
+case "SET_MF_DO_SAFE_VALUE":
+functionCode = 0xF;
+refAddr = 128;
+break;
+case "SET_MF_DO_POWER_ON":
+functionCode = 0xF;
+refAddr = 160;
+break;
+case "CLEAR_WDT_ALARM":
+functionCode = 0x5;
+refAddr = 269;
+break;
+case "SET_WDT_TIMER":
+functionCode = 0x6;
+refAddr = 488;
+break;
+case "SET_WDT_ENABLE":
+functionCode = 0xF;
+refAddr = 260;
+break;
+case "SET_WDT_OVERWRITE":
+functionCode = 0xF;
+refAddr = 259;
+break;
+case "CLEAR_CH0_LOW_ALARM_LATCH":
+functionCode = 0x5;
+refAddr = 288;
+break;
+case "SET_RESPONSE_DELAY_TIME":
+functionCode = 0x6;
+refAddr = 487;
+break;
+case "SET_MODBUS_DATAFORMAT":
+functionCode = 0x5;
+refAddr = 268;
+break;
+case "SET_MODULE_ADDRESS":
+functionCode = 0x6;
+refAddr = 484;
+break;
+case "SET_COMMUNICATE_PARAMETER":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+}
+break;
+#endregion LC291

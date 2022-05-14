@@ -1,0 +1,244 @@
+#region XV303
+case "XV303":
+hasCmd = false;
+switch (cmdTitle)
+{
+case "GET_MODULE_NAME":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODULE_FIRMWARE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_COMMUNICATE_PARAMETER":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODULE_ADDRESS":
+functionCode = 0x3;
+refAddr = 484;
+break;
+case "GET_MODBUS_DATAFORMAT":
+functionCode = 0x1;
+refAddr = 268;
+break;
+case "GET_RESPONSE_DELAY_TIME":
+functionCode = 0x3;
+refAddr = 487;
+break;
+case "GET_DO_REVERSE":
+functionCode = 0x1;
+refAddr = 265;
+break;
+case "GET_DI_REVERSE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_CH0_AO_TYPE_CODE":
+functionCode = 0x3;
+refAddr = 416;
+break;
+case "GET_CH0_AO_SLEW_RATE":
+functionCode = 0x3;
+refAddr = 288;
+break;
+case "GET_CH1_AO_TYPE_CODE":
+functionCode = 0x3;
+refAddr = 417;
+break;
+case "GET_CH1_AO_SLEW_RATE":
+functionCode = 0x3;
+refAddr = 289;
+break;
+case "GET_CH2_AO_TYPE_CODE":
+functionCode = 0x3;
+refAddr = 418;
+break;
+case "GET_CH2_AO_SLEW_RATE":
+functionCode = 0x3;
+refAddr = 290;
+break;
+case "GET_CH3_AO_TYPE_CODE":
+functionCode = 0x3;
+refAddr = 419;
+break;
+case "GET_CH3_AO_SLEW_RATE":
+functionCode = 0x3;
+refAddr = 291;
+break;
+case "READ_CH0_LAST_AO":
+functionCode = 0x3;
+refAddr = 32;
+break;
+case "READ_CH1_LAST_AO":
+functionCode = 0x3;
+refAddr = 33;
+break;
+case "READ_CH2_LAST_AO":
+functionCode = 0x3;
+refAddr = 34;
+break;
+case "READ_CH3_LAST_AO":
+functionCode = 0x3;
+refAddr = 35;
+break;
+case "READ_SIMPLE_AI_DI_STATUS":
+functionCode = 0x2;
+refAddr = 32;
+break;
+case "READ_SIMPLE_AI_DO_STATUS":
+functionCode = 0x1;
+refAddr = 0;
+break;
+case "READ_SIMPLE_AI_ALARM_STATUS":
+functionCode = 0x1;
+refAddr = 261;
+break;
+case "READ_DI_HIGH_LATCH":
+functionCode = 0x1;
+refAddr = 64;
+break;
+case "READ_DI_LOW_LATCH":
+functionCode = 0x1;
+refAddr = 96;
+break;
+case "READ_CH0_DI_COUNTER":
+functionCode = 0x3;
+refAddr = 128;
+break;
+case "READ_CH1_DI_COUNTER":
+functionCode = 0x3;
+refAddr = 130;
+break;
+case "READ_CH2_DI_COUNTER":
+functionCode = 0x3;
+refAddr = 132;
+break;
+case "READ_CH3_DI_COUNTER":
+functionCode = 0x3;
+refAddr = 134;
+break;
+case "READ_CH0_AO":
+functionCode = 0x3;
+refAddr = 64;
+break;
+case "READ_CH1_AO":
+functionCode = 0x3;
+refAddr = 65;
+break;
+case "READ_CH2_AO":
+functionCode = 0x3;
+refAddr = 66;
+break;
+case "READ_CH3_AO":
+functionCode = 0x3;
+refAddr = 67;
+break;
+case "SET_RESPONSE_DELAY_TIME":
+functionCode = 0x6;
+refAddr = 487;
+break;
+case "SET_DO_REVERSE":
+functionCode = 0x5;
+refAddr = 265;
+break;
+case "SET_MODBUS_DATAFORMAT":
+functionCode = 0x5;
+refAddr = 268;
+break;
+case "SET_CH0_AO_TYPE_CODE":
+functionCode = 0x6;
+refAddr = 416;
+break;
+case "SET_CH0_AO_SLEW_RATE":
+functionCode = 0x6;
+refAddr = 288;
+break;
+case "SET_CH1_AO_TYPE_CODE":
+functionCode = 0x6;
+refAddr = 417;
+break;
+case "SET_CH1_AO_SLEW_RATE":
+functionCode = 0x6;
+refAddr = 289;
+break;
+case "OUTPUT_CH0_AO":
+functionCode = 0x6;
+refAddr = 32;
+break;
+case "OUTPUT_CH1_AO":
+functionCode = 0x6;
+refAddr = 33;
+break;
+case "OUTPUT_CH0_MFDO":
+functionCode = 0x5;
+refAddr = 0;
+break;
+case "OUTPUT_CH1_MFDO":
+functionCode = 0x5;
+refAddr = 1;
+break;
+case "OUTPUT_CH2_MFDO":
+functionCode = 0x5;
+refAddr = 2;
+break;
+case "OUTPUT_CH3_MFDO":
+functionCode = 0x5;
+refAddr = 3;
+break;
+case "SET_MF_DO_SAFE_VALUE":
+functionCode = 0xF;
+refAddr = 128;
+break;
+case "SET_MF_DO_POWER_ON":
+functionCode = 0xF;
+refAddr = 160;
+break;
+case "READ_MF_DO_POWER_ON":
+functionCode = 0x1;
+refAddr = 160;
+break;
+case "SET_DI_REVERSE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "CLEAR_DI_LATCH":
+functionCode = 0x5;
+refAddr = 256;
+break;
+case "CLEAR_CH0_DI_COUNTER":
+functionCode = 0x5;
+refAddr = 512;
+break;
+case "CLEAR_CH1_DI_COUNTER":
+functionCode = 0x5;
+refAddr = 513;
+break;
+case "CLEAR_CH2_DI_COUNTER":
+functionCode = 0x5;
+refAddr = 514;
+break;
+case "CLEAR_CH3_DI_COUNTER":
+functionCode = 0x5;
+refAddr = 515;
+break;
+case "SET_CH2_AO_TYPE_CODE":
+functionCode = 0x6;
+refAddr = 418;
+break;
+case "SET_CH2_AO_SLEW_RATE":
+functionCode = 0x6;
+refAddr = 290;
+break;
+case "SET_CH3_AO_TYPE_CODE":
+functionCode = 0x6;
+refAddr = 419;
+break;
+case "SET_CH3_AO_SLEW_RATE":
+functionCode = 0x6;
+refAddr = 291;
+break;
+}
+break;
+#endregion XV303

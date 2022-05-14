@@ -1,0 +1,20 @@
+case 7033:
+titleList.Add("GET_MODULE_NAME");
+rtuList.Add("01 46 00");
+asciiList.Add(":014600");
+titleList.Add("GET_MODULE_FIRMWARE");
+rtuList.Add("01 46 20");
+asciiList.Add(":014620");
+titleList.Add("GET_MODULE_ADDRESS");
+rtuList.Add("01 03 01 E4 00 01");
+asciiList.Add(":010301E40001");
+titleList.Add("READ_CH0_AI");
+rtuList.Add("01 04 00 00 00 01");
+asciiList.Add(":010400000001");
+titleList.Add("READ_CH1_AI");
+rtuList.Add("01 04 00 01 00 01");
+asciiList.Add(":010400010001");
+titleList.Add("READ_CH2_AI");
+rtuList.Add("01 04 00 02 00 01");
+asciiList.Add(":010400020001");
+break;

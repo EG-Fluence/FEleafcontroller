@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "modTable", "modTable\modTable.csproj", "{D449BEAB-EA7A-43F6-A2A1-262D1A7DC3A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modbus維護程式", "Modbus維護程式\Modbus維護程式.csproj", "{0AA44A97-A7DE-443A-96E9-289598A01E0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D449BEAB-EA7A-43F6-A2A1-262D1A7DC3A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D449BEAB-EA7A-43F6-A2A1-262D1A7DC3A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D449BEAB-EA7A-43F6-A2A1-262D1A7DC3A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D449BEAB-EA7A-43F6-A2A1-262D1A7DC3A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AA44A97-A7DE-443A-96E9-289598A01E0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AA44A97-A7DE-443A-96E9-289598A01E0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AA44A97-A7DE-443A-96E9-289598A01E0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AA44A97-A7DE-443A-96E9-289598A01E0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

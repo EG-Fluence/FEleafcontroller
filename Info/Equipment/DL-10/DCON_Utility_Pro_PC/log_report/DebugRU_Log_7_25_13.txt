@@ -1,0 +1,3 @@
+1:37:55 PM-> objList count = 0  LoadIO tP3R3
+1:37:59 PM-> shutdown objList count = 1  RemovePlugIn tP3R3
+1:37:59 PM-> shutdown objList count = 0

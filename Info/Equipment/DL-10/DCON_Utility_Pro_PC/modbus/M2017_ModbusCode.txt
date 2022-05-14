@@ -1,0 +1,156 @@
+#region M2017
+case "M2017":
+hasCmd = false;
+switch (cmdTitle)
+{
+case "GET_MODULE_NAME":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODULE_FIRMWARE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_COMMUNICATE_PARAMETER":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODULE_ADDRESS":
+functionCode = 0x3;
+refAddr = 484;
+break;
+case "GET_MODBUS_MISC":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODBUS_DATAFORMAT":
+functionCode = 0x1;
+refAddr = 268;
+break;
+case "GET_RESPONSE_DELAY_TIME":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_CHANNEL_ENABLE_STATUS":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_CH0_INPUT_RANGE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_CH1_INPUT_RANGE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_CH2_INPUT_RANGE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_CH3_INPUT_RANGE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_CH4_INPUT_RANGE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_CH5_INPUT_RANGE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_CH6_INPUT_RANGE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_CH7_INPUT_RANGE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "READ_CH0_AI":
+functionCode = 0x4;
+refAddr = 0;
+break;
+case "READ_CH1_AI":
+functionCode = 0x4;
+refAddr = 1;
+break;
+case "READ_CH2_AI":
+functionCode = 0x4;
+refAddr = 2;
+break;
+case "READ_CH3_AI":
+functionCode = 0x4;
+refAddr = 3;
+break;
+case "READ_CH4_AI":
+functionCode = 0x4;
+refAddr = 4;
+break;
+case "READ_CH5_AI":
+functionCode = 0x4;
+refAddr = 5;
+break;
+case "READ_CH6_AI":
+functionCode = 0x4;
+refAddr = 6;
+break;
+case "READ_CH7_AI":
+functionCode = 0x4;
+refAddr = 7;
+break;
+case "SET_RESPONSE_DELAY_TIME":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "SET_MODBUS_MISC":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "SET_MODBUS_DATAFORMAT":
+functionCode = 0x5;
+refAddr = 268;
+break;
+case "SET_MODULE_ADDRESS":
+functionCode = 0x6;
+refAddr = 484;
+break;
+case "SET_CHANNEL_ENABLE_STATUS":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "SET_CH0_INPUT_RANGE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "SET_CH1_INPUT_RANGE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "SET_CH2_INPUT_RANGE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "SET_CH3_INPUT_RANGE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "SET_CH4_INPUT_RANGE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "SET_CH5_INPUT_RANGE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "SET_CH6_INPUT_RANGE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "SET_CH7_INPUT_RANGE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+}
+break;
+#endregion M2017

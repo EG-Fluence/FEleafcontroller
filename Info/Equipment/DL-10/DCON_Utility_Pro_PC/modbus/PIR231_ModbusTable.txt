@@ -1,0 +1,35 @@
+
+
+********************************[0x46_Registers]********************************
+XXXXX = GET_MODULE_NAME
+XXXXX = GET_MODULE_FIRMWARE
+XXXXX = GET_COMMUNICATE_PARAMETER
+XXXXX = GET_RESPONSE_DELAY_TIME
+XXXXX = READ_ROTARY_SWITCH
+
+
+********************************[DO_Registers]********************************
+00000 = READ_SIMPLE_AI_DO_STATUS
+00261 = READ_SIMPLE_AI_ALARM_STATUS
+00268 = GET_MODBUS_DATAFORMAT
+00276 = SET_PIR_BUZZER_MODE
+00276 = GET_PIR_BUZZER_MODE
+00304 = READ_PIR_ALARM_ON
+
+
+********************************[DI_Registers]********************************
+10032 = READ_SIMPLE_AI_DI_STATUS
+
+
+********************************[AO_Registers]********************************
+40225 = GET_SIMPLE_AI_HIGH_ALARM_LIMIT
+40484 = GET_MODULE_ADDRESS
+40512 = SET_PIR_ON_DELAY_TIME
+40512 = GET_PIR_ON_DELAY_TIME
+40515 = SET_ON_DELAY_TIME
+40515 = GET_ON_DELAY_TIME
+
+
+********************************[AI_Registers]********************************
+30000 = READ_CH0_AI
+30002 = READ_CH2_AI

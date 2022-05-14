@@ -1,0 +1,28 @@
+5:30:40 PM-> DCON Error_GET_MODULE_NAME,B[115200],F[N,8,1], C[Disable], Cmd [$80M], Rec []Raw []
+5:30:40 PM-> Modbus RTU Timeout  GET_MODULE_NAME,B[115200],F[N,8,1], , CmdType [100], Cmd [80 46 00 42 48], wT = 600
+5:30:41 PM-> DCON Error_GET_MODULE_NAME,B[9600],F[N,8,1], C[Disable], Cmd [$80M], Rec []Raw []
+5:30:42 PM-> Modbus RTU Timeout  GET_MODULE_NAME,B[9600],F[N,8,1], , CmdType [100], Cmd [80 46 00 42 48], wT = 600
+5:30:42 PM-> DCON Error_GET_MODULE_NAME,B[115200],F[N,8,1], C[Disable], Cmd [$00M], Rec []Raw []
+5:30:43 PM-> Modbus RTU Timeout  GET_MODULE_NAME,B[115200],F[N,8,1], , CmdType [100], Cmd [00 46 00 43 A0], wT = 600
+5:30:44 PM-> DCON Error_GET_MODULE_NAME,B[9600],F[N,8,1], C[Disable], Cmd [$00M], Rec []Raw []
+5:30:44 PM-> Modbus RTU Timeout  GET_MODULE_NAME,B[9600],F[N,8,1], , CmdType [100], Cmd [00 46 00 43 A0], wT = 600
+5:30:45 PM-> DCON Error_GET_MODULE_NAME,B[115200],F[N,8,1], C[Disable], Cmd [$81M], Rec []Raw []
+5:30:45 PM-> Modbus RTU Timeout  GET_MODULE_NAME,B[115200],F[N,8,1], , CmdType [100], Cmd [81 46 00 13 88], wT = 600
+5:30:46 PM-> DCON Error_GET_MODULE_NAME,B[9600],F[N,8,1], C[Disable], Cmd [$81M], Rec []Raw []
+5:30:47 PM-> Modbus RTU Timeout  GET_MODULE_NAME,B[9600],F[N,8,1], , CmdType [100], Cmd [81 46 00 13 88], wT = 600
+5:30:47 PM-> [11965]DCON GET_MODULE_NAME,B[115200],F[N,8,1], C[Disable], Cmd [$01M], Rec [!01RU-87P1]Raw [21 30 31 52 55 2D 38 37 50 31 ]
+5:30:47 PM-> [16]DCON GET_MODULE_FIRMWARE,B[115200],F[N,8,1], C[Disable], Cmd [$01F], Rec [!01A4.0]Raw [21 30 31 41 34 2E 30 ]
+5:30:47 PM-> [0]DCON READ_GetRUDipSwitch,B[115200],F[N,8,1], C[Disable], Cmd [$01L], Rec [!0163]Raw [21 30 31 36 33 ]
+5:30:47 PM-> [0]DCON READ_GetHotSwapSlotStatus_0,B[115200],F[N,8,1], C[Disable], Cmd [~01HZ0], Rec [!0100]Raw [21 30 31 30 30 ]
+5:30:47 PM-> [0]DCON GET_MODULE_FIRMWARE,B[115200],F[N,8,1], C[Disable], Cmd [$01F], Rec [!01A4.0]Raw [21 30 31 41 34 2E 30 ]
+5:30:47 PM-> DCON GET_MODULE_PROTOCOL,B[115200],F[None Parity], C[Disable], Cmd [$01P], Rec [?01]Raw [3F 30 31 ]
+5:30:47 PM-> DCON Error_GET_MODULE_PROTOCOL,B[115200],F[N,8,1], C[Disable], Cmd [$01P], Rec [?01]Raw [3F 30 31 ]
+5:30:47 PM-> [15]DCON READ_GetHotSwapSlotID_0,B[115200],F[N,8,1], C[Disable], Cmd [~01HN0], Rec [!0187024U]Raw [21 30 31 38 37 30 32 34 55 ]
+5:30:47 PM-> [0]DCON GET_MODULE_NAME,B[115200],F[N,8,1], C[Disable], Cmd [$02M], Rec [!0287024U]Raw [21 30 32 38 37 30 32 34 55 ]
+5:30:47 PM-> [0]DCON GET_MODULE_FIRMWARE,B[115200],F[N,8,1], C[Disable], Cmd [$02F], Rec [!02A2.6]Raw [21 30 32 41 32 2E 36 ]
+5:30:47 PM-> DCON GET_MODULE_PROTOCOL,B[115200],F[None Parity], C[Disable], Cmd [$02P], Rec [?02]Raw [3F 30 32 ]
+5:30:47 PM-> DCON Error_GET_MODULE_PROTOCOL,B[115200],F[N,8,1], C[Disable], Cmd [$02P], Rec [?02]Raw [3F 30 32 ]
+5:30:47 PM-> Modbus RTU Timeout  GET_MODULE_NAME,B[115200],F[N,8,1], , CmdType [100], Cmd [01 46 00 12 60], wT = 600
+5:30:48 PM-> DCON Error_GET_MODULE_NAME,B[9600],F[N,8,1], C[Disable], Cmd [$01M], Rec []Raw []
+5:30:49 PM-> Modbus RTU Timeout  GET_MODULE_NAME,B[9600],F[N,8,1], , CmdType [100], Cmd [01 46 00 12 60], wT = 600
+5:30:49 PM-> Close COM 1

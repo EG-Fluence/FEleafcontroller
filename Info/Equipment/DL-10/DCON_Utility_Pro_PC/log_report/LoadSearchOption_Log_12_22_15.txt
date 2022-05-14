@@ -1,0 +1,24 @@
+3:32:55 PM-> portStr0 =COM1 StrLen:4
+3:32:55 PM-> portStr0 =COM7 StrLen:4
+3:32:55 PM-> portStr0 =COM8 StrLen:4
+3:32:55 PM-> portStr0 =COM9 StrLen:4
+3:32:55 PM-> portStr0 =COM10 StrLen:5
+3:32:55 PM-> portStr0 =COM11 StrLen:5
+3:32:55 PM-> portStr0 =COM12 StrLen:5
+3:32:55 PM-> portStr0 =COM6 StrLen:4
+3:32:55 PM-> portStr0 =COM13 StrLen:5
+3:32:55 PM-> portStr0 =COM5 StrLen:4
+3:32:55 PM-> PortList COM1  StrLen:4
+3:32:55 PM-> start 0
+3:32:55 PM-> end 255
+3:32:55 PM-> timeout 300
+3:32:57 PM-> portStr0 =COM1 StrLen:4
+3:32:57 PM-> portStr0 =COM7 StrLen:4
+3:32:57 PM-> portStr0 =COM8 StrLen:4
+3:32:57 PM-> portStr0 =COM9 StrLen:4
+3:32:57 PM-> portStr0 =COM10 StrLen:5
+3:32:57 PM-> portStr0 =COM11 StrLen:5
+3:32:57 PM-> portStr0 =COM12 StrLen:5
+3:32:57 PM-> portStr0 =COM6 StrLen:4
+3:32:57 PM-> portStr0 =COM13 StrLen:5
+3:32:57 PM-> portStr0 =COM5 StrLen:4

@@ -1,0 +1,88 @@
+#region SL-P6R1-WF
+case "SL-P6R1-WF":
+hasCmd = false;
+switch (cmdTitle)
+{
+case "GET_MODULE_NAME":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODULE_FIRMWARE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_COMMUNICATE_PARAMETER":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODULE_ADDRESS":
+functionCode = 0x3;
+refAddr = 484;
+break;
+case "GET_RESPONSE_DELAY_TIME":
+functionCode = 0x3;
+refAddr = 487;
+break;
+case "GET_Combinatorial":
+functionCode = 0x4;
+refAddr = 361;
+break;
+case "READ_CH0_AI":
+functionCode = 0x4;
+refAddr = 0;
+break;
+case "READ_CombinatorialTime":
+functionCode = 0x4;
+refAddr = 10;
+break;
+case "READ_CH1_AI":
+functionCode = 0x4;
+refAddr = 1;
+break;
+case "READ_CH2_AI":
+functionCode = 0x4;
+refAddr = 2;
+break;
+case "READ_CH3_AI":
+functionCode = 0x4;
+refAddr = 3;
+break;
+case "READ_CH4_AI":
+functionCode = 0x4;
+refAddr = 4;
+break;
+case "READ_CH5_AI":
+functionCode = 0x4;
+refAddr = 5;
+break;
+case "READ_CH6_AI":
+functionCode = 0x4;
+refAddr = 6;
+break;
+case "READ_CH7_AI":
+functionCode = 0x4;
+refAddr = 7;
+break;
+case "READ_DO":
+functionCode = 0x1;
+refAddr = 0;
+break;
+case "OUTPUT_CH0_DO_BIT":
+functionCode = 0x5;
+refAddr = 0;
+break;
+case "SET_CHANGE_COUNT":
+functionCode = 0x6;
+refAddr = 317;
+break;
+case "SET_RESPONSE_DELAY_TIME":
+functionCode = 0x6;
+refAddr = 487;
+break;
+case "SET_MODULE_ADDRESS":
+functionCode = 0x6;
+refAddr = 484;
+break;
+}
+break;
+#endregion SL-P6R1-WF

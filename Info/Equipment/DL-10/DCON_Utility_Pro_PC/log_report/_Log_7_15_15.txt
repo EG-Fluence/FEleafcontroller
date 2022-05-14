@@ -1,0 +1,5 @@
+3:08:26 PM-> DCON Error_GET_MODULE_NAME,B[115200],F[N,8,1], C[Disable], Cmd [$80M], Rec []Raw []
+3:08:27 PM-> Modbus RTU Timeout  GET_MODULE_NAME,B[115200],F[N,8,1], , CmdType [100], Cmd [80 46 00 42 48], wT = 600
+3:08:28 PM-> DCON Error_GET_MODULE_NAME,B[9600],F[N,8,1], C[Disable], Cmd [$80M], Rec []Raw []
+3:08:28 PM-> Modbus RTU Timeout  GET_MODULE_NAME,B[9600],F[N,8,1], , CmdType [100], Cmd [80 46 00 42 48], wT = 600
+3:08:28 PM-> Close COM 1

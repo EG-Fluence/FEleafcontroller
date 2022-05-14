@@ -1,0 +1,2 @@
+3:13:26 PM-> objList count = 0  LoadIO ET-87P8
+3:13:32 PM-> objList count = 1  LoadIO 87084

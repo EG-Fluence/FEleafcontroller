@@ -30,8 +30,6 @@ def singleRead(client, regType, unitId, startAddress, numberOfRegs, dataFrame):
 
 def readFullRegister(client, regType, unitId, dataFrame):
 
-    print("===================================== readFullRegister BEGIN")
-
     # for every read-try implement heartbeat
     try:
         dataFrame.loc['heartbeat', 'value'] = (dataFrame.loc['heartbeat', 'value'] + 1)%65536
@@ -71,26 +69,28 @@ def readFullRegister(client, regType, unitId, dataFrame):
 
             try:
                 variables.ReadMessages_counter += 1
+                TimeBefore_singleRead = time.time()
                 result = singleRead(client, regType, unitId, startAddress, numberOfRegs, dataFrame)
+                Time_singleRead = int((time.time() - TimeBefore_singleRead)*1000000)
                 ReadAttempts += 1
 
                 if result.function_code < 0x80:
                     if regType == 'co':
                         dataFrame.loc[startIndex:lastIndex, 'value'] = result.bits[0:numberOfRegs]
                         if variables.DEBUG:
-                            print("    UnitID'co':" + str(result.unit_id) + "  " + str(result.bits))
+                            print("    UnitID'co':" + str(result.unit_id) + "  Time_singleRead:" + str(Time_singleRead) + "us  " + str(result.bits))
                     if regType == 'di':
                         dataFrame.loc[startIndex:lastIndex, 'value'] = result.bits[0:numberOfRegs]
                         if variables.DEBUG:
-                            print("    UnitID'di':" + str(result.unit_id) + "  " + str(result.bits))
+                            print("    UnitID'di':" + str(result.unit_id) + "  Time_singleRead:" + str(Time_singleRead) + "us  " + str(result.bits))
                     if regType == 'hr':
                         dataFrame.loc[startIndex:lastIndex, 'value'] = result.registers[0:numberOfRegs]
                         if variables.DEBUG:
-                            print("    UnitID'hr':" + str(result.unit_id) + "  " + str(result.registers))
+                            print("    UnitID'hr':" + str(result.unit_id) + "  Time_singleRead:" + str(Time_singleRead) + "us  " + str(result.registers))
                     if regType == 'ir':
                         dataFrame.loc[startIndex:lastIndex, 'value'] = result.registers[0:numberOfRegs]
                         if variables.DEBUG:
-                            print("    UnitID'ir':" + str(result.unit_id) + "  " + str(result.registers))
+                            print("    UnitID'ir':" + str(result.unit_id) + "  Time_singleRead:" + str(Time_singleRead) + "us  " + str(result.registers))
 
                     break  # success, so no more retries
 
@@ -142,10 +142,6 @@ def readFullRegister(client, regType, unitId, dataFrame):
         dataFrame.loc['readAlarm', 'value'] = 0
     except builtins.KeyError:
         pass
-
-    print("===================================== readFullRegister END\r\n\r")
-
-
 
 
 class ModbusDevice():

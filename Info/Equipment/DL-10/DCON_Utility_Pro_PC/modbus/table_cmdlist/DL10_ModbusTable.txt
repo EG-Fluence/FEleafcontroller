@@ -1,0 +1,20 @@
+
+
+********************************[0x46_Registers]********************************
+XXXXX = GET_MODULE_NAME
+XXXXX = GET_MODULE_FIRMWARE
+XXXXX = GET_COMMUNICATE_PARAMETER
+XXXXX = SET_COMMUNICATE_PARAMETER
+
+
+********************************[AO_Registers]********************************
+40448 = SET_DL30X_TEMPERATURE_OFFSET
+40448 = GET_DL30X_TEMPERATURE_OFFSET
+40484 = SET_MODULE_ADDRESS
+40484 = GET_MODULE_ADDRESS
+
+
+********************************[AI_Registers]********************************
+30000 = READ_CH0_AI
+30001 = READ_CH1_AI
+30002 = READ_CH2_AI

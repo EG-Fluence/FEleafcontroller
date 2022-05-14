@@ -1,0 +1,51 @@
+2:53:35 PM-> English
+2:53:35 PM-> Chinese
+2:53:35 PM-> Don't show this next time
+2:53:36 PM-> Search RU-87PN Addr. Mode
+2:53:36 PM-> Modbus Editor
+2:53:36 PM-> COM Port
+2:53:36 PM-> Start Search
+2:53:36 PM-> Stop Search
+2:53:36 PM-> Command Line
+2:53:36 PM-> Remote I/O quick configuration
+2:53:36 PM-> CE/WES Backup/Restore backplane I-87K I/O configurations
+2:53:36 PM-> Offline Configuration for 87PN
+2:53:36 PM-> Data Logger
+2:53:36 PM-> Language
+2:53:36 PM-> FAQ
+2:53:36 PM-> End Address
+2:53:36 PM-> Start Address
+2:53:36 PM-> ID
+2:53:36 PM-> Address
+2:53:36 PM-> Baud Rate
+2:53:36 PM-> Checksum
+2:53:36 PM-> Format
+2:53:36 PM-> Status
+2:53:36 PM-> Description
+2:53:36 PM-> COM:1
+2:53:38 PM-> Language Name
+2:53:38 PM-> OK
+2:53:38 PM-> Refresh_Sorting_Language
+2:53:38 PM-> Select Language
+2:53:41 PM-> Search RU-87PN Addr. Mode
+2:53:41 PM-> Modbus Editor
+2:53:41 PM-> COM Port
+2:53:41 PM-> Start Search
+2:53:41 PM-> Stop Search
+2:53:41 PM-> Command Line
+2:53:41 PM-> Remote I/O quick configuration
+2:53:41 PM-> CE/WES Backup/Restore backplane I-87K I/O configurations
+2:53:41 PM-> Offline Configuration for 87PN
+2:53:41 PM-> Data Logger
+2:53:41 PM-> Language
+2:53:41 PM-> FAQ
+2:53:41 PM-> End Address
+2:53:41 PM-> Start Address
+2:53:41 PM-> ID
+2:53:41 PM-> Address
+2:53:41 PM-> Baud Rate
+2:53:41 PM-> Checksum
+2:53:41 PM-> Format
+2:53:41 PM-> Status
+2:53:41 PM-> Description
+2:53:41 PM-> COM:1

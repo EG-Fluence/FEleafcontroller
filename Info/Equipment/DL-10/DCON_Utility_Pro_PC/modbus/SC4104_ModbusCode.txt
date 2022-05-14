@@ -1,0 +1,156 @@
+#region SC4104
+case "SC4104":
+hasCmd = false;
+switch (cmdTitle)
+{
+case "GET_MODULE_NAME":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODULE_FIRMWARE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODULE_ADDRESS":
+functionCode = 0x3;
+refAddr = 484;
+break;
+case "GET_MODBUS_MISC":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_RESPONSE_DELAY_TIME":
+functionCode = 0x3;
+refAddr = 487;
+break;
+case "GET_CH0_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 288;
+break;
+case "GET_SC_TEMPERATURE_HIGH_ALARM_LIMIT":
+functionCode = 0x3;
+refAddr = 274;
+break;
+case "GET_SC_TEMPERATURE_ALARM_RANGE":
+functionCode = 0x3;
+refAddr = 276;
+break;
+case "GET_SC_RELAY_PROTECT_TIME":
+functionCode = 0x3;
+refAddr = 275;
+break;
+case "READ_DO_POWER_ON":
+functionCode = 0x1;
+refAddr = 160;
+break;
+case "READ_DO_SAFE_VALUE":
+functionCode = 0x1;
+refAddr = 128;
+break;
+case "GET_WDT_TIMER":
+functionCode = 0x3;
+refAddr = 488;
+break;
+case "GET_WDT_ENABLE":
+functionCode = 0x1;
+refAddr = 260;
+break;
+case "GET_WDT_OVERWRITE":
+functionCode = 0x1;
+refAddr = 259;
+break;
+case "GET_TEMPERATURE_DISPLAY_FORMAT":
+functionCode = 0x1;
+refAddr = 266;
+break;
+case "GET_DI_CONNECTION":
+functionCode = 0x3;
+refAddr = 273;
+break;
+case "GET_ON_DELAY_TIME":
+functionCode = 0x3;
+refAddr = 497;
+break;
+case "READ_ROTARY_SWITCH":
+functionCode = 0x2;
+refAddr = 320;
+break;
+case "READ_CH0_AI":
+functionCode = 0x4;
+refAddr = 0;
+break;
+case "READ_WDT_STATUS":
+functionCode = 0x1;
+refAddr = 269;
+break;
+case "READ_DI":
+functionCode = 0x1;
+refAddr = 32;
+break;
+case "READ_DO":
+functionCode = 0x1;
+refAddr = 0;
+break;
+case "SET_TEMPERATURE_DISPLAY_FORMAT":
+functionCode = 0x5;
+refAddr = 266;
+break;
+case "SET_CH0_TEMPERATURE_OFFSET":
+functionCode = 0x6;
+refAddr = 288;
+break;
+case "SET_SC_TEMPERATURE_HIGH_ALARM_LIMIT":
+functionCode = 0x6;
+refAddr = 274;
+break;
+case "SET_SC_TEMPERATURE_ALARM_RANGE":
+functionCode = 0x6;
+refAddr = 276;
+break;
+case "SET_SC_RELAY_PROTECT_TIME":
+functionCode = 0x6;
+refAddr = 275;
+break;
+case "OUTPUT_CH0_DO_BIT":
+functionCode = 0x5;
+refAddr = 0;
+break;
+case "OUTPUT_CH1_DO_BIT":
+functionCode = 0x5;
+refAddr = 1;
+break;
+case "OUTPUT_CH2_DO_BIT":
+functionCode = 0x5;
+refAddr = 2;
+break;
+case "OUTPUT_CH3_DO_BIT":
+functionCode = 0x5;
+refAddr = 3;
+break;
+case "SET_DO_POWER_ON":
+functionCode = 0xF;
+refAddr = 160;
+break;
+case "SET_DO_SAFE_VALUE":
+functionCode = 0xF;
+refAddr = 128;
+break;
+case "SET_WDT_OVERWRITE":
+functionCode = 0xF;
+refAddr = 259;
+break;
+case "CLEAR_WDT_ALARM":
+functionCode = 0x5;
+refAddr = 269;
+break;
+case "SET_WDT_TIMER":
+functionCode = 0x6;
+refAddr = 488;
+break;
+case "SET_WDT_ENABLE":
+functionCode = 0xF;
+refAddr = 259;
+break;
+}
+break;
+#endregion SC4104

@@ -1,0 +1,156 @@
+#region ZT-2005-C8
+case "ZT-2005-C8":
+hasCmd = false;
+switch (cmdTitle)
+{
+case "GET_MODULE_NAME":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODULE_FIRMWARE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODULE_ADDRESS":
+functionCode = 0x3;
+refAddr = 484;
+break;
+case "GET_MODBUS_DATAFORMAT":
+functionCode = 0x1;
+refAddr = 268;
+break;
+case "GET_CHANNEL_ENABLE_STATUS":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_CH0_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 288;
+break;
+case "GET_CH1_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 289;
+break;
+case "GET_CH2_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 290;
+break;
+case "GET_CH3_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 291;
+break;
+case "GET_CH4_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 292;
+break;
+case "GET_CH5_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 293;
+break;
+case "GET_CH6_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 294;
+break;
+case "GET_CH7_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 295;
+break;
+case "GET_TEMPERATURE_DISPLAY_FORMAT":
+functionCode = 0x1;
+refAddr = 266;
+break;
+case "GET_USER_DEFINED_TYPE_A":
+functionCode = 0x3;
+refAddr = 768;
+break;
+case "GET_USER_DEFINED_TYPE_B":
+functionCode = 0x3;
+refAddr = 800;
+break;
+case "GET_USER_DEFINED_TYPE_C":
+functionCode = 0x3;
+refAddr = 832;
+break;
+case "READ_DIP_SWITCH":
+functionCode = 0x1;
+refAddr = 320;
+break;
+case "READ_CH0_AI":
+functionCode = 0x4;
+refAddr = 0;
+break;
+case "READ_CH1_AI":
+functionCode = 0x4;
+refAddr = 1;
+break;
+case "READ_CH2_AI":
+functionCode = 0x4;
+refAddr = 2;
+break;
+case "READ_CH3_AI":
+functionCode = 0x4;
+refAddr = 3;
+break;
+case "READ_CH4_AI":
+functionCode = 0x4;
+refAddr = 4;
+break;
+case "READ_CH5_AI":
+functionCode = 0x4;
+refAddr = 5;
+break;
+case "READ_CH6_AI":
+functionCode = 0x4;
+refAddr = 6;
+break;
+case "READ_CH7_AI":
+functionCode = 0x4;
+refAddr = 7;
+break;
+case "SET_CH0_TEMPERATURE_OFFSET":
+functionCode = 0x6;
+refAddr = 288;
+break;
+case "SET_CH1_TEMPERATURE_OFFSET":
+functionCode = 0x6;
+refAddr = 289;
+break;
+case "SET_CH2_TEMPERATURE_OFFSET":
+functionCode = 0x6;
+refAddr = 290;
+break;
+case "SET_CH3_TEMPERATURE_OFFSET":
+functionCode = 0x6;
+refAddr = 291;
+break;
+case "SET_CH4_TEMPERATURE_OFFSET":
+functionCode = 0x6;
+refAddr = 292;
+break;
+case "SET_CH5_TEMPERATURE_OFFSET":
+functionCode = 0x6;
+refAddr = 293;
+break;
+case "SET_CH6_TEMPERATURE_OFFSET":
+functionCode = 0x6;
+refAddr = 294;
+break;
+case "SET_CH7_TEMPERATURE_OFFSET":
+functionCode = 0x6;
+refAddr = 295;
+break;
+case "SET_CHANNEL_ENABLE_STATUS":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "SET_MODBUS_DATAFORMAT":
+functionCode = 0x5;
+refAddr = 268;
+break;
+case "SET_MODULE_ADDRESS":
+functionCode = 0x6;
+refAddr = 484;
+break;
+}
+break;
+#endregion ZT-2005-C8

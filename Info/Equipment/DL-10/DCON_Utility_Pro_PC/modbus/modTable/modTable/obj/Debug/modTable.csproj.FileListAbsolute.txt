@@ -1,0 +1,17 @@
+D:\martin\TestV\DCON_Utility_Pro\modbus\modTable\modTable\bin\Debug\modTable.exe
+D:\martin\TestV\DCON_Utility_Pro\modbus\modTable\modTable\bin\Debug\modTable.pdb
+D:\martin\TestV\DCON_Utility_Pro\modbus\modTable\modTable\obj\Debug\ResolveAssemblyReference.cache
+D:\martin\TestV\DCON_Utility_Pro\modbus\modTable\modTable\obj\Debug\modTable.exe
+D:\martin\TestV\DCON_Utility_Pro\modbus\modTable\modTable\obj\Debug\modTable.pdb
+D:\martin\TestV\DCON_Utility_Pro\modbus\modTable\modTable\bin\Debug\CommuIO.dll
+D:\martin\TestV\DCON_Utility_Pro\modbus\modTable\modTable\bin\Debug\IOModule.dll
+D:\martin\TestV\DCON_Utility_Pro\modbus\modTable\modTable\bin\Debug\Platform.dll
+D:\martin\TestV\DCON_Utility_Pro\modbus\modTable\modTable\bin\Debug\Protocol.dll
+D:\martin\TestV\DCON_Utility_Pro\modbus\modTable\modTable\bin\Debug\Utility.dll
+D:\martin\TestV\DCON_Utility_Pro\modbus\modTable\modTable\bin\Debug\PACNET.dll
+D:\martin\TestV\DCON_Utility_Pro\modbus\modTable\modTable\bin\Debug\udpNet.dll
+D:\martin\TestV\DCON_Utility_Pro\modbus\modTable\modTable\bin\Debug\Platform.pdb
+D:\martin\TestV\DCON_Utility_Pro\modbus\modTable\modTable\bin\Debug\IOModule.pdb
+D:\martin\TestV\DCON_Utility_Pro\modbus\modTable\modTable\bin\Debug\Utility.pdb
+D:\martin\TestV\DCON_Utility_Pro\modbus\modTable\modTable\bin\Debug\Protocol.pdb
+D:\martin\TestV\DCON_Utility_Pro\modbus\modTable\modTable\bin\Debug\CommuIO.pdb

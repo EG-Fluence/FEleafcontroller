@@ -1,0 +1,88 @@
+#region PIR231
+case "PIR231":
+hasCmd = false;
+switch (cmdTitle)
+{
+case "GET_MODULE_NAME":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODULE_FIRMWARE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_COMMUNICATE_PARAMETER":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODULE_ADDRESS":
+functionCode = 0x3;
+refAddr = 484;
+break;
+case "GET_MODBUS_DATAFORMAT":
+functionCode = 0x1;
+refAddr = 268;
+break;
+case "GET_RESPONSE_DELAY_TIME":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_PIR_ON_DELAY_TIME":
+functionCode = 0x3;
+refAddr = 512;
+break;
+case "GET_PIR_BUZZER_MODE":
+functionCode = 0x1;
+refAddr = 276;
+break;
+case "GET_ON_DELAY_TIME":
+functionCode = 0x3;
+refAddr = 515;
+break;
+case "GET_SIMPLE_AI_HIGH_ALARM_LIMIT":
+functionCode = 0x3;
+refAddr = 225;
+break;
+case "READ_SIMPLE_AI_DI_STATUS":
+functionCode = 0x2;
+refAddr = 32;
+break;
+case "READ_SIMPLE_AI_DO_STATUS":
+functionCode = 0x1;
+refAddr = 0;
+break;
+case "READ_SIMPLE_AI_ALARM_STATUS":
+functionCode = 0x1;
+refAddr = 261;
+break;
+case "READ_ROTARY_SWITCH":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "READ_CH0_AI":
+functionCode = 0x4;
+refAddr = 0;
+break;
+case "READ_CH2_AI":
+functionCode = 0x4;
+refAddr = 2;
+break;
+case "READ_PIR_ALARM_ON":
+functionCode = 0x1;
+refAddr = 304;
+break;
+case "SET_PIR_ON_DELAY_TIME":
+functionCode = 0x6;
+refAddr = 512;
+break;
+case "SET_PIR_BUZZER_MODE":
+functionCode = 0xF;
+refAddr = 276;
+break;
+case "SET_ON_DELAY_TIME":
+functionCode = 0x6;
+refAddr = 515;
+break;
+}
+break;
+#endregion PIR231

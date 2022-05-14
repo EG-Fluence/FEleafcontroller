@@ -1,0 +1,7 @@
+
+
+********************************[AI_Registers]********************************
+30000 = READ_CH0_SENSOR_AI
+30001 = READ_CH1_SENSOR_AI
+30002 = READ_CH2_SENSOR_AI
+30003 = READ_CH3_SENSOR_AI

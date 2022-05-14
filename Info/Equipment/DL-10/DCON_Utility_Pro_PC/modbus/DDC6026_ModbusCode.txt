@@ -1,0 +1,576 @@
+#region DDC6026
+case "DDC6026":
+hasCmd = false;
+switch (cmdTitle)
+{
+case "GET_MODULE_NAME":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODULE_FIRMWARE":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_COMMUNICATE_PARAMETER":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODULE_ADDRESS":
+functionCode = 0x3;
+refAddr = 484;
+break;
+case "GET_MODBUS_MISC":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_MODBUS_DATAFORMAT":
+functionCode = 0x1;
+refAddr = 268;
+break;
+case "GET_RESPONSE_DELAY_TIME":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_WDT_TIMER":
+functionCode = 0x3;
+refAddr = 488;
+break;
+case "GET_WDT_ENABLE":
+functionCode = 0x1;
+refAddr = 260;
+break;
+case "GET_WDT_OVERWRITE":
+functionCode = 0x1;
+refAddr = 259;
+break;
+case "READ_CH0_LAST_AO":
+functionCode = 0x3;
+refAddr = 32;
+break;
+case "READ_CH1_LAST_AO":
+functionCode = 0x3;
+refAddr = 33;
+break;
+case "READ_CH2_LAST_AO":
+functionCode = 0x3;
+refAddr = 34;
+break;
+case "READ_CH3_LAST_AO":
+functionCode = 0x3;
+refAddr = 35;
+break;
+case "READ_CH4_LAST_AO":
+functionCode = 0x3;
+refAddr = 36;
+break;
+case "READ_CH5_LAST_AO":
+functionCode = 0x3;
+refAddr = 37;
+break;
+case "READ_CH6_LAST_AO":
+functionCode = 0x3;
+refAddr = 38;
+break;
+case "READ_CH7_LAST_AO":
+functionCode = 0x3;
+refAddr = 39;
+break;
+case "READ_CH8_LAST_AO":
+functionCode = 0x3;
+refAddr = 40;
+break;
+case "READ_CH9_LAST_AO":
+functionCode = 0x3;
+refAddr = 41;
+break;
+case "READ_CH10_LAST_AO":
+functionCode = 0x3;
+refAddr = 42;
+break;
+case "READ_CH11_LAST_AO":
+functionCode = 0x3;
+refAddr = 43;
+break;
+case "READ_CH12_LAST_AO":
+functionCode = 0x3;
+refAddr = 44;
+break;
+case "READ_CH13_LAST_AO":
+functionCode = 0x3;
+refAddr = 45;
+break;
+case "READ_CH14_LAST_AO":
+functionCode = 0x3;
+refAddr = 46;
+break;
+case "READ_CH15_LAST_AO":
+functionCode = 0x3;
+refAddr = 47;
+break;
+case "GET_CHANNEL_ENABLE_STATUS":
+functionCode = 0x46;
+refAddr = 65535;
+break;
+case "GET_CH0_INPUT_RANGE":
+functionCode = 0x3;
+refAddr = 256;
+break;
+case "GET_CH0_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 448;
+break;
+case "GET_CH0_AO_TYPE_CODE":
+functionCode = 0x3;
+refAddr = 416;
+break;
+case "GET_CH0_AO_SLEW_RATE":
+functionCode = 0x3;
+refAddr = 288;
+break;
+case "GET_CH1_INPUT_RANGE":
+functionCode = 0x3;
+refAddr = 257;
+break;
+case "GET_CH1_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 449;
+break;
+case "GET_CH1_AO_TYPE_CODE":
+functionCode = 0x3;
+refAddr = 417;
+break;
+case "GET_CH1_AO_SLEW_RATE":
+functionCode = 0x3;
+refAddr = 289;
+break;
+case "GET_CH2_INPUT_RANGE":
+functionCode = 0x3;
+refAddr = 258;
+break;
+case "GET_CH2_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 450;
+break;
+case "GET_CH2_AO_TYPE_CODE":
+functionCode = 0x3;
+refAddr = 418;
+break;
+case "GET_CH2_AO_SLEW_RATE":
+functionCode = 0x3;
+refAddr = 290;
+break;
+case "GET_CH3_INPUT_RANGE":
+functionCode = 0x3;
+refAddr = 259;
+break;
+case "GET_CH3_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 451;
+break;
+case "GET_CH3_AO_TYPE_CODE":
+functionCode = 0x3;
+refAddr = 419;
+break;
+case "GET_CH3_AO_SLEW_RATE":
+functionCode = 0x3;
+refAddr = 291;
+break;
+case "GET_CH4_INPUT_RANGE":
+functionCode = 0x3;
+refAddr = 260;
+break;
+case "GET_CH4_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 452;
+break;
+case "GET_CH4_AO_TYPE_CODE":
+functionCode = 0x3;
+refAddr = 420;
+break;
+case "GET_CH4_AO_SLEW_RATE":
+functionCode = 0x3;
+refAddr = 292;
+break;
+case "GET_CH5_INPUT_RANGE":
+functionCode = 0x3;
+refAddr = 261;
+break;
+case "GET_CH5_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 453;
+break;
+case "GET_CH5_AO_TYPE_CODE":
+functionCode = 0x3;
+refAddr = 421;
+break;
+case "GET_CH5_AO_SLEW_RATE":
+functionCode = 0x3;
+refAddr = 293;
+break;
+case "GET_CH6_INPUT_RANGE":
+functionCode = 0x3;
+refAddr = 262;
+break;
+case "GET_CH6_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 454;
+break;
+case "GET_CH6_AO_TYPE_CODE":
+functionCode = 0x3;
+refAddr = 422;
+break;
+case "GET_CH6_AO_SLEW_RATE":
+functionCode = 0x3;
+refAddr = 294;
+break;
+case "GET_CH7_INPUT_RANGE":
+functionCode = 0x3;
+refAddr = 263;
+break;
+case "GET_CH7_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 455;
+break;
+case "GET_CH7_AO_TYPE_CODE":
+functionCode = 0x3;
+refAddr = 423;
+break;
+case "GET_CH7_AO_SLEW_RATE":
+functionCode = 0x3;
+refAddr = 295;
+break;
+case "GET_CH8_INPUT_RANGE":
+functionCode = 0x3;
+refAddr = 264;
+break;
+case "GET_CH8_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 456;
+break;
+case "GET_CH8_AO_TYPE_CODE":
+functionCode = 0x3;
+refAddr = 424;
+break;
+case "GET_CH8_AO_SLEW_RATE":
+functionCode = 0x3;
+refAddr = 296;
+break;
+case "GET_CH9_INPUT_RANGE":
+functionCode = 0x3;
+refAddr = 265;
+break;
+case "GET_CH9_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 457;
+break;
+case "GET_CH9_AO_TYPE_CODE":
+functionCode = 0x3;
+refAddr = 425;
+break;
+case "GET_CH9_AO_SLEW_RATE":
+functionCode = 0x3;
+refAddr = 297;
+break;
+case "GET_CH10_INPUT_RANGE":
+functionCode = 0x3;
+refAddr = 266;
+break;
+case "GET_CH10_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 458;
+break;
+case "GET_CH10_AO_TYPE_CODE":
+functionCode = 0x3;
+refAddr = 426;
+break;
+case "GET_CH10_AO_SLEW_RATE":
+functionCode = 0x3;
+refAddr = 298;
+break;
+case "GET_CH11_INPUT_RANGE":
+functionCode = 0x3;
+refAddr = 267;
+break;
+case "GET_CH11_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 459;
+break;
+case "GET_CH11_AO_TYPE_CODE":
+functionCode = 0x3;
+refAddr = 427;
+break;
+case "GET_CH11_AO_SLEW_RATE":
+functionCode = 0x3;
+refAddr = 299;
+break;
+case "GET_CH12_INPUT_RANGE":
+functionCode = 0x3;
+refAddr = 268;
+break;
+case "GET_CH12_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 460;
+break;
+case "GET_CH12_AO_TYPE_CODE":
+functionCode = 0x3;
+refAddr = 428;
+break;
+case "GET_CH12_AO_SLEW_RATE":
+functionCode = 0x3;
+refAddr = 300;
+break;
+case "GET_CH13_INPUT_RANGE":
+functionCode = 0x3;
+refAddr = 269;
+break;
+case "GET_CH13_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 461;
+break;
+case "GET_CH13_AO_TYPE_CODE":
+functionCode = 0x3;
+refAddr = 429;
+break;
+case "GET_CH13_AO_SLEW_RATE":
+functionCode = 0x3;
+refAddr = 301;
+break;
+case "GET_CH14_INPUT_RANGE":
+functionCode = 0x3;
+refAddr = 270;
+break;
+case "GET_CH14_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 462;
+break;
+case "GET_CH14_AO_TYPE_CODE":
+functionCode = 0x3;
+refAddr = 430;
+break;
+case "GET_CH14_AO_SLEW_RATE":
+functionCode = 0x3;
+refAddr = 302;
+break;
+case "GET_CH15_INPUT_RANGE":
+functionCode = 0x3;
+refAddr = 271;
+break;
+case "GET_CH15_TEMPERATURE_OFFSET":
+functionCode = 0x3;
+refAddr = 463;
+break;
+case "GET_CH15_AO_TYPE_CODE":
+functionCode = 0x3;
+refAddr = 431;
+break;
+case "GET_CH15_AO_SLEW_RATE":
+functionCode = 0x3;
+refAddr = 303;
+break;
+case "READ_CH0_DI_COUNTER":
+functionCode = 0x4;
+refAddr = 128;
+break;
+case "READ_CH1_DI_COUNTER":
+functionCode = 0x4;
+refAddr = 130;
+break;
+case "READ_CH2_DI_COUNTER":
+functionCode = 0x4;
+refAddr = 132;
+break;
+case "READ_CH3_DI_COUNTER":
+functionCode = 0x4;
+refAddr = 134;
+break;
+case "READ_CH4_DI_COUNTER":
+functionCode = 0x4;
+refAddr = 136;
+break;
+case "READ_CH5_DI_COUNTER":
+functionCode = 0x4;
+refAddr = 138;
+break;
+case "READ_CH6_DI_COUNTER":
+functionCode = 0x4;
+refAddr = 140;
+break;
+case "READ_CH7_DI_COUNTER":
+functionCode = 0x4;
+refAddr = 142;
+break;
+case "READ_CH8_DI_COUNTER":
+functionCode = 0x4;
+refAddr = 144;
+break;
+case "READ_CH9_DI_COUNTER":
+functionCode = 0x4;
+refAddr = 146;
+break;
+case "READ_CH10_DI_COUNTER":
+functionCode = 0x4;
+refAddr = 148;
+break;
+case "READ_CH11_DI_COUNTER":
+functionCode = 0x4;
+refAddr = 150;
+break;
+case "READ_CH12_DI_COUNTER":
+functionCode = 0x4;
+refAddr = 152;
+break;
+case "READ_CH13_DI_COUNTER":
+functionCode = 0x4;
+refAddr = 154;
+break;
+case "READ_CH14_DI_COUNTER":
+functionCode = 0x4;
+refAddr = 156;
+break;
+case "READ_CH15_DI_COUNTER":
+functionCode = 0x4;
+refAddr = 158;
+break;
+case "READ_DI_HIGH_LATCH":
+functionCode = 0x1;
+refAddr = 64;
+break;
+case "READ_DI_LOW_LATCH":
+functionCode = 0x1;
+refAddr = 96;
+break;
+case "READ_DI":
+functionCode = 0x1;
+refAddr = 32;
+break;
+case "READ_CH0_AI":
+functionCode = 0x4;
+refAddr = 0;
+break;
+case "READ_CH1_AI":
+functionCode = 0x4;
+refAddr = 1;
+break;
+case "READ_CH2_AI":
+functionCode = 0x4;
+refAddr = 2;
+break;
+case "READ_CH3_AI":
+functionCode = 0x4;
+refAddr = 3;
+break;
+case "READ_CH4_AI":
+functionCode = 0x4;
+refAddr = 4;
+break;
+case "READ_CH5_AI":
+functionCode = 0x4;
+refAddr = 5;
+break;
+case "READ_CH6_AI":
+functionCode = 0x4;
+refAddr = 6;
+break;
+case "READ_CH7_AI":
+functionCode = 0x4;
+refAddr = 7;
+break;
+case "READ_CH8_AI":
+functionCode = 0x4;
+refAddr = 8;
+break;
+case "READ_CH9_AI":
+functionCode = 0x4;
+refAddr = 9;
+break;
+case "READ_CH10_AI":
+functionCode = 0x4;
+refAddr = 10;
+break;
+case "READ_CH11_AI":
+functionCode = 0x4;
+refAddr = 11;
+break;
+case "READ_CH12_AI":
+functionCode = 0x4;
+refAddr = 12;
+break;
+case "READ_CH13_AI":
+functionCode = 0x4;
+refAddr = 13;
+break;
+case "READ_CH14_AI":
+functionCode = 0x4;
+refAddr = 14;
+break;
+case "READ_CH15_AI":
+functionCode = 0x4;
+refAddr = 15;
+break;
+case "READ_CH0_AO":
+functionCode = 0x3;
+refAddr = 64;
+break;
+case "READ_CH1_AO":
+functionCode = 0x3;
+refAddr = 65;
+break;
+case "READ_CH2_AO":
+functionCode = 0x3;
+refAddr = 66;
+break;
+case "READ_CH3_AO":
+functionCode = 0x3;
+refAddr = 67;
+break;
+case "READ_CH4_AO":
+functionCode = 0x3;
+refAddr = 68;
+break;
+case "READ_CH5_AO":
+functionCode = 0x3;
+refAddr = 69;
+break;
+case "READ_CH6_AO":
+functionCode = 0x3;
+refAddr = 70;
+break;
+case "READ_CH7_AO":
+functionCode = 0x3;
+refAddr = 71;
+break;
+case "READ_CH8_AO":
+functionCode = 0x3;
+refAddr = 72;
+break;
+case "READ_CH9_AO":
+functionCode = 0x3;
+refAddr = 73;
+break;
+case "READ_CH10_AO":
+functionCode = 0x3;
+refAddr = 74;
+break;
+case "READ_CH11_AO":
+functionCode = 0x3;
+refAddr = 75;
+break;
+case "READ_CH12_AO":
+functionCode = 0x3;
+refAddr = 76;
+break;
+case "READ_CH13_AO":
+functionCode = 0x3;
+refAddr = 77;
+break;
+case "READ_CH14_AO":
+functionCode = 0x3;
+refAddr = 78;
+break;
+case "READ_CH15_AO":
+functionCode = 0x3;
+refAddr = 79;
+break;
+}
+break;
+#endregion DDC6026

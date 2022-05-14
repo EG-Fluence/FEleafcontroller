@@ -1,0 +1,20 @@
+下午 04:59:55-> portStr0 =COM1 StrLen:4
+下午 04:59:55-> portStr0 =COM7 StrLen:4
+下午 04:59:55-> portStr0 =COM8 StrLen:4
+下午 04:59:55-> portStr0 =COM9 StrLen:4
+下午 04:59:55-> portStr0 =COM10 StrLen:5
+下午 04:59:55-> portStr0 =COM11 StrLen:5
+下午 04:59:55-> portStr0 =COM12 StrLen:5
+下午 04:59:55-> portStr0 =COM6 StrLen:4
+下午 04:59:55-> portStr0 =COM13 StrLen:5
+下午 04:59:55-> PortList COM1  StrLen:4
+下午 04:59:55-> PortList COM7  StrLen:4
+下午 04:59:55-> PortList COM8  StrLen:4
+下午 04:59:55-> PortList COM9  StrLen:4
+下午 04:59:55-> PortList COM10  StrLen:5
+下午 04:59:55-> PortList COM11  StrLen:5
+下午 04:59:55-> PortList COM12  StrLen:5
+下午 04:59:55-> PortList COM6  StrLen:4
+下午 04:59:55-> start 0
+下午 04:59:55-> end 255
+下午 04:59:55-> timeout 300

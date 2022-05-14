@@ -521,7 +521,7 @@ def getVirtualSlaveValues(settings, localDf):
         chillerDev1.hrDataFrame.loc['inverterOverCurrentLock', 'value'] > 0 or
         chillerDev1.hrDataFrame.loc['inverterOverTempLock', 'value'] > 0 or
         chillerDev1.hrDataFrame.loc['inverterOverVoltLock', 'value'] > 0 or
-        chillerDev1.hrDataFrame.loc['inverterUnterVoltLock', 'value'] > 0 or
+        chillerDev1.hrDataFrame.loc['inverterUnderVoltLock', 'value'] > 0 or
         chillerDev1.hrDataFrame.loc['inverterPhaseLossLock', 'value'] > 0 or
         chillerDev1.hrDataFrame.loc['inverterOtherFaultLock', 'value'] > 0 or
     
@@ -535,7 +535,7 @@ def getVirtualSlaveValues(settings, localDf):
         chillerDev2.hrDataFrame.loc['inverterOverCurrentLock', 'value'] > 0 or
         chillerDev2.hrDataFrame.loc['inverterOverTempLock', 'value'] > 0 or
         chillerDev2.hrDataFrame.loc['inverterOverVoltLock', 'value'] > 0 or
-        chillerDev2.hrDataFrame.loc['inverterUnterVoltLock', 'value'] > 0 or
+        chillerDev2.hrDataFrame.loc['inverterUnderVoltLock', 'value'] > 0 or
         chillerDev2.hrDataFrame.loc['inverterPhaseLossLock', 'value'] > 0 or
         chillerDev2.hrDataFrame.loc['inverterOtherFaultLock', 'value'] > 0
         ):
@@ -1041,7 +1041,7 @@ def readClients(settings):
     pd.set_option('display.max_rows', None)
     pd.set_option('display.max_columns', None)
     pd.set_option('display.width', None)
-    pd.set_option('display.max_colwidth', None)
+    # pd.set_option('display.max_colwidth', None)    # On the EspressoBins installation this needs to be commented otherwise an error is thrown.
 
     if not settings.MODE == 'Production':
         # print out all read values
@@ -1292,7 +1292,7 @@ def writeToClients():
     while True:
         # check the queue for write requests
         try:
-            deviceName, fx, address, values, sleepvalue = queue.get(timeout=1)
+            deviceName, fx, address, values, sleepvalue = queue.get(timeout=0.1)
             deviceSetting, df, fc = devDict[deviceName]
             client = deviceSetting.client
             unitId = deviceSetting.unitId            
@@ -1374,6 +1374,7 @@ def loopTransferDataClientToServer(log, settings, context):
             os._exit(1)
 
         # time.sleep(settings.sleepTime)  # TODO  doesn't seem to make much effect...
+        time.sleep(1)    # sleep for 1 second otherwise errors are returned from singleRead...
 
         print("ReadMessages_counter = " + str(variables.ReadMessages_counter) + "    " +
               "ReadMessages_error_counter = " + str(variables.ReadMessages_error_counter)
@@ -1691,7 +1692,7 @@ def main():
     settings.MAX_SOFTWARE_VERSION_CHILLER = 4245
     settings.MAX_SOFTWARE_VERSION_HVAC = 100
     settings.OSENSA_ALARM_RESET_TEMP = 90
-    settings.MODBUS_TIMEOUT = 5
+    settings.MODBUS_TIMEOUT = 0.1
 
     print('Starting Script')
 

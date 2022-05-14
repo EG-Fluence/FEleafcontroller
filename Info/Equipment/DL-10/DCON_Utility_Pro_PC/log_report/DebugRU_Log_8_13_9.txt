@@ -1,0 +1,7 @@
+9:36:14 AM-> objList count = 0  LoadIO tP8
+9:36:29 AM-> shutdown objList count = 1  RemovePlugIn tP8
+9:36:29 AM-> shutdown objList count = 0
+9:37:23 AM-> objList count = 0  LoadIO tP8
+9:37:43 AM-> shutdown objList count = 1  RemovePlugIn tP8
+9:37:43 AM-> shutdown objList count = 0
+9:37:52 AM-> objList count = 0  LoadIO tP8
