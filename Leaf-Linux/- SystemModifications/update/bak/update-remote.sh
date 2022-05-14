@@ -8,12 +8,20 @@ fi
 
 CUBE_TYPE=$1
 
+echo
+
+echo "untar update.tar -----------------------------------------------------------------------"
+
 cd /update
 tar  -xvf  update.tar
 
+echo "----------------------------------------------------------------------------------------"; echo
 
-#----------------------------------------------------------------------------------------------
+
+#---------------------------------------------------------------------------------------------
 #update controllino_modbus
+
+echo "updating controllino_modbus ------------------------------------------------------------"
 
 cp  /update/controllino_modbus/usr-local-bin/*.py  /usr/local/bin
 cp  /update/controllino_modbus/usr-local-bin/*.py  /usr/local/bin/controllino_modbus_utils/
@@ -41,9 +49,13 @@ case "$CUBE_TYPE" in
                 ;;
 esac
 
+echo "----------------------------------------------------------------------------------------"; echo
 
-#----------------------------------------------------------------------------------------------
+
+#---------------------------------------------------------------------------------------------
 #update reboot_datetime
+
+echo "updating reboot_datetime ---------------------------------------------------------------"
 
 if test -f /logs ; then
   mkdir  /logs
@@ -54,14 +66,25 @@ chmod  777  /logs/reboot_datetime.sh
 sed -i -e 's/\r$//'  /logs/reboot_datetime.sh
 
 
-(crontab -l && echo "@reboot (sh /logs/reboot_datetime.sh)") | crontab -
+change_crontab=$(crontab -l | grep -c reboot_datetime.sh)
+if [ "$change_crontab" -eq 0 ]; then
+  (crontab -l && echo "@reboot (sh /logs/reboot_datetime.sh)") | crontab -
+  echo " crontab changed with reboot_datetime.sh"
+else
+  echo " crontab has already been changed."
+fi
+
+echo "----------------------------------------------------------------------------------------"; echo
 
 
-#----------------------------------------------------------------------------------------------
+#---------------------------------------------------------------------------------------------
 #update self_discovery
+
+echo "updating self discover -----------------------------------------------------------------"
 
 cp  /update/self_discovery/home-fos-SelfConfiguration/*.py  /home/fos/SelfConfiguration
 chmod  777  /home/fos/SelfConfiguration/*.py
 
+echo "----------------------------------------------------------------------------------------"; echo
 
-reboot
+# reboot

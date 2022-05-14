@@ -9,7 +9,8 @@ fi
 
 STATIC_IP_ADDRESS=$1
 PASSWORD=$2
-CUBE_TYPE=$3
+# Convert Cube Type to upper case
+CUBE_TYPE=$(tr '[a-z]' '[A-Z]' <<< $3)
 CUBE_TYPE_str=""
 
 

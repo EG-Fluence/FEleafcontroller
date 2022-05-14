@@ -6,7 +6,25 @@ if [ $# -ne 1 ]; then
     exit 1
 fi
 
-CUBE_TYPE=$1
+
+# Convert Cube Type to upper case
+CUBE_TYPE=$(tr '[a-z]' '[A-Z]' <<< $1)
+
+case "$CUBE_TYPE" in
+        "AC" | "LC-LD" | "LC-SD")
+	        echo "Updating for Cube $CUBE_TYPE"
+		;;
+	*)
+		echo "Unknown Cube type:"
+        	echo "  AC    = Air    Cooled"
+	        echo "  LC-LD = Liquid Cooled - Long  Duration"
+        	echo "  LC-SD = Liquid Cooled - Short Duration"
+	        echo
+        	exit 1
+		;;
+esac
+
+
 
 echo
 
@@ -57,7 +75,7 @@ echo "--------------------------------------------------------------------------
 
 echo "updating reboot_datetime ---------------------------------------------------------------"
 
-if test -f /logs ; then
+if [[ ! -d /logs ]]; then
   mkdir  /logs
 fi
 
@@ -65,6 +83,12 @@ cp  /update/reboot_datetime/reboot_datetime.sh  /logs
 chmod  777  /logs/reboot_datetime.sh
 sed -i -e 's/\r$//'  /logs/reboot_datetime.sh
 
+echo "----------------------------------------------------------------------------------------"; echo
+
+#---------------------------------------------------------------------------------------------
+#update crontab
+
+echo "updating crontab -----------------------------------------------------------------------"
 
 change_crontab=$(crontab -l | grep -c reboot_datetime.sh)
 if [ "$change_crontab" -eq 0 ]; then
@@ -80,11 +104,13 @@ echo "--------------------------------------------------------------------------
 #---------------------------------------------------------------------------------------------
 #update self_discovery
 
-echo "updating self discover -----------------------------------------------------------------"
+echo "updating self discovery ----------------------------------------------------------------"
 
 cp  /update/self_discovery/home-fos-SelfConfiguration/*.py  /home/fos/SelfConfiguration
 chmod  777  /home/fos/SelfConfiguration/*.py
 
 echo "----------------------------------------------------------------------------------------"; echo
+
+
 
 # reboot
