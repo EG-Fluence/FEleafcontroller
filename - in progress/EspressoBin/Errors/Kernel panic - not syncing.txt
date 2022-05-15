@@ -1,0 +1,18 @@
+, False]
+    UnitID'hr':42  Time_singleRead:3091us  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    UnitID'ir':42  Time_singleRead:2783us  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    UnitID'ir':42  Time_singleRead:2396us  [0, 0, 0, 0, 0, 0, 61978]
+    UnitID'ir':5  Time_singleRead:19463us  [4301, 2713, 8083]
+ReadMessages_counter = 50611    ReadMessages_error_counter = 1   |   WriteMessages_counter = 0    WriteMessages_error_counter = 0
+    UnitID'co':42  Time_singleRead:2571us  [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+    UnitID'hr':42  Time_singleRead:3096us  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    UnitID'ir':42  Time_singleRead:2767us  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    UnitID'ir':42  Time_singleRead:2819us  [0, 0, 0, 0, 0, 0, 63830]
+    UnitID'ir':5  Time_singleRead:19712us  [4300, 2716, 8088]
+[18559.825408] Kernel panic - not syncing: stack-protector: Kernel stack is corrupted in: __wake_up_common_lock+0xcc/0xd0
+[18559.836486] SMP: stopping secondary CPUs
+[18560.968710] SMP: failed to stop secondary CPUs 0-1
+[18560.973663] Kernel Offset: disabled
+[18560.977264] CPU features: 0x00,00004002,40000846
+[18560.982034] Memory Limit: none
+[18560.985198] ---[ end Kernel panic - not syncing: stack-protector: Kernel stack is corrupted in: __wake_up_common_lock+0xcc/0xd0 ]---

@@ -1,0 +1,167 @@
+ReadMessages_counter = 577    ReadMessages_error_counter = 0   |   WriteMessages_counter = 0    WriteMessages_error_counter = 0
+unit3 timmings: 17460  105769
+    UnitID'co':42  Time_singleRead:2168us  [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+    UnitID'hr':42  Time_singleRead:2852us  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    UnitID'ir':42  Time_singleRead:2929us  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 60623]
+    UnitID'hr':3  Time_singleRead:18128us  [100]
+    UnitID'hr':3  Time_singleRead:27674us  [1, 1, 0, 0, 0, 2]
+    UnitID'hr':3  Time_singleRead:40530us  [228, 2000, 224, 230, 120, 2000, 32767, 0, 0]
+    UnitID'hr':3  Time_singleRead:67511us  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    UnitID'hr':3  Time_singleRead:20891us  [0, 0, 0]
+    UnitID'hr':3  Time_singleRead:39818us  [25, 6, 10, 5, 60, 10, 40, 0, 90]
+    UnitID'hr':3  Time_singleRead:70407us  [65516]
+    UnitID'hr':3  Time_singleRead:18866us  [1]
+    UnitID'ir':5  Time_singleRead:17652us  [4244, 2368, 7462]
+ReadMessages_counter = 589    ReadMessages_error_counter = 0   |   WriteMessages_counter = 0    WriteMessages_error_counter = 0
+unit3 timmings: 17460  105769
+    UnitID'co':42  Time_singleRead:2134us  [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+    UnitID'hr':42  Time_singleRead:2730us  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    UnitID'ir':42  Time_singleRead:2872us  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 61065]
+    UnitID'hr':3  Time_singleRead:20129us  [100]
+    UnitID'hr':3  Time_singleRead:27564us  [1, 1, 0, 0, 0, 2]
+    UnitID'hr':3  Time_singleRead:32323us  [228, 2000, 224, 231, 120, 2000, 32767, 0, 0]
+    UnitID'hr':3  Time_singleRead:66420us  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    UnitID'hr':3  Time_singleRead:23439us  [0, 0, 0]
+    UnitID'hr':3  Time_singleRead:69195us  [25, 6, 10, 5, 60, 10, 40, 0, 90]
+    UnitID'hr':3  Time_singleRead:19040us  [65516]
+    UnitID'hr':3  Time_singleRead:20828us  [1]
+    UnitID'ir':5  Time_singleRead:18022us  [4248, 2369, 7464]
+ReadMessages_counter = 601    ReadMessages_error_counter = 0   |   WriteMessages_counter = 0    WriteMessages_error_counter = 0
+unit3 timmings: 17460  105769
+    UnitID'co':42  Time_singleRead:2390us  [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+    UnitID'hr':42  Time_singleRead:2930us  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    UnitID'ir':42  Time_singleRead:2944us  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 61514]
+    UnitID'hr':3  Time_singleRead:19740us  [100]
+    UnitID'hr':3  Time_singleRead:27129us  [1, 1, 0, 0, 0, 2]
+    UnitID'hr':3  Time_singleRead:41769us  [227, 2000, 224, 231, 120, 2000, 32767, 0, 0]
+Non standard response from singleRead
+Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 8 bytes (0 received)
+Retrying Read message to unitId: 3
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 3
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 3
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 3
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 3
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 3
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 3
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 3
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 3
+    UnitID'hr':3  Time_singleRead:10421us  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    UnitID'hr':3  Time_singleRead:35913us  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    UnitID'hr':3  Time_singleRead:4443us  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    UnitID'hr':3  Time_singleRead:51703us  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    UnitID'hr':3  Time_singleRead:46296us  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 5
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 5
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 5
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 5
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 5
+Non standard response from singleRead
+Modbus Error: [Input/Output] Modbus Error: [Invalid Message] Incomplete message received, expected at least 8 bytes (0 received)
+Retrying Read message to unitId: 5
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 5
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 5
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 5
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 5
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 5
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 5
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 5
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 5
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 5
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 5
+    UnitID'ir':5  Time_singleRead:10836us  [4247, 2369, 7464]
+ReadMessages_counter = 638    ReadMessages_error_counter = 0   |   WriteMessages_counter = 0    WriteMessages_error_counter = 0
+unit3 timmings: 4443  105769
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 42
+Non standard response from singleRead
+Modbus Error: [Input/Output] No Response received from the remote unit/Unable to decode response
+Retrying Read message to unitId: 42
+    UnitID'co':42  Time_singleRead:798us  [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+'ReadCoilsResponse' object has no attribute 'registers'
+Retrying Read message to unitId: 42
+'ReadCoilsResponse' object has no attribute 'registers'
+Retrying Read message to unitId: 42
+    UnitID'hr':42  Time_singleRead:946us  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/twisted/_threads/_threadworker.py", line 46, in work
+    task()
+  File "/usr/local/lib/python3.6/dist-packages/twisted/_threads/_team.py", line 190, in doWork
+    task()
+--- <exception caught here> ---
+  File "/usr/local/lib/python3.6/dist-packages/twisted/python/threadpool.py", line 250, in inContext
+    result = inContext.theWork()
+  File "/usr/local/lib/python3.6/dist-packages/twisted/python/threadpool.py", line 266, in <lambda>
+    inContext.theWork = lambda: context.call(ctx, func, *args, **kw)
+  File "/usr/local/lib/python3.6/dist-packages/twisted/python/context.py", line 122, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "/usr/local/lib/python3.6/dist-packages/twisted/python/context.py", line 85, in callWithContext
+    return func(*args,**kw)
+  File "./controllino_modbus.py", line 1366, in loopTransferDataClientToServer
+    readClientsWriteToServer(log, settings, context)
+  File "./controllino_modbus.py", line 1105, in readClientsWriteToServer
+    readClients(settings)
+  File "./controllino_modbus.py", line 916, in readClients
+    controllinoDev.readAll()
+  File "/usr/local/bin/controllino_modbus_utils/controllino_generic_modbus_device.py", line 209, in readAll
+    readFullRegister(self.deviceSettings.client, 'ir', self.deviceSettings.unitId, self.irDataFrame)
+  File "/usr/local/bin/controllino_modbus_utils/controllino_generic_modbus_device.py", line 103, in readFullRegister
+    dataFrame.loc[startIndex:lastIndex, 'value'] = result.registers[0:numberOfRegs]
+  File "/usr/local/lib/python3.6/dist-packages/pandas/core/indexing.py", line 670, in __setitem__
+    iloc._setitem_with_indexer(indexer, value)
+  File "/usr/local/lib/python3.6/dist-packages/pandas/core/indexing.py", line 1667, in _setitem_with_indexer
+    "cannot set using a multi-index "
+builtins.ValueError: cannot set using a multi-index selection indexer with a different length than the value
+
+

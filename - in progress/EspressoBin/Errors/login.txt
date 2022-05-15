@@ -1,0 +1,52 @@
+[  OK  ] Started LLDP daemon.
+[  OK  ] Started Discard unused blocks.
+[  OK  ] Started Time & Date Service.
+[  OK  ] Started Load/Save RF Kill Switch Status.
+[    9.896185] Bluetooth: hci0: unexpected event for opcode 0x0000
+         Starting Bluetooth service...
+[  OK  ] Started Bluetooth service.
+[  OK  ] Reached target Bluetooth.
+         Starting Hostname Service...
+[  OK  ] Started Hostname Service.
+[  OK  ] Stopped Fluence IP Tables service.
+[  OK  ] Started Fluence IP Tables service.
+[  OK  ] Started Initialize Machine to Fluence Specification.
+
+System installed.
+leaf-35946aba0f login: [   70.557377] Unable to handle kernel execute from non-executable memory at virtual address ffff00000274b6c0
+[   70.567516] Mem abort info:
+[   70.570493]   ESR = 0x8600000f
+[   70.573784]   EC = 0x21: IABT (current EL), IL = 32 bits
+[   70.579414]   SET = 0, FnV = 0
+[   70.582652]   EA = 0, S1PTW = 0
+[   70.585939]   FSC = 0x0f: level 3 permission fault
+[   70.590938] swapper pgtable: 4k pages, 48-bit VAs, pgdp=0000000007fe8000
+[   70.598031] [ffff00000274b6c0] pgd=180000003fff8003, p4d=180000003fff8003, pud=180000003fff7003, pmd=180000003ffe3003, pte=006800000274b707
+[   70.611077] Internal error: Oops: 8600000f [#1] PREEMPT SMP
+[   70.616833] Modules linked in: btusb btrtl btbcm btintel bluetooth ecdh_generic ecc mwifiex_pcie mwifiex crct10dif_ce cfg80211 armada_37xx_rwtm_mailbox rfkill sch_fq_codel ip_tables x_tables
+[   70.634393] CPU: 0 PID: 1 Comm: systemd Not tainted 5.16.12-gb3be4203fc2a #5
+[   70.641669] Hardware name: Globalscale Marvell ESPRESSOBin Ultra Board (DT)
+[   70.648850] pstate: 00000005 (nzcv daif -PAN -UAO -TCO -DIT -SSBS BTYPE=--)
+[   70.656034] pc : 0xffff00000274b6c0
+[   70.659637] lr : 0xffff00000274b6c0
+[   70.663233] sp : ffff80000939bcd0
+[   70.666648] x29: ffff00000138cb00 x28: ffff0000000a8000 x27: 0000000000000000
+[   70.674018] x26: 0000000000000000 x25: 0000000000000002 x24: ffff800008f34000
+[   70.681386] x23: ffff000000711860 x22: ffff800009293000 x21: 0000000000000000
+[   70.688755] x20: ffff800009293000 x19: ffff00000138cb00 x18: 0000000000000000
+[   70.696123] x17: 0000000000000000 x16: 0000000000000000 x15: 0000000000000000
+[   70.703491] x14: 0000000000000000 x13: 656369767265732e x12: 73656c6261747069
+[   70.710860] x11: 0000000000000020 x10: 0101010101010101 x9 : 0000ffffffffffff
+[   70.718228] x8 : 0101010101010101 x7 : 7f7f7f7f7f7f7f7f x6 : fefefefffefefeff
+[   70.725598] x5 : 0000000000000020 x4 : 000000000000000f x3 : 0000000000000000
+[   70.732965] x2 : ffff00000274b6c9 x1 : ffff0000000a8000 x0 : 0000000000000000
+[   70.740334] Call trace:
+[   70.742853]  0xffff00000274b6c0
+[   70.746098] Code: 00000000 00000000 0bd1bd38 ffff0000 (00000004)
+[   70.752388] ---[ end trace 48f35e17d4feffc5 ]---
+[   70.757309] Kernel panic - not syncing: Attempted to kill init! exitcode=0x0000000b
+[   70.765222] SMP: stopping secondary CPUs
+[   70.769281] Kernel Offset: disabled
+[   70.772876] CPU features: 0x00,00004002,40000846
+[   70.777641] Memory Limit: none
+[   70.780794] ---[ end Kernel panic - not syncing: Attempted to kill init! exitcode=0x0000000b ]---

@@ -1,0 +1,601 @@
+Team: SW Architecture & Platform -or- Controls Applications
+
+My manager:
+Staffan Dahlberg
+staffan.dahlberg@fluenceenergy.com
+
+Holger Haidinger
+holger.haidinger@fluenceenergy.com
+
+US Team
+  Zach
+  Leaf (OCTE) - Trevor
+  Cube - Prachi, Chris and Pranit
+
+
+GitHub
+https://github.com/
+username email
+office365 password
+access token  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
+
+
+controller_software
+https://github.com/FluenceEnergy/controller_software
+
+VPN
+vpn-us.fluenceenergy.com/FluenceSupport
+
+
+Atlassan
+fluenceenergy.atlassian.net/
+Documentation:
+https://fluenceenergy.atlassian.net/wiki/spaces/APD/pages/806158534/Software+Development+On-boarding
+
+Hardware  Espresso V7
+http://espressobin.net/tech-spec/
+
+HR
+Johannes Bruns
+johannes.bruns@fluenceenergy.com
+
+HR DE shared mailbox
+HRDE@fluenceenergy.com
+
+
+LMS (training)
+https://fluenceenergy.inclassnow.com/training#
+
+
+IT support
+https://fluence.samanage.com/login
+https://fluence.samanage.com/solutions.portal?&report_id=9097623&sso_token=5c6bd679cc4646f020d7e02e0c3a747201696ba1
+
+
+Apps
+https://myapplications.microsoft.com/
+
+
+SharePoint
+https://fluenceenergy.sharepoint.com/SitePages/Welcome%20to.aspx
+
+
+Conteco (booking meeting rooms)
+https://fluenceenergy.condecosoftware.com/EnterpriseLite/
+
+
+LinkedIn learning
+https://www.linkedin.com/learning-login/continue?forceAccount=false&authModeName=SAML-1&authUUID=NM7v3tshQwaEMcZ89ka0AA%3D%3D&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2F
+
+
+===============
+
+Handover Kai
+
+https://github.com/Uskok/Fluence-Survival-Guide
+
+MODBUS devices:
+https://fluenceenergy.sharepoint.com/sites/nextgen/Shared%20Documents/Forms/AllItems.aspx?FolderCTID=0x01200015A50E1661DE0947A964AA647879B0FA&xsdata=MDN8MDF8fDgyNjA2ZTVhYjI1NjRlYTFhZTY2YTQ5OWExNzYyMjk0fDI2MDBlOTUzZGZmMTQzZTc4ODAwNzQyNmE1MjhlYTUwfDF8MHw2Mzc3MDQxNDU1ODIyMjQ3ODl8R29vZHxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKV0lqb2lNQzR3TGpBd01EQWlMQ0pRSWpvaUlpd2lRVTRpT2lJaUxDSlhWQ0k2TVRKOQ%3D%3D&sdata=RVkzRlRQN05zQlFSdEVMeXh2a3k5czJ4QjQ0MEF5enBGeW80QVRWNnBMYz0%3D&ovuser=2600e953%2Ddff1%2D43e7%2D8800%2D7426a528ea50%2CKai%2EWeber%40fluenceenergy%2Ecom&OR=Teams%2DHL&CT=1634818058457&id=%2Fsites%2Fnextgen%2FShared%20Documents%2FControls%20HW%20and%20SW%2FNextGen%20Controller%20Workstream%2FVendor%20Info&viewid=2cf5bfe0%2D965c%2D4b36%2D8092%2D9e87f2ca317c
+
+
+===================
+
+MODBUS sites
+
+
+https://www.simplymodbus.ca/FAQ.htm
+
+==========
+
+Repository
+https://fluenceenergy.atlassian.net/browse/FL-9067
+
+
+Controllino development environment
+https://fluenceenergy.atlassian.net/browse/FL-9563
+
+
+=====================  Technical Support
+
+FIT support portal
+https://fluence.samanage.com/welcome.portal
+
+
+======================================= GEN 6 documentation
+
+https://fluenceenergy.sharepoint.com/sites/nextgen/Gen6%20Release%20Documents/Forms/AllItems.aspx?csf=1&web=1&e=HOJ3N7&cid=0ae56726%2D945c%2D40c9%2D9c1c%2Dee0bd7770baa&FolderCTID=0x01200061C12C94228C574FA194675C8C0C534E&viewid=620918f1%2Dbbe8%2D433a%2D9102%2D573d63fcf18e
+
+
+===================== Chrome LINKS
+
+https://github.com/settings/repositories
+
+https://fluenceenergy.atlassian.net/jira/software/c/projects/FL/boards/127
+https://fluenceenergy.atlassian.net/browse/FL-9563
+
+https://fluenceenergy.sharepoint.com/sites/nextgen/Shared%20Documents/Forms/AllItems.aspx?csf=1&web=1&e=Wi2aVc&xsdata=MDN8MDF8fDdlOWY1YmIzNDBhYTRlNGFiNGM2ODhjYzIyYWZlZWUxfDI2MDBlOTUzZGZmMTQzZTc4ODAwNzQyNmE1MjhlYTUwfDF8MHw2Mzc3ODk1NjQxMDE5NjM0MTh8R29vZHxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKV0lqb2lNQzR3TGpBd01EQWlMQ0pRSWpvaVYybHVNeklpTENKQlRpSTZJazkwYUdWeUlpd2lWMVFpT2pFeGZRPT0%3D&sdata=bEs1UXk2Ukd1M0hOOGFUaGNkVmMxZGUwMjczcTJZMzkwc2lsQlkycFV5dz0%3D&ovuser=2600e953%2Ddff1%2D43e7%2D8800%2D7426a528ea50%2CEduardo%2EGoncalves%40fluenceenergy%2Ecom&cid=a64e43ef%2D4fdb%2D41b8%2Dab64%2Dd7427c7b2850&FolderCTID=0x01200015A50E1661DE0947A964AA647879B0FA&isAscending=false&id=%2Fsites%2Fnextgen%2FShared%20Documents%2FControls%20HW%20and%20SW&sortField=Modified&viewid=2cf5bfe0%2D965c%2D4b36%2D8092%2D9e87f2ca317c
+
+https://fluenceenergy.sharepoint.com/sites/nextgen/Shared%20Documents/Forms/AllItems.aspx?FolderCTID=0x01200015A50E1661DE0947A964AA647879B0FA&xsdata=MDN8MDF8fDgyNjA2ZTVhYjI1NjRlYTFhZTY2YTQ5OWExNzYyMjk0fDI2MDBlOTUzZGZmMTQzZTc4ODAwNzQyNmE1MjhlYTUwfDF8MHw2Mzc3MDQxNDU1ODIyMjQ3ODl8R29vZHxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKV0lqb2lNQzR3TGpBd01EQWlMQ0pRSWpvaUlpd2lRVTRpT2lJaUxDSlhWQ0k2TVRKOQ%3D%3D&sdata=RVkzRlRQN05zQlFSdEVMeXh2a3k5czJ4QjQ0MEF5enBGeW80QVRWNnBMYz0%3D&ovuser=2600e953%2Ddff1%2D43e7%2D8800%2D7426a528ea50%2CKai%2EWeber%40fluenceenergy%2Ecom&OR=Teams%2DHL&CT=1634818058457&id=%2Fsites%2Fnextgen%2FShared%20Documents%2FControls%20HW%20and%20SW%2FNextGen%20Controller%20Workstream%2FVendor%20Info&viewid=2cf5bfe0%2D965c%2D4b36%2D8092%2D9e87f2ca317c
+
+https://fluenceenergy.sharepoint.com/sites/nextgen/Gen6%20Release%20Documents/Forms/AllItems.aspx?csf=1&web=1&e=HOJ3N7&cid=0ae56726%2D945c%2D40c9%2D9c1c%2Dee0bd7770baa&FolderCTID=0x01200061C12C94228C574FA194675C8C0C534E&viewid=620918f1%2Dbbe8%2D433a%2D9102%2D573d63fcf18e
+
+===================== Document-Drawing  Register
+
+https://fluenceenergy.sharepoint.com/:x:/r/sites/nextgen/_layouts/15/Doc.aspx?sourcedoc=%7BF00ABBFD-EE1A-4062-90D7-BDF21BA5F309%7D&file=DOCUMENT+%26+DRAWING+REGISTER+-+GEN6.xlsx&wdLOR=c40A6285A-071E-48B1-8EDB-BD0436D7999E&action=default&mobileredirect=true&cid=64ac699b-b496-4561-8e8a-e3fb3429440d&isSPOFile=1
+
+
+
+
+=====================  Python Scripts
+
+
+systemctl start  fluence-modbus
+systemctl stop   fluence-*
+systemctl status fluence-*
+
+fluence-controller.service
+fluence-init.service
+
+
+
+controllino_modbus.py
+
+
+
+
+======================= Vendor Info
+
+https://fluenceenergy.sharepoint.com/sites/nextgen/Shared%20Documents/Forms/AllItems.aspx?FolderCTID=0x01200015A50E1661DE0947A964AA647879B0FA&xsdata=MDN8MDF8fDgyNjA2ZTVhYjI1NjRlYTFhZTY2YTQ5OWExNzYyMjk0fDI2MDBlOTUzZGZmMTQzZTc4ODAwNzQyNmE1MjhlYTUwfDF8MHw2Mzc3MDQxNDU1ODIyMjQ3ODl8R29vZHxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKV0lqb2lNQzR3TGpBd01EQWlMQ0pRSWpvaUlpd2lRVTRpT2lJaUxDSlhWQ0k2TVRKOQ%3D%3D&sdata=RVkzRlRQN05zQlFSdEVMeXh2a3k5czJ4QjQ0MEF5enBGeW80QVRWNnBMYz0%3D&ovuser=2600e953%2Ddff1%2D43e7%2D8800%2D7426a528ea50%2CKai%2EWeber%40fluenceenergy%2Ecom&OR=Teams%2DHL&CT=1646044107749&sourceId=&params=%7B%22AppName%22%3A%22Teams%2DDesktop%22%2C%22AppVersion%22%3A%2227%2F22010300411%22%7D&id=%2Fsites%2Fnextgen%2FShared%20Documents%2FControls%20HW%20and%20SW%2FNextGen%20Controller%20Workstream%2FVendor%20Info&viewid=2cf5bfe0%2D965c%2D4b36%2D8092%2D9e87f2ca317c
+
+
+================= Python modules
+
+pandas
+pymodbus
+twisted
+numpy
+
+=====================  FSTOP
+https://fluenceenergy.atlassian.net/wiki/spaces/APD/pages/2025652332/Interaction+between+Fire+Alarm+System+FAS+and+Fluence+OS
+
+
+
+===================  JIRA tickets
+
+
+https://fluenceenergy.atlassian.net/browse/SR-1184
+https://fluenceenergy.atlassian.net/browse/SR-1185
+https://fluenceenergy.atlassian.net/browse/SR-1186
+https://fluenceenergy.atlassian.net/browse/SR-1377
+
+Core/node controller bpi dead
+https://fluenceenergy.atlassian.net/browse/EE-1990
+
+
+
+======================== FE repository
+
+https://github.com/EG-Fluence/FEleafcontroller
+
+
+
+
+=======================  BananaPi-R2 LINUX images
+
+
+https://fluenceenergy.sharepoint.com/sites/nextgen/Shared%20Documents/Forms/AllItems.aspx?csf=1&web=1&e=96fH4R&cid=314efc09%2D209b%2D487d%2D9d54%2Deb4d6cbd6df4&RootFolder=%2Fsites%2Fnextgen%2FShared%20Documents%2FControls%20HW%20and%20SW%2FNextGen%20Controller%20Workstream%2FDevice%20Images&FolderCTID=0x01200015A50E1661DE0947A964AA647879B0FA
+
+
+======================= EspressoBin-Ultra LINUX Images
+
+
+https://fluenceenergy.sharepoint.com/sites/ArchitectureandSoftwareEngineering/Shared%20Documents/Forms/AllItems.aspx?ct=1651165308920&or=Teams%2DHL&ga=1&id=%2Fsites%2FArchitectureandSoftwareEngineering%2FShared%20Documents%2FControllers%2FESPRESSObin%2DUltra%2FReplicate%20an%20ESPRESSObin%20Ultra%20Installation%2FEBRECOVER%20Files&viewid=436b9f21%2D5445%2D449e%2D9633%2D895f6e79c116
+
+
+======================= Deployment Images github
+
+
+https://github.com/FluenceEnergy/controller_software/tree/master
+
+
+=============================  BananaPi-R2 wiki
+
+how to flash to EMMC:  https://wiki.banana-pi.org/Getting_Started_with_R2#Development
+
+
+Linux image for BananaPi-R2:   https://wiki.banana-pi.org/Banana_Pi_BPI-R2#Ubuntu_with_kernel_4.4
+
+
+And for BPI-R2 details, you can check here, most document were open here:  https://wiki.banana-pi.org/Banana_Pi_BPI-R2 
+
+https://wiki.banana-pi.org/Getting_Started_with_R2
+
+
+https://github.com/BPI-SINOVOIP/BPI-R2-bsp/blob/master/build.sh 
+
+Making a Linux Image:
+	Make your own image
+	Prepare a SD card which have installed Ubuntu system
+	Boot your SD card with R2, after R2 finish starting, copy your files and config your Ubuntu, then poweroff R2
+	Plug your SD card in Linux PC, "cd /media", then "ln -s <your account> pi"
+	Execute "bpi-migrate -c bpi-r2.conf -c ubuntu-mate-from-sd.conf -d /dev/sdx"
+	Then you could get your own image now
+
+
+
+========================  Controller Software repo
+
+https://github.com/FluenceEnergy/controller_software.git
+
+
+========================  
+
+Gen6-EspressoBin Air Cooled and Self Configuration 
+
+https://github.com/FluenceEnergy/controller_software/tree/Gen6-EspressoBin
+
+
+==========================  VPN US
+
+Username: Eduardo.Goncalves
+
+Fluence Support VPN 							(NO vpn-us.fluenceenergy.com/FluencePeople)
+
+California Deployment centre
+	Array Controller	10.194.5.8
+
+	Cube Liquid-cooled	172.16.1.111  LD	172.16.1.112  SD
+	Cube Air-cooled		172.16.1.113  UL	172.16.1.114  IEC
+
+Login with PuTTY in the Controller Array
+10.194.5.8
+username: egoncalves.admin
+password: egoncalves_2022!
+
+login in the Cube
+ssh root@172.16.1.114
+
+New ExpressoBins
+ssh root@172.16.1.115 (ex .113)
+ssh root@172.16.1.116 (ex .114)
+
+
+Python controllino_modbus
+cd /usr/local/bin
+
+https://github.com/Kai-JW/docs/tree/main/Fluence-Survival-Guide-master/Fluence/DEPCTR
+https://github.com/Kai-JW/docs/blob/main/Fluence-Survival-Guide-master/Fluence/Projects/ProjectSetup.md
+
+
+https://github.com/FluenceEnergy/controller_software
+
+scp controllino_modbus.py egoncalves.admin@10.194.5.8
+scp controllino_modbus.py root@172.16.1.114
+
+
+# Files for the System Services
+cd /etc/systemd/system
+
+nano /etc/systemd/system/fluence-modbus.service
+nano /etc/systemd/system/fluence-controller.service
+
+
+systemctl --type=service --state=running
+
+
+systemctl status fluence-*
+systemctl status fluence-modbus*
+systemctl status fluence-controller*
+
+
+Start/Stop controllino_modbus
+systemctl stop   fluence-modbus
+systemctl start  fluence-modbus
+
+Start/Stop  fluence_controller.py
+systemctl stop   fluence-controller
+systemctl start  fluence-controller
+
+
+journalctl --since "30 minutes ago" --unit=fluence-modbus
+
+journalctl --since "10 minutes ago" --unit=fluence-controller
+
+
+Copying the controllino_modbus files
+
+scp root@172.16.1.114:/usr/local/share/fluence/controllino_modbus.conf .
+
+
+========================= VPN DE
+
+Fluence Support VPN 					(NO vpn-de.fluenceenergy.com/FluencePeople)
+
+
+ArrayController
+ssh 10.194.253.3
+username: egoncalves.admin
+password: egoncalves_2022!
+
+
+OCTE - leaf controller
+10.11.8.161
+ssh fluence@10.11.8.161
+pass:fluence
+
+Cube 1
+ssh root@10.11.9.101
+
+Cube 2
+ssh root@10.11.10.101
+
+
+
+
+=====================  Erlangen Lab  VPN
+
+https://github.com/Kai-JW/docs/tree/main/Fluence-Survival-Guide-master/Fluence/ErlangenLab
+
+Array Controller: 10.194.253.3
+username: egoncalves.admin
+password: egoncalves_2022!
+
+
+10.11.17.103   LD  Inside:  BananaPi - Controllino - HVAC Envicool - DL10
+
+10.11.9.101    Outside: 
+
+10.11.10.101    
+
+
+
+
+========================== VPN installations
+
+user: fluence
+name: fluence
+
+
+=========================  Boris tickets
+
+https://fluenceenergy.atlassian.net/browse/FL-6212?filter=17035
+
+
+==========================  Espresso Bin Linux
+
+https://fluenceenergy.sharepoint.com/sites/ArchitectureandSoftwareEngineering/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FArchitectureandSoftwareEngineering%2FShared%20Documents%2FControllers&p=true&ct=1648040203655&or=OWA%2DNT&cid=0aab09cf%2D7403%2D0b85%2Dbd9f%2Dfde30e34920e
+
+
+
+==========================  KAI repo
+
+https://github.com/FluenceEnergy/controller_software/tree/dev-kweber-DEPCTR
+
+
+
+=============================  Swati SPRINT
+
+https://fluenceenergy.atlassian.net/jira/software/c/projects/FL/boards/210
+
+
+======================  Python versions
+
+pip3 show cython numpy twisted pandas pymodbus
+
+
+pip3 install -U cython
+pip3 install -U numpy
+pip3 install -U twisted
+pip3 install -U pandas
+pip3 install -U pymodbus
+
+
+==========================  TEST RAIL
+
+https://fluence.testrail.io/index.php?/suites/view/628&group_by=cases:section_id&group_order=asc&display_deleted_cases=0
+
+
+
+========================== LINUX installation  DD
+
+
+dd if=/dev/<sd_card> of=/image.img
+
+
+lsblk  ??
+
+
+yes, should copy entire disk.yes, you can present the image to balenaEtcher. balenaEtcher is able to handle compressed images. i know zip for sure. maybe it supports gzip as well.you can pipe output of dd to gzip:
+
+dd if=/dev/<sd_card> | gzip --best >image.img.gz
+
+
+
+======================================================================= Installations
+
+vpn-de.fluenceenergy.com/FluenceSupport
+
+Array Controller
+User/Pass fluence/fluence
+
+BananaPi
+root/root
+
+
+/var/log/syslog
+
+======================= DE - BASF
+
+ArrayController
+10.194.199.3
+
+NodeController
+10.11.9.3
+
+
+====================== US - Marsh Landing
+
+10.194.179.3 (array)
+
+10.11.8.3  (core 1)
+10.11.16.3 (core 2)
+10.11.24.3 (core 3)
+10.11.32.3 (core 4)
+10.11.40.3 (core 5) 
+
+==============================  Killala
+
+Array Controller: 10.194.207.3
+
+CORE
+ssh root@10.11.8.3
+
+CUBE
+ssh root@10.11.9.101
+
+
+==========================  Aghada
+
+/logs/reboot_datetime.log  2022-03-28 11:08:17 UTC
+
+Running variables.py 2022/03/28
+2022/04/01
+ReadMessages_counter = 404834    ReadMessages_error_counter = 15   |   WriteMessages_counter = 5    WriteMessages_error_counter = 0
+2022/04/09
+ReadMessages_counter = 1191849    ReadMessages_error_counter = 35   |   WriteMessages_counter = 9    WriteMessages_error_counter = 0
+2022/04/24
+ReadMessages_counter = 2699569    ReadMessages_error_counter = 376   |   WriteMessages_counter = 13    WriteMessages_error_counter = 0
+2022/05/11
+ReadMessages_counter = 4427468    ReadMessages_error_counter = 438   |   WriteMessages_counter = 15    WriteMessages_error_counter = 0
+
+
+vpn-de.fluenceenergy.com/FluenceSupport
+
+Array Controller: 10.194.205.3
+
+CUBE: ssh root@10.11.9.101
+
+
+============================================= Porterstown
+
+
+Array Controller: 10.194.211.3
+
+
+=============================================
+
+
+
+Marsh Landing
+  5 Cores 15 Nodes (10 Nodes are only to control the inverters) and 20 Cubes 
+
+Brookwood
+  1 Core 6 Nodes 12 Cubes site
+  
+
+
+===== Sandbox Array Controller at Isaiah's house:
+
+
+login to enst01nm02pr as egoncalves.admin
+
+On VNC "ESARRAY enst00m01c00n00s01" do:  ssh localhost -p 10022
+
+user: egoncalves.admin
+password: eg_2022!
+
+/opt/pycharm-community-2021.3.3/bin/pycharm.sh
+
+ssh root@eb-01 or ssh root@10.0.0.5  espressobin-ultra-01
+ssh root@eb-02 or ssh root@10.0.0.6  espressobin-ultra-02
+ssh root@eb-03 or ssh root@10.0.0.7  espressobin-ultra-03
+
+eb-04 is 10.0.0.11
+
+
+cd /home/fos/SelfConfiguration/
+./leaf_selfconfiguration.py
+
+nano ./leaf_selfdiscovery.py
+
+after selfConfiguration:  root@10.0.0.5  ssh root@10.11.9.101
+
+
+tcpdump -i enp0s5 -s 0 -A 'tcp dst port 5000 and tcp[((tcp[12:1] & 0xf0) >> 2):4] = 0x504F5354'
+
+
+
+=================== VNC
+
+password:
+egoncalves_2022!
+
+
+
+=================== Linux Network command
+
+ip addr show br0 
+
+
+
+======================  DAS
+
+https://eu-lab-array-das.fluenceenergy.com:9443/
+
+
+=======================  Self Configuration
+
+/home/fos/SelfConfiguration
+
+./leaf_selfconfiguration.py
+
+
+blank out FOS variable
+FOS=GIT-bf52942d
+in
+/usr/local/share/fluence/fluence_vars.sh
+
+
+
+==================================  Linux cheat commands
+
+
+select-editor
+
+
+nano .bashrc
+  export TERM=ansi
+  stty cols 150 rows 50
+
+
+#change the EOFs
+sed -i -e 's/\r$//' FILE_NAME
+
+#tar a directory
+tar -cvf myfolder.tar myfolder
+
+#untar
+tar -xvf file_name.tar
+
+
+
+========================  Installing Python packages without PIP
+
+
+Download the package
+unzip it if it is zipped
+cd into the directory containing setup.py
+If there are any installation instructions contained in documentation, read and follow the instructions OTHERWISE
+type in python setup.py install
+
+
+
+=========================== timesheets
+
+https://fluenceenergy-my.sharepoint.com/:v:/p/michael_wang/EdkWiXP-cRRPowf7Z3bBHNcBZfAbIE3SgGUIQlBj3bbavQ?isSPOFile=1
+
+
+
+=================================  TeraTerm
+
+C:\Users\Eduardo.Goncalves\AppData\Local\VirtualStore\Program Files (x86)\teraterm

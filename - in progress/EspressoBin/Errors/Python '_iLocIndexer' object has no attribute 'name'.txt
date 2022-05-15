@@ -1,0 +1,44 @@
+ReadMessages_counter = 17795    ReadMessages_error_counter = 0   |   WriteMessages_counter = 0    WriteMessages_error_counter = 0
+    UnitID'co':42  Time_singleRead:2358us  [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+    UnitID'hr':42  Time_singleRead:3098us  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    UnitID'ir':42  Time_singleRead:2831us  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    UnitID'ir':42  Time_singleRead:2556us  [0, 0, 0, 0, 0, 0, 18218]
+    UnitID'ir':5  Time_singleRead:53356us  [4186, 2802, 8243]
+ReadMessages_counter = 17800    ReadMessages_error_counter = 0   |   WriteMessages_counter = 0    WriteMessages_error_counter = 0
+Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3/dist-packages/twisted/_threads/_threadworker.py", line 46, in work
+    task()
+  File "/usr/lib/python3/dist-packages/twisted/_threads/_team.py", line 190, in doWork
+    task()
+--- <exception caught here> ---
+  File "/usr/lib/python3/dist-packages/twisted/python/threadpool.py", line 250, in inContext
+    result = inContext.theWork()
+  File "/usr/lib/python3/dist-packages/twisted/python/threadpool.py", line 266, in <lambda>
+    inContext.theWork = lambda: context.call(ctx, func, *args, **kw)
+  File "/usr/lib/python3/dist-packages/twisted/python/context.py", line 122, in callWithContext
+    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+  File "/usr/lib/python3/dist-packages/twisted/python/context.py", line 85, in callWithContext
+    return func(*args,**kw)
+  File "/usr/local/bin/controllino_modbus.py", line 1366, in loopTransferDataClientToServer
+    readClientsWriteToServer(log, settings, context)
+  File "/usr/local/bin/controllino_modbus.py", line 1105, in readClientsWriteToServer
+    readClients(settings)
+  File "/usr/local/bin/controllino_modbus.py", line 916, in readClients
+    controllinoDev.readAll()
+  File "/usr/local/bin/controllino_modbus_utils/controllino_generic_modbus_device.py", line 188, in readAll
+    readFullRegister(self.deviceSettings.client, 'co', self.deviceSettings.unitId, self.coDataFrame)
+  File "/usr/local/bin/controllino_modbus_utils/controllino_generic_modbus_device.py", line 57, in readFullRegister
+    (dataFrame.iloc[j - 1].loc['address'] + 1) == (dataFrame.iloc[j].loc['address']) and
+  File "/usr/lib/python3/dist-packages/pandas/core/indexing.py", line 1373, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "/usr/lib/python3/dist-packages/pandas/core/indexing.py", line 1823, in _getitem_axis
+    key = self._convert_scalar_indexer(key, axis)
+  File "/usr/lib/python3/dist-packages/pandas/core/indexing.py", line 256, in _convert_scalar_indexer
+    return ax._convert_scalar_indexer(key, kind=self.name)
+builtins.AttributeError: '_iLocIndexer' object has no attribute 'name'
+

@@ -1,0 +1,72 @@
+    UnitID'hr':42  Time_singleRead:2955us  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    UnitID'ir':42  Time_singleRead:2824us  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    UnitID'ir':42  Time_singleRead:2644us  [0, 0, 0, 0, 0, 0, 9264]
+    UnitID'ir':5  Time_singleRead:19999us  [5463, 2563, 7813]
+ReadMessages_counter = 1045    ReadMessages_error_counter = 20   |   WriteMessages_counter = 0    WriteMessages_error_counter = 0
+    UnitID'co':42  Time_singleRead:2568us  [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+    UnitID'hr':42  Time_singleRead:3089us  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    UnitID'ir':42  Time_singleRead:2893us  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    UnitID'ir':42  Time_singleRead:2741us  [0, 0, 0, 0, 0, 0, 11125]
+    UnitID'ir':5  Time_singleRead:18095us  [5458, 2562, 7811]
+ReadMessages_counter = 1050    ReadMessages_error_counter = 20   |   WriteMessages_counter = 0    WriteMessages_error_counter = 0
+Unhandled exception in thread started by <bound method Thread._bootstrap of <Thread(PoolThread-twisted.internet.reactor-0, started 281473448710640)>>
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/twisted/_threads/_team.py", line 190, in doWork
+    task()
+  File "/usr/lib/python3/dist-packages/twisted/python/threadpool.py", line 261, in inContext
+    log.err(result)
+  File "/usr/lib/python3/dist-packages/twisted/python/log.py", line 134, in err
+    msg(failure=_stuff, why=_why, isError=1, **kw)
+  File "/usr/lib/python3/dist-packages/twisted/python/threadable.py", line 53, in sync
+    return function(self, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/twisted/python/log.py", line 286, in msg
+    _publishNew(self._publishPublisher, actualEventDict, textFromEventDict)
+  File "/usr/lib/python3/dist-packages/twisted/logger/_legacy.py", line 126, in publishToNewObserver
+    text = textFromEventDict(eventDict)
+  File "/usr/lib/python3/dist-packages/twisted/python/log.py", line 439, in textFromEventDict
+    why = eventDict.get('why')
+AttributeError: 'dict' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3/dist-packages/twisted/_threads/_threadworker.py", line 46, in work
+    task()
+  File "/usr/lib/python3/dist-packages/twisted/_threads/_team.py", line 192, in doWork
+    self._logException()
+  File "/usr/lib/python3/dist-packages/twisted/python/log.py", line 134, in err
+    msg(failure=_stuff, why=_why, isError=1, **kw)
+  File "/usr/lib/python3/dist-packages/twisted/python/threadable.py", line 53, in sync
+    return function(self, *args, **kwargs)
+  File "/usr/lib/python3/dist-packages/twisted/python/log.py", line 286, in msg
+    _publishNew(self._publishPublisher, actualEventDict, textFromEventDict)
+  File "/usr/lib/python3/dist-packages/twisted/logger/_legacy.py", line 126, in publishToNewObserver
+    text = textFromEventDict(eventDict)
+  File "/usr/lib/python3/dist-packages/twisted/python/log.py", line 439, in textFromEventDict
+    why = eventDict.get('why')
+AttributeError: 'dict' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 926, in _bootstrap_inner
+    (self.name, _format_exc()), file=_sys.stderr)
+  File "/usr/lib/python3.6/traceback.py", line 167, in format_exc
+    return "".join(format_exception(*sys.exc_info(), limit=limit, chain=chain))
+  File "/usr/lib/python3.6/traceback.py", line 121, in format_exception
+    type(value), value, tb, limit=limit).format(chain=chain))
+  File "/usr/lib/python3.6/traceback.py", line 498, in __init__
+    _seen=_seen)
+  File "/usr/lib/python3.6/traceback.py", line 509, in __init__
+    capture_locals=capture_locals)
+  File "/usr/lib/python3.6/traceback.py", line 351, in extract
+    linecache.lazycache(filename, f.f_globals)
+  File "/usr/lib/python3.6/linecache.py", line 169, in lazycache
+    name = module_globals.get('__name__')
+AttributeError: 'dict' object has no attribute 'get'

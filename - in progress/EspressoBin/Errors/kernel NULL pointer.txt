@@ -1,0 +1,54 @@
+
+
+./usr/lib/python3/dist-packages/scipy/sparse/linalg/eigen/
+./usr/lib/python3/dist-packages/scipy/sparse/linalg/eigen/arpack/
+./usr/lib/python3/dist-packages/scipy/sparse/linalg/eigen/arpack/tests/
+./usr/lib/python3/dist-packages/scipy/sparse/linalg/eigen/arpack/tests/__pycache__/
+./usr/lib/python3/dist-packages/scipy/sparse/linalg/eigen/arpack/tests/__pycache__/test_arpack.cpython-36.pyc
+./usr/lib/python3/dist-packages/scipy/sparse/linalg/eigen/arpack/tests/test_arpack.py
+./usr/lib/python3/dist-packages/scipy/sparse/linalg/eigen/arpack/arpack.py
+./usr/lib/python3/dist-packages/scipy/sparse/linalg/eigen/arpack/__pycache__/
+./usr/lib/python3/dist-packages/scipy/sparse/linalg/eigen/arpack/__pycache__/arpack.cpython-36.pyc
+./usr/lib/python3/dist-packages/scipy/sparse/linalg/eigen/arpac[  291.505676] Unable to handle kernel NULL pointer dereference at virtual address 0000000000000004
+[  291.514701] Mem abort info:
+[  291.517566]   ESR = 0x86000006
+[  291.520703]   Exception class = IABT (current EL), IL = 32 bits
+[  291.526795]   SET = 0, FnV = 0
+[  291.529930]   EA = 0, S1PTW = 0
+[  291.533160] user pgtable: 4k pages, 48-bit VAs, pgdp = 00000000c25825c8
+[  291.539967] [0000000000000004] pgd=0000000039d41003, pud=0000000039e9a003, pmd=0000000000000000
+[  291.548928] Internal error: Oops: 86000006 [#1] PREEMPT SMP
+[  291.554661] Modules linked in:
+[  291.557798] Process swapper/0 (pid: 0, stack limit = 0x00000000af7870e9)
+[  291.564701] CPU: 0 PID: 0 Comm: swapper/0 Not tainted 4.19.62-00036-gbc6a6e31fe72 #1
+[  291.572670] Hardware name: gti cellular cpe board (DT)
+[  291.577959] pstate: 80000085 (Nzcv daIf -PAN -UAO)
+[  291.582890] pc : 0x4
+[  291.585126] lr : 0x4
+[  291.587364] sp : ffff000008003d00
+[  291.590769] x29: ffff80003ca00000 x28: ffff000008c9a000
+[  291.596234] x27: 0000000000000000 x26: 0000000000000000
+[  291.601701] x25: ffff000008c9a730 x24: ffff80003dfbf940
+[  291.607166] x23: 0000000000000080 x22: 0000000000000004
+[  291.612631] x21: 0000000000000004 x20: ffff80003dfbf940
+[  291.618097] x19: 0000000000000080 x18: 0000000000000400
+[  291.623562] x17: 0000000000000000 x16: 0000000000000000
+[  291.629029] x15: 0000000000000400 x14: 0000000000000400
+[  291.634494] x13: 0000000000000000 x12: 0000000000000000
+[  291.639960] x11: ffff80003dfbf9c0 x10: 0000000000000000
+[  291.645425] x9 : 00000000ffffffff x8 : ffff80003dfc0320
+[  291.650890] x7 : ffff80003dfc0320 x6 : ffff80003ca000f0
+[  291.656356] x5 : ffff80003dfbf9f0 x4 : 0000000000000000
+[  291.661822] x3 : 0000000000000000 x2 : 0000000000000000
+[  291.667288] x1 : 0000000000000001 x0 : 0000000000000000
+[  291.672754] Call trace:
+[  291.675264]  0x4
+[  291.677150] Code: bad PC value
+[  291.680289] ---[ end trace eb84a5431e238eb6 ]---
+[  291.685031] Kernel panic - not syncing: Fatal exception in interrupt
+[  291.691571] SMP: stopping secondary CPUs
+[  292.735604] SMP: failed to stop secondary CPUs 0-1
+[  292.737674] Kernel Offset: disabled
+[  292.741259] CPU features: 0x0,2080200c
+[  292.745110] Memory Limit: none
+[  292.748252] ---[ end Kernel panic - not syncing: Fatal exception in interrupt ]---
