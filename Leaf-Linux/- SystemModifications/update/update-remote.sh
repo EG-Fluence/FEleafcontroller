@@ -46,8 +46,8 @@ echo "--------------------------------------------------------------------------
 
 echo "updating controllino_modbus ------------------------------------------------------------"
 
-cp  /update/controllino_modbus/usr-local-bin/*.py  /usr/local/bin
-cp  /update/controllino_modbus/usr-local-bin/*.py  /usr/local/bin/controllino_modbus_utils/
+cp  /update/controllino_modbus/usr-local-bin/*.py                           /usr/local/bin
+cp  /update/controllino_modbus/usr-local-bin/controllino_modbus_utils/*.py  /usr/local/bin/controllino_modbus_utils
 
 chmod  777  /usr/local/bin/*.py
 chmod  777  /usr/local/bin/controllino_modbus_utils/*.py

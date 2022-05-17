@@ -1,0 +1,54 @@
+
+========================================= LINUX Installation
+
+Connect to ESPRESSObin-Ultra with a console cable (usb micro to usb a)
+Plug the USB disk into any of USB ports in the ESPRESSObin-Ultra
+Boot ESPRESSObin-Ultra and hit any key to stop autoboot (you have a few seconds) to enter Marvell>
+
+
+bubt espressobin_ultra-bootloader-cpu-1000-ddr4-1cs-1g-atf-eff6ede8-uboot-g926d08c7ce-utils-52d9aef-20220307-rel.bin spi usb
+
+usb reset; fatload usb 0 $loadaddr recovery.bin; source $loadaddr
+
+Press enter
+
+fsck.ext4 -y /dev/mmcblk0p1 ; mount /dev/sda1 /media ; mount /dev/mmcblk0p1 /mnt
+
+tar -zxvf /media/ebinx-fluence-rootfs.tgz -C /mnt
+
+sync
+
+umount /mnt ; cd ; umount /media
+
+reboot
+
+login into the EspressoBin
+systemctl unmask systemd-networkd.service
+netplan generate
+netplan apply
+
+reboot
+
+
+========================================= Program UPDATE
+
+
+Login into the EspressoBin
+
+
+mount /dev/sda /media/disk0
+
+mkdir /update ; cd /update
+
+cp /media/disk0/update.tar .
+
+cp /media/disk0/update-remote.sh .
+
+chmod 777 *.sh
+
+./update-remote.sh AC		# Air Cooled Cubes
+./update-remote.sh LC-LD	# Liquid Cooled Long  Duration Cubes
+./update-remote.sh LC-SD	# Liquid Cooled Short Duration Cubes
+
+
+reboot

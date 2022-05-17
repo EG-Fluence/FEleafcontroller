@@ -4,15 +4,15 @@
 1. 	Format a FAT32 USB disk and copy the files in the link below to the USB disk
 https://fluenceenergy.sharepoint.com/sites/ArchitectureandSoftwareEngineering/Shared%20Documents/Forms/AllItems.aspx?ct=1651165308920&or=Teams%2DHL&ga=1&id=%2Fsites%2FArchitectureandSoftwareEngineering%2FShared%20Documents%2FControllers%2FESPRESSObin%2DUltra%2FReplicate%20an%20ESPRESSObin%20Ultra%20Installation%2FEBRECOVER%20Files&viewid=436b9f21%2D5445%2D449e%2D9633%2D895f6e79c116
 
-            10,827 armada-3720-axc300-v3.dtb
-            10,559 armada-3720-ccpe.dtb
-     1,193,202,389 ebinx-fluence-rootfs.tgz
-         4,066,304 espressobin_ultra-bootloader-cpu-1000-ddr4-1cs-1g-atf-eff6ede8-uboot-g926d08c7ce-utils-52d9aef-20220307-rel.bin
-        13,310,464 Image
-               533 md5sum.txt
-         8,897,801 ramdisk
-               576 recovery.bin
-               762 u-boot-env.txt
+		armada-3720-axc300-v3.dtb
+		armada-3720-ccpe.dtb
+		ebinx-fluence-rootfs.tgz
+		espressobin_ultra-bootloader-cpu-1000-ddr4-1cs-1g-atf-eff6ede8-uboot-g926d08c7ce-utils-52d9aef-20220307-rel.bin
+		Image
+		md5sum.txt
+		ramdisk
+		recovery.bin
+        u-boot-env.txt
 
 
 2. 	Connect to ESPRESSObin-Ultra with a console cable (usb micro to usb a)

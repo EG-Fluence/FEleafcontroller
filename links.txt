@@ -1,23 +1,10 @@
 Team: SW Architecture & Platform -or- Controls Applications
 
-My manager:
-Staffan Dahlberg
-staffan.dahlberg@fluenceenergy.com
-
-Holger Haidinger
-holger.haidinger@fluenceenergy.com
-
-US Team
-  Zach
-  Leaf (OCTE) - Trevor
-  Cube - Prachi, Chris and Pranit
-
 
 GitHub
 https://github.com/
 username email
 office365 password
-access token  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
 
 
 controller_software
@@ -31,9 +18,6 @@ Atlassan
 fluenceenergy.atlassian.net/
 Documentation:
 https://fluenceenergy.atlassian.net/wiki/spaces/APD/pages/806158534/Software+Development+On-boarding
-
-Hardware  Espresso V7
-http://espressobin.net/tech-spec/
 
 HR
 Johannes Bruns
@@ -167,6 +151,7 @@ https://fluenceenergy.atlassian.net/browse/SR-1184
 https://fluenceenergy.atlassian.net/browse/SR-1185
 https://fluenceenergy.atlassian.net/browse/SR-1186
 https://fluenceenergy.atlassian.net/browse/SR-1377
+https://fluenceenergy.atlassian.net/browse/SR-1250
 
 Core/node controller bpi dead
 https://fluenceenergy.atlassian.net/browse/EE-1990
