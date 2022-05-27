@@ -42,7 +42,7 @@ ModbusVariables = list()
 reader = csv.reader(open('controllino_testing.conf', 'r'))
 for row in reader:
     row = [x.strip(' ') for x in row]
-    if len(row) == 3:
+    if len(row) == 4:
         ModbusVariables.append(row)
         print('  '+str(row))
     else:
@@ -68,11 +68,9 @@ LogFileName = LogsDirectoryPath + '/' + 'Log_' + TimeNowStr + '.csv'
 LogFile = open(LogFileName, "w")
 
 #print header
-firstloop = True
-Line = ''
+Line = 'time'
 for ModbusVariable in ModbusVariables:
-    if not firstloop:
-        Line += ','
+    Line += ','
     firstloop = False
     Line += str(ModbusVariable[0])
 print(Line)
@@ -92,9 +90,18 @@ while True:
         ModbusVariableName = ModbusVariable[0]
         ModbusSlaveId = int(ModbusVariable[1])
         ModbusVariableAddress = int(ModbusVariable[2])
+        regType = ModbusVariable[3]
 
+        result = ""
         try:
-            result = client.read_input_registers(ModbusVariableAddress, 1, unit=ModbusSlaveId)
+            if regType == 'co':
+                result = client.read_coils(ModbusVariableAddress, 1, unit=ModbusSlaveId)
+            elif regType == 'di':
+                result = client.read_discrete_inputs(ModbusVariableAddress, 1, unit=ModbusSlaveId)
+            elif regType == "hr":
+                result = client.read_holding_registers(ModbusVariableAddress, 1, unit=ModbusSlaveId)
+            elif regType == "ir":
+                result = client.read_input_registers(ModbusVariableAddress, 1, unit=ModbusSlaveId)
 
             if result.function_code < 0x80:
                 LineResults.append(result.registers[0])
@@ -114,6 +121,7 @@ while True:
 
     if len(LineResults) != 0:
         Line = TimeNowStr
+
         for LineResult in LineResults:
             Line += ',' + str(LineResult)
         print(Line)

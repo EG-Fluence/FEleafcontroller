@@ -1,0 +1,5 @@
+0 * * * *     /home/npe_tuneup/scripts/npe_tuneup.sh --clean
+* * * * * /usr/sbin/logrotate /etc/logrotate.d/fos
+*/5 * * * * export PATH=/usr/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin; /usr/local/bin/fluence_selfconfiguration.sh
+* * * * *     /home/imodcloud/scripts/vpn_watchdog --check
+*/5 * * * * /bin/bash /opt/restart-network-interface.sh

@@ -2,6 +2,7 @@
 
 
 1. 	Format a FAT32 USB disk and copy the files in the link below to the USB disk
+
 https://fluenceenergy.sharepoint.com/sites/ArchitectureandSoftwareEngineering/Shared%20Documents/Forms/AllItems.aspx?ct=1651165308920&or=Teams%2DHL&ga=1&id=%2Fsites%2FArchitectureandSoftwareEngineering%2FShared%20Documents%2FControllers%2FESPRESSObin%2DUltra%2FReplicate%20an%20ESPRESSObin%20Ultra%20Installation%2FEBRECOVER%20Files&viewid=436b9f21%2D5445%2D449e%2D9633%2D895f6e79c116
 
 		armada-3720-axc300-v3.dtb
@@ -50,45 +51,6 @@ https://fluenceenergy.sharepoint.com/sites/ArchitectureandSoftwareEngineering/Sh
 12.	reboot
 
 
-=====================================================================
-
-
-If FLUENCE_INITIALIZED is present it needs to be removed (see below)
-
-
-Connect to ESPRESSObin-Ultra with a console cable (usb micro to usb a)
-
-Install USB into ESPRESSObin-Ultra
-
-Boot ESPRESSObin-Ultra
-
-Hit any key to stop autoboot (you have a few seconds)
-usb reset; fatload usb 0 $loadaddr recovery.bin; source $loadaddr
-
-After boot completed - press enter - to see command prompt
-
-Mount usb
-mount /dev/sda1 /media
-
-Run dd command to restore to eMMC disk. Note: This will take a long time
-gzip -dc /media/ebinx-fluence-emmc.img.gz | dd of=/dev/mmcblk0; sync
-
-After restore completed [updated]
-
-mount eMMC
-mount /dev/mmcblk0p1 /mnt
-
-Remove FLUENCE_INITIALIZED
-rm /mnt/etc/FLUENCE_INITIALIZED
-
-Unmount eMMC
-umount /mnt
-
-Unmount usb
-umount /media
-
-Reboot
-reboot
 
 
 

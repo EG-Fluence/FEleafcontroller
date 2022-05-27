@@ -314,7 +314,8 @@ ssh root@10.11.9.101
 Cube 2
 ssh root@10.11.10.101
 
-
+Cube in pieces:
+10.11.17.103
 
 
 =====================  Erlangen Lab  VPN
@@ -467,8 +468,9 @@ CUBE: ssh root@10.11.9.101
 Array Controller: 10.194.211.3
 
 
-=============================================
+=============================================  Enel Azure Sky
 
+Core Leaf-Controller:10.22.8.161
 
 
 Marsh Landing
@@ -476,7 +478,15 @@ Marsh Landing
 
 Brookwood
   1 Core 6 Nodes 12 Cubes site
-  
+
+
+
+========================================  Spower Lab Array are
+
+AC: 10.194.195.3
+username: egoncalves.admin
+password: Goncalves_2022!
+
 
 
 ===== Sandbox Array Controller at Isaiah's house:
