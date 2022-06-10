@@ -5,6 +5,7 @@ GitHub
 https://github.com/
 username email
 office365 password
+token: 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
 
 
 controller_software
@@ -25,6 +26,16 @@ johannes.bruns@fluenceenergy.com
 
 HR DE shared mailbox
 HRDE@fluenceenergy.com
+
+
+=============================== Erlangen Lab
+
+Fluence Energy GmbH
+Technology Department
+Schallershofer Str. 143
+91056 Erlangen
+GERMANY
+
 
 
 LMS (training)
@@ -481,7 +492,7 @@ Brookwood
 
 
 
-========================================  Spower Lab Array are
+========================================  Spower Lab
 
 AC: 10.194.195.3
 username: egoncalves.admin
@@ -533,9 +544,9 @@ ip addr show br0
 
 
 
-======================  DAS
+======================  DAS installation
 
-https://eu-lab-array-das.fluenceenergy.com:9443/
+https://fluenceenergy.atlassian.net/wiki/spaces/APD/pages/2395537546/Configure+FOS+DAS+-+Rachel
 
 
 =======================  Self Configuration
@@ -589,8 +600,30 @@ type in python setup.py install
 
 https://fluenceenergy-my.sharepoint.com/:v:/p/michael_wang/EdkWiXP-cRRPowf7Z3bBHNcBZfAbIE3SgGUIQlBj3bbavQ?isSPOFile=1
 
+prj-0463
+prj-0481
+prj-0768
 
 
 =================================  TeraTerm
 
 C:\Users\Eduardo.Goncalves\AppData\Local\VirtualStore\Program Files (x86)\teraterm
+
+
+
+
+====================== IP Matrix
+
+https://fluenceenergy.atlassian.net/wiki/spaces/APD/pages/6291817/IP+Matrix
+
+
+
+=========================  Self Config Stories
+ 
+https://fluenceenergy.atlassian.net/browse/FL-12973
+https://fluenceenergy.atlassian.net/browse/FL-12966
+https://fluenceenergy.atlassian.net/browse/FL-12967
+https://fluenceenergy.atlassian.net/browse/FL-12968
+https://fluenceenergy.atlassian.net/browse/FL-12969
+
+

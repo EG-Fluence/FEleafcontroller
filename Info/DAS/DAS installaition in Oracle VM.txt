@@ -1,0 +1,69 @@
+
+
+Regarding the DAS installation described here:
+	https://fluenceenergy.atlassian.net/wiki/spaces/APD/pages/2395537546/Configure+FOS+DAS+-+Rachel
+
+
+Installing the LinuxUbuntu-18.04 VM software
+
+	apt install net-tools
+
+	apt install git
+
+	cd /usr/local/src
+
+	git clone https://github.com/FluenceEnergy/das_utilities.git
+
+	cd das_utilities
+
+	git checkout dcs-10013
+
+	sudo groupadd -g 15676 fosdas
+
+	sudo useradd -g 15676 -m -s/bin/bash -u 15676 fosdas
+
+	cd src/mango/install
+
+	sudo ./server_install_packages
+
+	nano /etc/mysql/my.cnf
+				add these lines to the end of the file:
+				[mariadb]
+				plugin_load_add = auth_socket
+
+	systemctl restart mysql
+
+	mysql -u root
+				Execute these commands in mysql:
+				use mysql;
+				UPDATE user SET PASSWORD=PASSWORD("ac") WHERE User='root';
+				UPDATE user SET PLUGIN="mysql_native_password";
+				FLUSH PRIVILEGES;
+				quit;
+
+	systemctl stop mysql
+	systemctl start mysql
+
+	cd /usr/local/src/das_utilities/src/mango/install
+	
+    * The following command will ask for a password, its the same entered before for mysql. "ac"
+	sudo ./mango_install_01_v435
+
+	sudo systemctl start fosdas
+	sudo systemctl enable fosdas
+
+
+=======================================================
+
+Deploy Self Configuration Server
+
+https://fluenceenergy.atlassian.net/wiki/spaces/APD/pages/2406350869/Deploy+Self+Configuration+Server
+
+
+
+=======================================================
+
+SelfConfigurationServer
+
+https://github.com/FluenceEnergy/controller_software/tree/dev-mconway-gen6/ArrayController/SelfConfigurationServer
+
