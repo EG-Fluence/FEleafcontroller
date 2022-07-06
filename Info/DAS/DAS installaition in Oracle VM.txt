@@ -6,9 +6,9 @@ Regarding the DAS installation described here:
 
 Installing the LinuxUbuntu-18.04 VM software
 
-	apt install net-tools
+	sudo -i
 
-	apt install git
+	apt install net-tools
 
 	cd /usr/local/src
 
@@ -26,24 +26,6 @@ Installing the LinuxUbuntu-18.04 VM software
 
 	sudo ./server_install_packages
 
-	nano /etc/mysql/my.cnf
-				add these lines to the end of the file:
-				[mariadb]
-				plugin_load_add = auth_socket
-
-	systemctl restart mysql
-
-	mysql -u root
-				Execute these commands in mysql:
-				use mysql;
-				UPDATE user SET PASSWORD=PASSWORD("ac") WHERE User='root';
-				UPDATE user SET PLUGIN="mysql_native_password";
-				FLUSH PRIVILEGES;
-				quit;
-
-	systemctl stop mysql
-	systemctl start mysql
-
 	cd /usr/local/src/das_utilities/src/mango/install
 	
     * The following command will ask for a password, its the same entered before for mysql. "ac"
@@ -52,6 +34,9 @@ Installing the LinuxUbuntu-18.04 VM software
 	sudo systemctl start fosdas
 	sudo systemctl enable fosdas
 
+DAS should be accessible via port 9080 as below if we are running in VM
+
+http://localhost:9080
 
 =======================================================
 

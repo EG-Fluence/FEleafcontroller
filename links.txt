@@ -240,8 +240,11 @@ Fluence Support VPN 							(NO vpn-us.fluenceenergy.com/FluencePeople)
 California Deployment centre
 	Array Controller	10.194.5.8
 
-	Cube Liquid-cooled	172.16.1.111  LD	172.16.1.112  SD
-	Cube Air-cooled		172.16.1.113  UL	172.16.1.114  IEC
+	Cube Liquid-cooled	172.16.1.111  LD EspressoBin	172.16.1.112  SD BananaPi
+	Cube Air-cooled		172.16.1.113  UL BananaPi		172.16.1.114  IEC
+
+						.115 (ex .113) EspressoBin
+						.116 (ex .114) EspressoBin
 
 Login with PuTTY in the Controller Array
 10.194.5.8
@@ -252,8 +255,8 @@ login in the Cube
 ssh root@172.16.1.114
 
 New ExpressoBins
-ssh root@172.16.1.115 (ex .113)
-ssh root@172.16.1.116 (ex .114)
+ssh root@172.16.1.115 (ex .113) EspressoBin
+ssh root@172.16.1.116 (ex .114) EspressoBin
 
 
 Python controllino_modbus
@@ -584,6 +587,8 @@ tar -cvf myfolder.tar myfolder
 tar -xvf file_name.tar
 
 
+dmesg
+journalctl -b -1
 
 ========================  Installing Python packages without PIP
 
@@ -598,11 +603,14 @@ type in python setup.py install
 
 =========================== timesheets
 
+https://4633567.app.netsuite.com/app/center/card.nl?sc=-46&whence=
+
 https://fluenceenergy-my.sharepoint.com/:v:/p/michael_wang/EdkWiXP-cRRPowf7Z3bBHNcBZfAbIE3SgGUIQlBj3bbavQ?isSPOFile=1
 
-prj-0463
-prj-0481
-prj-0768
+prj-0463 - Gridstack
+prj-0481 - Requesition Engineering
+prj-0768 - DevOps internal software
+prj-0492 - Lab work
 
 
 =================================  TeraTerm
@@ -626,4 +634,44 @@ https://fluenceenergy.atlassian.net/browse/FL-12967
 https://fluenceenergy.atlassian.net/browse/FL-12968
 https://fluenceenergy.atlassian.net/browse/FL-12969
 
+
+
+======================== Jon Campbell  tickets
+
+https://fluenceenergy.atlassian.net/browse/FL-11808
+
+
+
+
+================================
+
+http://192.168.68.101:9080/
+
+
+
+===================================
+
+There are 2 OCTEs but it's just the modberries versus BPis
+
+UL uses modberries and IEC use Bpis for the controllers
+
+
+=================================== Prince Handover
+
+https://github.com/FluenceEnergy/controller_software/tree/Gen6.1
+
+
+git clone https://github.com/FluenceEnergy/controller_software.git
+cd controller_software
+git checkout Gen6.1
+
+
+==========================================================  JIRA stories link  Platform Team 1
+
+https://fluenceenergy.atlassian.net/jira/software/c/projects/FAT/boards/220
+
+
+==========================================================  FAT assignments
+
+https://fluenceenergy.atlassian.net/browse/FAT-358
 

@@ -1,0 +1,660 @@
+egoncalves.admin@enst10m01c00n00s02:/usr/local/share$ ssh root@172.16.1.115
+root@172.16.1.115's password:
+Welcome to Ubuntu 18.04.6 LTS (GNU/Linux 5.16.12-gb3be4203fc2a aarch64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+System installed.
+Last login: Wed Jun 15 17:41:44 2022 from 172.16.1.4
+root@leaf-140b0f4298:~# journalctl -b
+-- Logs begin at Fri 2022-04-29 16:03:40 UTC, end at Wed 2022-06-15 18:18:05 UTC. --
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Booting Linux on physical CPU 0x0000000000 [0x410fd034]
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Linux version 5.16.12-gb3be4203fc2a (gti@ubuntu) (aarch64-linux-gnu-gcc (Linaro GCC 7.3-2018.05) 7.3.1 20180425 [linaro-7.3-2018.05 revision d29120a4Jun 15 18:17:20 leaf-140b0f4298 kernel: Machine model: Globalscale Marvell ESPRESSOBin Ultra Board
+Jun 15 18:17:20 leaf-140b0f4298 kernel: earlycon: ar3700_uart0 at MMIO 0x00000000d0012000 (options '')
+Jun 15 18:17:20 leaf-140b0f4298 kernel: printk: bootconsole [ar3700_uart0] enabled
+Jun 15 18:17:20 leaf-140b0f4298 kernel: efi: UEFI not found.
+Jun 15 18:17:20 leaf-140b0f4298 kernel: NUMA: No NUMA configuration found
+Jun 15 18:17:20 leaf-140b0f4298 kernel: NUMA: Faking a node at [mem 0x0000000000000000-0x000000003fffffff]
+Jun 15 18:17:20 leaf-140b0f4298 kernel: NUMA: NODE_DATA [mem 0x3fde9b40-0x3fdebfff]
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Zone ranges:
+Jun 15 18:17:20 leaf-140b0f4298 kernel:   DMA      [mem 0x0000000000000000-0x000000003fffffff]
+Jun 15 18:17:20 leaf-140b0f4298 kernel:   DMA32    empty
+Jun 15 18:17:20 leaf-140b0f4298 kernel:   Normal   empty
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Movable zone start for each node
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Early memory node ranges
+Jun 15 18:17:20 leaf-140b0f4298 kernel:   node   0: [mem 0x0000000000000000-0x0000000003ffffff]
+Jun 15 18:17:20 leaf-140b0f4298 kernel:   node   0: [mem 0x0000000004000000-0x00000000041fffff]
+Jun 15 18:17:20 leaf-140b0f4298 kernel:   node   0: [mem 0x0000000004200000-0x000000003fffffff]
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Initmem setup node 0 [mem 0x0000000000000000-0x000000003fffffff]
+Jun 15 18:17:20 leaf-140b0f4298 kernel: cma: Reserved 32 MiB at 0x000000003cc00000
+Jun 15 18:17:20 leaf-140b0f4298 kernel: psci: probing for conduit method from DT.
+Jun 15 18:17:20 leaf-140b0f4298 kernel: psci: PSCIv1.1 detected in firmware.
+Jun 15 18:17:20 leaf-140b0f4298 kernel: psci: Using standard PSCI v0.2 function IDs
+Jun 15 18:17:20 leaf-140b0f4298 kernel: psci: MIGRATE_INFO_TYPE not supported.
+Jun 15 18:17:20 leaf-140b0f4298 kernel: psci: SMC Calling Convention v1.1
+Jun 15 18:17:20 leaf-140b0f4298 kernel: percpu: Embedded 19 pages/cpu s40600 r8192 d29032 u77824
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pcpu-alloc: s40600 r8192 d29032 u77824 alloc=19*4096
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pcpu-alloc: [0] 0 [0] 1
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Detected VIPT I-cache on CPU0
+Jun 15 18:17:20 leaf-140b0f4298 kernel: CPU features: detected: GIC system register CPU interface
+Jun 15 18:17:20 leaf-140b0f4298 kernel: CPU features: detected: ARM erratum 845719
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Fallback order for Node 0: 0
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Built 1 zonelists, mobility grouping on.  Total pages: 258048
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Policy zone: DMA
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Kernel command line: console=ttyMV0,115200 earlycon=ar3700_uart,0xd0012000 root=PARTUUID=89708921-01 rw rootwait net.ifnames=0 biosdevname=0
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Unknown kernel command line parameters "biosdevname=0", will be passed to user space.
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Inode-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)
+Jun 15 18:17:20 leaf-140b0f4298 kernel: mem auto-init: stack:off, heap alloc:off, heap free:off
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Memory: 973504K/1048576K available (12096K kernel code, 1128K rwdata, 4092K rodata, 2048K init, 465K bss, 42304K reserved, 32768K cma-reserved)
+Jun 15 18:17:20 leaf-140b0f4298 kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+Jun 15 18:17:20 leaf-140b0f4298 kernel: rcu: Preemptible hierarchical RCU implementation.
+Jun 15 18:17:20 leaf-140b0f4298 kernel: rcu:         RCU event tracing is enabled.
+Jun 15 18:17:20 leaf-140b0f4298 kernel: rcu:         RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=2.
+Jun 15 18:17:20 leaf-140b0f4298 kernel:         Trampoline variant of Tasks RCU enabled.
+Jun 15 18:17:20 leaf-140b0f4298 kernel: rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+Jun 15 18:17:20 leaf-140b0f4298 kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=2
+Jun 15 18:17:20 leaf-140b0f4298 kernel: NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+Jun 15 18:17:20 leaf-140b0f4298 kernel: GICv3: GIC: Using split EOI/Deactivate mode
+Jun 15 18:17:20 leaf-140b0f4298 kernel: GICv3: 192 SPIs implemented
+Jun 15 18:17:20 leaf-140b0f4298 kernel: GICv3: 0 Extended SPIs implemented
+Jun 15 18:17:20 leaf-140b0f4298 kernel: GICv3: Distributor has no Range Selector support
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Root IRQ handler: gic_handle_irq
+Jun 15 18:17:20 leaf-140b0f4298 kernel: GICv3: 16 PPIs implemented
+Jun 15 18:17:20 leaf-140b0f4298 kernel: GICv3: CPU0: found redistributor 0 region 0:0x00000000d1d40000
+Jun 15 18:17:20 leaf-140b0f4298 kernel: random: get_random_bytes called from start_kernel+0x484/0x674 with crng_init=0
+Jun 15 18:17:20 leaf-140b0f4298 kernel: arch_timer: cp15 timer(s) running at 12.50MHz (phys).
+Jun 15 18:17:20 leaf-140b0f4298 kernel: clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x2e2049cda, max_idle_ns: 440795202628 ns
+Jun 15 18:17:20 leaf-140b0f4298 kernel: sched_clock: 56 bits at 12MHz, resolution 80ns, wraps every 4398046511080ns
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Console: colour dummy device 80x25
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 25.00 BogoMIPS (lpj=50000)
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pid_max: default: 32768 minimum: 301
+Jun 15 18:17:20 leaf-140b0f4298 kernel: LSM: Security Framework initializing
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Mount-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)
+Jun 15 18:17:20 leaf-140b0f4298 kernel: rcu: Hierarchical SRCU implementation.
+Jun 15 18:17:20 leaf-140b0f4298 kernel: EFI services will not be available.
+Jun 15 18:17:20 leaf-140b0f4298 kernel: smp: Bringing up secondary CPUs ...
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Detected VIPT I-cache on CPU1
+Jun 15 18:17:20 leaf-140b0f4298 kernel: GICv3: CPU1: found redistributor 1 region 0:0x00000000d1d60000
+Jun 15 18:17:20 leaf-140b0f4298 kernel: CPU1: Booted secondary processor 0x0000000001 [0x410fd034]
+Jun 15 18:17:20 leaf-140b0f4298 kernel: smp: Brought up 1 node, 2 CPUs
+Jun 15 18:17:20 leaf-140b0f4298 kernel: SMP: Total of 2 processors activated.
+Jun 15 18:17:20 leaf-140b0f4298 kernel: CPU features: detected: 32-bit EL0 Support
+Jun 15 18:17:20 leaf-140b0f4298 kernel: CPU features: detected: 32-bit EL1 Support
+Jun 15 18:17:20 leaf-140b0f4298 kernel: CPU features: detected: CRC32 instructions
+Jun 15 18:17:20 leaf-140b0f4298 kernel: CPU: All CPU(s) started at EL2
+Jun 15 18:17:20 leaf-140b0f4298 kernel: alternatives: patching kernel code
+Jun 15 18:17:20 leaf-140b0f4298 kernel: devtmpfs: initialized
+Jun 15 18:17:20 leaf-140b0f4298 kernel: KASLR disabled due to lack of seed
+Jun 15 18:17:20 leaf-140b0f4298 kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+Jun 15 18:17:20 leaf-140b0f4298 kernel: futex hash table entries: 512 (order: 3, 32768 bytes, linear)
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pinctrl core: initialized pinctrl subsystem
+Jun 15 18:17:20 leaf-140b0f4298 kernel: DMI not present or invalid.
+Jun 15 18:17:20 leaf-140b0f4298 kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Jun 15 18:17:20 leaf-140b0f4298 kernel: DMA: preallocated 128 KiB GFP_KERNEL pool for atomic allocations
+Jun 15 18:17:20 leaf-140b0f4298 kernel: DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Jun 15 18:17:20 leaf-140b0f4298 kernel: DMA: preallocated 128 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+Jun 15 18:17:20 leaf-140b0f4298 kernel: audit: initializing netlink subsys (disabled)
+Jun 15 18:17:20 leaf-140b0f4298 kernel: audit: type=2000 audit(0.164:1): state=initialized audit_enabled=0 res=1
+Jun 15 18:17:20 leaf-140b0f4298 kernel: thermal_sys: Registered thermal governor 'step_wise'
+Jun 15 18:17:20 leaf-140b0f4298 kernel: thermal_sys: Registered thermal governor 'power_allocator'
+Jun 15 18:17:20 leaf-140b0f4298 kernel: cpuidle: using governor menu
+Jun 15 18:17:20 leaf-140b0f4298 kernel: hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+Jun 15 18:17:20 leaf-140b0f4298 kernel: ASID allocator initialised with 65536 entries
+Jun 15 18:17:20 leaf-140b0f4298 kernel: HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+Jun 15 18:17:20 leaf-140b0f4298 kernel: HugeTLB registered 32.0 MiB page size, pre-allocated 0 pages
+Jun 15 18:17:20 leaf-140b0f4298 kernel: HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+Jun 15 18:17:20 leaf-140b0f4298 kernel: HugeTLB registered 64.0 KiB page size, pre-allocated 0 pages
+Jun 15 18:17:20 leaf-140b0f4298 kernel: ACPI: Interpreter disabled.
+Jun 15 18:17:20 leaf-140b0f4298 kernel: iommu: Default domain type: Translated
+Jun 15 18:17:20 leaf-140b0f4298 kernel: iommu: DMA domain TLB invalidation policy: strict mode
+Jun 15 18:17:20 leaf-140b0f4298 kernel: vgaarb: loaded
+Jun 15 18:17:20 leaf-140b0f4298 kernel: SCSI subsystem initialized
+Jun 15 18:17:20 leaf-140b0f4298 kernel: libata version 3.00 loaded.
+Jun 15 18:17:20 leaf-140b0f4298 kernel: usbcore: registered new interface driver usbfs
+Jun 15 18:17:20 leaf-140b0f4298 kernel: usbcore: registered new interface driver hub
+Jun 15 18:17:20 leaf-140b0f4298 kernel: usbcore: registered new device driver usb
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pps_core: LinuxPPS API ver. 1 registered
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Jun 15 18:17:20 leaf-140b0f4298 kernel: PTP clock support registered
+Jun 15 18:17:20 leaf-140b0f4298 kernel: EDAC MC: Ver: 3.0.0
+Jun 15 18:17:20 leaf-140b0f4298 kernel: NetLabel: Initializing
+Jun 15 18:17:20 leaf-140b0f4298 kernel: NetLabel:  domain hash size = 128
+Jun 15 18:17:20 leaf-140b0f4298 kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Jun 15 18:17:20 leaf-140b0f4298 kernel: NetLabel:  unlabeled traffic allowed by default
+Jun 15 18:17:20 leaf-140b0f4298 kernel: clocksource: Switched to clocksource arch_sys_counter
+Jun 15 18:17:20 leaf-140b0f4298 kernel: VFS: Disk quotas dquot_6.6.0
+Jun 15 18:17:20 leaf-140b0f4298 kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pnp: PnP ACPI: disabled
+Jun 15 18:17:20 leaf-140b0f4298 kernel: NET: Registered PF_INET protocol family
+Jun 15 18:17:20 leaf-140b0f4298 kernel: IP idents hash table entries: 16384 (order: 5, 131072 bytes, linear)
+Jun 15 18:17:20 leaf-140b0f4298 kernel: tcp_listen_portaddr_hash hash table entries: 512 (order: 1, 8192 bytes, linear)
+Jun 15 18:17:20 leaf-140b0f4298 kernel: TCP established hash table entries: 8192 (order: 4, 65536 bytes, linear)
+Jun 15 18:17:20 leaf-140b0f4298 kernel: TCP bind hash table entries: 8192 (order: 5, 131072 bytes, linear)
+Jun 15 18:17:20 leaf-140b0f4298 kernel: TCP: Hash tables configured (established 8192 bind 8192)
+Jun 15 18:17:20 leaf-140b0f4298 kernel: UDP hash table entries: 512 (order: 2, 16384 bytes, linear)
+Jun 15 18:17:20 leaf-140b0f4298 kernel: UDP-Lite hash table entries: 512 (order: 2, 16384 bytes, linear)
+Jun 15 18:17:20 leaf-140b0f4298 kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+Jun 15 18:17:20 leaf-140b0f4298 kernel: RPC: Registered named UNIX socket transport module.
+Jun 15 18:17:20 leaf-140b0f4298 kernel: RPC: Registered udp transport module.
+Jun 15 18:17:20 leaf-140b0f4298 kernel: RPC: Registered tcp transport module.
+Jun 15 18:17:20 leaf-140b0f4298 kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Jun 15 18:17:20 leaf-140b0f4298 kernel: PCI: CLS 0 bytes, default 64
+Jun 15 18:17:20 leaf-140b0f4298 kernel: hw perfevents: enabled with armv8_pmuv3 PMU driver, 7 counters available
+Jun 15 18:17:20 leaf-140b0f4298 kernel: kvm [1]: IPA Size Limit: 40 bits
+Jun 15 18:17:20 leaf-140b0f4298 kernel: kvm [1]: vgic-v2@d1da0000
+Jun 15 18:17:20 leaf-140b0f4298 kernel: kvm [1]: GIC system register CPU interface enabled
+Jun 15 18:17:20 leaf-140b0f4298 kernel: kvm [1]: vgic interrupt IRQ9
+Jun 15 18:17:20 leaf-140b0f4298 kernel: kvm [1]: Hyp mode initialized successfully
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Initialise system trusted keyrings
+Jun 15 18:17:20 leaf-140b0f4298 kernel: workingset: timestamp_bits=42 max_order=18 bucket_order=0
+Jun 15 18:17:20 leaf-140b0f4298 kernel: squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Jun 15 18:17:20 leaf-140b0f4298 kernel: NFS: Registering the id_resolver key type
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Key type id_resolver registered
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Key type id_legacy registered
+Jun 15 18:17:20 leaf-140b0f4298 kernel: nfs4filelayout_init: NFSv4 File Layout Driver Registering...
+Jun 15 18:17:20 leaf-140b0f4298 kernel: nfs4flexfilelayout_init: NFSv4 Flexfile Layout Driver Registering...
+Jun 15 18:17:20 leaf-140b0f4298 kernel: 9p: Installing v9fs 9p2000 file system support
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Key type asymmetric registered
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Asymmetric key parser 'x509' registered
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 245)
+Jun 15 18:17:20 leaf-140b0f4298 kernel: io scheduler mq-deadline registered
+Jun 15 18:17:20 leaf-140b0f4298 kernel: io scheduler kyber registered
+Jun 15 18:17:20 leaf-140b0f4298 kernel: advk-pcie d0070000.pcie: host bridge /soc/pcie@d0070000 ranges:
+Jun 15 18:17:20 leaf-140b0f4298 kernel: advk-pcie d0070000.pcie:      MEM 0x00e8000000..0x00efefffff -> 0x00e8000000
+Jun 15 18:17:20 leaf-140b0f4298 kernel: advk-pcie d0070000.pcie:       IO 0x00efff0000..0x00efffffff -> 0x00efff0000
+Jun 15 18:17:20 leaf-140b0f4298 kernel: advk-pcie d0070000.pcie: issuing PERST via reset GPIO for 10ms
+Jun 15 18:17:20 leaf-140b0f4298 kernel: advk-pcie d0070000.pcie: link up
+Jun 15 18:17:20 leaf-140b0f4298 kernel: advk-pcie d0070000.pcie: PCI host bridge to bus 0000:00
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pci_bus 0000:00: root bus resource [mem 0xe8000000-0xefefffff]
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pci_bus 0000:00: root bus resource [io  0x0000-0xffff] (bus address [0xefff0000-0xefffffff])
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pci 0000:00:00.0: [11ab:0100] type 01 class 0x060400
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pci 0000:00:00.0: bridge configuration invalid ([bus 00-00]), reconfiguring
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pci 0000:01:00.0: [1b4b:2b42] type 00 class 0x020000
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pci 0000:01:00.0: reg 0x10: [mem 0x00000000-0x000fffff 64bit pref]
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pci 0000:01:00.0: reg 0x18: [mem 0x00000000-0x000fffff 64bit pref]
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pci 0000:01:00.0: Upstream bridge's Max Payload Size set to 128 (was 512, max 512)
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pci 0000:01:00.0: Max Payload Size set to 128 (was 128, max 128)
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pci 0000:01:00.0: supports D1 D2
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pci 0000:01:00.0: PME# supported from D0 D1 D3hot D3cold
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pci 0000:01:00.0: 2.000 Gb/s available PCIe bandwidth, limited by 2.5 GT/s PCIe x1 link at 0000:00:00.0 (capable of 4.000 Gb/s with 5.0 GT/s PCIe x1 Jun 15 18:17:20 leaf-140b0f4298 kernel: pci_bus 0000:01: busn_res: [bus 01-ff] end is updated to 01
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pci 0000:00:00.0: BAR 15: assigned [mem 0xe8000000-0xe81fffff 64bit pref]
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pci 0000:01:00.0: BAR 0: assigned [mem 0xe8000000-0xe80fffff 64bit pref]
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pci 0000:01:00.0: BAR 2: assigned [mem 0xe8100000-0xe81fffff 64bit pref]
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pci 0000:00:00.0: PCI bridge to [bus 01]
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pci 0000:00:00.0:   bridge window [mem 0xe8000000-0xe81fffff 64bit pref]
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pcieport 0000:00:00.0: enabling device (0000 -> 0002)
+Jun 15 18:17:20 leaf-140b0f4298 kernel: pcieport 0000:00:00.0: PME: Signaling with IRQ 50
+Jun 15 18:17:20 leaf-140b0f4298 kernel: EINJ: ACPI disabled.
+Jun 15 18:17:20 leaf-140b0f4298 kernel: mv_xor d0060900.xor: Marvell shared XOR driver
+Jun 15 18:17:20 leaf-140b0f4298 kernel: mv_xor d0060900.xor: Marvell XOR (Descriptor Mode): ( xor cpy intr )
+Jun 15 18:17:20 leaf-140b0f4298 kernel: mv_xor d0060900.xor: Marvell XOR (Descriptor Mode): ( xor cpy intr )
+Jun 15 18:17:20 leaf-140b0f4298 kernel: debugfs: Directory 'd0060900.xor' with parent 'dmaengine' already present!
+Jun 15 18:17:20 leaf-140b0f4298 kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+Jun 15 18:17:20 leaf-140b0f4298 kernel: cacheinfo: Unable to detect cache hierarchy for CPU 0
+Jun 15 18:17:20 leaf-140b0f4298 kernel: brd: module loaded
+Jun 15 18:17:20 leaf-140b0f4298 kernel: loop: module loaded
+Jun 15 18:17:20 leaf-140b0f4298 kernel: ahci-mvebu d00e0000.sata: supply ahci not found, using dummy regulator
+Jun 15 18:17:20 leaf-140b0f4298 kernel: ahci-mvebu d00e0000.sata: supply phy not found, using dummy regulator
+Jun 15 18:17:20 leaf-140b0f4298 kernel: ahci-mvebu d00e0000.sata: supply target not found, using dummy regulator
+Jun 15 18:17:20 leaf-140b0f4298 kernel: ahci-mvebu d00e0000.sata: AHCI 0001.0300 32 slots 1 ports 6 Gbps 0x1 impl platform mode
+Jun 15 18:17:20 leaf-140b0f4298 kernel: ahci-mvebu d00e0000.sata: flags: ncq sntf led only pmp fbs pio slum part sxs
+Jun 15 18:17:21 leaf-140b0f4298 kernel: scsi host0: ahci-mvebu
+Jun 15 18:17:21 leaf-140b0f4298 kernel: ata1: SATA max UDMA/133 mmio [mem 0xd00e0000-0xd00e0177] port 0x100 irq 31
+Jun 15 18:17:21 leaf-140b0f4298 kernel: spi-nor spi0.0: mx25u3235f (4096 Kbytes)
+Jun 15 18:17:21 leaf-140b0f4298 kernel: 3 fixed-partitions partitions found on MTD device spi0.0
+Jun 15 18:17:21 leaf-140b0f4298 kernel: Creating 3 MTD partitions on "spi0.0":
+Jun 15 18:17:21 leaf-140b0f4298 kernel: 0x000000000000-0x0000003e0000 : "firmware"
+Jun 15 18:17:21 leaf-140b0f4298 kernel: 0x0000003e0000-0x0000003f0000 : "hw-info"
+Jun 15 18:17:21 leaf-140b0f4298 kernel: 0x0000003f0000-0x000000400000 : "u-boot-env"
+Jun 15 18:17:21 leaf-140b0f4298 kernel: tun: Universal TUN/TAP device driver, 1.6
+Jun 15 18:17:21 leaf-140b0f4298 kernel: e1000e: Intel(R) PRO/1000 Network Driver
+Jun 15 18:17:21 leaf-140b0f4298 kernel: e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+Jun 15 18:17:21 leaf-140b0f4298 kernel: igb: Intel(R) Gigabit Ethernet Network Driver
+Jun 15 18:17:21 leaf-140b0f4298 kernel: igb: Copyright (c) 2007-2014 Intel Corporation.
+Jun 15 18:17:21 leaf-140b0f4298 kernel: igbvf: Intel(R) Gigabit Virtual Function Network Driver
+Jun 15 18:17:21 leaf-140b0f4298 kernel: igbvf: Copyright (c) 2009 - 2012 Intel Corporation.
+Jun 15 18:17:21 leaf-140b0f4298 kernel: mv88e6085 d0032004.mdio-mii:03: switch 0x3410 detected: Marvell 88E6341, revision 0
+Jun 15 18:17:21 leaf-140b0f4298 kernel: hwmon hwmon0: temp1_input not attached to any thermal zone
+Jun 15 18:17:21 leaf-140b0f4298 kernel: hwmon hwmon1: temp1_input not attached to any thermal zone
+Jun 15 18:17:21 leaf-140b0f4298 kernel: hwmon hwmon2: temp1_input not attached to any thermal zone
+Jun 15 18:17:21 leaf-140b0f4298 kernel: hwmon hwmon3: temp1_input not attached to any thermal zone
+Jun 15 18:17:21 leaf-140b0f4298 kernel: hwmon hwmon0: temp1_input not attached to any thermal zone
+Jun 15 18:17:21 leaf-140b0f4298 kernel: mvneta d0030000.ethernet eth0: Using device tree mac address f0:ad:4e:1a:c8:18
+Jun 15 18:17:21 leaf-140b0f4298 kernel: VFIO - User Level meta-driver version: 0.3
+Jun 15 18:17:21 leaf-140b0f4298 kernel: ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Jun 15 18:17:21 leaf-140b0f4298 kernel: ehci-pci: EHCI PCI platform driver
+Jun 15 18:17:21 leaf-140b0f4298 kernel: ehci-platform: EHCI generic platform driver
+Jun 15 18:17:21 leaf-140b0f4298 kernel: ehci-orion: EHCI orion driver
+Jun 15 18:17:21 leaf-140b0f4298 kernel: orion-ehci d005e000.usb: EHCI Host Controller
+Jun 15 18:17:21 leaf-140b0f4298 kernel: orion-ehci d005e000.usb: new USB bus registered, assigned bus number 1
+Jun 15 18:17:21 leaf-140b0f4298 kernel: orion-ehci d005e000.usb: irq 22, io mem 0xd005e000
+Jun 15 18:17:21 leaf-140b0f4298 kernel: orion-ehci d005e000.usb: USB 2.0 started, EHCI 1.00
+Jun 15 18:17:21 leaf-140b0f4298 kernel: hub 1-0:1.0: USB hub found
+Jun 15 18:17:21 leaf-140b0f4298 kernel: hub 1-0:1.0: 1 port detected
+Jun 15 18:17:21 leaf-140b0f4298 kernel: ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+Jun 15 18:17:21 leaf-140b0f4298 kernel: ohci-pci: OHCI PCI platform driver
+Jun 15 18:17:21 leaf-140b0f4298 kernel: ohci-platform: OHCI generic platform driver
+Jun 15 18:17:21 leaf-140b0f4298 kernel: usbcore: registered new interface driver cdc_acm
+Jun 15 18:17:21 leaf-140b0f4298 kernel: cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+Jun 15 18:17:21 leaf-140b0f4298 kernel: usbcore: registered new interface driver cdc_wdm
+Jun 15 18:17:21 leaf-140b0f4298 kernel: usbcore: registered new interface driver usb-storage
+Jun 15 18:17:21 leaf-140b0f4298 kernel: i2c_dev: i2c /dev entries driver
+Jun 15 18:17:21 leaf-140b0f4298 kernel: armada_37xx_wdt d0008300.watchdog: Initial timeout 120 sec
+Jun 15 18:17:21 leaf-140b0f4298 kernel: sdhci: Secure Digital Host Controller Interface driver
+Jun 15 18:17:21 leaf-140b0f4298 kernel: sdhci: Copyright(c) Pierre Ossman
+Jun 15 18:17:21 leaf-140b0f4298 kernel: ata1: SATA link down (SStatus 0 SControl 300)
+Jun 15 18:17:21 leaf-140b0f4298 kernel: Synopsys Designware Multimedia Card Interface Driver
+Jun 15 18:17:21 leaf-140b0f4298 kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Jun 15 18:17:21 leaf-140b0f4298 kernel: ledtrig-cpu: registered to indicate activity on CPUs
+Jun 15 18:17:21 leaf-140b0f4298 kernel: usbcore: registered new interface driver usbhid
+Jun 15 18:17:21 leaf-140b0f4298 kernel: usbhid: USB HID core driver
+Jun 15 18:17:21 leaf-140b0f4298 kernel: NET: Registered PF_INET6 protocol family
+Jun 15 18:17:21 leaf-140b0f4298 kernel: mmc0: SDHCI controller on d00d8000.sdhci [d00d8000.sdhci] using ADMA
+Jun 15 18:17:21 leaf-140b0f4298 kernel: Segment Routing with IPv6
+Jun 15 18:17:21 leaf-140b0f4298 kernel: In-situ OAM (IOAM) with IPv6
+Jun 15 18:17:21 leaf-140b0f4298 kernel: NET: Registered PF_PACKET protocol family
+Jun 15 18:17:21 leaf-140b0f4298 kernel: Bridge firewalling registered
+Jun 15 18:17:21 leaf-140b0f4298 kernel: 8021q: 802.1Q VLAN Support v1.8
+Jun 15 18:17:21 leaf-140b0f4298 kernel: 9pnet: Installing 9P2000 support
+Jun 15 18:17:21 leaf-140b0f4298 kernel: Key type dns_resolver registered
+Jun 15 18:17:21 leaf-140b0f4298 kernel: Loading compiled-in X.509 certificates
+Jun 15 18:17:21 leaf-140b0f4298 kernel: d0012000.serial: ttyMV0 at MMIO 0xd0012000 (irq = 0, base_baud = 1562500) is a mvebu-uart
+Jun 15 18:17:21 leaf-140b0f4298 kernel: printk: console [ttyMV0] enabled
+Jun 15 18:17:21 leaf-140b0f4298 kernel: printk: bootconsole [ar3700_uart0] disabled
+Jun 15 18:17:21 leaf-140b0f4298 kernel: rtc-pcf8563 0-0051: registered as rtc0
+Jun 15 18:17:21 leaf-140b0f4298 kernel: rtc-pcf8563 0-0051: setting system clock to 2022-06-15T18:17:18 UTC (1655317038)
+Jun 15 18:17:21 leaf-140b0f4298 kernel: i2c i2c-0:  PXA I2C adapter
+Jun 15 18:17:21 leaf-140b0f4298 kernel: mv88e6085 d0032004.mdio-mii:03: switch 0x3410 detected: Marvell 88E6341, revision 0
+Jun 15 18:17:21 leaf-140b0f4298 kernel: mmc0: new HS400 MMC card at address 0001
+Jun 15 18:17:21 leaf-140b0f4298 kernel: mmcblk0: mmc0:0001 DG4008 7.28 GiB
+Jun 15 18:17:21 leaf-140b0f4298 kernel:  mmcblk0: p1
+Jun 15 18:17:21 leaf-140b0f4298 kernel: hwmon hwmon1: temp1_input not attached to any thermal zone
+Jun 15 18:17:21 leaf-140b0f4298 kernel: mmcblk0boot0: mmc0:0001 DG4008 4.00 MiB
+Jun 15 18:17:21 leaf-140b0f4298 kernel: hwmon hwmon2: temp1_input not attached to any thermal zone
+Jun 15 18:17:21 leaf-140b0f4298 kernel: mmcblk0boot1: mmc0:0001 DG4008 4.00 MiB
+Jun 15 18:17:21 leaf-140b0f4298 kernel: hwmon hwmon3: temp1_input not attached to any thermal zone
+Jun 15 18:17:21 leaf-140b0f4298 kernel: usb 1-1: new high-speed USB device number 2 using orion-ehci
+Jun 15 18:17:21 leaf-140b0f4298 kernel: hwmon hwmon4: temp1_input not attached to any thermal zone
+Jun 15 18:17:21 leaf-140b0f4298 kernel: mmcblk0rpmb: mmc0:0001 DG4008 4.00 MiB, chardev (243:0)
+Jun 15 18:17:21 leaf-140b0f4298 kernel: hub 1-1:1.0: USB hub found
+Jun 15 18:17:21 leaf-140b0f4298 kernel: hub 1-1:1.0: 4 ports detected
+Jun 15 18:17:21 leaf-140b0f4298 kernel: usb 1-1.1: new full-speed USB device number 3 using orion-ehci
+Jun 15 18:17:21 leaf-140b0f4298 kernel: mv88e6085 d0032004.mdio-mii:03: configuring for fixed/rgmii-id link mode
+Jun 15 18:17:21 leaf-140b0f4298 kernel: mv88e6085 d0032004.mdio-mii:03: Link is Up - 1Gbps/Full - flow control off
+Jun 15 18:17:21 leaf-140b0f4298 kernel: mv88e6085 d0032004.mdio-mii:03 lan0 (uninitialized): PHY [!soc!internal-regs@d0000000!mdio@32004!switch0@1!mdio:11] driver [Marvell 88E6341 Family] (Jun 15 18:17:21 leaf-140b0f4298 kernel: cdc_acm 1-1.1:1.0: ttyACM0: USB ACM device
+Jun 15 18:17:21 leaf-140b0f4298 kernel: mv88e6085 d0032004.mdio-mii:03 lan1 (uninitialized): PHY [!soc!internal-regs@d0000000!mdio@32004!switch0@1!mdio:12] driver [Marvell 88E6341 Family] (Jun 15 18:17:21 leaf-140b0f4298 kernel: mv88e6085 d0032004.mdio-mii:03 lan2 (uninitialized): PHY [!soc!internal-regs@d0000000!mdio@32004!switch0@1!mdio:13] driver [Marvell 88E6341 Family] (Jun 15 18:17:21 leaf-140b0f4298 kernel: mv88e6085 d0032004.mdio-mii:03 lan3 (uninitialized): PHY [!soc!internal-regs@d0000000!mdio@32004!switch0@1!mdio:14] driver [Marvell 88E6341 Family] (Jun 15 18:17:21 leaf-140b0f4298 kernel: mv88e6085 d0032004.mdio-mii:03 wan (uninitialized): PHY [d0032004.mdio-mii:01] driver [Marvell 88E1510] (irq=POLL)
+Jun 15 18:17:21 leaf-140b0f4298 kernel: device eth0 entered promiscuous mode
+Jun 15 18:17:21 leaf-140b0f4298 kernel: DSA: tree 0 setup
+Jun 15 18:17:21 leaf-140b0f4298 kernel: xhci-hcd d0058000.usb: xHCI Host Controller
+Jun 15 18:17:21 leaf-140b0f4298 kernel: xhci-hcd d0058000.usb: new USB bus registered, assigned bus number 2
+Jun 15 18:17:21 leaf-140b0f4298 kernel: xhci-hcd d0058000.usb: hcc params 0x0a000998 hci version 0x100 quirks 0x0000000000010090
+Jun 15 18:17:21 leaf-140b0f4298 kernel: xhci-hcd d0058000.usb: irq 21, io mem 0xd0058000
+Jun 15 18:17:21 leaf-140b0f4298 kernel: hub 2-0:1.0: USB hub found
+Jun 15 18:17:21 leaf-140b0f4298 kernel: hub 2-0:1.0: 1 port detected
+Jun 15 18:17:21 leaf-140b0f4298 kernel: xhci-hcd d0058000.usb: xHCI Host Controller
+Jun 15 18:17:21 leaf-140b0f4298 kernel: xhci-hcd d0058000.usb: new USB bus registered, assigned bus number 3
+Jun 15 18:17:21 leaf-140b0f4298 kernel: xhci-hcd d0058000.usb: Host supports USB 3.0 SuperSpeed
+Jun 15 18:17:21 leaf-140b0f4298 kernel: usb usb3: We don't know the algorithms for LPM for this host, disabling LPM.
+Jun 15 18:17:21 leaf-140b0f4298 kernel: hub 3-0:1.0: USB hub found
+Jun 15 18:17:21 leaf-140b0f4298 kernel: hub 3-0:1.0: 1 port detected
+Jun 15 18:17:21 leaf-140b0f4298 kernel: Unsupported CPU frequency 1200 MHz
+Jun 15 18:17:21 leaf-140b0f4298 kernel: random: fast init done
+Jun 15 18:17:21 leaf-140b0f4298 kernel: xenon-sdhci d00d8000.sdhci: Timing issue might occur in DDR mode
+Jun 15 18:17:21 leaf-140b0f4298 kernel: EXT4-fs (mmcblk0p1): recovery complete
+Jun 15 18:17:21 leaf-140b0f4298 kernel: EXT4-fs (mmcblk0p1): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+Jun 15 18:17:21 leaf-140b0f4298 kernel: VFS: Mounted root (ext4 filesystem) on device 179:1.
+Jun 15 18:17:21 leaf-140b0f4298 kernel: devtmpfs: mounted
+Jun 15 18:17:21 leaf-140b0f4298 kernel: Freeing unused kernel memory: 2048K
+Jun 15 18:17:21 leaf-140b0f4298 kernel: Run /sbin/init as init process
+Jun 15 18:17:21 leaf-140b0f4298 kernel:   with arguments:
+Jun 15 18:17:21 leaf-140b0f4298 kernel:     /sbin/init
+Jun 15 18:17:21 leaf-140b0f4298 kernel:   with environment:
+Jun 15 18:17:21 leaf-140b0f4298 kernel:     HOME=/
+Jun 15 18:17:21 leaf-140b0f4298 kernel:     TERM=linux
+Jun 15 18:17:21 leaf-140b0f4298 kernel:     biosdevname=0
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: systemd 237 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECJun 15 18:17:21 leaf-140b0f4298 systemd[1]: Detected architecture arm64.
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Set hostname to <leaf-140b0f4298>.
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: File /lib/systemd/system/systemd-journald.service:36 configures an IP firewall (IPAddressDeny=any), but the local system does not support BPF/cgrJun 15 18:17:21 leaf-140b0f4298 systemd[1]: Proceeding WITHOUT firewalling in effect! (This warning is only shown for the first loaded unit using IP firewalling.)
+Jun 15 18:17:21 leaf-140b0f4298 kernel: random: systemd: uninitialized urandom read (16 bytes read)
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Reached target Remote File Systems.
+Jun 15 18:17:21 leaf-140b0f4298 kernel: random: systemd: uninitialized urandom read (16 bytes read)
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Reached target Swap.
+Jun 15 18:17:21 leaf-140b0f4298 kernel: random: systemd: uninitialized urandom read (16 bytes read)
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Created slice System Slice.
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Listening on udev Kernel Socket.
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Listening on Syslog Socket.
+Jun 15 18:17:21 leaf-140b0f4298 systemd-journald[169]: Journal started
+Jun 15 18:17:21 leaf-140b0f4298 systemd-journald[169]: Runtime journal (/run/log/journal/140b0f4298fd0194a5066644626bfb9d) is 6.1M, max 49.2M, 43.0M free.
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Started Remount Root and Kernel File Systems.
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Starting Load/Save Random Seed...
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Starting Flush Journal to Persistent Storage...
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Starting Apply Kernel Variables...
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Mounting Kernel Configuration File System...
+Jun 15 18:17:21 leaf-140b0f4298 systemd-sysctl[182]: Couldn't write '1' to 'kernel/yama/ptrace_scope', ignoring: No such file or directory
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Starting Create Static Device Nodes in /dev...
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Started Load/Save Random Seed.
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Started Apply Kernel Variables.
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Mounted Kernel Configuration File System.
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Started Create Static Device Nodes in /dev.
+Jun 15 18:17:21 leaf-140b0f4298 systemd-journald[169]: Time spent on flushing to /var is 32.137ms for 339 entries.
+Jun 15 18:17:21 leaf-140b0f4298 systemd-journald[169]: System journal (/var/log/journal/140b0f4298fd0194a5066644626bfb9d) is 610.2M, max 721.1M, 110.9M free.
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Starting udev Kernel Device Manager...
+Jun 15 18:17:21 leaf-140b0f4298 systemd-udevd[186]: Network interface NamePolicy= disabled on kernel command line, ignoring.
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Started Set the console keyboard layout.
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Started udev Coldplug all Devices.
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Starting udev Wait for Complete Device Initialization...
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Reached target Local File Systems (Pre).
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Reached target Local File Systems.
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Starting Set console font and keymap...
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Started udev Kernel Device Manager.
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Started Set console font and keymap.
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Starting Network Service...
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Started Flush Journal to Persistent Storage.
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Starting Create Volatile Files and Directories...
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Started Create Volatile Files and Directories.
+Jun 15 18:17:21 leaf-140b0f4298 systemd-networkd[198]: br0: netdev ready
+Jun 15 18:17:21 leaf-140b0f4298 systemd-networkd[198]: br1: netdev ready
+Jun 15 18:17:21 leaf-140b0f4298 systemd-networkd[198]: Enumeration completed
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Started Entropy daemon using the HAVEGE algorithm.
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Starting Network Time Synchronization...
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Started Network Service.
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Starting Wait for Network to be Configured...
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Starting Network Name Resolution...
+Jun 15 18:17:21 leaf-140b0f4298 systemd[1]: Started Update UTMP about System Boot/Shutdown.
+Jun 15 18:17:22 leaf-140b0f4298 systemd[1]: Started Network Time Synchronization.
+Jun 15 18:17:22 leaf-140b0f4298 systemd[1]: Reached target System Time Synchronized.
+Jun 15 18:17:22 leaf-140b0f4298 systemd-resolved[211]: Positive Trust Anchors:
+Jun 15 18:17:22 leaf-140b0f4298 systemd-resolved[211]: . IN DS 19036 8 2 49aac11d7b6f6446702e54a1607371607a1a41855200fd2ce1cdde32f24e8fb5
+Jun 15 18:17:22 leaf-140b0f4298 systemd-resolved[211]: . IN DS 20326 8 2 e06d44b80b8f1d39a95c0b0d7c65d08458e880409bbc683457104237c7f8ec8d
+Jun 15 18:17:22 leaf-140b0f4298 systemd-resolved[211]: Negative trust anchors: 10.in-addr.arpa 16.172.in-addr.arpa 17.172.in-addr.arpa 18.172.in-addr.arpa 19.172.in-addr.arpa 20.172.in-addrJun 15 18:17:22 leaf-140b0f4298 systemd-resolved[211]: Using system hostname 'leaf-140b0f4298'.
+Jun 15 18:17:22 leaf-140b0f4298 systemd[1]: Started Network Name Resolution.
+Jun 15 18:17:22 leaf-140b0f4298 systemd[1]: Reached target Host and Network Name Lookups.
+Jun 15 18:17:22 leaf-140b0f4298 systemd[1]: Found device /dev/ttyMV0.
+Jun 15 18:17:22 leaf-140b0f4298 systemd-udevd[193]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Jun 15 18:17:22 leaf-140b0f4298 systemd-udevd[202]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Jun 15 18:17:22 leaf-140b0f4298 systemd-udevd[195]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Jun 15 18:17:22 leaf-140b0f4298 systemd-udevd[200]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Jun 15 18:17:22 leaf-140b0f4298 systemd-udevd[199]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Jun 15 18:17:22 leaf-140b0f4298 systemd-udevd[205]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Jun 15 18:17:22 leaf-140b0f4298 kernel: mvneta d0030000.ethernet eth0: configuring for fixed/rgmii-id link mode
+Jun 15 18:17:22 leaf-140b0f4298 kernel: mvneta d0030000.ethernet eth0: Link is Up - 1Gbps/Full - flow control off
+Jun 15 18:17:22 leaf-140b0f4298 systemd-networkd[198]: eth0: Link UP
+Jun 15 18:17:22 leaf-140b0f4298 systemd-networkd[198]: eth0: Gained carrier
+Jun 15 18:17:22 leaf-140b0f4298 kernel: br1: port 1(lan0) entered blocking state
+Jun 15 18:17:22 leaf-140b0f4298 kernel: br1: port 1(lan0) entered disabled state
+Jun 15 18:17:22 leaf-140b0f4298 kernel: mv88e6085 d0032004.mdio-mii:03: port 1 failed to add 3e:c6:12:ed:92:38 vid 1 to fdb: -95
+Jun 15 18:17:22 leaf-140b0f4298 kernel: device lan0 entered promiscuous mode
+Jun 15 18:17:22 leaf-140b0f4298 kernel: mv88e6085 d0032004.mdio-mii:03 lan0: configuring for phy/ link mode
+Jun 15 18:17:22 leaf-140b0f4298 systemd-networkd[198]: lan0: Link UP
+Jun 15 18:17:23 leaf-140b0f4298 kernel: cfg80211: Loading compiled-in X.509 certificates for regulatory database
+Jun 15 18:17:23 leaf-140b0f4298 kernel: br1: port 2(lan1) entered blocking state
+Jun 15 18:17:23 leaf-140b0f4298 kernel: br1: port 2(lan1) entered disabled state
+Jun 15 18:17:23 leaf-140b0f4298 kernel: cfg80211: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+Jun 15 18:17:23 leaf-140b0f4298 kernel: device lan1 entered promiscuous mode
+Jun 15 18:17:23 leaf-140b0f4298 systemd-udevd[199]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Jun 15 18:17:23 leaf-140b0f4298 kernel: br1: port 3(lan2) entered blocking state
+Jun 15 18:17:23 leaf-140b0f4298 kernel: br1: port 3(lan2) entered disabled state
+Jun 15 18:17:23 leaf-140b0f4298 haveged[207]: haveged: ver: 1.9.1; arch: generic; vend: ; build: (gcc 6.4.0 CTV); collect: 128K
+Jun 15 18:17:23 leaf-140b0f4298 haveged[207]: haveged: cpu: (VC); data: 16K (D); inst: 16K (D); idx: 10/40; sz: 15464/70644
+Jun 15 18:17:23 leaf-140b0f4298 haveged[207]: haveged: tot tests(BA8): A:1/1 B:1/1 continuous tests(B):  last entropy estimate 7.99512
+Jun 15 18:17:23 leaf-140b0f4298 haveged[207]: haveged: fills: 0, generated: 0
+Jun 15 18:17:23 leaf-140b0f4298 kernel: device lan2 entered promiscuous mode
+Jun 15 18:17:23 leaf-140b0f4298 kernel: br0: port 1(lan3) entered blocking state
+Jun 15 18:17:23 leaf-140b0f4298 kernel: br0: port 1(lan3) entered disabled state
+Jun 15 18:17:23 leaf-140b0f4298 kernel: random: crng init done
+Jun 15 18:17:23 leaf-140b0f4298 kernel: random: 7 urandom warning(s) missed due to ratelimiting
+Jun 15 18:17:23 leaf-140b0f4298 kernel: device lan3 entered promiscuous mode
+Jun 15 18:17:23 leaf-140b0f4298 kernel: mwifiex_pcie 0000:01:00.0: no quirks enabled
+Jun 15 18:17:23 leaf-140b0f4298 kernel: mwifiex_pcie 0000:01:00.0: enabling device (0000 -> 0002)
+Jun 15 18:17:23 leaf-140b0f4298 kernel: mwifiex_pcie: PCI memory map Virt0: ffff800009c00000 PCI memory map Virt2: ffff800009e00000
+Jun 15 18:17:23 leaf-140b0f4298 kernel: mv88e6085 d0032004.mdio-mii:03: p4: hw VLAN 1 already used by port 1 in br1
+Jun 15 18:17:23 leaf-140b0f4298 kernel: br0: port 2(wan) entered blocking state
+Jun 15 18:17:23 leaf-140b0f4298 kernel: br0: port 2(wan) entered disabled state
+Jun 15 18:17:23 leaf-140b0f4298 kernel: device wan entered promiscuous mode
+Jun 15 18:17:23 leaf-140b0f4298 kernel: mv88e6085 d0032004.mdio-mii:03: p5: hw VLAN 1 already used by port 1 in br1
+Jun 15 18:17:23 leaf-140b0f4298 kernel: mv88e6085 d0032004.mdio-mii:03 lan1: configuring for phy/ link mode
+Jun 15 18:17:23 leaf-140b0f4298 systemd-networkd[198]: eth0: IPv6 successfully enabled
+Jun 15 18:17:23 leaf-140b0f4298 systemd-networkd[198]: br0: Link is not managed by us
+Jun 15 18:17:23 leaf-140b0f4298 systemd-networkd[198]: br1: Link is not managed by us
+Jun 15 18:17:23 leaf-140b0f4298 systemd-networkd[198]: lo: Link is not managed by us
+Jun 15 18:17:23 leaf-140b0f4298 kernel: mv88e6085 d0032004.mdio-mii:03 lan2: configuring for phy/ link mode
+Jun 15 18:17:23 leaf-140b0f4298 kernel: mv88e6085 d0032004.mdio-mii:03 lan3: configuring for phy/ link mode
+Jun 15 18:17:23 leaf-140b0f4298 kernel: mv88e6085 d0032004.mdio-mii:03 wan: configuring for phy/sgmii link mode
+Jun 15 18:17:23 leaf-140b0f4298 systemd-networkd[198]: lan1: Link UP
+Jun 15 18:17:23 leaf-140b0f4298 systemd-udevd[195]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Jun 15 18:17:23 leaf-140b0f4298 systemd-udevd[193]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Jun 15 18:17:23 leaf-140b0f4298 systemd-networkd[198]: lan2: Link UP
+Jun 15 18:17:23 leaf-140b0f4298 systemd-networkd[198]: lan3: Link UP
+Jun 15 18:17:23 leaf-140b0f4298 systemd-networkd[198]: wan: Link UP
+Jun 15 18:17:23 leaf-140b0f4298 systemd-networkd[198]: br0: IPv6 successfully enabled
+Jun 15 18:17:23 leaf-140b0f4298 systemd-networkd[198]: br1: Link is not managed by us
+Jun 15 18:17:23 leaf-140b0f4298 systemd-networkd[198]: lo: Link is not managed by us
+Jun 15 18:17:23 leaf-140b0f4298 systemd[1]: Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+Jun 15 18:17:23 leaf-140b0f4298 systemd-networkd[198]: br0: Link UP
+Jun 15 18:17:23 leaf-140b0f4298 systemd-networkd[198]: br1: IPv6 successfully enabled
+Jun 15 18:17:23 leaf-140b0f4298 systemd-networkd[198]: lo: Link is not managed by us
+Jun 15 18:17:23 leaf-140b0f4298 systemd-networkd[198]: br1: Link UP
+Jun 15 18:17:23 leaf-140b0f4298 systemd[1]: Started udev Wait for Complete Device Initialization.
+Jun 15 18:17:23 leaf-140b0f4298 systemd[1]: Reached target System Initialization.
+Jun 15 18:17:23 leaf-140b0f4298 systemd[1]: Started Trigger to poll for Ubuntu Pro licenses (Only enabled on GCP LTS non-pro).
+Jun 15 18:17:23 leaf-140b0f4298 systemd[1]: Reached target Paths.
+Jun 15 18:17:23 leaf-140b0f4298 systemd[1]: Listening on D-Bus System Message Bus Socket.
+Jun 15 18:17:23 leaf-140b0f4298 systemd[1]: Reached target Sockets.
+Jun 15 18:17:23 leaf-140b0f4298 systemd[1]: Started Message of the Day.
+Jun 15 18:17:23 leaf-140b0f4298 systemd[1]: Started Discard unused blocks once a week.
+Jun 15 18:17:23 leaf-140b0f4298 systemd[1]: Started Ubuntu Advantage Timer for running repeated jobs.
+Jun 15 18:17:23 leaf-140b0f4298 systemd[1]: Reached target Basic System.
+Jun 15 18:17:23 leaf-140b0f4298 systemd[1]: Starting Restore /etc/resolv.conf if the system crashed before the ppp link was shut down...
+Jun 15 18:17:23 leaf-140b0f4298 systemd[1]: Started Set the CPU Frequency Scaling governor.
+Jun 15 18:17:23 leaf-140b0f4298 systemd[1]: Starting System Logging Service...
+Jun 15 18:17:23 leaf-140b0f4298 systemd[1]: Started D-Bus System Message Bus.
+Jun 15 18:17:23 leaf-140b0f4298 rsyslogd[254]: imuxsock: Acquired UNIX socket '/run/systemd/journal/syslog' (fd 3) from systemd.  [v8.32.0]
+Jun 15 18:17:23 leaf-140b0f4298 rsyslogd[254]: rsyslogd's groupid changed to 106
+Jun 15 18:17:23 leaf-140b0f4298 rsyslogd[254]: rsyslogd's userid changed to 102
+Jun 15 18:17:23 leaf-140b0f4298 rsyslogd[254]:  [origin software="rsyslogd" swVersion="8.32.0" x-pid="254" x-info="http://www.rsyslog.com"] start
+Jun 15 18:17:23 leaf-140b0f4298 systemd[1]: Starting WPA supplicant...
+Jun 15 18:17:23 leaf-140b0f4298 systemd[1]: Started Daily apt download activities.
+Jun 15 18:17:23 leaf-140b0f4298 systemd[1]: Starting Login Service...
+Jun 15 18:17:23 leaf-140b0f4298 systemd[1]: Started Regular background program processing daemon.
+Jun 15 18:17:23 leaf-140b0f4298 cron[261]: (CRON) INFO (pidfile fd = 3)
+Jun 15 18:17:24 leaf-140b0f4298 systemd[1]: Started Daily apt upgrade and clean activities.
+Jun 15 18:17:24 leaf-140b0f4298 wpa_supplicant[259]: Successfully initialized wpa_supplicant
+Jun 15 18:17:24 leaf-140b0f4298 cron[261]: (CRON) INFO (Running @reboot jobs)
+Jun 15 18:17:24 leaf-140b0f4298 systemd[1]: Starting Dispatcher daemon for systemd-networkd...
+Jun 15 18:17:24 leaf-140b0f4298 systemd[1]: Started Daily Cleanup of Temporary Directories.
+Jun 15 18:17:24 leaf-140b0f4298 systemd-logind[260]: New seat seat0.
+Jun 15 18:17:24 leaf-140b0f4298 systemd[1]: Reached target Timers.
+Jun 15 18:17:24 leaf-140b0f4298 CRON[262]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 15 18:17:24 leaf-140b0f4298 CRON[264]: (root) CMD ((sh /logs/reboot_datetime.sh))
+Jun 15 18:17:24 leaf-140b0f4298 systemd[1]: Started System Logging Service.
+Jun 15 18:17:24 leaf-140b0f4298 systemd[1]: Started Restore /etc/resolv.conf if the system crashed before the ppp link was shut down.
+Jun 15 18:17:24 leaf-140b0f4298 systemd[1]: Started WPA supplicant.
+Jun 15 18:17:24 leaf-140b0f4298 dbus-daemon[255]: [system] Activating via systemd: service name='org.freedesktop.timedate1' unit='dbus-org.freedesktop.timedate1.service' requested by ':1.5'Jun 15 18:17:24 leaf-140b0f4298 systemd[1]: Started Login Service.
+Jun 15 18:17:24 leaf-140b0f4298 systemd[1]: Starting Time & Date Service...
+Jun 15 18:17:24 leaf-140b0f4298 systemd[1]: Reached target Network.
+Jun 15 18:17:24 leaf-140b0f4298 systemd[1]: Starting LLDP daemon...
+Jun 15 18:17:24 leaf-140b0f4298 systemd[1]: Started Unattended Upgrades Shutdown.
+Jun 15 18:17:24 leaf-140b0f4298 systemd[1]: Starting OpenBSD Secure Shell server...
+Jun 15 18:17:24 leaf-140b0f4298 systemd[1]: Starting Permit User Sessions...
+Jun 15 18:17:24 leaf-140b0f4298 systemd[1]: Starting Network UPS Tools - power device driver controller...
+Jun 15 18:17:24 leaf-140b0f4298 systemd[1]: Started Permit User Sessions.
+Jun 15 18:17:24 leaf-140b0f4298 dbus-daemon[255]: [system] Successfully activated service 'org.freedesktop.timedate1'
+Jun 15 18:17:24 leaf-140b0f4298 systemd[1]: Started Time & Date Service.
+Jun 15 18:17:24 leaf-140b0f4298 CRON[262]: pam_unix(cron:session): session closed for user root
+Jun 15 18:17:24 leaf-140b0f4298 systemd[1]: Starting Set console scheme...
+Jun 15 18:17:24 leaf-140b0f4298 kernel: mwifiex_pcie 0000:01:00.0: info: FW download over, size 608632 bytes
+Jun 15 18:17:24 leaf-140b0f4298 systemd[1]: Started Set console scheme.
+Jun 15 18:17:24 leaf-140b0f4298 systemd[1]: Created slice system-getty.slice.
+Jun 15 18:17:24 leaf-140b0f4298 upsdrvctl[272]: Network UPS Tools - Generic HID driver 0.41 (2.7.4)
+Jun 15 18:17:24 leaf-140b0f4298 upsdrvctl[272]: USB communication driver 0.33
+Jun 15 18:17:24 leaf-140b0f4298 upsdrvctl[272]: No matching HID UPS found
+Jun 15 18:17:24 leaf-140b0f4298 upsdrvctl[272]: Driver failed to start (exit status=1)
+Jun 15 18:17:24 leaf-140b0f4298 sshd[276]: Server listening on 0.0.0.0 port 22.
+Jun 15 18:17:24 leaf-140b0f4298 sshd[276]: Server listening on :: port 22.
+Jun 15 18:17:24 leaf-140b0f4298 systemd[1]: Started OpenBSD Secure Shell server.
+Jun 15 18:17:24 leaf-140b0f4298 systemd[1]: Started LLDP daemon.
+Jun 15 18:17:24 leaf-140b0f4298 lldpd[278]: /etc/localtime copied to chroot
+Jun 15 18:17:24 leaf-140b0f4298 lldpd[278]: protocol LLDP enabled
+Jun 15 18:17:24 leaf-140b0f4298 lldpd[278]: protocol CDPv1 disabled
+Jun 15 18:17:24 leaf-140b0f4298 lldpd[278]: protocol CDPv2 disabled
+Jun 15 18:17:24 leaf-140b0f4298 lldpd[278]: protocol SONMP disabled
+Jun 15 18:17:24 leaf-140b0f4298 lldpd[278]: protocol EDP disabled
+Jun 15 18:17:24 leaf-140b0f4298 lldpd[278]: protocol FDP disabled
+Jun 15 18:17:24 leaf-140b0f4298 lldpd[278]: libevent 2.1.8-stable initialized with epoll method
+Jun 15 18:17:24 leaf-140b0f4298 lldpd[278]: enable SNMP subagent
+Jun 15 18:17:24 leaf-140b0f4298 lldpd[275]: cannot connect to /var/agentx/master: No such file or directory
+Jun 15 18:17:24 leaf-140b0f4298 lldpd[278]: Warning: Failed to connect to the agentx master agent ([NIL]):
+Jun 15 18:17:24 leaf-140b0f4298 kernel: mv88e6085 d0032004.mdio-mii:03 lan0: Link is Up - 100Mbps/Full - flow control off
+Jun 15 18:17:24 leaf-140b0f4298 kernel: IPv6: ADDRCONF(NETDEV_CHANGE): lan0: link becomes ready
+Jun 15 18:17:24 leaf-140b0f4298 kernel: br1: port 1(lan0) entered blocking state
+Jun 15 18:17:24 leaf-140b0f4298 kernel: br1: port 1(lan0) entered forwarding state
+Jun 15 18:17:24 leaf-140b0f4298 kernel: IPv6: ADDRCONF(NETDEV_CHANGE): br1: link becomes ready
+Jun 15 18:17:24 leaf-140b0f4298 systemd-networkd[198]: lan0: Gained carrier
+Jun 15 18:17:24 leaf-140b0f4298 systemd-networkd[198]: lan0: Configured
+Jun 15 18:17:24 leaf-140b0f4298 systemd-networkd[198]: br1: Gained carrier
+Jun 15 18:17:24 leaf-140b0f4298 systemd-timesyncd[209]: Network configuration changed, trying to establish connection.
+Jun 15 18:17:24 leaf-140b0f4298 systemd-networkd[198]: eth0: Gained IPv6LL
+Jun 15 18:17:24 leaf-140b0f4298 systemd-networkd[198]: eth0: Configured
+Jun 15 18:17:24 leaf-140b0f4298 lldpcli[277]: lldpd should resume operations
+Jun 15 18:17:25 leaf-140b0f4298 kernel: mwifiex_pcie 0000:01:00.0: WLAN FW is active
+Jun 15 18:17:25 leaf-140b0f4298 systemd[1]: Starting Load/Save RF Kill Switch Status...
+Jun 15 18:17:25 leaf-140b0f4298 systemd[1]: Started Load/Save RF Kill Switch Status.
+Jun 15 18:17:25 leaf-140b0f4298 kernel: mwifiex_pcie 0000:01:00.0: info: MWIFIEX VERSION: mwifiex 1.0 (16.88.1.p193)
+Jun 15 18:17:25 leaf-140b0f4298 kernel: mwifiex_pcie 0000:01:00.0: driver_version = mwifiex 1.0 (16.88.1.p193)
+Jun 15 18:17:25 leaf-140b0f4298 systemd-udevd[288]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Jun 15 18:17:25 leaf-140b0f4298 systemd-udevd[282]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Jun 15 18:17:25 leaf-140b0f4298 kernel: usb 1-1.4: new high-speed USB device number 4 using orion-ehci
+Jun 15 18:17:25 leaf-140b0f4298 systemd[1]: Started Dispatcher daemon for systemd-networkd.
+Jun 15 18:17:25 leaf-140b0f4298 networkd-dispatcher[263]: WARNING:Unknown index 11 seen, reloading interface list
+Jun 15 18:17:25 leaf-140b0f4298 kernel: Bluetooth: Core ver 2.22
+Jun 15 18:17:25 leaf-140b0f4298 kernel: NET: Registered PF_BLUETOOTH protocol family
+Jun 15 18:17:25 leaf-140b0f4298 kernel: Bluetooth: HCI device and connection manager initialized
+Jun 15 18:17:25 leaf-140b0f4298 kernel: Bluetooth: HCI socket layer initialized
+Jun 15 18:17:25 leaf-140b0f4298 kernel: Bluetooth: L2CAP socket layer initialized
+Jun 15 18:17:25 leaf-140b0f4298 kernel: Bluetooth: SCO socket layer initialized
+Jun 15 18:17:25 leaf-140b0f4298 kernel: usbcore: registered new interface driver btusb
+Jun 15 18:17:25 leaf-140b0f4298 kernel: Bluetooth: hci0: unexpected event for opcode 0x0000
+Jun 15 18:17:25 leaf-140b0f4298 systemd[1]: Starting Bluetooth service...
+Jun 15 18:17:25 leaf-140b0f4298 bluetoothd[314]: Bluetooth daemon 5.48
+Jun 15 18:17:25 leaf-140b0f4298 systemd[1]: Started Bluetooth service.
+Jun 15 18:17:25 leaf-140b0f4298 bluetoothd[314]: Starting SDP server
+Jun 15 18:17:25 leaf-140b0f4298 bluetoothd[314]: kernel lacks bnep-protocol support
+Jun 15 18:17:25 leaf-140b0f4298 bluetoothd[314]: System does not support network plugin
+Jun 15 18:17:25 leaf-140b0f4298 systemd[1]: Reached target Bluetooth.
+Jun 15 18:17:25 leaf-140b0f4298 bluetoothd[314]: Bluetooth management interface 1.21 initialized
+Jun 15 18:17:25 leaf-140b0f4298 dbus-daemon[255]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.9'Jun 15 18:17:25 leaf-140b0f4298 systemd[1]: Starting Hostname Service...
+Jun 15 18:17:26 leaf-140b0f4298 dbus-daemon[255]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Jun 15 18:17:26 leaf-140b0f4298 systemd[1]: Started Hostname Service.
+Jun 15 18:17:26 leaf-140b0f4298 systemd-networkd[198]: br1: Gained IPv6LL
+Jun 15 18:17:26 leaf-140b0f4298 systemd-networkd[198]: br1: Configured
+Jun 15 18:17:26 leaf-140b0f4298 kernel: mv88e6085 d0032004.mdio-mii:03 lan3: Link is Up - 1Gbps/Full - flow control rx/tx
+Jun 15 18:17:26 leaf-140b0f4298 kernel: IPv6: ADDRCONF(NETDEV_CHANGE): lan3: link becomes ready
+Jun 15 18:17:26 leaf-140b0f4298 kernel: br0: port 1(lan3) entered blocking state
+Jun 15 18:17:26 leaf-140b0f4298 kernel: br0: port 1(lan3) entered forwarding state
+Jun 15 18:17:26 leaf-140b0f4298 kernel: IPv6: ADDRCONF(NETDEV_CHANGE): br0: link becomes ready
+Jun 15 18:17:26 leaf-140b0f4298 systemd-networkd[198]: lan3: Gained carrier
+Jun 15 18:17:26 leaf-140b0f4298 systemd-networkd[198]: lan3: Configured
+Jun 15 18:17:26 leaf-140b0f4298 systemd-networkd[198]: br0: Gained carrier
+Jun 15 18:17:27 leaf-140b0f4298 systemd-networkd[198]: wan: Gained carrier
+Jun 15 18:17:27 leaf-140b0f4298 kernel: mv88e6085 d0032004.mdio-mii:03 wan: Link is Up - 1Gbps/Full - flow control off
+Jun 15 18:17:27 leaf-140b0f4298 kernel: IPv6: ADDRCONF(NETDEV_CHANGE): wan: link becomes ready
+Jun 15 18:17:27 leaf-140b0f4298 kernel: br0: port 2(wan) entered blocking state
+Jun 15 18:17:27 leaf-140b0f4298 kernel: br0: port 2(wan) entered forwarding state
+Jun 15 18:17:27 leaf-140b0f4298 systemd-networkd[198]: wan: Configured
+Jun 15 18:17:28 leaf-140b0f4298 systemd-networkd[198]: br0: Gained IPv6LL
+Jun 15 18:17:29 leaf-140b0f4298 upsdrvctl[272]: Network UPS Tools - Generic HID driver 0.41 (2.7.4)
+Jun 15 18:17:29 leaf-140b0f4298 upsdrvctl[272]: USB communication driver 0.33
+Jun 15 18:17:29 leaf-140b0f4298 upsdrvctl[272]: No matching HID UPS found
+Jun 15 18:17:29 leaf-140b0f4298 upsdrvctl[272]: Driver failed to start (exit status=1)
+Jun 15 18:17:30 leaf-140b0f4298 rsyslogd[254]: cannot connect to 10.0.0.3:514: No route to host [v8.32.0 try http://www.rsyslog.com/e/2027 ]
+Jun 15 18:17:30 leaf-140b0f4298 rsyslogd[254]: action 'action 6' suspended (module 'builtin:omfwd'), retry 0. There should be messages before this one giving the reason for suspension. [v8.Jun 15 18:17:33 leaf-140b0f4298 rsyslogd[254]: cannot connect to 10.0.0.3:514: No route to host [v8.32.0 try http://www.rsyslog.com/e/2027 ]
+Jun 15 18:17:33 leaf-140b0f4298 rsyslogd[254]: action 'action 6' suspended (module 'builtin:omfwd'), next retry is Wed Jun 15 18:18:03 2022, retry nbr 0. There should be messages before thiJun 15 18:17:34 leaf-140b0f4298 upsdrvctl[272]: Network UPS Tools - Generic HID driver 0.41 (2.7.4)
+Jun 15 18:17:34 leaf-140b0f4298 upsdrvctl[272]: USB communication driver 0.33
+Jun 15 18:17:34 leaf-140b0f4298 upsdrvctl[272]: No matching HID UPS found
+Jun 15 18:17:34 leaf-140b0f4298 upsdrvctl[272]: Driver failed to start (exit status=1)
+Jun 15 18:17:34 leaf-140b0f4298 upsdrvctl[272]: Network UPS Tools - UPS driver controller 2.7.4
+Jun 15 18:17:34 leaf-140b0f4298 systemd[1]: nut-driver.service: Control process exited, code=exited status=1
+Jun 15 18:17:34 leaf-140b0f4298 systemd[1]: nut-driver.service: Failed with result 'exit-code'.
+Jun 15 18:17:34 leaf-140b0f4298 systemd[1]: Failed to start Network UPS Tools - power device driver controller.
+Jun 15 18:17:34 leaf-140b0f4298 systemd[1]: Starting Network UPS Tools - power devices information server...
+Jun 15 18:17:34 leaf-140b0f4298 upsd[323]: fopen /var/run/nut/upsd.pid: No such file or directory
+Jun 15 18:17:34 leaf-140b0f4298 upsd[323]: listening on 127.0.0.1 port 3493
+Jun 15 18:17:34 leaf-140b0f4298 upsd[323]: listening on ::1 port 3493
+Jun 15 18:17:34 leaf-140b0f4298 upsd[323]: listening on 127.0.0.1 port 3493
+Jun 15 18:17:34 leaf-140b0f4298 upsd[323]: listening on ::1 port 3493
+Jun 15 18:17:34 leaf-140b0f4298 upsd[323]: Can't connect to UPS [eaton5p] (usbhid-ups-eaton5p): No such file or directory
+Jun 15 18:17:34 leaf-140b0f4298 upsd[323]: Can't connect to UPS [eaton5p] (usbhid-ups-eaton5p): No such file or directory
+Jun 15 18:17:34 leaf-140b0f4298 upsd[323]: /etc/nut/upsd.users is world readable
+Jun 15 18:17:34 leaf-140b0f4298 upsd[323]: /etc/nut/upsd.users is world readable
+Jun 15 18:17:34 leaf-140b0f4298 upsd[324]: Startup successful
+Jun 15 18:17:34 leaf-140b0f4298 systemd[1]: Started Network UPS Tools - power devices information server.
+Jun 15 18:17:35 leaf-140b0f4298 systemd-timesyncd[209]: Timed out waiting for reply from 10.0.0.3:123 (10.0.0.3).
+Jun 15 18:17:35 leaf-140b0f4298 systemd[1]: Starting Network UPS Tools - power device monitor and shutdown controller...
+Jun 15 18:17:35 leaf-140b0f4298 upsmon[325]: fopen /var/run/nut/upsmon.pid: No such file or directory
+Jun 15 18:17:35 leaf-140b0f4298 upsmon[325]: UPS: eaton5p@localhost (master) (power value 1)
+Jun 15 18:17:35 leaf-140b0f4298 upsmon[325]: Using power down flag file /etc/killpower
+Jun 15 18:17:35 leaf-140b0f4298 upsmon[326]: Startup successful
+Jun 15 18:17:35 leaf-140b0f4298 systemd[1]: nut-monitor.service: Supervising process 327 which is not our child. We'll most likely not notice when it exits.
+Jun 15 18:17:35 leaf-140b0f4298 systemd[1]: Started Network UPS Tools - power device monitor and shutdown controller.
+Jun 15 18:17:35 leaf-140b0f4298 upsd[324]: User upsuser@127.0.0.1 logged into UPS [eaton5p]
+Jun 15 18:17:35 leaf-140b0f4298 upsmon[327]: Poll UPS [eaton5p@localhost] failed - Driver not connected
+Jun 15 18:17:35 leaf-140b0f4298 upsmon[327]: Communications with UPS eaton5p@localhost lost
+Jun 15 18:17:39 leaf-140b0f4298 lldpd[275]: cannot connect to /var/agentx/master: No such file or directory
+Jun 15 18:17:39 leaf-140b0f4298 lldpd[278]: Warning: Failed to connect to the agentx master agent ([NIL]):
+Jun 15 18:17:40 leaf-140b0f4298 upsmon[327]: Poll UPS [eaton5p@localhost] failed - Driver not connected
+Jun 15 18:17:40 leaf-140b0f4298 upsmon[327]: UPS eaton5p@localhost is unavailable
+Jun 15 18:17:45 leaf-140b0f4298 upsmon[327]: Poll UPS [eaton5p@localhost] failed - Driver not connected
+Jun 15 18:17:48 leaf-140b0f4298 systemd-networkd[198]: lan3: Lost carrier
+Jun 15 18:17:48 leaf-140b0f4298 kernel: br0: port 1(lan3) entered disabled state
+Jun 15 18:17:48 leaf-140b0f4298 kernel: mv88e6085 d0032004.mdio-mii:03 lan3: Link is Down
+Jun 15 18:17:50 leaf-140b0f4298 upsmon[327]: Poll UPS [eaton5p@localhost] failed - Driver not connected
+Jun 15 18:17:51 leaf-140b0f4298 kernel: mv88e6085 d0032004.mdio-mii:03 lan3: Link is Up - 1Gbps/Full - flow control rx/tx
+Jun 15 18:17:51 leaf-140b0f4298 kernel: br0: port 1(lan3) entered blocking state
+Jun 15 18:17:51 leaf-140b0f4298 kernel: br0: port 1(lan3) entered forwarding state
+Jun 15 18:17:51 leaf-140b0f4298 systemd-networkd[198]: lan3: Gained carrier
+Jun 15 18:17:51 leaf-140b0f4298 systemd-networkd[198]: lan3: Configured
+Jun 15 18:17:54 leaf-140b0f4298 systemd-networkd[198]: lan3: Lost carrier
+Jun 15 18:17:54 leaf-140b0f4298 kernel: br0: port 1(lan3) entered disabled state
+Jun 15 18:17:54 leaf-140b0f4298 kernel: mv88e6085 d0032004.mdio-mii:03 lan3: Link is Down
+Jun 15 18:17:54 leaf-140b0f4298 lldpd[275]: cannot connect to /var/agentx/master: No such file or directory
+Jun 15 18:17:54 leaf-140b0f4298 lldpd[278]: Warning: Failed to connect to the agentx master agent ([NIL]):
+Jun 15 18:17:55 leaf-140b0f4298 upsmon[327]: Poll UPS [eaton5p@localhost] failed - Driver not connected
+Jun 15 18:17:57 leaf-140b0f4298 kernel: mv88e6085 d0032004.mdio-mii:03 lan3: Link is Up - 1Gbps/Full - flow control rx/tx
+Jun 15 18:17:57 leaf-140b0f4298 kernel: br0: port 1(lan3) entered blocking state
+Jun 15 18:17:57 leaf-140b0f4298 kernel: br0: port 1(lan3) entered forwarding state
+Jun 15 18:17:57 leaf-140b0f4298 systemd-networkd[198]: lan3: Gained carrier
+Jun 15 18:17:57 leaf-140b0f4298 systemd-networkd[198]: lan3: Configured
+Jun 15 18:18:00 leaf-140b0f4298 upsmon[327]: Poll UPS [eaton5p@localhost] failed - Driver not connected
+Jun 15 18:18:00 leaf-140b0f4298 systemd-networkd[198]: br0: DHCPv4 address 172.16.1.27/24 via 172.16.1.1
+Jun 15 18:18:00 leaf-140b0f4298 systemd-networkd[198]: br0: Configured
+Jun 15 18:18:00 leaf-140b0f4298 sshd[338]: Accepted password for root from 172.16.1.4 port 41346 ssh2
+Jun 15 18:18:00 leaf-140b0f4298 sshd[338]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Jun 15 18:18:00 leaf-140b0f4298 systemd[1]: Created slice User Slice of root.
+Jun 15 18:18:00 leaf-140b0f4298 systemd[1]: Starting User Manager for UID 0...
+Jun 15 18:18:00 leaf-140b0f4298 systemd[341]: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Jun 15 18:18:00 leaf-140b0f4298 systemd-logind[260]: New session 2 of user root.
+Jun 15 18:18:00 leaf-140b0f4298 systemd[1]: Started Session 2 of user root.
+Jun 15 18:18:00 leaf-140b0f4298 systemd[341]: Listening on GnuPG network certificate management daemon.
+Jun 15 18:18:00 leaf-140b0f4298 systemd[341]: Listening on GnuPG cryptographic agent and passphrase cache.
+Jun 15 18:18:00 leaf-140b0f4298 systemd[341]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Jun 15 18:18:00 leaf-140b0f4298 systemd[341]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Jun 15 18:18:00 leaf-140b0f4298 systemd[341]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Jun 15 18:18:00 leaf-140b0f4298 systemd[341]: Reached target Sockets.
+Jun 15 18:18:00 leaf-140b0f4298 systemd[341]: Reached target Paths.
+Jun 15 18:18:00 leaf-140b0f4298 systemd[341]: Reached target Timers.
+Jun 15 18:18:00 leaf-140b0f4298 systemd[341]: Reached target Basic System.
+Jun 15 18:18:00 leaf-140b0f4298 systemd[1]: Started User Manager for UID 0.
+Jun 15 18:18:00 leaf-140b0f4298 systemd[341]: Reached target Default.
+Jun 15 18:18:00 leaf-140b0f4298 systemd[341]: Startup finished in 149ms.
+Jun 15 18:18:01 leaf-140b0f4298 CRON[380]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jun 15 18:18:01 leaf-140b0f4298 CRON[381]: (root) CMD (/usr/sbin/logrotate /etc/logrotate.d/fos)
+Jun 15 18:18:01 leaf-140b0f4298 CRON[380]: (CRON) info (No MTA installed, discarding output)
+Jun 15 18:18:01 leaf-140b0f4298 CRON[380]: pam_unix(cron:session): session closed for user root
+Jun 15 18:18:05 leaf-140b0f4298 upsmon[327]: Poll UPS [eaton5p@localhost] failed - Driver not connected
+lines 607-661/661 (END)
+

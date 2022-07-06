@@ -913,6 +913,24 @@ def readConfigFile(path, settings, settingsDefault):
             if tmp:
                 settings.hvac2.type = str(tmp)
 
+        if 'chiller1EnvicoolModel' in conf:
+            # check if it is not empty
+            tmp = conf.split('chiller1EnvicoolModel')[1].splitlines()[0].split(':', 1)[-1].split('=', 1)[-1].strip()
+            if tmp:
+                settings.chiller1.type = str(tmp)
+
+        if 'chiller2EnvicoolModel' in conf:
+            # check if it is not empty
+            tmp = conf.split('chiller2EnvicoolModel')[1].splitlines()[0].split(':', 1)[-1].split('=', 1)[-1].strip()
+            if tmp:
+                settings.chiller2.type = str(tmp)
+
+        if 'hvacTelcoManfType' in conf:
+            # check if it is not empty
+            tmp = conf.split('hvacTelcoManfType')[1].splitlines()[0].split(':', 1)[-1].split('=', 1)[-1].strip()
+            if tmp:
+                settings.hvacTelco.type = str(tmp)
+
         # TODO: KaiW: OCTE fixed values
         if 'fixedRefrigStopPoint' in conf:
             tmp = conf.split('fixedRefrigStopPoint')[1].splitlines()[0].split(':', 1)[-1].split('=', 1)[-1].strip()

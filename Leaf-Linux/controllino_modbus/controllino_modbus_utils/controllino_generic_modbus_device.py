@@ -69,6 +69,8 @@ def readFullRegister(client, regType, unitId, dataFrame):
         while True:
 
             try:
+                print("    singleRead:"+"  regType:"+regType+"  unitId:"+str(unitId)+"  startAddress:"+str(startAddress)+"  numberOfRegs:"+str(numberOfRegs))
+
                 variables.ReadMessages_counter += 1
                 TimeBefore_singleRead = time.time()
                 result = singleRead(client, regType, unitId, startAddress, numberOfRegs, dataFrame)
@@ -107,6 +109,8 @@ def readFullRegister(client, regType, unitId, dataFrame):
                 else:
                     print("Non standard response from singleRead")
                     print(result)
+                    if ReadAttempts == variables.MaximumReadAttempts:
+                        return dataFrame
 
             except pme.ConnectionException as e:
                 variables.ReadMessages_error_counter += 1

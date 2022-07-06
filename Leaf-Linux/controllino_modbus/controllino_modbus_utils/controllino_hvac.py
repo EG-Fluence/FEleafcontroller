@@ -21,7 +21,7 @@ Description of the columns
     'v' virtual device register, will be used only inside Modbus server
 '''
 
-def ManfTypeSelection(hvac):
+def hvacManfTypeSelection(hvac):
 
     if hvac.type == 'BlackShields':
 
@@ -155,7 +155,7 @@ def ManfTypeSelection(hvac):
 
 class HvacDevice(ModbusDevice):
     def __init__(self, deviceSettings):
-        hvacHrRegisterList, hvacCoRegisterList = ManfTypeSelection(deviceSettings)
+        hvacHrRegisterList, hvacCoRegisterList = hvacManfTypeSelection(deviceSettings)
         super(HvacDevice, self).__init__(deviceSettings,
                                          coRegisterList=hvacCoRegisterList,
                                          diRegisterList=None,

@@ -247,28 +247,29 @@ def serverInit(settings):
 
         list.extend(entriesCont)
 
-        entriesChiller1 = [
-            ['vdCh1PressLow',                chillerDev1.hrDataFrame.loc['WaterReplenishmentAlarm', 'address'],    settings.chiller1,    0xFF, 'ro'], # '''26'''
-            ['vdCh1OutletWaterTempSensFail', chillerDev1.hrDataFrame.loc['outletWaterTempSensFail', 'address'],    settings.chiller1,    0xFF, 'ro'], # '''27'''
-            ['vdCh1waterTempSet',            chillerDev1.hrDataFrame.loc['waterTempSet',            'address'],    settings.chiller1,    0xFF, 'rw'], # '''28'''
-            ['vdCh1hysteresisSet',           chillerDev1.hrDataFrame.loc['hysteresisSet',           'address'],    settings.chiller1,    0xFF, 'rw'], # '''29'''
-            ['vdCh1pumpCommandSpeed',        chillerDev1.hrDataFrame.loc['pumpCommandSpeed',        'address'],    settings.chiller1,    0xFF, 'ro'], # '''30'''
-            ['vdCh1heartbeat',               chillerDev1.hrDataFrame.loc['heartbeat',               'address'],    settings.chiller1,    0xFF, 'ro'], # '''31'''
-            ['vdCh1systemOnOff',             chillerDev1.hrDataFrame.loc['systemOnOff',             'address'],    settings.chiller1,    0xFF, 'rw'], # '''32'''
+        if settings.chiller1.type == 'EMW75HDNC1A':
+            entriesChiller1 = [
+                ['vdCh1PressLow',                chillerDev1.hrDataFrame.loc['WaterReplenishmentAlarm', 'address'],    settings.chiller1,    0xFF, 'ro'], # '''26'''
+                ['vdCh1OutletWaterTempSensFail', chillerDev1.hrDataFrame.loc['outletWaterTempSensFail', 'address'],    settings.chiller1,    0xFF, 'ro'], # '''27'''
+                ['vdCh1waterTempSet',            chillerDev1.hrDataFrame.loc['waterTempSet',            'address'],    settings.chiller1,    0xFF, 'rw'], # '''28'''
+                ['vdCh1hysteresisSet',           chillerDev1.hrDataFrame.loc['hysteresisSet',           'address'],    settings.chiller1,    0xFF, 'rw'], # '''29'''
+                ['vdCh1pumpCommandSpeed',        chillerDev1.hrDataFrame.loc['pumpCommandSpeed',        'address'],    settings.chiller1,    0xFF, 'ro'], # '''30'''
+                ['vdCh1heartbeat',               chillerDev1.hrDataFrame.loc['heartbeat',               'address'],    settings.chiller1,    0xFF, 'ro'], # '''31'''
+                ['vdCh1systemOnOff',             chillerDev1.hrDataFrame.loc['systemOnOff',             'address'],    settings.chiller1,    0xFF, 'rw'], # '''32'''
                                                 ]
+            list.extend(entriesChiller1)
 
-        entriesChiller2 = [
-            ['vdCh2PressLow',                chillerDev2.hrDataFrame.loc['WaterReplenishmentAlarm', 'address'],    settings.chiller2,    0xFF, 'ro'], # '''33'''
-            ['vdCh2OutletWaterTempSensFail', chillerDev2.hrDataFrame.loc['outletWaterTempSensFail', 'address'],    settings.chiller2,    0xFF, 'ro'], # '''34'''
-            ['vdCh2waterTempSet',            chillerDev2.hrDataFrame.loc['waterTempSet',            'address'],    settings.chiller2,    0xFF, 'rw'], # '''35'''
-            ['vdCh2hysteresisSet',           chillerDev2.hrDataFrame.loc['hysteresisSet',           'address'],    settings.chiller2,    0xFF, 'rw'], # '''36'''
-            ['vdCh2pumpCommandSpeed',        chillerDev2.hrDataFrame.loc['pumpCommandSpeed',        'address'],    settings.chiller2,    0xFF, 'ro'], # '''37'''
-            ['vdCh2heartbeat',               chillerDev2.hrDataFrame.loc['heartbeat',               'address'],    settings.chiller2,    0xFF, 'ro'], # '''38'''
-            ['vdCh2systemOnOff',             chillerDev2.hrDataFrame.loc['systemOnOff',             'address'],    settings.chiller2,    0xFF, 'rw'], # '''39'''
+        if settings.chiller2.type == 'EMW75HDNC1A':
+            entriesChiller2 = [
+                ['vdCh2PressLow',                chillerDev2.hrDataFrame.loc['WaterReplenishmentAlarm', 'address'],    settings.chiller2,    0xFF, 'ro'], # '''33'''
+                ['vdCh2OutletWaterTempSensFail', chillerDev2.hrDataFrame.loc['outletWaterTempSensFail', 'address'],    settings.chiller2,    0xFF, 'ro'], # '''34'''
+                ['vdCh2waterTempSet',            chillerDev2.hrDataFrame.loc['waterTempSet',            'address'],    settings.chiller2,    0xFF, 'rw'], # '''35'''
+                ['vdCh2hysteresisSet',           chillerDev2.hrDataFrame.loc['hysteresisSet',           'address'],    settings.chiller2,    0xFF, 'rw'], # '''36'''
+                ['vdCh2pumpCommandSpeed',        chillerDev2.hrDataFrame.loc['pumpCommandSpeed',        'address'],    settings.chiller2,    0xFF, 'ro'], # '''37'''
+                ['vdCh2heartbeat',               chillerDev2.hrDataFrame.loc['heartbeat',               'address'],    settings.chiller2,    0xFF, 'ro'], # '''38'''
+                ['vdCh2systemOnOff',             chillerDev2.hrDataFrame.loc['systemOnOff',             'address'],    settings.chiller2,    0xFF, 'rw'], # '''39'''
                                                 ]
-
-        list.extend(entriesChiller1)
-        list.extend(entriesChiller2)
+            list.extend(entriesChiller2)
 
         if settings.hvac1.type == 'BlackShields':
             entriesHvac1 = [
@@ -450,43 +451,45 @@ def getVirtualSlaveValues(settings, localDf):
         localDf.loc['vdContReserved13', 'value']      = controllinoDev.irDataFrame.loc['reserved13', 'value']
         localDf.loc['vdContHeartbeat', 'value']       = controllinoDev.irDataFrame.loc['heartbeat', 'value']
 
-    localDf.loc['vdCh1PressLow', 'value']                 = chillerDev1.hrDataFrame.loc['WaterReplenishmentAlarm', 'value']
-    localDf.loc['vdCh1OutletWaterTempSensFail', 'value']  = 1 if chillerDev1.hrDataFrame.loc['outletWaterTempSensFail':'heatingFaultLock', 'value'].sum() > 1 else 0
-    localDf.loc['vdCh1waterTempSet', 'value']             = chillerDev1.hrDataFrame.loc['waterTempSet', 'value']
-    localDf.loc['vdCh1hysteresisSet', 'value']            = chillerDev1.hrDataFrame.loc['hysteresisSet', 'value']
-    localDf.loc['vdCh1pumpCommandSpeed', 'value']         = chillerDev1.hrDataFrame.loc['pumpCommandSpeed', 'value']
-    localDf.loc['vdCh1heartbeat', 'value']                = chillerDev1.hrDataFrame.loc['heartbeat', 'value']
-    localDf.loc['vdCh1systemOnOff', 'value']              = chillerDev1.hrDataFrame.loc['systemOnOff', 'value']
-    
-    localDf.loc['vdCh2PressLow', 'value']                 = chillerDev2.hrDataFrame.loc['WaterReplenishmentAlarm', 'value']
-    localDf.loc['vdCh2OutletWaterTempSensFail', 'value']  = 1 if chillerDev2.hrDataFrame.loc['outletWaterTempSensFail':'heatingFaultLock', 'value'].sum() > 1 else 0
-    localDf.loc['vdCh2waterTempSet', 'value']             = chillerDev2.hrDataFrame.loc['waterTempSet', 'value']
-    localDf.loc['vdCh2hysteresisSet', 'value']            = chillerDev2.hrDataFrame.loc['hysteresisSet', 'value']
-    localDf.loc['vdCh2pumpCommandSpeed', 'value']         = chillerDev2.hrDataFrame.loc['pumpCommandSpeed', 'value']
-    localDf.loc['vdCh2heartbeat', 'value']                = chillerDev2.hrDataFrame.loc['heartbeat', 'value']
-    localDf.loc['vdCh2systemOnOff', 'value']              = chillerDev2.hrDataFrame.loc['systemOnOff', 'value']
+        if settings.chiller1.type == 'EMW75HDNC1A':
+            localDf.loc['vdCh1PressLow', 'value']                 = chillerDev1.hrDataFrame.loc['WaterReplenishmentAlarm', 'value']
+            localDf.loc['vdCh1OutletWaterTempSensFail', 'value']  = 1 if chillerDev1.hrDataFrame.loc['outletWaterTempSensFail':'heatingFaultLock', 'value'].sum() > 1 else 0
+            localDf.loc['vdCh1waterTempSet', 'value']             = chillerDev1.hrDataFrame.loc['waterTempSet', 'value']
+            localDf.loc['vdCh1hysteresisSet', 'value']            = chillerDev1.hrDataFrame.loc['hysteresisSet', 'value']
+            localDf.loc['vdCh1pumpCommandSpeed', 'value']         = chillerDev1.hrDataFrame.loc['pumpCommandSpeed', 'value']
+            localDf.loc['vdCh1heartbeat', 'value']                = chillerDev1.hrDataFrame.loc['heartbeat', 'value']
+            localDf.loc['vdCh1systemOnOff', 'value']              = chillerDev1.hrDataFrame.loc['systemOnOff', 'value']
+
+        if settings.chiller1.type == 'EMW75HDNC1A':
+            localDf.loc['vdCh2PressLow', 'value']                 = chillerDev2.hrDataFrame.loc['WaterReplenishmentAlarm', 'value']
+            localDf.loc['vdCh2OutletWaterTempSensFail', 'value']  = 1 if chillerDev2.hrDataFrame.loc['outletWaterTempSensFail':'heatingFaultLock', 'value'].sum() > 1 else 0
+            localDf.loc['vdCh2waterTempSet', 'value']             = chillerDev2.hrDataFrame.loc['waterTempSet', 'value']
+            localDf.loc['vdCh2hysteresisSet', 'value']            = chillerDev2.hrDataFrame.loc['hysteresisSet', 'value']
+            localDf.loc['vdCh2pumpCommandSpeed', 'value']         = chillerDev2.hrDataFrame.loc['pumpCommandSpeed', 'value']
+            localDf.loc['vdCh2heartbeat', 'value']                = chillerDev2.hrDataFrame.loc['heartbeat', 'value']
+            localDf.loc['vdCh2systemOnOff', 'value']              = chillerDev2.hrDataFrame.loc['systemOnOff', 'value']
 
     if settings.hvac1.type == 'BlackShields':
-        localDf.loc['vd' + str(settings.hvac1.name) + 'AnyAlarm',           'value']    = 1 if hvacDev1.coDataFrame.loc['highAndLowPressureAlarm':'highAndLowTempAlarm', 'value'].sum() > 1 else 0
-        localDf.loc['vd' + str(settings.hvac1.name) + 'refrigStopPoint',    'value']    = hvacDev1.hrDataFrame.loc['refrigSetPoint', 'value']
-        localDf.loc['vd' + str(settings.hvac1.name) + 'Heartbeat',          'value']    = 1  #TODO: heartbeat
+        localDf.loc['vd' + str(settings.hvac1.name) + 'AnyAlarm',           'value'] = 1 if hvacDev1.coDataFrame.loc['highAndLowPressureAlarm':'highAndLowTempAlarm', 'value'].sum() > 1 else 0
+        localDf.loc['vd' + str(settings.hvac1.name) + 'refrigStopPoint',    'value'] = hvacDev1.hrDataFrame.loc['refrigSetPoint', 'value']
+        localDf.loc['vd' + str(settings.hvac1.name) + 'Heartbeat',          'value'] = 1  #TODO: heartbeat
 
     else:
-        localDf.loc['vd' + str(settings.hvac1.name) + 'AnyAlarm',           'value']    = 1 if hvacDev1.hrDataFrame.loc['highTempAlarm':'dcUnderVoltageAlarm', 'value'].sum() > 1 else 0
-        localDf.loc['vd' + str(settings.hvac1.name) + 'refrigStopPoint',    'value']    = hvacDev1.hrDataFrame.loc['refrigStopPoint', 'value']
-        localDf.loc['vd' + str(settings.hvac1.name) + 'Heartbeat',          'value']    = 1  #TODO: heartbeat
-        localDf.loc['vd' + str(settings.hvac1.name) + 'unitRunningStatus',  'value']    = hvacDev1.hrDataFrame.loc['unitRunningStatus', 'value']
+        localDf.loc['vd' + str(settings.hvac1.name) + 'AnyAlarm',           'value'] = 1 if hvacDev1.hrDataFrame.loc['highTempAlarm':'dcUnderVoltageAlarm', 'value'].sum() > 1 else 0
+        localDf.loc['vd' + str(settings.hvac1.name) + 'refrigStopPoint',    'value'] = hvacDev1.hrDataFrame.loc['refrigStopPoint', 'value']
+        localDf.loc['vd' + str(settings.hvac1.name) + 'Heartbeat',          'value'] = 1  #TODO: heartbeat
+        localDf.loc['vd' + str(settings.hvac1.name) + 'unitRunningStatus',  'value'] = hvacDev1.hrDataFrame.loc['unitRunningStatus', 'value']
 
     if settings.hvac2.type == 'BlackShields':
-        localDf.loc['vd' + str(settings.hvac2.name) + 'AnyAlarm',           'value']    = 1 if hvacDev2.coDataFrame.loc['highAndLowPressureAlarm':'highAndLowTempAlarm', 'value'].sum() > 1 else 0
-        localDf.loc['vd' + str(settings.hvac2.name) + 'refrigStopPoint',    'value']    = hvacDev2.hrDataFrame.loc['refrigSetPoint', 'value']
-        localDf.loc['vd' + str(settings.hvac2.name) + 'Heartbeat',          'value']    = 1  #TODO: heartbeat
+        localDf.loc['vd' + str(settings.hvac2.name) + 'AnyAlarm',           'value'] = 1 if hvacDev2.coDataFrame.loc['highAndLowPressureAlarm':'highAndLowTempAlarm', 'value'].sum() > 1 else 0
+        localDf.loc['vd' + str(settings.hvac2.name) + 'refrigStopPoint',    'value'] = hvacDev2.hrDataFrame.loc['refrigSetPoint', 'value']
+        localDf.loc['vd' + str(settings.hvac2.name) + 'Heartbeat',          'value'] = 1  #TODO: heartbeat
 
     else:
-        localDf.loc['vd' + str(settings.hvac2.name) + 'AnyAlarm',           'value']    = 1 if hvacDev2.hrDataFrame.loc['highTempAlarm':'dcUnderVoltageAlarm', 'value'].sum() > 1 else 0
-        localDf.loc['vd' + str(settings.hvac2.name) + 'refrigStopPoint',    'value']    = hvacDev2.hrDataFrame.loc['refrigStopPoint', 'value']
-        localDf.loc['vd' + str(settings.hvac2.name) + 'Heartbeat',          'value']    = 1  #TODO: heartbeat
-        localDf.loc['vd' + str(settings.hvac2.name) + 'unitRunningStatus',  'value']    = hvacDev2.hrDataFrame.loc['unitRunningStatus', 'value']
+        localDf.loc['vd' + str(settings.hvac2.name) + 'AnyAlarm',           'value'] = 1 if hvacDev2.hrDataFrame.loc['highTempAlarm':'dcUnderVoltageAlarm', 'value'].sum() > 1 else 0
+        localDf.loc['vd' + str(settings.hvac2.name) + 'refrigStopPoint',    'value'] = hvacDev2.hrDataFrame.loc['refrigStopPoint', 'value']
+        localDf.loc['vd' + str(settings.hvac2.name) + 'Heartbeat',          'value'] = 1  #TODO: heartbeat
+        localDf.loc['vd' + str(settings.hvac2.name) + 'unitRunningStatus',  'value'] = hvacDev2.hrDataFrame.loc['unitRunningStatus', 'value']
 
     #Old Structure
     # localDf.loc['vdHv1highTempAlarm', 'value']            = 1 if hvacDev1.hrDataFrame.loc['highTempAlarm':'dcUnderVoltageAlarm', 'value'].sum() > 1 else 0
@@ -510,60 +513,66 @@ def getVirtualSlaveValues(settings, localDf):
     localDf.loc['vdOsTemp8', 'value']                     = osensaDev.hrDataFrame.loc['osensaTemp8', 'value']
      
     localDf.loc['vdDlTemp', 'value']                      = dl10Dev.irDataFrame.loc['dl10TempC', 'value']
-    
-    if (chillerDev1.hrDataFrame.loc['outletLowWaterTemp', 'value'] > 0 or
-        chillerDev1.hrDataFrame.loc['pumpFail', 'value'] > 0 or
-        chillerDev1.hrDataFrame.loc['inverterComFail', 'value'] > 0 or
-        chillerDev1.hrDataFrame.loc['highSystemPressAlarm', 'value'] > 0 or
-        chillerDev1.hrDataFrame.loc['sysHighVoltageLock', 'value'] > 0 or
-        chillerDev1.hrDataFrame.loc['sysLowVoltageLock', 'value'] > 0 or
-        chillerDev1.hrDataFrame.loc['exhaustGasHighTempLock', 'value'] > 0 or
-        chillerDev1.hrDataFrame.loc['inverterOverCurrentLock', 'value'] > 0 or
-        chillerDev1.hrDataFrame.loc['inverterOverTempLock', 'value'] > 0 or
-        chillerDev1.hrDataFrame.loc['inverterOverVoltLock', 'value'] > 0 or
-        chillerDev1.hrDataFrame.loc['inverterUnderVoltLock', 'value'] > 0 or
-        chillerDev1.hrDataFrame.loc['inverterPhaseLossLock', 'value'] > 0 or
-        chillerDev1.hrDataFrame.loc['inverterOtherFaultLock', 'value'] > 0 or
-    
-        chillerDev2.hrDataFrame.loc['outletLowWaterTemp', 'value'] > 0 or
-        chillerDev2.hrDataFrame.loc['pumpFail', 'value'] > 0 or
-        chillerDev2.hrDataFrame.loc['inverterComFail', 'value'] > 0 or
-        chillerDev2.hrDataFrame.loc['highSystemPressAlarm', 'value'] > 0 or
-        chillerDev2.hrDataFrame.loc['sysHighVoltageLock', 'value'] > 0 or
-        chillerDev2.hrDataFrame.loc['sysLowVoltageLock', 'value'] > 0 or
-        chillerDev2.hrDataFrame.loc['exhaustGasHighTempLock', 'value'] > 0 or
-        chillerDev2.hrDataFrame.loc['inverterOverCurrentLock', 'value'] > 0 or
-        chillerDev2.hrDataFrame.loc['inverterOverTempLock', 'value'] > 0 or
-        chillerDev2.hrDataFrame.loc['inverterOverVoltLock', 'value'] > 0 or
-        chillerDev2.hrDataFrame.loc['inverterUnderVoltLock', 'value'] > 0 or
-        chillerDev2.hrDataFrame.loc['inverterPhaseLossLock', 'value'] > 0 or
-        chillerDev2.hrDataFrame.loc['inverterOtherFaultLock', 'value'] > 0
-        ):
-    
-        localDf.loc['vdAnyChillerAlarm', 'value'] = 1
-    else:
-        localDf.loc['vdAnyChillerAlarm', 'value'] = 0
-    
-    if ((settings.chiller1.use and 
-         (chillerDev1.hrDataFrame.loc['outletHighWaterTemp', 'value'] > 0 or
-          chillerDev1.hrDataFrame.loc['outletWaterTempSensFail', 'value'] > 0 or
-          chillerDev1.hrDataFrame.loc['returnWaterTempSensFail', 'value'] > 0 or
-          chillerDev1.hrDataFrame.loc['heatingFail', 'value'] > 0 or
-          chillerDev1.hrDataFrame.loc['highOutletPressAlarm', 'value'] > 0 or
-          chillerDev1.hrDataFrame.loc['heatingFaultLock', 'value'] > 0)) 
-        or
-        (settings.chiller2.use and 
-         (chillerDev2.hrDataFrame.loc['outletHighWaterTemp', 'value'] > 0 or
-          chillerDev2.hrDataFrame.loc['outletWaterTempSensFail', 'value'] > 0 or
-          chillerDev2.hrDataFrame.loc['returnWaterTempSensFail', 'value'] > 0 or
-          chillerDev2.hrDataFrame.loc['heatingFail', 'value'] > 0 or
-          chillerDev2.hrDataFrame.loc['highOutletPressAlarm', 'value'] > 0 or
-          chillerDev2.hrDataFrame.loc['heatingFaultLock', 'value'] > 0
-        ))):
-    
-        localDf.loc['vdAnyChillerWarning', 'value'] = 1
-    else:
-        localDf.loc['vdAnyChillerWarning', 'value'] = 0
+
+    if settings.chiller1.type == 'EMW75HDNC1A':
+        if (chillerDev1.hrDataFrame.loc['outletLowWaterTemp', 'value'] > 0 or
+            chillerDev1.hrDataFrame.loc['pumpFail', 'value'] > 0 or
+            chillerDev1.hrDataFrame.loc['inverterComFail', 'value'] > 0 or
+            chillerDev1.hrDataFrame.loc['highSystemPressAlarm', 'value'] > 0 or
+            chillerDev1.hrDataFrame.loc['sysHighVoltageLock', 'value'] > 0 or
+            chillerDev1.hrDataFrame.loc['sysLowVoltageLock', 'value'] > 0 or
+            chillerDev1.hrDataFrame.loc['exhaustGasHighTempLock', 'value'] > 0 or
+            chillerDev1.hrDataFrame.loc['inverterOverCurrentLock', 'value'] > 0 or
+            chillerDev1.hrDataFrame.loc['inverterOverTempLock', 'value'] > 0 or
+            chillerDev1.hrDataFrame.loc['inverterOverVoltLock', 'value'] > 0 or
+            chillerDev1.hrDataFrame.loc['inverterUnderVoltLock', 'value'] > 0 or
+            chillerDev1.hrDataFrame.loc['inverterPhaseLossLock', 'value'] > 0 or
+            chillerDev1.hrDataFrame.loc['inverterOtherFaultLock', 'value'] > 0):
+            localDf.loc['vdAnyChillerAlarm', 'value'] = 1
+        else:
+            localDf.loc['vdAnyChillerAlarm', 'value'] = 0
+
+    if settings.chiller2.type == 'EMW75HDNC1A':
+        if (chillerDev2.hrDataFrame.loc['outletLowWaterTemp', 'value'] > 0 or
+            chillerDev2.hrDataFrame.loc['pumpFail', 'value'] > 0 or
+            chillerDev2.hrDataFrame.loc['inverterComFail', 'value'] > 0 or
+            chillerDev2.hrDataFrame.loc['highSystemPressAlarm', 'value'] > 0 or
+            chillerDev2.hrDataFrame.loc['sysHighVoltageLock', 'value'] > 0 or
+            chillerDev2.hrDataFrame.loc['sysLowVoltageLock', 'value'] > 0 or
+            chillerDev2.hrDataFrame.loc['exhaustGasHighTempLock', 'value'] > 0 or
+            chillerDev2.hrDataFrame.loc['inverterOverCurrentLock', 'value'] > 0 or
+            chillerDev2.hrDataFrame.loc['inverterOverTempLock', 'value'] > 0 or
+            chillerDev2.hrDataFrame.loc['inverterOverVoltLock', 'value'] > 0 or
+            chillerDev2.hrDataFrame.loc['inverterUnderVoltLock', 'value'] > 0 or
+            chillerDev2.hrDataFrame.loc['inverterPhaseLossLock', 'value'] > 0 or
+            chillerDev2.hrDataFrame.loc['inverterOtherFaultLock', 'value'] > 0):
+            localDf.loc['vdAnyChillerAlarm', 'value'] = 1
+        else:
+            localDf.loc['vdAnyChillerAlarm', 'value'] = 0
+
+    if settings.chiller1.type == 'EMW75HDNC1A':
+        if (settings.chiller1.use and
+             (chillerDev1.hrDataFrame.loc['outletHighWaterTemp', 'value'] > 0 or
+              chillerDev1.hrDataFrame.loc['outletWaterTempSensFail', 'value'] > 0 or
+              chillerDev1.hrDataFrame.loc['returnWaterTempSensFail', 'value'] > 0 or
+              chillerDev1.hrDataFrame.loc['heatingFail', 'value'] > 0 or
+              chillerDev1.hrDataFrame.loc['highOutletPressAlarm', 'value'] > 0 or
+              chillerDev1.hrDataFrame.loc['heatingFaultLock', 'value'] > 0)):
+            localDf.loc['vdAnyChillerWarning', 'value'] = 1
+        else:
+            localDf.loc['vdAnyChillerWarning', 'value'] = 0
+
+    if settings.chiller2.type == 'EMW75HDNC1A':
+        if (settings.chiller2.use and
+             (chillerDev2.hrDataFrame.loc['outletHighWaterTemp', 'value'] > 0 or
+              chillerDev2.hrDataFrame.loc['outletWaterTempSensFail', 'value'] > 0 or
+              chillerDev2.hrDataFrame.loc['returnWaterTempSensFail', 'value'] > 0 or
+              chillerDev2.hrDataFrame.loc['heatingFail', 'value'] > 0 or
+              chillerDev2.hrDataFrame.loc['highOutletPressAlarm', 'value'] > 0 or
+              chillerDev2.hrDataFrame.loc['heatingFaultLock', 'value'] > 0)):
+            localDf.loc['vdAnyChillerWarning', 'value'] = 1
+        else:
+            localDf.loc['vdAnyChillerWarning', 'value'] = 0
     
     if (osensaDev.hrDataFrame.loc['osensaTemp1', 'value']/10 > 92.5 or
         osensaDev.hrDataFrame.loc['osensaTemp2', 'value']/10 > 92.5 or
@@ -572,8 +581,7 @@ def getVirtualSlaveValues(settings, localDf):
         osensaDev.hrDataFrame.loc['osensaTemp5', 'value']/10 > 92.5 or
         osensaDev.hrDataFrame.loc['osensaTemp6', 'value']/10 > 92.5 or
         osensaDev.hrDataFrame.loc['osensaTemp7', 'value']/10 > 92.5 or
-        osensaDev.hrDataFrame.loc['osensaTemp8', 'value']/10 > 92.5
-        ):
+        osensaDev.hrDataFrame.loc['osensaTemp8', 'value']/10 > 92.5):
         localDf.loc['vdOsHighTempWarning', 'value'] = 1
     else:
         localDf.loc['vdOsHighTempWarning', 'value'] = 0
@@ -586,10 +594,8 @@ def getVirtualSlaveValues(settings, localDf):
         osensaDev.hrDataFrame.loc['osensaTemp5', 'value']/10 > 95 or
         osensaDev.hrDataFrame.loc['osensaTemp6', 'value']/10 > 95 or
         osensaDev.hrDataFrame.loc['osensaTemp7', 'value']/10 > 95 or
-        osensaDev.hrDataFrame.loc['osensaTemp8', 'value']/10 > 95
-        ):
+        osensaDev.hrDataFrame.loc['osensaTemp8', 'value']/10 > 95):
         localDf.loc['vdOsHighTempAlarm', 'value'] = 1
-    
     elif (osensaDev.hrDataFrame.loc['osensaTemp1', 'value']/10 < settings.OSENSA_ALARM_RESET_TEMP or
         osensaDev.hrDataFrame.loc['osensaTemp2', 'value']/10 < settings.OSENSA_ALARM_RESET_TEMP or
         osensaDev.hrDataFrame.loc['osensaTemp3', 'value']/10 < settings.OSENSA_ALARM_RESET_TEMP or
@@ -597,8 +603,7 @@ def getVirtualSlaveValues(settings, localDf):
         osensaDev.hrDataFrame.loc['osensaTemp5', 'value']/10 < settings.OSENSA_ALARM_RESET_TEMP or
         osensaDev.hrDataFrame.loc['osensaTemp6', 'value']/10 < settings.OSENSA_ALARM_RESET_TEMP or
         osensaDev.hrDataFrame.loc['osensaTemp7', 'value']/10 < settings.OSENSA_ALARM_RESET_TEMP or
-        osensaDev.hrDataFrame.loc['osensaTemp8', 'value']/10 < settings.OSENSA_ALARM_RESET_TEMP
-        ):
+        osensaDev.hrDataFrame.loc['osensaTemp8', 'value']/10 < settings.OSENSA_ALARM_RESET_TEMP):
         localDf.loc['vdOsHighTempAlarm', 'value'] = 0
     
     localDf.loc['readTimestamp0':'readTimestamp3', 'value'] = cmu_utils.getTimeStampRegs()
@@ -1203,7 +1208,8 @@ def readClientsWriteToServer(log, settings, context):
             values = [ hvacTelcoDev.coDataFrame.loc[i, 'value'] ]
             #context[settings.hvacTelco.unitId].setValues(settings, holdingregister, hvacTelcoDev.coDataFrame.loc[i, 'address'], values, setQueue = False)
             context[settings.hvacTelco.unitId].setValues(coil, hvacTelcoDev.coDataFrame.loc[i, 'address'], values, setQueue = False)
-            context[settings.hvacTelco.unitId].setValues(discreteinput, hvacTelcoDev.diDataFrame.loc[i, 'address'], values, setQueue = False)
+            if hvacTelcoDev.diDataFrame is not None:
+                context[settings.hvacTelco.unitId].setValues(discreteinput, hvacTelcoDev.diDataFrame.loc[i, 'address'], values, setQueue = False)
 
     if settings.upsTelco.use == True:
         for i in upsTelcoDev.hrDataFrame.index:

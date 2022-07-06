@@ -1,0 +1,38 @@
+network:
+  bridges:
+    br0:
+      addresses: [172.16.1.116/24]
+      gateway4: 172.16.1.1
+      dhcp4: true
+      interfaces:
+      - wan
+      - lan3
+      nameservers:
+        addresses:
+        - 172.16.1.4
+        - 8.8.4.4
+        - 8.8.8.8
+    br1:
+      addresses:
+      - 192.168.2.1/24
+      - 192.168.2.2/24
+      dhcp4: false
+      interfaces:
+      - lan0
+      - lan1
+      - lan2
+  ethernets:
+    eth0:
+      dhcp4: false
+    lan0:
+      dhcp4: false
+    lan1:
+      dhcp4: false
+    lan2:
+      dhcp4: false
+    lan3:
+      dhcp4: false
+    wan:
+      dhcp4: false
+  renderer: networkd
+  version: 2
