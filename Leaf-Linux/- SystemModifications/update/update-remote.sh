@@ -4,11 +4,11 @@
 Usage()
 {
     echo "Usage:"
-    echo "update.sh <Cube/Telco type>"
+    echo "update-remote.sh <Cube/Telco type>"
     echo "  <Cube type>"
     echo "    Cube-AC        = Cube Air    Cooled"
     echo "    Cube-LC-LD-EMW = Cube Liquid Cooled - Long  Duration - Envicool Chiller EMW75HDNC1A"
-    echo "    Cube-LC-LD-RC  = Cube Liquid Cooled - Long  Duration - Envicool Chiller RC8057G1"
+    echo "    Cube-LC-LD-RC  = Cube Liquid Cooled - Long  Duration - Boyd     Chiller RC8057G1"
     echo "    Cube-LC-SD     = Cube Liquid Cooled - Short Duration"
     echo "    Telco-rs485    = Telco nVent HVAC RS485"
     echo "    Telco-ethernet = Telco nVent HVAC Ethernet"
@@ -77,7 +77,7 @@ case $Cube_Telco_type in
                 cp  /usr/local/share/fluence/controllino_modbus_Cube_LiquidCooled_LD_chillerEnvicoolEMW75HDNC1A.conf  /usr/local/share/fluence/controllino_modbus.conf
                 ;;
         "CUBE-LC-LD-RC")
-                cp  /usr/local/share/fluence/controllino_modbus_Cube_LiquidCooled_LD_chillerEnvicoolRC8057G1.conf     /usr/local/share/fluence/controllino_modbus.conf
+                cp  /usr/local/share/fluence/controllino_modbus_Cube_LiquidCooled_LD_chillerBoydRC8057G1.conf         /usr/local/share/fluence/controllino_modbus.conf
                 ;;
         "LC-SD")
                 cp  /usr/local/share/fluence/controllino_modbus_Cube_LiquidCooled_SD.conf                             /usr/local/share/fluence/controllino_modbus.conf

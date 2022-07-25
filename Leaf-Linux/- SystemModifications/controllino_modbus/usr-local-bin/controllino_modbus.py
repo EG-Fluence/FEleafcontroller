@@ -1763,14 +1763,16 @@ def main():
     # Function will set the actual settings to the default values.
     settings.setDefaultSettings(settingsDefault)
    
-    
+    arguments = sys.argv
+    arguments = [item.lower() for item in arguments]
+
     # Shows helptext, which is useful for first-time users.
     if settings.SHOWHELPTEXT == True:
         cmu_utils.showHelptext(settings.MODE)
-    
+
     # check for user input, arguments and config file to set correct ip address and mode.
     # First, check if the user just wants to see the helptext.
-    if ('-h' in sys.argv or 'help' in sys.argv):
+    if ('-h' in sys.argv or 'help' in arguments):
         if settings.SHOWHELPTEXT == True:
             # Helptext was already shown.
             sys.exit()
@@ -1842,10 +1844,10 @@ def main():
 
     # More arguments than IP address and Port are given, so use them.
     # make every argument lower case to avoid typos
-    map(str.lower, sys.argv)
+    # map(str.lower, sys.argv)    # it doesn't seem to work!!!
 
     # At first, check if -a or all is given. Afterwards disable or enable specific settings.
-    if 'all' in sys.argv or '-a' in sys.argv:
+    if 'all' in arguments or '-a' in sys.argv:
         settings.server.use = True
         settings.clients.use = True
         settings.controllino.use = True
@@ -1864,133 +1866,133 @@ def main():
         
 
     # Disable or enable specific settings.
-    if 'help' in sys.argv or '-h' in sys.argv:
+    if 'help' in arguments or '-h' in sys.argv:
         cmu_utils.showHelptext(settings.MODE)
         sys.exit()
 
-    if 'sleepTime' in sys.argv or '-s' in sys.argv:
-        if 'sleepTime' in sys.argv:
-            i = sys.argv.index('sleepTime')
+    if 'sleeptime' in arguments or '-s' in sys.argv:
+        if 'sleeptime' in arguments:
+            i = arguments.index('sleeptime')
         elif '-s' in sys.argv:
             i = sys.argv.index('-s')
         settings.sleepTime = int(sys.argv[i + 1])
 
-    if 'mode' in sys.argv:
-        i = sys.argv.index('mode')
-        settings.MODE = sys.argv[i + 1]
+    if 'mode' in arguments:
+        i = arguments.index('mode')
+        settings.MODE = arguments[i + 1]
 
-    if 'cyclic' in sys.argv or '-c' in sys.argv:
+    if 'cyclic' in arguments or '-c' in sys.argv:
         settings.cyclicRead = True
 
-    if 'clients' in sys.argv:
+    if 'clients' in arguments:
         settings.clients.use = True
 
-    if 'server' in sys.argv:
+    if 'server' in arguments:
         settings.server.use = True
 
-    if 'controllino' in sys.argv:
+    if 'controllino' in arguments:
         settings.controllino.use = True
 
-    if 'chiller' in sys.argv: # ALias for chiller1
+    if 'chiller' in arguments: # ALias for chiller1
         settings.chiller1.use = True
 
-    if 'chiller1' in sys.argv:
+    if 'chiller1' in arguments:
         settings.chiller1.use = True
 
-    if 'chiller2' in sys.argv:
+    if 'chiller2' in arguments:
         settings.chiller2.use = True
 
-    if 'hvac' in sys.argv:
+    if 'hvac' in arguments:
         settings.hvac1.use = True
 
-    if 'hvac1' in sys.argv:
+    if 'hvac1' in arguments:
         settings.hvac1.use = True
 
-    if 'hvac2' in sys.argv:
+    if 'hvac2' in arguments:
         settings.hvac2.use = True
 
-    if 'osensa' in sys.argv:
+    if 'osensa' in arguments:
         settings.osensa.use = True
 
-    if 'dl10' in sys.argv:
+    if 'dl10' in arguments:
         settings.dl10.use = True
 
-    if 'flowmeter' in sys.argv: # Alias for backwards compatibility.
+    if 'flowmeter' in arguments: # Alias for backwards compatibility.
         settings.flowmeter1.use = True
 
-    if 'flowmeter1' in sys.argv:
+    if 'flowmeter1' in arguments:
         settings.flowmeter1.use = True
 
-    if 'ups' in sys.argv:
+    if 'ups' in arguments:
         settings.ups.use = True
 
-    if 'flowmeter2' in sys.argv:
+    if 'flowmeter2' in arguments:
         settings.flowmeter2.use = True
 
-    if 'virtualslave' in sys.argv:
+    if 'virtualslave' in arguments:
         settings.virtualSlave.use = True
 
-    if 'hvactelco' in sys.argv:
+    if 'hvactelco' in arguments:
         settings.hvacTelco.use = True
 
-    if 'upstelco' in sys.argv:
+    if 'upstelco' in arguments:
         settings.upsTelco.use = True
 
-    if 'notclients' in sys.argv:
+    if 'notclients' in arguments:
         settings.clients.use = False
 
-    if 'notserver' in sys.argv:
+    if 'notserver' in arguments:
         settings.server.use = False
 
-    if 'notcyclic' in sys.argv:
+    if 'notcyclic' in arguments:
         settings.cyclicRead = False
 
-    if 'notcontrollino' in sys.argv:
+    if 'notcontrollino' in arguments:
         settings.controllino.use = False
 
-    if 'notchiller' in sys.argv: # Alias for notchiller1
+    if 'notchiller' in arguments: # Alias for notchiller1
         settings.chiller1.use = False
 
-    if 'notchiller1' in sys.argv:
+    if 'notchiller1' in arguments:
         settings.chiller1.use = False
 
-    if 'notchiller2' in sys.argv:
+    if 'notchiller2' in arguments:
         settings.chiller2.use = False
 
-    if 'nothvac' in sys.argv: # Alias for nothvac1
+    if 'nothvac' in arguments: # Alias for nothvac1
         settings.hvac1.use = False
 
-    if 'nothvac1' in sys.argv:
+    if 'nothvac1' in arguments:
         settings.hvac1.use = False
 
-    if 'nothvac2' in sys.argv:
+    if 'nothvac2' in arguments:
         settings.hvac2.use = False
 
-    if 'notosensa' in sys.argv:
+    if 'notosensa' in arguments:
         settings.osensa.use = False
 
-    if 'notdl10' in sys.argv:
+    if 'notdl10' in arguments:
         settings.dl10.use = False
 
-    if 'notflowmeter' in sys.argv: # Alias for backwards compatibility.
+    if 'notflowmeter' in arguments: # Alias for backwards compatibility.
         settings.flowmeter1.use = False
 
-    if 'notflowmeter1' in sys.argv:
+    if 'notflowmeter1' in arguments:
         settings.flowmeter1.use = False
 
-    if 'notups' in sys.argv:
+    if 'notups' in arguments:
         settings.ups.use = False
 
-    if 'notflowmeter2' in sys.argv:
+    if 'notflowmeter2' in arguments:
         settings.flowmeter2.use = False
 
-    if 'notvirtualslave' in sys.argv:
+    if 'notvirtualslave' in arguments:
         settings.virtualSlave.use = False
 
-    if 'nothvacTelco' in sys.argv:
+    if 'nothvactelco' in arguments:
         settings.hvacTelco.use = False
 
-    if 'notupsTelco' in sys.argv:
+    if 'notupstelco' in arguments:
         settings.upsTelco.use = False
 
     # All Settings set. Print them.
@@ -2003,15 +2005,15 @@ def main():
     #Example 1b: controllino_modbus.py write 1        hr 35596 180
     #Example 2:  ccontrollino_modbus.py write chiller1 systemOnOff 1
     #Example 3:  controllino_modbus.py write chiller1 35596 180   (undocumented, not listed in help)
-    if 'write' in sys.argv:
-        i = sys.argv.index('write')
+    if 'write' in arguments:
+        i = arguments.index('write')
         
-        #                                  Example 1                          | Example2 
-        wrArg1 = sys.argv[i + 1].lower() #device controllino, chiller1, hvac1 | the same
-        wrArg2 = sys.argv[i + 2]         # hr or co                           | Register name -> will be converted address
-        wrArg3 = sys.argv[i + 3]         # Address                            | value
+                                          # Example 1                           | Example2
+        wrArg1 = arguments[i + 1]         # device controllino, chiller1, hvac1 | the same
+        wrArg2 = arguments[i + 2]         # hr or co                            | Register name -> will be converted address
+        wrArg3 = arguments[i + 3]         # Address                             | value
         try:
-            wrArg4 = sys.argv[i + 4]     # value
+            wrArg4 = arguments[i + 4]     # value
         except IndexError:
             wrArg4 = None
         
@@ -2053,12 +2055,11 @@ def main():
                 addressRequest = int(wrArg2, 0)
                 valueRequest = [ int(wrArg3, 0) ]
         
-        if not ('force' in sys.argv):
+        if not ('force' in arguments):
             if checkWriteAccess(deviceSetting, addressRequest, registerTypeRequest):    
                 #with deviceSetting what is logical solution is not working, locking problem
                 queue.put((deviceName, registerTypeRequest, addressRequest, valueRequest, 0))
-                
-            else: 
+            else:
                 raise cmu_utils.WriteAccessError()
         else:
             queue.put((deviceName, registerTypeRequest, addressRequest, valueRequest, 0))
@@ -2080,13 +2081,13 @@ def main():
         settings.hvacTelco.use = False
         settings.upsTelco.use = False
     
-    if 'readsingle' in sys.argv:
-        i = sys.argv.index('readsingle')
+    if 'readsingle' in arguments:
+        i = arguments.index('readsingle')
         
-        rdArg1 = sys.argv[i + 1].lower()
-        rdArg2 = sys.argv[i + 2]
+        rdArg1 = arguments[i + 1]
+        rdArg2 = arguments[i + 2]
         try:
-            rdArg3 = sys.argv[i + 3]
+            rdArg3 = arguments[i + 3]
         except IndexError:
             rdArg3 = None
         
@@ -2139,14 +2140,14 @@ def main():
         else:
             os._exit(1)
     
-    if 'readmultiple' in sys.argv:
-        i = sys.argv.index('readmultiple')
+    if 'readmultiple' in arguments:
+        i = arguments.index('readmultiple')
         
-        rdArg1 = sys.argv[i + 1].lower()
-        rdArg2 = sys.argv[i + 2]
-        rdArg3 = sys.argv[i + 3]
+        rdArg1 = arguments[i + 1]
+        rdArg2 = arguments[i + 2]
+        rdArg3 = arguments[i + 3]
         try:
-            rdArg4 = sys.argv[i + 4]
+            rdArg4 = arguments[i + 4]
         except IndexError:
             rdArg4 = None
         

@@ -7,7 +7,7 @@ Usage()
     echo "  <Cube type>"
     echo "    Cube-AC        = Cube Air    Cooled"
     echo "    Cube-LC-LD-EMW = Cube Liquid Cooled - Long  Duration - Envicool Chiller EMW75HDNC1A"
-    echo "    Cube-LC-LD-RC  = Cube Liquid Cooled - Long  Duration - Envicool Chiller RC8057G1"
+    echo "    Cube-LC-LD-RC  = Cube Liquid Cooled - Long  Duration - Boyd     Chiller RC8057G1"
     echo "    Cube-LC-SD     = Cube Liquid Cooled - Short Duration"
     echo "    Telco-rs485    = Telco nVent HVAC RS485"
     echo "    Telco-ethernet = Telco nVent HVAC Ethernet"
@@ -29,22 +29,22 @@ Cube_Telco_type_str=""
 
 case $Cube_Telco_type in
 	"CUBE-AC")
-		Cube_Telco_type_str="Cube Air Cooled"
+        Cube_Telco_type_str="Cube Air Cooled"
                 ;;
 	"CUBE-LC-LD-EMW")
-		Cube_Telco_type_str="Cube Liquid Cooled - Long Duration - Envicool Chiller EMW75HDNC1A"
+        Cube_Telco_type_str="Cube Liquid Cooled - Long Duration - Envicool Chiller EMW75HDNC1A"
                 ;;
-        "CUBE-LC-LD-RC")
-                Cube_Telco_type_str="Cube Liquid Cooled - Long Duration - Envicool Chiller RC8057G1"
+    "CUBE-LC-LD-RC")
+        Cube_Telco_type_str="Cube Liquid Cooled - Long Duration - Boyd Chiller RC8057G1"
                 ;;
 	"LC-SD")
-		Cube_Telco_type_str="Cube Liquid Cooled - Short Duration"
+        Cube_Telco_type_str="Cube Liquid Cooled - Short Duration"
                 ;;
-        "TELCO-RS485")
-                Cube_Telco_type_str="Telco nVent HVAC RS485"
+    "TELCO-RS485")
+        Cube_Telco_type_str="Telco nVent HVAC RS485"
                 ;;
-        "TELCO-ETHERNET")
-                Cube_Telco_type_str="Telco nVent HVAC RS485"
+    "TELCO-ETHERNET")
+        Cube_Telco_type_str="Telco nVent HVAC RS485"
                 ;;
 
 	*)

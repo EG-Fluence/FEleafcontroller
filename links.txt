@@ -467,7 +467,8 @@ ReadMessages_counter = 1191849    ReadMessages_error_counter = 35   |   WriteMes
 ReadMessages_counter = 2699569    ReadMessages_error_counter = 376   |   WriteMessages_counter = 13    WriteMessages_error_counter = 0
 2022/05/11
 ReadMessages_counter = 4427468    ReadMessages_error_counter = 438   |   WriteMessages_counter = 15    WriteMessages_error_counter = 0
-
+2022/07/15
+ReadMessages_counter = 10996894    ReadMessages_error_counter = 833   |   WriteMessages_counter = 39    WriteMessages_error_counter = 0
 
 vpn-de.fluenceenergy.com/FluenceSupport
 
@@ -674,4 +675,14 @@ https://fluenceenergy.atlassian.net/jira/software/c/projects/FAT/boards/220
 ==========================================================  FAT assignments
 
 https://fluenceenergy.atlassian.net/browse/FAT-358
+
+
+
+==========================================================  JIRA slow long response
+
+https://fluenceenergy.atlassian.net/browse/FAT-391 --> long HVAC response for bananapi
+https://fluenceenergy.atlassian.net/browse/FAT-393 --> long HVAC response for espressobin
+https://fluenceenergy.atlassian.net/browse/FAT-394 --> long Chiller response for espressobin
+https://fluenceenergy.atlassian.net/browse/FAT-392 --> long Chiller response for bananapi
+https://fluenceenergy.atlassian.net/browse/FAT-388 --> long delays for DAS datapoints
 
